@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum PropertyHint
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum PropertyHint
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.PropertyHint">
+
+
+
+
+  <h1 id="Godot_PropertyHint" data-uid="Godot.PropertyHint" class="text-break">Enum PropertyHint
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_PropertyHint_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum PropertyHint : long</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Godot_PropertyHint_ArrayType">ArrayType</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_ColorNoAlpha">ColorNoAlpha</td>
+        <td><p>Hints that a <a class="xref" href="Godot.Color.html">Color</a> property should be edited without affecting its transparency (<code>Color.a</code> is not editable).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Dir">Dir</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is a path to a directory. Editing it will show a file dialog for picking the path.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Enum">Enum</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is an enumerated value to pick in a list specified via a hint string.</p>
+<p>The hint string is a comma separated list of names such as <code>"Hello,Something,Else"</code>. Whitespaces are <b>not</b> removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending <code>:integer</code> to the name, e.g. <code>"Zero,One,Three:3,Four,Six:6"</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_EnumSuggestion">EnumSuggestion</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property can be an enumerated value to pick in a list specified via a hint string such as <code>"Hello,Something,Else"</code>.</p>
+<p>Unlike <a class="xref" href="Godot.PropertyHint.html#Godot_PropertyHint_Enum">Enum</a>, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_ExpEasing">ExpEasing</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> property should be edited via an exponential easing function. The hint string can include <code>"attenuation"</code> to flip the curve horizontally and/or <code>"positive_only"</code> to exclude in/out easing and limit values to be greater than or equal to zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Expression">Expression</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is an <a class="xref" href="Godot.Expression.html">Expression</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_File">File</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is a path to a file. Editing it will show a file dialog for picking the path. The hint string can be a set of filters with wildcards like <code>"*.png,*.jpg"</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Flags">Flags</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask with named bit flags.</p>
+<p>The hint string is a comma separated list of names such as <code>"Bit0,Bit1,Bit2,Bit3"</code>. Whitespaces are <b>not</b> removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending <code>:integer</code> to the name, e.g. <code>"A:4,B:8,C:16"</code>. You can also combine several flags (<code>"A:4,B:8,AB:12,C:16"</code>).</p>
+<p><b>Note:</b> A flag value must be at least <code>1</code> and at most <code>2 ** 32 - 1</code>.</p>
+<p><b>Note:</b> Unlike <a class="xref" href="Godot.PropertyHint.html#Godot_PropertyHint_Enum">Enum</a>, the previous explicit value is not taken into account. For the hint <code>"A:16,B,C"</code>, A is 16, B is 2, C is 4.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_GlobalDir">GlobalDir</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is an absolute path to a directory outside the project folder. Editing it will show a file dialog for picking the path.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_GlobalFile">GlobalFile</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is an absolute path to a file outside the project folder. Editing it will show a file dialog for picking the path. The hint string can be a set of filters with wildcards, like <code>"*.png,*.jpg"</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_GlobalSaveFile">GlobalSaveFile</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_HideQuaternionEdit">HideQuaternionEdit</td>
+        <td><p>Hints that a quaternion property should disable the temporary euler editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_IntIsObjectid">IntIsObjectid</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_IntIsPointer">IntIsPointer</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers2DNavigation">Layers2DNavigation</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 2D navigation layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers2DPhysics">Layers2DPhysics</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 2D physics layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers2DRender">Layers2DRender</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 2D render layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers3DNavigation">Layers3DNavigation</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 3D navigation layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers3DPhysics">Layers3DPhysics</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 3D physics layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Layers3DRender">Layers3DRender</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> property is a bitmask using the optionally named 3D render layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_LayersAvoidance">LayersAvoidance</td>
+        <td><p>Hints that an integer property is a bitmask using the optionally named avoidance layers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Link">Link</td>
+        <td><p>Hints that a vector property should allow its components to be linked. For example, this allows <code>Vector2.x</code> and <code>Vector2.y</code> to be edited together.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_LocaleId">LocaleId</td>
+        <td><p>Hints that a string property is a locale code. Editing it will show a locale dialog for picking language and country.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_LocalizableString">LocalizableString</td>
+        <td><p>Hints that a dictionary property is string translation map. Dictionary keys are locale codes and, values are translated strings.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Max">Max</td>
+        <td><p>Represents the size of the <a class="xref" href="Godot.PropertyHint.html">PropertyHint</a> enum.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_MultilineText">MultilineText</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property is text with line breaks. Editing it will show a text input field where line breaks can be typed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_NodePathToEditedNode">NodePathToEditedNode</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_NodePathValidTypes">NodePathValidTypes</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_NodeType">NodeType</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_None">None</td>
+        <td><p>The property has no hint for the editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_ObjectId">ObjectId</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_ObjectTooBig">ObjectTooBig</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Password">Password</td>
+        <td><p>Hints that a string property is a password, and every character is replaced with the secret character.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_PlaceholderText">PlaceholderText</td>
+        <td><p>Hints that a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> property should show a placeholder text on its input field, if empty. The hint string is the placeholder text to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_Range">Range</td>
+        <td><p>Hints that an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> property should be within a range specified via the hint string <code>"min,max"</code> or <code>"min,max,step"</code>. The hint string can optionally include <code>"or_greater"</code> and/or <code>"or_less"</code> to allow manual input going respectively above the max or below the min values.</p>
+<p><b>Example:</b> <code>"-360,360,1,or_greater,or_less"</code>.</p>
+<p>Additionally, other keywords can be included: <code>"exp"</code> for exponential range editing, <code>"radians"</code> for editing radian angles in degrees, <code>"degrees"</code> to hint at an angle and <code>"hide_slider"</code> to hide the slider.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_ResourceType">ResourceType</td>
+        <td><p>Hints that a property is an instance of a <a class="xref" href="Godot.Resource.html">Resource</a>-derived type, optionally specified via the hint string (e.g. <code>"Texture2D"</code>). Editing it will show a popup menu of valid resource types to instantiate.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_SaveFile">SaveFile</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyHint_TypeString">TypeString</td>
+        <td><p>If a property is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.</p>
+<p>If a property is <a class="xref" href="Godot.Collections.Array.html">Array</a>, hints the editor how to show elements. The <code>hint_string</code> must encode nested types using <code>":"</code> and <code>"/"</code>.</p>
+<p><pre><code class="lang-csharp">// Array of elemType.
+   hintString = $"{elemType:D}:";
+   hintString = $"{elemType:}/{elemHint:D}:{elemHintString}";
+   // Two-dimensional array of elemType (array of arrays of elemType).
+   hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
+   hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
+   // Three-dimensional array of elemType (array of arrays of arrays of elemType).
+   hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
+   hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";</code></pre>
+<p>Examples:</p>
+<p><pre><code class="lang-csharp">hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
+   hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
+   hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
+   hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
+   hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
+<p>hintString = $&quot;{Variant.Type.Array:D}:{Variant.Type.Float:D}:&quot;; // Two-dimensional array of floats.
+hintString = $&quot;{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:&quot;; // Two-dimensional array of multiline strings.
+hintString = $&quot;{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1&quot;; // Two-dimensional array of floats (in range from -1 to 1).
+hintString = $&quot;{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D&quot;; // Two-dimensional array of textures.</p></code></pre>
+<p><b>Note:</b> The trailing colon is required for properly detecting built-in types.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

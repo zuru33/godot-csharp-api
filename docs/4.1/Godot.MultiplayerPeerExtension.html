@@ -1,0 +1,1194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MultiplayerPeerExtension
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MultiplayerPeerExtension
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.MultiplayerPeerExtension">
+
+
+
+  <h1 id="Godot_MultiplayerPeerExtension" data-uid="Godot.MultiplayerPeerExtension" class="text-break">Class MultiplayerPeerExtension
+</h1>
+  <div class="markdown level0 summary"><p>This class is designed to be inherited from a GDExtension plugin to implement custom networking layers for the multiplayer API (such as WebRTC). All the methods below <b>must</b> be implemented to have a working custom multiplayer implementation. See also <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+    <div class="level3"><a class="xref" href="Godot.PacketPeer.html">PacketPeer</a></div>
+    <div class="level4"><a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a></div>
+    <div class="level5"><span class="xref">MultiplayerPeerExtension</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TargetPeerBroadcast">MultiplayerPeer.TargetPeerBroadcast</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TargetPeerServer">MultiplayerPeer.TargetPeerServer</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_SetTargetPeer_System_Int32_">MultiplayerPeer.SetTargetPeer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketPeer">MultiplayerPeer.GetPacketPeer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketChannel">MultiplayerPeer.GetPacketChannel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketMode">MultiplayerPeer.GetPacketMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_Poll">MultiplayerPeer.Poll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_Close">MultiplayerPeer.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_DisconnectPeer_System_Int32_System_Boolean_">MultiplayerPeer.DisconnectPeer(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetConnectionStatus">MultiplayerPeer.GetConnectionStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetUniqueId">MultiplayerPeer.GetUniqueId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GenerateUniqueId">MultiplayerPeer.GenerateUniqueId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_IsServerRelaySupported">MultiplayerPeer.IsServerRelaySupported()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_RefuseNewConnections">MultiplayerPeer.RefuseNewConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferMode">MultiplayerPeer.TransferMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferChannel">MultiplayerPeer.TransferChannel</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_PeerConnected">MultiplayerPeer.PeerConnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_PeerDisconnected">MultiplayerPeer.PeerDisconnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_GetVar_System_Boolean_">PacketPeer.GetVar(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_PutVar_Godot_Variant_System_Boolean_">PacketPeer.PutVar(Variant, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_GetPacket">PacketPeer.GetPacket()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_PutPacket_System_Byte___">PacketPeer.PutPacket(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_GetPacketError">PacketPeer.GetPacketError()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_GetAvailablePacketCount">PacketPeer.GetAvailablePacketCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.PacketPeer.html#Godot_PacketPeer_EncodeBufferMaxSize">PacketPeer.EncodeBufferMaxSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_MultiplayerPeerExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiplayerPeerExtension : MultiplayerPeer, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_MultiplayerPeerExtension__ctor_" data-uid="Godot.MultiplayerPeerExtension.#ctor*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__ctor" data-uid="Godot.MultiplayerPeerExtension.#ctor">MultiplayerPeerExtension()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiplayerPeerExtension()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_MultiplayerPeerExtension_HasGodotClassMethod_" data-uid="Godot.MultiplayerPeerExtension.HasGodotClassMethod*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.MultiplayerPeerExtension.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">MultiplayerPeer.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_MultiplayerPeerExtension_HasGodotClassSignal_" data-uid="Godot.MultiplayerPeerExtension.HasGodotClassSignal*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.MultiplayerPeerExtension.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">MultiplayerPeer.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_MultiplayerPeerExtension_InvokeGodotClassMethod_" data-uid="Godot.MultiplayerPeerExtension.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.MultiplayerPeerExtension.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">MultiplayerPeer.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_MultiplayerPeerExtension__Close_" data-uid="Godot.MultiplayerPeerExtension._Close*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__Close" data-uid="Godot.MultiplayerPeerExtension._Close">_Close()</h4>
+  <div class="markdown level1 summary"><p>Called when the multiplayer peer should be immediately closed (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_Close">Close()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Close()</code></pre>
+  </div>
+
+
+  <a id="Godot_MultiplayerPeerExtension__DisconnectPeer_" data-uid="Godot.MultiplayerPeerExtension._DisconnectPeer*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__DisconnectPeer_System_Int32_System_Boolean_" data-uid="Godot.MultiplayerPeerExtension._DisconnectPeer(System.Int32,System.Boolean)">_DisconnectPeer(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Called when the connected <code>pPeer</code> should be forcibly disconnected (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_DisconnectPeer_System_Int32_System_Boolean_">DisconnectPeer(int, bool)</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _DisconnectPeer(int pPeer, bool pForce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pPeer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">pForce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetAvailablePacketCount_" data-uid="Godot.MultiplayerPeerExtension._GetAvailablePacketCount*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetAvailablePacketCount" data-uid="Godot.MultiplayerPeerExtension._GetAvailablePacketCount">_GetAvailablePacketCount()</h4>
+  <div class="markdown level1 summary"><p>Called when the available packet count is internally requested by the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetAvailablePacketCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetConnectionStatus_" data-uid="Godot.MultiplayerPeerExtension._GetConnectionStatus*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetConnectionStatus" data-uid="Godot.MultiplayerPeerExtension._GetConnectionStatus">_GetConnectionStatus()</h4>
+  <div class="markdown level1 summary"><p>Called when the connection status is requested on the <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetConnectionStatus">GetConnectionStatus()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MultiplayerPeer.ConnectionStatus _GetConnectionStatus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a>.<a class="xref" href="Godot.MultiplayerPeer.ConnectionStatus.html">ConnectionStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetMaxPacketSize_" data-uid="Godot.MultiplayerPeerExtension._GetMaxPacketSize*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetMaxPacketSize" data-uid="Godot.MultiplayerPeerExtension._GetMaxPacketSize">_GetMaxPacketSize()</h4>
+  <div class="markdown level1 summary"><p>Called when the maximum allowed packet size (in bytes) is requested by the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetMaxPacketSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetPacketChannel_" data-uid="Godot.MultiplayerPeerExtension._GetPacketChannel*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetPacketChannel" data-uid="Godot.MultiplayerPeerExtension._GetPacketChannel">_GetPacketChannel()</h4>
+  <div class="markdown level1 summary"><p>Called to get the channel over which the next available packet was received. See <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketChannel">GetPacketChannel()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetPacketChannel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetPacketMode_" data-uid="Godot.MultiplayerPeerExtension._GetPacketMode*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetPacketMode" data-uid="Godot.MultiplayerPeerExtension._GetPacketMode">_GetPacketMode()</h4>
+  <div class="markdown level1 summary"><p>Called to get the <a class="xref" href="Godot.MultiplayerPeer.TransferModeEnum.html">MultiplayerPeer.TransferModeEnum</a> the remote peer used to send the next available packet. See <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketMode">GetPacketMode()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MultiplayerPeer.TransferModeEnum _GetPacketMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a>.<a class="xref" href="Godot.MultiplayerPeer.TransferModeEnum.html">TransferModeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetPacketPeer_" data-uid="Godot.MultiplayerPeerExtension._GetPacketPeer*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetPacketPeer" data-uid="Godot.MultiplayerPeerExtension._GetPacketPeer">_GetPacketPeer()</h4>
+  <div class="markdown level1 summary"><p>Called when the ID of the <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> who sent the most recent packet is requested (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetPacketPeer">GetPacketPeer()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetPacketPeer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetPacketScript_" data-uid="Godot.MultiplayerPeerExtension._GetPacketScript*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetPacketScript" data-uid="Godot.MultiplayerPeerExtension._GetPacketScript">_GetPacketScript()</h4>
+  <div class="markdown level1 summary"><p>Called when a packet needs to be received by the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>, if <code>_get_packet</code> isn't implemented. Use this when extending this class via GDScript.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] _GetPacketScript()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetTransferChannel_" data-uid="Godot.MultiplayerPeerExtension._GetTransferChannel*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetTransferChannel" data-uid="Godot.MultiplayerPeerExtension._GetTransferChannel">_GetTransferChannel()</h4>
+  <div class="markdown level1 summary"><p>Called when the transfer channel to use is read on this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferChannel">TransferChannel</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetTransferChannel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetTransferMode_" data-uid="Godot.MultiplayerPeerExtension._GetTransferMode*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetTransferMode" data-uid="Godot.MultiplayerPeerExtension._GetTransferMode">_GetTransferMode()</h4>
+  <div class="markdown level1 summary"><p>Called when the transfer mode to use is read on this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferMode">TransferMode</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MultiplayerPeer.TransferModeEnum _GetTransferMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a>.<a class="xref" href="Godot.MultiplayerPeer.TransferModeEnum.html">TransferModeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__GetUniqueId_" data-uid="Godot.MultiplayerPeerExtension._GetUniqueId*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__GetUniqueId" data-uid="Godot.MultiplayerPeerExtension._GetUniqueId">_GetUniqueId()</h4>
+  <div class="markdown level1 summary"><p>Called when the unique ID of this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> is requested (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_GetUniqueId">GetUniqueId()</a>). The value must be between <code>1</code> and <code>2147483647</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _GetUniqueId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__IsRefusingNewConnections_" data-uid="Godot.MultiplayerPeerExtension._IsRefusingNewConnections*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__IsRefusingNewConnections" data-uid="Godot.MultiplayerPeerExtension._IsRefusingNewConnections">_IsRefusingNewConnections()</h4>
+  <div class="markdown level1 summary"><p>Called when the "refuse new connections" status is requested on this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_RefuseNewConnections">RefuseNewConnections</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsRefusingNewConnections()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__IsServer_" data-uid="Godot.MultiplayerPeerExtension._IsServer*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__IsServer" data-uid="Godot.MultiplayerPeerExtension._IsServer">_IsServer()</h4>
+  <div class="markdown level1 summary"><p>Called when the "is server" status is requested on the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>. See <a class="xref" href="Godot.MultiplayerApi.html#Godot_MultiplayerApi_IsServer">IsServer()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsServer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__IsServerRelaySupported_" data-uid="Godot.MultiplayerPeerExtension._IsServerRelaySupported*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__IsServerRelaySupported" data-uid="Godot.MultiplayerPeerExtension._IsServerRelaySupported">_IsServerRelaySupported()</h4>
+  <div class="markdown level1 summary"><p>Called to check if the server can act as a relay in the current configuration. See <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_IsServerRelaySupported">IsServerRelaySupported()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsServerRelaySupported()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__Poll_" data-uid="Godot.MultiplayerPeerExtension._Poll*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__Poll" data-uid="Godot.MultiplayerPeerExtension._Poll">_Poll()</h4>
+  <div class="markdown level1 summary"><p>Called when the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a> is polled. See <a class="xref" href="Godot.MultiplayerApi.html#Godot_MultiplayerApi_Poll">Poll()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Poll()</code></pre>
+  </div>
+
+
+  <a id="Godot_MultiplayerPeerExtension__PutPacketScript_" data-uid="Godot.MultiplayerPeerExtension._PutPacketScript*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__PutPacketScript_System_Byte___" data-uid="Godot.MultiplayerPeerExtension._PutPacketScript(System.Byte[])">_PutPacketScript(byte[])</h4>
+  <div class="markdown level1 summary"><p>Called when a packet needs to be sent by the <a class="xref" href="Godot.MultiplayerApi.html">MultiplayerApi</a>, if <code>_put_packet</code> isn't implemented. Use this when extending this class via GDScript.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Error _PutPacketScript(byte[] pBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">pBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__SetRefuseNewConnections_" data-uid="Godot.MultiplayerPeerExtension._SetRefuseNewConnections*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__SetRefuseNewConnections_System_Boolean_" data-uid="Godot.MultiplayerPeerExtension._SetRefuseNewConnections(System.Boolean)">_SetRefuseNewConnections(bool)</h4>
+  <div class="markdown level1 summary"><p>Called when the "refuse new connections" status is set on this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_RefuseNewConnections">RefuseNewConnections</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetRefuseNewConnections(bool pEnable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">pEnable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__SetTargetPeer_" data-uid="Godot.MultiplayerPeerExtension._SetTargetPeer*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__SetTargetPeer_System_Int32_" data-uid="Godot.MultiplayerPeerExtension._SetTargetPeer(System.Int32)">_SetTargetPeer(int)</h4>
+  <div class="markdown level1 summary"><p>Called when the target peer to use is set for this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_SetTargetPeer_System_Int32_">SetTargetPeer(int)</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetTargetPeer(int pPeer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pPeer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__SetTransferChannel_" data-uid="Godot.MultiplayerPeerExtension._SetTransferChannel*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__SetTransferChannel_System_Int32_" data-uid="Godot.MultiplayerPeerExtension._SetTransferChannel(System.Int32)">_SetTransferChannel(int)</h4>
+  <div class="markdown level1 summary"><p>Called when the channel to use is set for this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferChannel">TransferChannel</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetTransferChannel(int pChannel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pChannel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_MultiplayerPeerExtension__SetTransferMode_" data-uid="Godot.MultiplayerPeerExtension._SetTransferMode*"></a>
+  <h4 id="Godot_MultiplayerPeerExtension__SetTransferMode_Godot_MultiplayerPeer_TransferModeEnum_" data-uid="Godot.MultiplayerPeerExtension._SetTransferMode(Godot.MultiplayerPeer.TransferModeEnum)">_SetTransferMode(TransferModeEnum)</h4>
+  <div class="markdown level1 summary"><p>Called when the transfer mode is set on this <a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a> (see <a class="xref" href="Godot.MultiplayerPeer.html#Godot_MultiplayerPeer_TransferMode">TransferMode</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetTransferMode(MultiplayerPeer.TransferModeEnum pMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.MultiplayerPeer.html">MultiplayerPeer</a>.<a class="xref" href="Godot.MultiplayerPeer.TransferModeEnum.html">TransferModeEnum</a></td>
+        <td><span class="parametername">pMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

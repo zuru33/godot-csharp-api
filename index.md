@@ -7,7 +7,7 @@ _disableBreadcrumb: true
 
 # Godot C# API
 
-This is an unofficial documentation for [Godot](https://godotengine.org/)'s C# API. It is generated using [DocFX](https://dotnet.github.io/docfx/) and kept up to date by [paulloz](https://github.com/paulloz/godot-csharp-api/). Feel free to reach me for suggestions and/or inquiries.  
+This is an unofficial documentation for [Godot](https://godotengine.org/)'s C# API. It is generated using [DocFX](https://dotnet.github.io/docfx/).
 
 ## A small list of useful links
 

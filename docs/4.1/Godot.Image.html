@@ -1,0 +1,2937 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Image
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Image
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.Image">
+
+
+
+  <h1 id="Godot_Image" data-uid="Godot.Image" class="text-break">Class Image
+</h1>
+  <div class="markdown level0 summary"><p>Native image datatype. Contains image data which can be converted to an <a class="xref" href="Godot.ImageTexture.html">ImageTexture</a> and provides commonly used <i>image processing</i> methods. The maximum width and height for an <a class="xref" href="Godot.Image.html">Image</a> are <a class="xref" href="Godot.Image.html#Godot_Image_MaxWidth">MaxWidth</a> and <a class="xref" href="Godot.Image.html#Godot_Image_MaxHeight">MaxHeight</a>.</p>
+<p>An <a class="xref" href="Godot.Image.html">Image</a> cannot be assigned to a <code>texture</code> property of an object directly (such as <a class="xref" href="Godot.Sprite2D.html">Sprite2D</a>), and has to be converted manually to an <a class="xref" href="Godot.ImageTexture.html">ImageTexture</a> first.</p>
+<p><b>Note:</b> The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images may fail to import.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+    <div class="level3"><a class="xref" href="Godot.Resource.html">Resource</a></div>
+    <div class="level4"><span class="xref">Image</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__GetRid">Resource._GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_TakeOverPath_System_String_">Resource.TakeOverPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetRid">Resource.GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetLocalScene">Resource.GetLocalScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToScene">Resource.SetupLocalToScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_EmitChanged">Resource.EmitChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Duplicate_System_Boolean_">Resource.Duplicate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceLocalToScene">Resource.ResourceLocalToScene</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourcePath">Resource.ResourcePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceName">Resource.ResourceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Changed">Resource.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToSceneRequested">Resource.SetupLocalToSceneRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_Image_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Image : Resource, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_Image__ctor_" data-uid="Godot.Image.#ctor*"></a>
+  <h4 id="Godot_Image__ctor" data-uid="Godot.Image.#ctor">Image()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Godot_Image_MaxHeight" data-uid="Godot.Image.MaxHeight">MaxHeight</h4>
+  <div class="markdown level1 summary"><p>The maximal height allowed for <a class="xref" href="Godot.Image.html">Image</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxHeight = 16777216</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_Image_MaxWidth" data-uid="Godot.Image.MaxWidth">MaxWidth</h4>
+  <div class="markdown level1 summary"><p>The maximal width allowed for <a class="xref" href="Godot.Image.html">Image</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxWidth = 16777216</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_Image_Data_" data-uid="Godot.Image.Data*"></a>
+  <h4 id="Godot_Image_Data" data-uid="Godot.Image.Data">Data</h4>
+  <div class="markdown level1 summary"><p>Holds all the image's color data in a given format. See <a class="xref" href="Godot.Image.Format.html">Image.Format</a> constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_Image_AdjustBcs_" data-uid="Godot.Image.AdjustBcs*"></a>
+  <h4 id="Godot_Image_AdjustBcs_System_Single_System_Single_System_Single_" data-uid="Godot.Image.AdjustBcs(System.Single,System.Single,System.Single)">AdjustBcs(float, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustBcs(float brightness, float contrast, float saturation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">brightness</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">contrast</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">saturation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_BlendRect_" data-uid="Godot.Image.BlendRect*"></a>
+  <h4 id="Godot_Image_BlendRect_Godot_Image_Godot_Rect2I_Godot_Vector2I_" data-uid="Godot.Image.BlendRect(Godot.Image,Godot.Rect2I,Godot.Vector2I)">BlendRect(Image, Rect2I, Vector2I)</h4>
+  <div class="markdown level1 summary"><p>Alpha-blends <code>srcRect</code> from <code>src</code> image to this image at coordinates <code>dst</code>, clipped accordingly to both image bounds. This image and <code>src</code> image <b>must</b> have the same format. <code>srcRect</code> with non-positive size is treated as empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlendRect(Image src, Rect2I srcRect, Vector2I dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_BlendRectMask_" data-uid="Godot.Image.BlendRectMask*"></a>
+  <h4 id="Godot_Image_BlendRectMask_Godot_Image_Godot_Image_Godot_Rect2I_Godot_Vector2I_" data-uid="Godot.Image.BlendRectMask(Godot.Image,Godot.Image,Godot.Rect2I,Godot.Vector2I)">BlendRectMask(Image, Image, Rect2I, Vector2I)</h4>
+  <div class="markdown level1 summary"><p>Alpha-blends <code>srcRect</code> from <code>src</code> image to this image using <code>mask</code> image at coordinates <code>dst</code>, clipped accordingly to both image bounds. Alpha channels are required for both <code>src</code> and <code>mask</code>. <code>dst</code> pixels and <code>src</code> pixels will blend if the corresponding mask pixel's alpha value is not 0. This image and <code>src</code> image <b>must</b> have the same format. <code>src</code> image and <code>mask</code> image <b>must</b> have the same size (width and height) but they can have different formats. <code>srcRect</code> with non-positive size is treated as empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlendRectMask(Image src, Image mask, Rect2I srcRect, Vector2I dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_BlitRect_" data-uid="Godot.Image.BlitRect*"></a>
+  <h4 id="Godot_Image_BlitRect_Godot_Image_Godot_Rect2I_Godot_Vector2I_" data-uid="Godot.Image.BlitRect(Godot.Image,Godot.Rect2I,Godot.Vector2I)">BlitRect(Image, Rect2I, Vector2I)</h4>
+  <div class="markdown level1 summary"><p>Copies <code>srcRect</code> from <code>src</code> image to this image at coordinates <code>dst</code>, clipped accordingly to both image bounds. This image and <code>src</code> image <b>must</b> have the same format. <code>srcRect</code> with non-positive size is treated as empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlitRect(Image src, Rect2I srcRect, Vector2I dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_BlitRectMask_" data-uid="Godot.Image.BlitRectMask*"></a>
+  <h4 id="Godot_Image_BlitRectMask_Godot_Image_Godot_Image_Godot_Rect2I_Godot_Vector2I_" data-uid="Godot.Image.BlitRectMask(Godot.Image,Godot.Image,Godot.Rect2I,Godot.Vector2I)">BlitRectMask(Image, Image, Rect2I, Vector2I)</h4>
+  <div class="markdown level1 summary"><p>Blits <code>srcRect</code> area from <code>src</code> image to this image at the coordinates given by <code>dst</code>, clipped accordingly to both image bounds. <code>src</code> pixel is copied onto <code>dst</code> if the corresponding <code>mask</code> pixel's alpha value is not 0. This image and <code>src</code> image <b>must</b> have the same format. <code>src</code> image and <code>mask</code> image <b>must</b> have the same size (width and height) but they can have different formats. <code>srcRect</code> with non-positive size is treated as empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlitRectMask(Image src, Image mask, Rect2I srcRect, Vector2I dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_BumpMapToNormalMap_" data-uid="Godot.Image.BumpMapToNormalMap*"></a>
+  <h4 id="Godot_Image_BumpMapToNormalMap_System_Single_" data-uid="Godot.Image.BumpMapToNormalMap(System.Single)">BumpMapToNormalMap(float)</h4>
+  <div class="markdown level1 summary"><p>Converts a bump map to a normal map. A bump map provides a height offset per-pixel, while a normal map provides a normal direction per pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BumpMapToNormalMap(float bumpScale = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">bumpScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_ClearMipmaps_" data-uid="Godot.Image.ClearMipmaps*"></a>
+  <h4 id="Godot_Image_ClearMipmaps" data-uid="Godot.Image.ClearMipmaps">ClearMipmaps()</h4>
+  <div class="markdown level1 summary"><p>Removes the image's mipmaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMipmaps()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_Compress_" data-uid="Godot.Image.Compress*"></a>
+  <h4 id="Godot_Image_Compress_Godot_Image_CompressMode_Godot_Image_CompressSource_Godot_Image_AstcFormat_" data-uid="Godot.Image.Compress(Godot.Image.CompressMode,Godot.Image.CompressSource,Godot.Image.AstcFormat)">Compress(CompressMode, CompressSource, AstcFormat)</h4>
+  <div class="markdown level1 summary"><p>Compresses the image to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.</p>
+<p>The <code>source</code> parameter helps to pick the best compression method for DXT and ETC2 formats. It is ignored for ASTC compression.</p>
+<p>For ASTC compression, the <code>astcFormat</code> parameter must be supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Compress(Image.CompressMode mode, Image.CompressSource source = CompressSource.Generic, Image.AstcFormat astcFormat = AstcFormat.Format4X4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.CompressMode.html">CompressMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.CompressSource.html">CompressSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.AstcFormat.html">AstcFormat</a></td>
+        <td><span class="parametername">astcFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_CompressFromChannels_" data-uid="Godot.Image.CompressFromChannels*"></a>
+  <h4 id="Godot_Image_CompressFromChannels_Godot_Image_CompressMode_Godot_Image_UsedChannels_Godot_Image_AstcFormat_" data-uid="Godot.Image.CompressFromChannels(Godot.Image.CompressMode,Godot.Image.UsedChannels,Godot.Image.AstcFormat)">CompressFromChannels(CompressMode, UsedChannels, AstcFormat)</h4>
+  <div class="markdown level1 summary"><p>Compresses the image to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.</p>
+<p>This is an alternative to <a class="xref" href="Godot.Image.html#Godot_Image_Compress_Godot_Image_CompressMode_Godot_Image_CompressSource_Godot_Image_AstcFormat_">Compress(CompressMode, CompressSource, AstcFormat)</a> that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.</p>
+<p>For ASTC compression, the <code>astcFormat</code> parameter must be supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error CompressFromChannels(Image.CompressMode mode, Image.UsedChannels channels, Image.AstcFormat astcFormat = AstcFormat.Format4X4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.CompressMode.html">CompressMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.UsedChannels.html">UsedChannels</a></td>
+        <td><span class="parametername">channels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.AstcFormat.html">AstcFormat</a></td>
+        <td><span class="parametername">astcFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_ComputeImageMetrics_" data-uid="Godot.Image.ComputeImageMetrics*"></a>
+  <h4 id="Godot_Image_ComputeImageMetrics_Godot_Image_System_Boolean_" data-uid="Godot.Image.ComputeImageMetrics(Godot.Image,System.Boolean)">ComputeImageMetrics(Image, bool)</h4>
+  <div class="markdown level1 summary"><p>Compute image metrics on the current image and the compared image.</p>
+<p>The dictionary contains <code>max</code>, <code>mean</code>, <code>mean_squared</code>, <code>root_mean_squared</code> and <code>peak_snr</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary ComputeImageMetrics(Image comparedImage, bool useLuma)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">comparedImage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useLuma</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Convert_" data-uid="Godot.Image.Convert*"></a>
+  <h4 id="Godot_Image_Convert_Godot_Image_Format_" data-uid="Godot.Image.Convert(Godot.Image.Format)">Convert(Format)</h4>
+  <div class="markdown level1 summary"><p>Converts the image's format. See <a class="xref" href="Godot.Image.Format.html">Image.Format</a> constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Convert(Image.Format format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Format.html">Format</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_CopyFrom_" data-uid="Godot.Image.CopyFrom*"></a>
+  <h4 id="Godot_Image_CopyFrom_Godot_Image_" data-uid="Godot.Image.CopyFrom(Godot.Image)">CopyFrom(Image)</h4>
+  <div class="markdown level1 summary"><p>Copies <code>src</code> image to this image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyFrom(Image src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Create_" data-uid="Godot.Image.Create*"></a>
+  <h4 id="Godot_Image_Create_System_Int32_System_Int32_System_Boolean_Godot_Image_Format_" data-uid="Godot.Image.Create(System.Int32,System.Int32,System.Boolean,Godot.Image.Format)">Create(int, int, bool, Format)</h4>
+  <div class="markdown level1 summary"><p>Creates an empty image of given size and format. See <a class="xref" href="Godot.Image.Format.html">Image.Format</a> constants. If <code>useMipmaps</code> is <code>true</code>, then generate mipmaps for this image. See the <a class="xref" href="Godot.Image.html#Godot_Image_GenerateMipmaps_System_Boolean_">GenerateMipmaps(bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image Create(int width, int height, bool useMipmaps, Image.Format format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useMipmaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Format.html">Format</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_CreateFromData_" data-uid="Godot.Image.CreateFromData*"></a>
+  <h4 id="Godot_Image_CreateFromData_System_Int32_System_Int32_System_Boolean_Godot_Image_Format_System_Byte___" data-uid="Godot.Image.CreateFromData(System.Int32,System.Int32,System.Boolean,Godot.Image.Format,System.Byte[])">CreateFromData(int, int, bool, Format, byte[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new image of given size and format. See <a class="xref" href="Godot.Image.Format.html">Image.Format</a> constants. Fills the image with the given raw data. If <code>useMipmaps</code> is <code>true</code> then loads mipmaps for this image from <code>data</code>. See <a class="xref" href="Godot.Image.html#Godot_Image_GenerateMipmaps_System_Boolean_">GenerateMipmaps(bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image CreateFromData(int width, int height, bool useMipmaps, Image.Format format, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useMipmaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Format.html">Format</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Crop_" data-uid="Godot.Image.Crop*"></a>
+  <h4 id="Godot_Image_Crop_System_Int32_System_Int32_" data-uid="Godot.Image.Crop(System.Int32,System.Int32)">Crop(int, int)</h4>
+  <div class="markdown level1 summary"><p>Crops the image to the given <code>width</code> and <code>height</code>. If the specified size is larger than the current size, the extra area is filled with black pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Crop(int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Decompress_" data-uid="Godot.Image.Decompress*"></a>
+  <h4 id="Godot_Image_Decompress" data-uid="Godot.Image.Decompress">Decompress()</h4>
+  <div class="markdown level1 summary"><p>Decompresses the image if it is VRAM compressed in a supported format. Returns <a class="xref" href="Godot.Error.html#Godot_Error_Ok">Ok</a> if the format is supported, otherwise <a class="xref" href="Godot.Error.html#Godot_Error_Unavailable">Unavailable</a>.</p>
+<p><b>Note:</b> The following formats can be decompressed: DXT, RGTC, BPTC. The formats ETC1 and ETC2 are not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Decompress()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_DetectAlpha_" data-uid="Godot.Image.DetectAlpha*"></a>
+  <h4 id="Godot_Image_DetectAlpha" data-uid="Godot.Image.DetectAlpha">DetectAlpha()</h4>
+  <div class="markdown level1 summary"><p>Returns <a class="xref" href="Godot.Image.AlphaMode.html#Godot_Image_AlphaMode_Blend">Blend</a> if the image has data for alpha values. Returns <a class="xref" href="Godot.Image.AlphaMode.html#Godot_Image_AlphaMode_Bit">Bit</a> if all the alpha values are stored in a single bit. Returns <a class="xref" href="Godot.Image.AlphaMode.html#Godot_Image_AlphaMode_None">None</a> if no data for alpha values is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image.AlphaMode DetectAlpha()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.AlphaMode.html">AlphaMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_DetectUsedChannels_" data-uid="Godot.Image.DetectUsedChannels*"></a>
+  <h4 id="Godot_Image_DetectUsedChannels_Godot_Image_CompressSource_" data-uid="Godot.Image.DetectUsedChannels(Godot.Image.CompressSource)">DetectUsedChannels(CompressSource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image.UsedChannels DetectUsedChannels(Image.CompressSource source = CompressSource.Generic)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.CompressSource.html">CompressSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.UsedChannels.html">UsedChannels</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Fill_" data-uid="Godot.Image.Fill*"></a>
+  <h4 id="Godot_Image_Fill_Godot_Color_" data-uid="Godot.Image.Fill(Godot.Color)">Fill(Color)</h4>
+  <div class="markdown level1 summary"><p>Fills the image with <code>color</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fill(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_FillRect_" data-uid="Godot.Image.FillRect*"></a>
+  <h4 id="Godot_Image_FillRect_Godot_Rect2I_Godot_Color_" data-uid="Godot.Image.FillRect(Godot.Rect2I,Godot.Color)">FillRect(Rect2I, Color)</h4>
+  <div class="markdown level1 summary"><p>Fills <code>rect</code> with <code>color</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillRect(Rect2I rect, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_FixAlphaEdges_" data-uid="Godot.Image.FixAlphaEdges*"></a>
+  <h4 id="Godot_Image_FixAlphaEdges" data-uid="Godot.Image.FixAlphaEdges">FixAlphaEdges()</h4>
+  <div class="markdown level1 summary"><p>Blends low-alpha pixels with nearby pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FixAlphaEdges()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_FlipX_" data-uid="Godot.Image.FlipX*"></a>
+  <h4 id="Godot_Image_FlipX" data-uid="Godot.Image.FlipX">FlipX()</h4>
+  <div class="markdown level1 summary"><p>Flips the image horizontally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlipX()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_FlipY_" data-uid="Godot.Image.FlipY*"></a>
+  <h4 id="Godot_Image_FlipY" data-uid="Godot.Image.FlipY">FlipY()</h4>
+  <div class="markdown level1 summary"><p>Flips the image vertically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlipY()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_GenerateMipmaps_" data-uid="Godot.Image.GenerateMipmaps*"></a>
+  <h4 id="Godot_Image_GenerateMipmaps_System_Boolean_" data-uid="Godot.Image.GenerateMipmaps(System.Boolean)">GenerateMipmaps(bool)</h4>
+  <div class="markdown level1 summary"><p>Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is <code>0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error GenerateMipmaps(bool renormalize = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">renormalize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetData_" data-uid="Godot.Image.GetData*"></a>
+  <h4 id="Godot_Image_GetData" data-uid="Godot.Image.GetData">GetData()</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the image's raw data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetFormat_" data-uid="Godot.Image.GetFormat*"></a>
+  <h4 id="Godot_Image_GetFormat" data-uid="Godot.Image.GetFormat">GetFormat()</h4>
+  <div class="markdown level1 summary"><p>Returns the image's format. See <a class="xref" href="Godot.Image.Format.html">Image.Format</a> constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image.Format GetFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Format.html">Format</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetHeight_" data-uid="Godot.Image.GetHeight*"></a>
+  <h4 id="Godot_Image_GetHeight" data-uid="Godot.Image.GetHeight">GetHeight()</h4>
+  <div class="markdown level1 summary"><p>Returns the image's height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetMipmapOffset_" data-uid="Godot.Image.GetMipmapOffset*"></a>
+  <h4 id="Godot_Image_GetMipmapOffset_System_Int32_" data-uid="Godot.Image.GetMipmapOffset(System.Int32)">GetMipmapOffset(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the offset where the image's mipmap with index <code>mipmap</code> is stored in the <code>data</code> dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMipmapOffset(int mipmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mipmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetPixel_" data-uid="Godot.Image.GetPixel*"></a>
+  <h4 id="Godot_Image_GetPixel_System_Int32_System_Int32_" data-uid="Godot.Image.GetPixel(System.Int32,System.Int32)">GetPixel(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the color of the pixel at <code>(x, y)</code>.</p>
+<p>This is the same as <a class="xref" href="Godot.Image.html#Godot_Image_GetPixelv_Godot_Vector2I_">GetPixelv(Vector2I)</a>, but with two integer arguments instead of a <a class="xref" href="Godot.Vector2I.html">Vector2I</a> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetPixel(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetPixelv_" data-uid="Godot.Image.GetPixelv*"></a>
+  <h4 id="Godot_Image_GetPixelv_Godot_Vector2I_" data-uid="Godot.Image.GetPixelv(Godot.Vector2I)">GetPixelv(Vector2I)</h4>
+  <div class="markdown level1 summary"><p>Returns the color of the pixel at <code>point</code>.</p>
+<p>This is the same as <a class="xref" href="Godot.Image.html#Godot_Image_GetPixel_System_Int32_System_Int32_">GetPixel(int, int)</a>, but with a <a class="xref" href="Godot.Vector2I.html">Vector2I</a> argument instead of two integer arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetPixelv(Vector2I point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetRegion_" data-uid="Godot.Image.GetRegion*"></a>
+  <h4 id="Godot_Image_GetRegion_Godot_Rect2I_" data-uid="Godot.Image.GetRegion(Godot.Rect2I)">GetRegion(Rect2I)</h4>
+  <div class="markdown level1 summary"><p>Returns a new <a class="xref" href="Godot.Image.html">Image</a> that is a copy of this <a class="xref" href="Godot.Image.html">Image</a>'s area specified with <code>region</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image GetRegion(Rect2I region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetSize_" data-uid="Godot.Image.GetSize*"></a>
+  <h4 id="Godot_Image_GetSize" data-uid="Godot.Image.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"><p>Returns the image's size (width and height).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2I GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetUsedRect_" data-uid="Godot.Image.GetUsedRect*"></a>
+  <h4 id="Godot_Image_GetUsedRect" data-uid="Godot.Image.GetUsedRect">GetUsedRect()</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="Godot.Rect2I.html">Rect2I</a> enclosing the visible portion of the image, considering each pixel with a non-zero alpha channel as visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect2I GetUsedRect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2I.html">Rect2I</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_GetWidth_" data-uid="Godot.Image.GetWidth*"></a>
+  <h4 id="Godot_Image_GetWidth" data-uid="Godot.Image.GetWidth">GetWidth()</h4>
+  <div class="markdown level1 summary"><p>Returns the image's width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWidth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_HasGodotClassMethod_" data-uid="Godot.Image.HasGodotClassMethod*"></a>
+  <h4 id="Godot_Image_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.Image.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">Resource.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_Image_HasGodotClassSignal_" data-uid="Godot.Image.HasGodotClassSignal*"></a>
+  <h4 id="Godot_Image_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.Image.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">Resource.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_Image_HasMipmaps_" data-uid="Godot.Image.HasMipmaps*"></a>
+  <h4 id="Godot_Image_HasMipmaps" data-uid="Godot.Image.HasMipmaps">HasMipmaps()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the image has generated mipmaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMipmaps()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_InvokeGodotClassMethod_" data-uid="Godot.Image.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_Image_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.Image.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">Resource.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_Image_IsCompressed_" data-uid="Godot.Image.IsCompressed*"></a>
+  <h4 id="Godot_Image_IsCompressed" data-uid="Godot.Image.IsCompressed">IsCompressed()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the image is compressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompressed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_IsEmpty_" data-uid="Godot.Image.IsEmpty*"></a>
+  <h4 id="Godot_Image_IsEmpty" data-uid="Godot.Image.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the image has no data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_IsInvisible_" data-uid="Godot.Image.IsInvisible*"></a>
+  <h4 id="Godot_Image_IsInvisible" data-uid="Godot.Image.IsInvisible">IsInvisible()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if all the image's pixels have an alpha value of 0. Returns <code>false</code> if any pixel has an alpha value higher than 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInvisible()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Load_" data-uid="Godot.Image.Load*"></a>
+  <h4 id="Godot_Image_Load_System_String_" data-uid="Godot.Image.Load(System.String)">Load(string)</h4>
+  <div class="markdown level1 summary"><p>Loads an image from file <code>path</code>. See <a href="$DOCS_URL/tutorials/assets_pipeline/importing_images.html#supported-image-formats">Supported image formats</a> for a list of supported image formats and limitations.</p>
+<p><b>Warning:</b> This method should only be used in the editor or in cases when you need to load external images at run-time, such as images located at the <code>user://</code> directory, and may not work in exported projects.</p>
+<p>See also <a class="xref" href="Godot.ImageTexture.html">ImageTexture</a> description for usage examples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Load(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadBmpFromBuffer_" data-uid="Godot.Image.LoadBmpFromBuffer*"></a>
+  <h4 id="Godot_Image_LoadBmpFromBuffer_System_Byte___" data-uid="Godot.Image.LoadBmpFromBuffer(System.Byte[])">LoadBmpFromBuffer(byte[])</h4>
+  <div class="markdown level1 summary"><p>Loads an image from the binary contents of a BMP file.</p>
+<p><b>Note:</b> Godot's BMP module doesn't support 16-bit per pixel images. Only 1-bit, 4-bit, 8-bit, 24-bit, and 32-bit per pixel images are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error LoadBmpFromBuffer(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadFromFile_" data-uid="Godot.Image.LoadFromFile*"></a>
+  <h4 id="Godot_Image_LoadFromFile_System_String_" data-uid="Godot.Image.LoadFromFile(System.String)">LoadFromFile(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Godot.Image.html">Image</a> and loads data from the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image LoadFromFile(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadJpgFromBuffer_" data-uid="Godot.Image.LoadJpgFromBuffer*"></a>
+  <h4 id="Godot_Image_LoadJpgFromBuffer_System_Byte___" data-uid="Godot.Image.LoadJpgFromBuffer(System.Byte[])">LoadJpgFromBuffer(byte[])</h4>
+  <div class="markdown level1 summary"><p>Loads an image from the binary contents of a JPEG file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error LoadJpgFromBuffer(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadPngFromBuffer_" data-uid="Godot.Image.LoadPngFromBuffer*"></a>
+  <h4 id="Godot_Image_LoadPngFromBuffer_System_Byte___" data-uid="Godot.Image.LoadPngFromBuffer(System.Byte[])">LoadPngFromBuffer(byte[])</h4>
+  <div class="markdown level1 summary"><p>Loads an image from the binary contents of a PNG file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error LoadPngFromBuffer(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadTgaFromBuffer_" data-uid="Godot.Image.LoadTgaFromBuffer*"></a>
+  <h4 id="Godot_Image_LoadTgaFromBuffer_System_Byte___" data-uid="Godot.Image.LoadTgaFromBuffer(System.Byte[])">LoadTgaFromBuffer(byte[])</h4>
+  <div class="markdown level1 summary"><p>Loads an image from the binary contents of a TGA file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error LoadTgaFromBuffer(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_LoadWebpFromBuffer_" data-uid="Godot.Image.LoadWebpFromBuffer*"></a>
+  <h4 id="Godot_Image_LoadWebpFromBuffer_System_Byte___" data-uid="Godot.Image.LoadWebpFromBuffer(System.Byte[])">LoadWebpFromBuffer(byte[])</h4>
+  <div class="markdown level1 summary"><p>Loads an image from the binary contents of a WebP file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error LoadWebpFromBuffer(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_NormalMapToXy_" data-uid="Godot.Image.NormalMapToXy*"></a>
+  <h4 id="Godot_Image_NormalMapToXy" data-uid="Godot.Image.NormalMapToXy">NormalMapToXy()</h4>
+  <div class="markdown level1 summary"><p>Converts the image's data to represent coordinates on a 3D plane. This is used when the image represents a normal map. A normal map can add lots of detail to a 3D surface without increasing the polygon count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NormalMapToXy()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_PremultiplyAlpha_" data-uid="Godot.Image.PremultiplyAlpha*"></a>
+  <h4 id="Godot_Image_PremultiplyAlpha" data-uid="Godot.Image.PremultiplyAlpha">PremultiplyAlpha()</h4>
+  <div class="markdown level1 summary"><p>Multiplies color values with alpha values. Resulting color values for a pixel are <code>(color * alpha)/256</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PremultiplyAlpha()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_Resize_" data-uid="Godot.Image.Resize*"></a>
+  <h4 id="Godot_Image_Resize_System_Int32_System_Int32_Godot_Image_Interpolation_" data-uid="Godot.Image.Resize(System.Int32,System.Int32,Godot.Image.Interpolation)">Resize(int, int, Interpolation)</h4>
+  <div class="markdown level1 summary"><p>Resizes the image to the given <code>width</code> and <code>height</code>. New pixels are calculated using the <code>interpolation</code> mode defined via <a class="xref" href="Godot.Image.Interpolation.html">Image.Interpolation</a> constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resize(int width, int height, Image.Interpolation interpolation = Interpolation.Bilinear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Interpolation.html">Interpolation</a></td>
+        <td><span class="parametername">interpolation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_ResizeToPo2_" data-uid="Godot.Image.ResizeToPo2*"></a>
+  <h4 id="Godot_Image_ResizeToPo2_System_Boolean_Godot_Image_Interpolation_" data-uid="Godot.Image.ResizeToPo2(System.Boolean,Godot.Image.Interpolation)">ResizeToPo2(bool, Interpolation)</h4>
+  <div class="markdown level1 summary"><p>Resizes the image to the nearest power of 2 for the width and height. If <code>square</code> is <code>true</code> then set width and height to be the same. New pixels are calculated using the <code>interpolation</code> mode defined via <a class="xref" href="Godot.Image.Interpolation.html">Image.Interpolation</a> constants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResizeToPo2(bool square = false, Image.Interpolation interpolation = Interpolation.Bilinear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">square</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Interpolation.html">Interpolation</a></td>
+        <td><span class="parametername">interpolation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_RgbeToSrgb_" data-uid="Godot.Image.RgbeToSrgb*"></a>
+  <h4 id="Godot_Image_RgbeToSrgb" data-uid="Godot.Image.RgbeToSrgb">RgbeToSrgb()</h4>
+  <div class="markdown level1 summary"><p>Converts a standard RGBE (Red Green Blue Exponent) image to an sRGB image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image RgbeToSrgb()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_Rotate180_" data-uid="Godot.Image.Rotate180*"></a>
+  <h4 id="Godot_Image_Rotate180" data-uid="Godot.Image.Rotate180">Rotate180()</h4>
+  <div class="markdown level1 summary"><p>Rotates the image by <code>180</code> degrees. The width and height of the image must be greater than <code>1</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate180()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_Rotate90_" data-uid="Godot.Image.Rotate90*"></a>
+  <h4 id="Godot_Image_Rotate90_Godot_ClockDirection_" data-uid="Godot.Image.Rotate90(Godot.ClockDirection)">Rotate90(ClockDirection)</h4>
+  <div class="markdown level1 summary"><p>Rotates the image in the specified <code>direction</code> by <code>90</code> degrees. The width and height of the image must be greater than <code>1</code>. If the width and height are not equal, the image will be resized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate90(ClockDirection direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.ClockDirection.html">ClockDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveExr_" data-uid="Godot.Image.SaveExr*"></a>
+  <h4 id="Godot_Image_SaveExr_System_String_System_Boolean_" data-uid="Godot.Image.SaveExr(System.String,System.Boolean)">SaveExr(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as an EXR file to <code>path</code>. If <code>grayscale</code> is <code>true</code> and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return <a class="xref" href="Godot.Error.html#Godot_Error_Unavailable">Unavailable</a> if Godot was compiled without the TinyEXR module.</p>
+<p><b>Note:</b> The TinyEXR module is disabled in non-editor builds, which means <a class="xref" href="Godot.Image.html#Godot_Image_SaveExr_System_String_System_Boolean_">SaveExr(string, bool)</a> will return <a class="xref" href="Godot.Error.html#Godot_Error_Unavailable">Unavailable</a> when it is called from an exported project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SaveExr(string path, bool grayscale = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">grayscale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveExrToBuffer_" data-uid="Godot.Image.SaveExrToBuffer*"></a>
+  <h4 id="Godot_Image_SaveExrToBuffer_System_Boolean_" data-uid="Godot.Image.SaveExrToBuffer(System.Boolean)">SaveExrToBuffer(bool)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as an EXR file to a byte array. If <code>grayscale</code> is <code>true</code> and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return an empty byte array if Godot was compiled without the TinyEXR module.</p>
+<p><b>Note:</b> The TinyEXR module is disabled in non-editor builds, which means <a class="xref" href="Godot.Image.html#Godot_Image_SaveExr_System_String_System_Boolean_">SaveExr(string, bool)</a> will return an empty byte array when it is called from an exported project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SaveExrToBuffer(bool grayscale = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">grayscale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveJpg_" data-uid="Godot.Image.SaveJpg*"></a>
+  <h4 id="Godot_Image_SaveJpg_System_String_System_Single_" data-uid="Godot.Image.SaveJpg(System.String,System.Single)">SaveJpg(string, float)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a JPEG file to <code>path</code> with the specified <code>quality</code> between <code>0.01</code> and <code>1.0</code> (inclusive). Higher <code>quality</code> values result in better-looking output at the cost of larger file sizes. Recommended <code>quality</code> values are between <code>0.75</code> and <code>0.90</code>. Even at quality <code>1.00</code>, JPEG compression remains lossy.</p>
+<p><b>Note:</b> JPEG does not save an alpha channel. If the <a class="xref" href="Godot.Image.html">Image</a> contains an alpha channel, the image will still be saved, but the resulting JPEG file won't contain the alpha channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SaveJpg(string path, float quality = 0.75)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveJpgToBuffer_" data-uid="Godot.Image.SaveJpgToBuffer*"></a>
+  <h4 id="Godot_Image_SaveJpgToBuffer_System_Single_" data-uid="Godot.Image.SaveJpgToBuffer(System.Single)">SaveJpgToBuffer(float)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a JPEG file to a byte array with the specified <code>quality</code> between <code>0.01</code> and <code>1.0</code> (inclusive). Higher <code>quality</code> values result in better-looking output at the cost of larger byte array sizes (and therefore memory usage). Recommended <code>quality</code> values are between <code>0.75</code> and <code>0.90</code>. Even at quality <code>1.00</code>, JPEG compression remains lossy.</p>
+<p><b>Note:</b> JPEG does not save an alpha channel. If the <a class="xref" href="Godot.Image.html">Image</a> contains an alpha channel, the image will still be saved, but the resulting byte array won't contain the alpha channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SaveJpgToBuffer(float quality = 0.75)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SavePng_" data-uid="Godot.Image.SavePng*"></a>
+  <h4 id="Godot_Image_SavePng_System_String_" data-uid="Godot.Image.SavePng(System.String)">SavePng(string)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a PNG file to the file at <code>path</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SavePng(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SavePngToBuffer_" data-uid="Godot.Image.SavePngToBuffer*"></a>
+  <h4 id="Godot_Image_SavePngToBuffer" data-uid="Godot.Image.SavePngToBuffer">SavePngToBuffer()</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a PNG file to a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SavePngToBuffer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveWebp_" data-uid="Godot.Image.SaveWebp*"></a>
+  <h4 id="Godot_Image_SaveWebp_System_String_System_Boolean_System_Single_" data-uid="Godot.Image.SaveWebp(System.String,System.Boolean,System.Single)">SaveWebp(string, bool, float)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a WebP (Web Picture) file to the file at <code>path</code>. By default it will save lossless. If <code>lossy</code> is true, the image will be saved lossy, using the <code>quality</code> setting between 0.0 and 1.0 (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SaveWebp(string path, bool lossy = false, float quality = 0.75)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">lossy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SaveWebpToBuffer_" data-uid="Godot.Image.SaveWebpToBuffer*"></a>
+  <h4 id="Godot_Image_SaveWebpToBuffer_System_Boolean_System_Single_" data-uid="Godot.Image.SaveWebpToBuffer(System.Boolean,System.Single)">SaveWebpToBuffer(bool, float)</h4>
+  <div class="markdown level1 summary"><p>Saves the image as a WebP (Web Picture) file to a byte array. By default it will save lossless. If <code>lossy</code> is true, the image will be saved lossy, using the <code>quality</code> setting between 0.0 and 1.0 (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SaveWebpToBuffer(bool lossy = false, float quality = 0.75)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">lossy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SetData_" data-uid="Godot.Image.SetData*"></a>
+  <h4 id="Godot_Image_SetData_System_Int32_System_Int32_System_Boolean_Godot_Image_Format_System_Byte___" data-uid="Godot.Image.SetData(System.Int32,System.Int32,System.Boolean,Godot.Image.Format,System.Byte[])">SetData(int, int, bool, Format, byte[])</h4>
+  <div class="markdown level1 summary"><p>Overwrites data of an existing <a class="xref" href="Godot.Image.html">Image</a>. Non-static equivalent of <a class="xref" href="Godot.Image.html#Godot_Image_CreateFromData_System_Int32_System_Int32_System_Boolean_Godot_Image_Format_System_Byte___">CreateFromData(int, int, bool, Format, byte[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData(int width, int height, bool useMipmaps, Image.Format format, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useMipmaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Image.html">Image</a>.<a class="xref" href="Godot.Image.Format.html">Format</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SetPixel_" data-uid="Godot.Image.SetPixel*"></a>
+  <h4 id="Godot_Image_SetPixel_System_Int32_System_Int32_Godot_Color_" data-uid="Godot.Image.SetPixel(System.Int32,System.Int32,Godot.Color)">SetPixel(int, int, Color)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="Godot.Color.html">Color</a> of the pixel at <code>(x, y)</code> to <code>color</code>.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">int imgWidth = 10;
+   int imgHeight = 5;
+   var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
+<p>img.SetPixel(1, 2, Colors.Red); // Sets the color at (1, 2) to red.</p></code></pre>
+<p>This is the same as <a class="xref" href="Godot.Image.html#Godot_Image_SetPixelv_Godot_Vector2I_Godot_Color_">SetPixelv(Vector2I, Color)</a>, but with a two integer arguments instead of a <a class="xref" href="Godot.Vector2I.html">Vector2I</a> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPixel(int x, int y, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_SetPixelv_" data-uid="Godot.Image.SetPixelv*"></a>
+  <h4 id="Godot_Image_SetPixelv_Godot_Vector2I_Godot_Color_" data-uid="Godot.Image.SetPixelv(Godot.Vector2I,Godot.Color)">SetPixelv(Vector2I, Color)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="Godot.Color.html">Color</a> of the pixel at <code>point</code> to <code>color</code>.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">int imgWidth = 10;
+   int imgHeight = 5;
+   var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
+<p>img.SetPixelv(new Vector2I(1, 2), Colors.Red); // Sets the color at (1, 2) to red.</p></code></pre>
+<p>This is the same as <a class="xref" href="Godot.Image.html#Godot_Image_SetPixel_System_Int32_System_Int32_Godot_Color_">SetPixel(int, int, Color)</a>, but with a <a class="xref" href="Godot.Vector2I.html">Vector2I</a> argument instead of two integer arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPixelv(Vector2I point, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2I.html">Vector2I</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Image_ShrinkX2_" data-uid="Godot.Image.ShrinkX2*"></a>
+  <h4 id="Godot_Image_ShrinkX2" data-uid="Godot.Image.ShrinkX2">ShrinkX2()</h4>
+  <div class="markdown level1 summary"><p>Shrinks the image by a factor of 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShrinkX2()</code></pre>
+  </div>
+
+
+  <a id="Godot_Image_SrgbToLinear_" data-uid="Godot.Image.SrgbToLinear*"></a>
+  <h4 id="Godot_Image_SrgbToLinear" data-uid="Godot.Image.SrgbToLinear">SrgbToLinear()</h4>
+  <div class="markdown level1 summary"><p>Converts the raw data from the sRGB colorspace to a linear scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SrgbToLinear()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

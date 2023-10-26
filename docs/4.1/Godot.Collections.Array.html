@@ -1,0 +1,2090 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Array
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Array
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.Collections.Array">
+
+
+
+  <h1 id="Godot_Collections_Array" data-uid="Godot.Collections.Array" class="text-break">Class Array
+</h1>
+  <div class="markdown level0 summary"><p>Wrapper around Godot's Array class, an array of Variant
+typed elements allocated in the engine in C++. Useful when
+interfacing with the engine. Otherwise prefer .NET collections
+such as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Array</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a>.<a class="xref" href="Godot.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_Collections_Array_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Array : IList&lt;Variant&gt;, ICollection&lt;Variant&gt;, IReadOnlyList&lt;Variant&gt;, IReadOnlyCollection&lt;Variant&gt;, IEnumerable&lt;Variant&gt;, ICollection, IEnumerable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor" data-uid="Godot.Collections.Array.#ctor">Array()</h4>
+  <div class="markdown level1 summary"><p>Constructs a new empty <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array()</code></pre>
+  </div>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_Godot_Variant___" data-uid="Godot.Collections.Array.#ctor(Godot.Variant[])">Array(Variant[])</h4>
+  <div class="markdown level1 summary"><p>Constructs a new <a class="xref" href="Godot.Collections.Array.html">Array</a> from the given objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(Variant[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The objects to put in the new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_System_Collections_Generic_IEnumerable_Godot_Variant__" data-uid="Godot.Collections.Array.#ctor(System.Collections.Generic.IEnumerable{Godot.Variant})">Array(IEnumerable&lt;Variant&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new <a class="xref" href="Godot.Collections.Array.html">Array</a> from the given collection's elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(IEnumerable&lt;Variant&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The collection of elements to construct from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_System_ReadOnlySpan_Godot_GodotObject__" data-uid="Godot.Collections.Array.#ctor(System.ReadOnlySpan{Godot.GodotObject})">Array(ReadOnlySpan&lt;GodotObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(ReadOnlySpan&lt;GodotObject&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="Godot.GodotObject.html">GodotObject</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_System_Span_Godot_NodePath__" data-uid="Godot.Collections.Array.#ctor(System.Span{Godot.NodePath})">Array(Span&lt;NodePath&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(Span&lt;NodePath&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.NodePath.html">NodePath</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_System_Span_Godot_Rid__" data-uid="Godot.Collections.Array.#ctor(System.Span{Godot.Rid})">Array(Span&lt;Rid&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(Span&lt;Rid&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array__ctor_" data-uid="Godot.Collections.Array.#ctor*"></a>
+  <h4 id="Godot_Collections_Array__ctor_System_Span_Godot_StringName__" data-uid="Godot.Collections.Array.#ctor(System.Span{Godot.StringName})">Array(Span&lt;StringName&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(Span&lt;StringName&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.StringName.html">StringName</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_Collections_Array_Count_" data-uid="Godot.Collections.Array.Count*"></a>
+  <h4 id="Godot_Collections_Array_Count" data-uid="Godot.Collections.Array.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Returns the number of elements in this <a class="xref" href="Godot.Collections.Array.html">Array</a>.
+This is also known as the size or length of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_IsReadOnly_" data-uid="Godot.Collections.Array.IsReadOnly*"></a>
+  <h4 id="Godot_Collections_Array_IsReadOnly" data-uid="Godot.Collections.Array.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the array is read-only.
+See <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_MakeReadOnly">MakeReadOnly()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Item_" data-uid="Godot.Collections.Array.Item*"></a>
+  <h4 id="Godot_Collections_Array_Item_System_Int32_" data-uid="Godot.Collections.Array.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Returns the item at the given <code class="paramref">index</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item at the given <code class="paramref">index</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The property is assigned and the array is read-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_Collections_Array_Add_" data-uid="Godot.Collections.Array.Add*"></a>
+  <h4 id="Godot_Collections_Array_Add_Godot_Variant_" data-uid="Godot.Collections.Array.Add(Godot.Variant)">Add(Variant)</h4>
+  <div class="markdown level1 summary"><p>Adds an item to the end of this <a class="xref" href="Godot.Collections.Array.html">Array</a>.
+This is the same as <code>append</code> or <code>push_back</code> in GDScript.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_AddRange_" data-uid="Godot.Collections.Array.AddRange*"></a>
+  <h4 id="Godot_Collections_Array_AddRange__1_System_Collections_Generic_IEnumerable___0__" data-uid="Godot.Collections.Array.AddRange``1(System.Collections.Generic.IEnumerable{``0})">AddRange&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the elements of the specified collection to the end of this <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange&lt;T&gt;(IEnumerable&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>Collection of <a class="xref" href="Godot.Variant.html">Variant</a> items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>The <code class="paramref">collection</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_BinarySearch_" data-uid="Godot.Collections.Array.BinarySearch*"></a>
+  <h4 id="Godot_Collections_Array_BinarySearch_Godot_Variant_" data-uid="Godot.Collections.Array.BinarySearch(Godot.Variant)">BinarySearch(Variant)</h4>
+  <div class="markdown level1 summary"><p>Finds the index of an existing value using binary search.
+If the value is not present in the array, it returns the bitwise
+complement of the insertion index that maintains sorting order.
+Note: Calling <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_BinarySearch_Godot_Variant_">BinarySearch(Variant)</a> on an unsorted
+array results in unexpected behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item in the array, if <code class="paramref">item</code> is found;
+otherwise, a negative number that is the bitwise complement of the index
+of the next element that is larger than <code class="paramref">item</code> or, if
+there is no larger element, the bitwise complement of <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_BinarySearch_" data-uid="Godot.Collections.Array.BinarySearch*"></a>
+  <h4 id="Godot_Collections_Array_BinarySearch_System_Int32_System_Int32_Godot_Variant_" data-uid="Godot.Collections.Array.BinarySearch(System.Int32,System.Int32,Godot.Variant)">BinarySearch(int, int, Variant)</h4>
+  <div class="markdown level1 summary"><p>Finds the index of an existing value using binary search.
+If the value is not present in the array, it returns the bitwise
+complement of the insertion index that maintains sorting order.
+Note: Calling <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_BinarySearch_System_Int32_System_Int32_Godot_Variant_">BinarySearch(int, int, Variant)</a> on an
+unsorted array results in unexpected behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(int index, int count, Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The starting index of the range to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The length of the range to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item in the array, if <code class="paramref">item</code> is found;
+otherwise, a negative number that is the bitwise complement of the index
+of the next element that is larger than <code class="paramref">item</code> or, if
+there is no larger element, the bitwise complement of <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0.
+-or-
+<code class="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">index</code> and <code class="paramref">count</code> do not denote
+a valid range in the <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Clear_" data-uid="Godot.Collections.Array.Clear*"></a>
+  <h4 id="Godot_Collections_Array_Clear" data-uid="Godot.Collections.Array.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the array. This is the equivalent to using <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Resize_System_Int32_">Resize(int)</a>
+with a size of <code>0</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Contains_" data-uid="Godot.Collections.Array.Contains*"></a>
+  <h4 id="Godot_Collections_Array_Contains_Godot_Variant_" data-uid="Godot.Collections.Array.Contains(Godot.Variant)">Contains(Variant)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the array contains the given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether or not this array contains the given item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_Collections_Array_Contains_Godot_Variant__examples">Examples</h5>
+  <pre><code class="lang-csharp">var arr = new Godot.Collections.Array { "inside", 7 };
+GD.Print(arr.Contains("inside")); // True
+GD.Print(arr.Contains("outside")); // False
+GD.Print(arr.Contains(7)); // True
+GD.Print(arr.Contains("7")); // False</code></pre>
+
+
+
+  <a id="Godot_Collections_Array_CopyTo_" data-uid="Godot.Collections.Array.CopyTo*"></a>
+  <h4 id="Godot_Collections_Array_CopyTo_Godot_Variant___System_Int32_" data-uid="Godot.Collections.Array.CopyTo(Godot.Variant[],System.Int32)">CopyTo(Variant[], int)</h4>
+  <div class="markdown level1 summary"><p>Copies the elements of this <a class="xref" href="Godot.Collections.Array.html">Array</a> to the given
+<a class="xref" href="Godot.Variant.html">Variant</a> C# array, starting at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(Variant[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The index to start at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">arrayIndex</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Dispose_" data-uid="Godot.Collections.Array.Dispose*"></a>
+  <h4 id="Godot_Collections_Array_Dispose" data-uid="Godot.Collections.Array.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of this <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+  <a id="Godot_Collections_Array_Dispose_" data-uid="Godot.Collections.Array.Dispose*"></a>
+  <h4 id="Godot_Collections_Array_Dispose_System_Boolean_" data-uid="Godot.Collections.Array.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Duplicate_" data-uid="Godot.Collections.Array.Duplicate*"></a>
+  <h4 id="Godot_Collections_Array_Duplicate_System_Boolean_" data-uid="Godot.Collections.Array.Duplicate(System.Boolean)">Duplicate(bool)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the <a class="xref" href="Godot.Collections.Array.html">Array</a>.
+If <code class="paramref">deep</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, a deep copy if performed:
+all nested arrays and dictionaries are duplicated and will not be shared with
+the original array. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, a shallow copy is made and
+references to the original nested arrays and dictionaries are kept, so that
+modifying a sub-array or dictionary in the copy will also impact those
+referenced in the source array. Note that any <a class="xref" href="Godot.GodotObject.html">GodotObject</a> derived
+elements will be shallow copied regardless of the <code class="paramref">deep</code>
+setting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array Duplicate(bool deep = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">deep</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, performs a deep copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><p>A new Godot Array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Fill_" data-uid="Godot.Collections.Array.Fill*"></a>
+  <h4 id="Godot_Collections_Array_Fill_Godot_Variant_" data-uid="Godot.Collections.Array.Fill(Godot.Variant)">Fill(Variant)</h4>
+  <div class="markdown level1 summary"><p>Assigns the given value to all elements in the array. This can typically be
+used together with <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Resize_System_Int32_">Resize(int)</a> to create an array with a given
+size and initialized elements.
+Note: If <code class="paramref">value</code> is of a reference type (<a class="xref" href="Godot.GodotObject.html">GodotObject</a>
+derived, <a class="xref" href="Godot.Collections.Array.html">Array</a> or <a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a>, etc.) then the array
+is filled with the references to the same object, i.e. no duplicates are
+created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fill(Variant value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to fill the array with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_Collections_Array_Fill_Godot_Variant__examples">Examples</h5>
+  <pre><code class="lang-csharp">var array = new Godot.Collections.Array();
+array.Resize(10);
+array.Fill(0); // Initialize the 10 elements to 0.</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Finalize_" data-uid="Godot.Collections.Array.Finalize*"></a>
+  <h4 id="Godot_Collections_Array_Finalize" data-uid="Godot.Collections.Array.Finalize">~Array()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~Array()</code></pre>
+  </div>
+
+
+  <a id="Godot_Collections_Array_GetEnumerator_" data-uid="Godot.Collections.Array.GetEnumerator*"></a>
+  <h4 id="Godot_Collections_Array_GetEnumerator" data-uid="Godot.Collections.Array.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Gets an enumerator for this <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Variant&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Godot.Variant.html">Variant</a>&gt;</td>
+        <td><p>An enumerator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_GetSliceRange_" data-uid="Godot.Collections.Array.GetSliceRange*"></a>
+  <h4 id="Godot_Collections_Array_GetSliceRange_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.Collections.Array.GetSliceRange(System.Int32,System.Int32,System.Int32,System.Boolean)">GetSliceRange(int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the slice of the <a class="xref" href="Godot.Collections.Array.html">Array</a>, from <code class="paramref">start</code>
+(inclusive) to <code class="paramref">end</code> (exclusive), as a new <a class="xref" href="Godot.Collections.Array.html">Array</a>.
+The absolute value of <code class="paramref">start</code> and <code class="paramref">end</code>
+will be clamped to the array size.
+If either <code class="paramref">start</code> or <code class="paramref">end</code> are negative, they
+will be relative to the end of the array (i.e. <code>arr.GetSliceRange(0, -2)</code>
+is a shorthand for <code>arr.GetSliceRange(0, arr.Count - 2)</code>).
+If specified, <code class="paramref">step</code> is the relative index between source
+elements. It can be negative, then <code class="paramref">start</code> must be higher than
+<code class="paramref">end</code>. For example, <code>[0, 1, 2, 3, 4, 5].GetSliceRange(5, 1, -2)</code>
+returns <code>[5, 3]</code>.
+If <code class="paramref">deep</code> is true, each element will be copied by value
+rather than by reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array GetSliceRange(int start, int end, int step = 1, bool deep = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The zero-based index at which the range starts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The zero-based index at which the range ends.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">step</span></td>
+        <td><p>The relative index between source elements to take.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">deep</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, performs a deep copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><p>A new array that contains the elements inside the slice range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_IndexOf_" data-uid="Godot.Collections.Array.IndexOf*"></a>
+  <h4 id="Godot_Collections_Array_IndexOf_Godot_Variant_" data-uid="Godot.Collections.Array.IndexOf(Godot.Variant)">IndexOf(Variant)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for a value and returns its index or <code>-1</code> if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_IndexOf_" data-uid="Godot.Collections.Array.IndexOf*"></a>
+  <h4 id="Godot_Collections_Array_IndexOf_Godot_Variant_System_Int32_" data-uid="Godot.Collections.Array.IndexOf(Godot.Variant,System.Int32)">IndexOf(Variant, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for a value and returns its index or <code>-1</code> if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(Variant item, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The initial search index to start from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Insert_" data-uid="Godot.Collections.Array.Insert*"></a>
+  <h4 id="Godot_Collections_Array_Insert_System_Int32_Godot_Variant_" data-uid="Godot.Collections.Array.Insert(System.Int32,Godot.Variant)">Insert(int, Variant)</h4>
+  <div class="markdown level1 summary"><p>Inserts a new element at a given position in the array. The position
+must be valid, or at the end of the array (<code>pos == Count - 1</code>).
+Existing items will be moved to the right.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to insert at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_LastIndexOf_" data-uid="Godot.Collections.Array.LastIndexOf*"></a>
+  <h4 id="Godot_Collections_Array_LastIndexOf_Godot_Variant_" data-uid="Godot.Collections.Array.LastIndexOf(Godot.Variant)">LastIndexOf(Variant)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for a value in reverse order and returns its index
+or <code>-1</code> if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_LastIndexOf_" data-uid="Godot.Collections.Array.LastIndexOf*"></a>
+  <h4 id="Godot_Collections_Array_LastIndexOf_Godot_Variant_System_Int32_" data-uid="Godot.Collections.Array.LastIndexOf(Godot.Variant,System.Int32)">LastIndexOf(Variant, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for a value in reverse order and returns its index
+or <code>-1</code> if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(Variant item, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="Godot.Variant.html">Variant</a> item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The initial search index to start from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the item, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_MakeReadOnly_" data-uid="Godot.Collections.Array.MakeReadOnly*"></a>
+  <h4 id="Godot_Collections_Array_MakeReadOnly" data-uid="Godot.Collections.Array.MakeReadOnly">MakeReadOnly()</h4>
+  <div class="markdown level1 summary"><p>Makes the <a class="xref" href="Godot.Collections.Array.html">Array</a> read-only, i.e. disabled modying of the
+array's elements. Does not apply to nested content, e.g. content of
+nested arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeReadOnly()</code></pre>
+  </div>
+
+
+  <a id="Godot_Collections_Array_Max_" data-uid="Godot.Collections.Array.Max*"></a>
+  <h4 id="Godot_Collections_Array_Max" data-uid="Godot.Collections.Array.Max">Max()</h4>
+  <div class="markdown level1 summary"><p>Returns the maximum value contained in the array if all elements are of
+comparable types. If the elements can't be compared, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>
+is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant Max()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><p>The maximum value contained in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Min_" data-uid="Godot.Collections.Array.Min*"></a>
+  <h4 id="Godot_Collections_Array_Min" data-uid="Godot.Collections.Array.Min">Min()</h4>
+  <div class="markdown level1 summary"><p>Returns the minimum value contained in the array if all elements are of
+comparable types. If the elements can't be compared, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>
+is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant Min()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><p>The minimum value contained in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_PickRandom_" data-uid="Godot.Collections.Array.PickRandom*"></a>
+  <h4 id="Godot_Collections_Array_PickRandom" data-uid="Godot.Collections.Array.PickRandom">PickRandom()</h4>
+  <div class="markdown level1 summary"><p>Returns a random value from the target array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant PickRandom()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><p>A random element from the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_Collections_Array_PickRandom_examples">Examples</h5>
+  <pre><code class="lang-csharp">var array = new Godot.Collections.Array { 1, 2, 3, 4 };
+GD.Print(array.PickRandom()); // Prints either of the four numbers.</code></pre>
+
+
+
+  <a id="Godot_Collections_Array_RecursiveEqual_" data-uid="Godot.Collections.Array.RecursiveEqual*"></a>
+  <h4 id="Godot_Collections_Array_RecursiveEqual_Godot_Collections_Array_" data-uid="Godot.Collections.Array.RecursiveEqual(Godot.Collections.Array)">RecursiveEqual(Array)</h4>
+  <div class="markdown level1 summary"><p>Compares this <a class="xref" href="Godot.Collections.Array.html">Array</a> against the <code class="paramref">other</code>
+<a class="xref" href="Godot.Collections.Array.html">Array</a> recursively. Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the
+sizes and contents of the arrays are equal, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
+otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RecursiveEqual(Array other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other array to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the sizes and contents of the arrays are equal,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Remove_" data-uid="Godot.Collections.Array.Remove*"></a>
+  <h4 id="Godot_Collections_Array_Remove_Godot_Variant_" data-uid="Godot.Collections.Array.Remove(Godot.Variant)">Remove(Variant)</h4>
+  <div class="markdown level1 summary"><p>Removes the first occurrence of the specified <code class="paramref">item</code>
+from this <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(Variant item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The value to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_RemoveAt_" data-uid="Godot.Collections.Array.RemoveAt*"></a>
+  <h4 id="Godot_Collections_Array_RemoveAt_System_Int32_" data-uid="Godot.Collections.Array.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"><p>Removes an element from the array by index.
+To remove an element by searching for its value, use
+<a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Remove_Godot_Variant_">Remove(Variant)</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the element to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">index</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Resize_" data-uid="Godot.Collections.Array.Resize*"></a>
+  <h4 id="Godot_Collections_Array_Resize_System_Int32_" data-uid="Godot.Collections.Array.Resize(System.Int32)">Resize(int)</h4>
+  <div class="markdown level1 summary"><p>Resizes the array to contain a different number of elements. If the array
+size is smaller, elements are cleared, if bigger, new elements are
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Resize(int newSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">newSize</span></td>
+        <td><p>The new size of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td><p><a class="xref" href="Godot.Error.html#Godot_Error_Ok">Ok</a> if successful, or an error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Reverse_" data-uid="Godot.Collections.Array.Reverse*"></a>
+  <h4 id="Godot_Collections_Array_Reverse" data-uid="Godot.Collections.Array.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>Reverses the order of the elements in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Shuffle_" data-uid="Godot.Collections.Array.Shuffle*"></a>
+  <h4 id="Godot_Collections_Array_Shuffle" data-uid="Godot.Collections.Array.Shuffle">Shuffle()</h4>
+  <div class="markdown level1 summary"><p>Shuffles the array such that the items will have a random order.
+This method uses the global random number generator common to methods
+such as <a class="xref" href="Godot.GD.html#Godot_GD_Randi">Randi()</a>. Call <a class="xref" href="Godot.GD.html#Godot_GD_Randomize">Randomize()</a> to
+ensure that a new seed will be used each time if you want
+non-reproducible shuffling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shuffle()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Slice_" data-uid="Godot.Collections.Array.Slice*"></a>
+  <h4 id="Godot_Collections_Array_Slice_System_Int32_" data-uid="Godot.Collections.Array.Slice(System.Int32)">Slice(int)</h4>
+  <div class="markdown level1 summary"><p>Creates a shallow copy of a range of elements in the source <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array Slice(int start)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The zero-based index at which the range starts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><p>A new array that contains the elements inside the slice range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">start</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Slice_" data-uid="Godot.Collections.Array.Slice*"></a>
+  <h4 id="Godot_Collections_Array_Slice_System_Int32_System_Int32_" data-uid="Godot.Collections.Array.Slice(System.Int32,System.Int32)">Slice(int, int)</h4>
+  <div class="markdown level1 summary"><p>Creates a shallow copy of a range of elements in the source <a class="xref" href="Godot.Collections.Array.html">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array Slice(int start, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The zero-based index at which the range starts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><p>A new array that contains the elements inside the slice range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">start</code> is less than 0 or greater than the array's size.
+-or-
+<code class="paramref">length</code> is less than 0 or greater than the array's size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_Sort_" data-uid="Godot.Collections.Array.Sort*"></a>
+  <h4 id="Godot_Collections_Array_Sort" data-uid="Godot.Collections.Array.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Sorts the array.
+Note: The sorting algorithm used is not stable. This means that values
+considered equal may have their order changed when using <a class="xref" href="Godot.Collections.Array.html#Godot_Collections_Array_Sort">Sort()</a>.
+Note: Strings are sorted in alphabetical order (as opposed to natural order).
+This may lead to unexpected behavior when sorting an array of strings ending
+with a sequence of numbers.
+To sort with a custom predicate use
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.enumerable.orderby#system-linq-enumerable-orderby-2(system-collections-generic-ienumerable((-0))-system-func((-0-1)))">OrderBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
+  </div>
+  <h5 id="Godot_Collections_Array_Sort_examples">Examples</h5>
+  <pre><code class="lang-csharp">var strings = new Godot.Collections.Array { "string1", "string2", "string10", "string11" };
+strings.Sort();
+GD.Print(strings); // Prints [string1, string10, string11, string2]</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The array is read-only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Collections_Array_ToString_" data-uid="Godot.Collections.Array.ToString*"></a>
+  <h4 id="Godot_Collections_Array_ToString" data-uid="Godot.Collections.Array.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="Godot.Collections.Array.html">Array</a> to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string representation of this array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="Godot_Collections_Array_op_Addition_" data-uid="Godot.Collections.Array.op_Addition*"></a>
+  <h4 id="Godot_Collections_Array_op_Addition_Godot_Collections_Array_Godot_Collections_Array_" data-uid="Godot.Collections.Array.op_Addition(Godot.Collections.Array,Godot.Collections.Array)">operator +(Array, Array)</h4>
+  <div class="markdown level1 summary"><p>Concatenates two <a class="xref" href="Godot.Collections.Array.html">Array</a>s together, with the <code class="paramref">right</code>
+being added to the end of the <a class="xref" href="Godot.Collections.Array.html">Array</a> specified in <code class="paramref">left</code>.
+For example, <code>[1, 2] + [3, 4]</code> results in <code>[1, 2, 3, 4]</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array operator +(Array left, Array right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><p>A new Godot Array with the contents of both arrays.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

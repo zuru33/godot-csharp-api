@@ -1,0 +1,1199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Marshaling
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Marshaling
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.NativeInterop.Marshaling">
+
+
+
+  <h1 id="Godot_NativeInterop_Marshaling" data-uid="Godot.NativeInterop.Marshaling" class="text-break">Class Marshaling
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Marshaling</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a>.<a class="xref" href="Godot.NativeInterop.html">NativeInterop</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_NativeInterop_Marshaling_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Marshaling</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertCallableToManaged_" data-uid="Godot.NativeInterop.Marshaling.ConvertCallableToManaged*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertCallableToManaged_Godot_NativeInterop_godot_callable__" data-uid="Godot.NativeInterop.Marshaling.ConvertCallableToManaged(Godot.NativeInterop.godot_callable@)">ConvertCallableToManaged(in godot_callable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Callable ConvertCallableToManaged(in godot_callable p_callable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_callable.html">godot_callable</a></td>
+        <td><span class="parametername">p_callable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Callable.html">Callable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertCallableToNative_" data-uid="Godot.NativeInterop.Marshaling.ConvertCallableToNative*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertCallableToNative_Godot_Callable__" data-uid="Godot.NativeInterop.Marshaling.ConvertCallableToNative(Godot.Callable@)">ConvertCallableToNative(in Callable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_callable ConvertCallableToNative(in Callable p_managed_callable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Callable.html">Callable</a></td>
+        <td><span class="parametername">p_managed_callable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_callable.html">godot_callable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedByteArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedByteArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedByteArrayToSystemArray_Godot_NativeInterop_godot_packed_byte_array__" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedByteArrayToSystemArray(Godot.NativeInterop.godot_packed_byte_array@)">ConvertNativePackedByteArrayToSystemArray(in godot_packed_byte_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ConvertNativePackedByteArrayToSystemArray(in godot_packed_byte_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_byte_array.html">godot_packed_byte_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedColorArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedColorArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedColorArrayToSystemArray_Godot_NativeInterop_godot_packed_color_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedColorArrayToSystemArray(Godot.NativeInterop.godot_packed_color_array)">ConvertNativePackedColorArrayToSystemArray(godot_packed_color_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color[] ConvertNativePackedColorArrayToSystemArray(godot_packed_color_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_color_array.html">godot_packed_color_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedFloat32ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedFloat32ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedFloat32ArrayToSystemArray_Godot_NativeInterop_godot_packed_float32_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedFloat32ArrayToSystemArray(Godot.NativeInterop.godot_packed_float32_array)">ConvertNativePackedFloat32ArrayToSystemArray(godot_packed_float32_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float[] ConvertNativePackedFloat32ArrayToSystemArray(godot_packed_float32_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_float32_array.html">godot_packed_float32_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedFloat64ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedFloat64ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedFloat64ArrayToSystemArray_Godot_NativeInterop_godot_packed_float64_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedFloat64ArrayToSystemArray(Godot.NativeInterop.godot_packed_float64_array)">ConvertNativePackedFloat64ArrayToSystemArray(godot_packed_float64_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] ConvertNativePackedFloat64ArrayToSystemArray(godot_packed_float64_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_float64_array.html">godot_packed_float64_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedInt32ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedInt32ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedInt32ArrayToSystemArray_Godot_NativeInterop_godot_packed_int32_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedInt32ArrayToSystemArray(Godot.NativeInterop.godot_packed_int32_array)">ConvertNativePackedInt32ArrayToSystemArray(godot_packed_int32_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] ConvertNativePackedInt32ArrayToSystemArray(godot_packed_int32_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_int32_array.html">godot_packed_int32_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedInt64ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedInt64ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedInt64ArrayToSystemArray_Godot_NativeInterop_godot_packed_int64_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedInt64ArrayToSystemArray(Godot.NativeInterop.godot_packed_int64_array)">ConvertNativePackedInt64ArrayToSystemArray(godot_packed_int64_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long[] ConvertNativePackedInt64ArrayToSystemArray(godot_packed_int64_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_int64_array.html">godot_packed_int64_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedStringArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedStringArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedStringArrayToSystemArray_Godot_NativeInterop_godot_packed_string_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedStringArrayToSystemArray(Godot.NativeInterop.godot_packed_string_array)">ConvertNativePackedStringArrayToSystemArray(godot_packed_string_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] ConvertNativePackedStringArrayToSystemArray(godot_packed_string_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_string_array.html">godot_packed_string_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedVector2ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedVector2ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedVector2ArrayToSystemArray_Godot_NativeInterop_godot_packed_vector2_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedVector2ArrayToSystemArray(Godot.NativeInterop.godot_packed_vector2_array)">ConvertNativePackedVector2ArrayToSystemArray(godot_packed_vector2_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2[] ConvertNativePackedVector2ArrayToSystemArray(godot_packed_vector2_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_vector2_array.html">godot_packed_vector2_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertNativePackedVector3ArrayToSystemArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedVector3ArrayToSystemArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertNativePackedVector3ArrayToSystemArray_Godot_NativeInterop_godot_packed_vector3_array_" data-uid="Godot.NativeInterop.Marshaling.ConvertNativePackedVector3ArrayToSystemArray(Godot.NativeInterop.godot_packed_vector3_array)">ConvertNativePackedVector3ArrayToSystemArray(godot_packed_vector3_array)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3[] ConvertNativePackedVector3ArrayToSystemArray(godot_packed_vector3_array p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_vector3_array.html">godot_packed_vector3_array</a></td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSignalToManaged_" data-uid="Godot.NativeInterop.Marshaling.ConvertSignalToManaged*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSignalToManaged_Godot_NativeInterop_godot_signal__" data-uid="Godot.NativeInterop.Marshaling.ConvertSignalToManaged(Godot.NativeInterop.godot_signal@)">ConvertSignalToManaged(in godot_signal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Signal ConvertSignalToManaged(in godot_signal p_signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_signal.html">godot_signal</a></td>
+        <td><span class="parametername">p_signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Signal.html">Signal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSignalToNative_" data-uid="Godot.NativeInterop.Marshaling.ConvertSignalToNative*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSignalToNative_Godot_Signal__" data-uid="Godot.NativeInterop.Marshaling.ConvertSignalToNative(Godot.Signal@)">ConvertSignalToNative(in Signal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_signal ConvertSignalToNative(in Signal p_managed_signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Signal.html">Signal</a></td>
+        <td><span class="parametername">p_managed_signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_signal.html">godot_signal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertStringToManaged_" data-uid="Godot.NativeInterop.Marshaling.ConvertStringToManaged*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertStringToManaged_Godot_NativeInterop_godot_string__" data-uid="Godot.NativeInterop.Marshaling.ConvertStringToManaged(Godot.NativeInterop.godot_string@)">ConvertStringToManaged(in godot_string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertStringToManaged(in godot_string p_string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string.html">godot_string</a></td>
+        <td><span class="parametername">p_string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertStringToNative_" data-uid="Godot.NativeInterop.Marshaling.ConvertStringToNative*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertStringToNative_System_String_" data-uid="Godot.NativeInterop.Marshaling.ConvertStringToNative(System.String)">ConvertStringToNative(string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_string ConvertStringToNative(string? p_mono_string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">p_mono_string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string.html">godot_string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedByteArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedByteArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedByteArray_System_Span_System_Byte__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedByteArray(System.Span{System.Byte})">ConvertSystemArrayToNativePackedByteArray(Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_byte_array ConvertSystemArrayToNativePackedByteArray(Span&lt;byte&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_byte_array.html">godot_packed_byte_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedColorArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedColorArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedColorArray_System_Span_Godot_Color__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedColorArray(System.Span{Godot.Color})">ConvertSystemArrayToNativePackedColorArray(Span&lt;Color&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_color_array ConvertSystemArrayToNativePackedColorArray(Span&lt;Color&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.Color.html">Color</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_color_array.html">godot_packed_color_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedFloat32Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedFloat32Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedFloat32Array_System_Span_System_Single__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedFloat32Array(System.Span{System.Single})">ConvertSystemArrayToNativePackedFloat32Array(Span&lt;float&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_float32_array ConvertSystemArrayToNativePackedFloat32Array(Span&lt;float&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_float32_array.html">godot_packed_float32_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedFloat64Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedFloat64Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedFloat64Array_System_Span_System_Double__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedFloat64Array(System.Span{System.Double})">ConvertSystemArrayToNativePackedFloat64Array(Span&lt;double&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_float64_array ConvertSystemArrayToNativePackedFloat64Array(Span&lt;double&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_float64_array.html">godot_packed_float64_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedInt32Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedInt32Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedInt32Array_System_Span_System_Int32__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedInt32Array(System.Span{System.Int32})">ConvertSystemArrayToNativePackedInt32Array(Span&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_int32_array ConvertSystemArrayToNativePackedInt32Array(Span&lt;int&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_int32_array.html">godot_packed_int32_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedInt64Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedInt64Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedInt64Array_System_Span_System_Int64__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedInt64Array(System.Span{System.Int64})">ConvertSystemArrayToNativePackedInt64Array(Span&lt;long&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_int64_array ConvertSystemArrayToNativePackedInt64Array(Span&lt;long&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_int64_array.html">godot_packed_int64_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedStringArray_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedStringArray*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedStringArray_System_Span_System_String__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedStringArray(System.Span{System.String})">ConvertSystemArrayToNativePackedStringArray(Span&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_string_array ConvertSystemArrayToNativePackedStringArray(Span&lt;string&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_string_array.html">godot_packed_string_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedVector2Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedVector2Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedVector2Array_System_Span_Godot_Vector2__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedVector2Array(System.Span{Godot.Vector2})">ConvertSystemArrayToNativePackedVector2Array(Span&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_vector2_array ConvertSystemArrayToNativePackedVector2Array(Span&lt;Vector2&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_vector2_array.html">godot_packed_vector2_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedVector3Array_" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedVector3Array*"></a>
+  <h4 id="Godot_NativeInterop_Marshaling_ConvertSystemArrayToNativePackedVector3Array_System_Span_Godot_Vector3__" data-uid="Godot.NativeInterop.Marshaling.ConvertSystemArrayToNativePackedVector3Array(System.Span{Godot.Vector3})">ConvertSystemArrayToNativePackedVector3Array(Span&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static godot_packed_vector3_array ConvertSystemArrayToNativePackedVector3Array(Span&lt;Vector3&gt; p_array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Godot.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">p_array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_packed_vector3_array.html">godot_packed_vector3_array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1095 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebRtcPeerConnection
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebRtcPeerConnection
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.WebRtcPeerConnection">
+
+
+
+  <h1 id="Godot_WebRtcPeerConnection" data-uid="Godot.WebRtcPeerConnection" class="text-break">Class WebRtcPeerConnection
+</h1>
+  <div class="markdown level0 summary"><p>A WebRTC connection between the local computer and a remote peer. Provides an interface to connect, maintain and monitor the connection.</p>
+<p>Setting up a WebRTC connection between two peers from now on) may not seem a trivial task, but it can be broken down into 3 main steps:</p>
+<p>- The peer that wants to initiate the connection (<code>A</code> from now on) creates an offer and send it to the other peer (<code>B</code> from now on).</p>
+<p>- <code>B</code> receives the offer, generate and answer, and sends it to <code>A</code>).</p>
+<p>- <code>A</code> and <code>B</code> then generates and exchange ICE candidates with each other.</p>
+<p>After these steps, the connection should become connected. Keep on reading or look into the tutorial for more information.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+    <div class="level3"><span class="xref">WebRtcPeerConnection</span></div>
+      <div class="level4"><a class="xref" href="Godot.WebRtcPeerConnectionExtension.html">WebRtcPeerConnectionExtension</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_WebRtcPeerConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GodotClassName(&quot;WebRTCPeerConnection&quot;)]
+public class WebRtcPeerConnection : RefCounted, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_WebRtcPeerConnection__ctor_" data-uid="Godot.WebRtcPeerConnection.#ctor*"></a>
+  <h4 id="Godot_WebRtcPeerConnection__ctor" data-uid="Godot.WebRtcPeerConnection.#ctor">WebRtcPeerConnection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebRtcPeerConnection()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_WebRtcPeerConnection_AddIceCandidate_" data-uid="Godot.WebRtcPeerConnection.AddIceCandidate*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_AddIceCandidate_System_String_System_Int32_System_String_" data-uid="Godot.WebRtcPeerConnection.AddIceCandidate(System.String,System.Int32,System.String)">AddIceCandidate(string, int, string)</h4>
+  <div class="markdown level1 summary"><p>Add an ice candidate generated by a remote peer (and received over the signaling server). See <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_IceCandidateCreated">IceCandidateCreated</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error AddIceCandidate(string media, int index, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">media</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_Close_" data-uid="Godot.WebRtcPeerConnection.Close*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_Close" data-uid="Godot.WebRtcPeerConnection.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Close the peer connection and all data channels associated with it.</p>
+<p><b>Note:</b> You cannot reuse this object for a new connection unless you call <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_Initialize_Godot_Collections_Dictionary_">Initialize(Dictionary)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+  <a id="Godot_WebRtcPeerConnection_CreateDataChannel_" data-uid="Godot.WebRtcPeerConnection.CreateDataChannel*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_CreateDataChannel_System_String_Godot_Collections_Dictionary_" data-uid="Godot.WebRtcPeerConnection.CreateDataChannel(System.String,Godot.Collections.Dictionary)">CreateDataChannel(string, Dictionary)</h4>
+  <div class="markdown level1 summary"><p>Returns a new <a class="xref" href="Godot.WebRtcDataChannel.html">WebRtcDataChannel</a> (or <code>null</code> on failure) with given <code>label</code> and optionally configured via the <code>options</code> dictionary. This method can only be called when the connection is in state <a class="xref" href="Godot.WebRtcPeerConnection.ConnectionState.html#Godot_WebRtcPeerConnection_ConnectionState_New">New</a>.</p>
+<p>There are two ways to create a working data channel: either call <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_CreateDataChannel_System_String_Godot_Collections_Dictionary_">CreateDataChannel(string, Dictionary)</a> on only one of the peer and listen to <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_DataChannelReceived">DataChannelReceived</a> on the other, or call <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_CreateDataChannel_System_String_Godot_Collections_Dictionary_">CreateDataChannel(string, Dictionary)</a> on both peers, with the same values, and the <code>"negotiated"</code> option set to <code>true</code>.</p>
+<p>Valid <code>options</code> are:</p>
+<p><pre><code class="lang-csharp">{
+       "negotiated": true, # When set to true (default off), means the channel is negotiated out of band. "id" must be set too. "data_channel_received" will not be called.
+       "id": 1, # When "negotiated" is true this value must also be set to the same value on both peer.
+<pre><code>   # Only one of maxRetransmits and maxPacketLifeTime can be specified, not both. They make the channel unreliable (but also better at real time).
+   &quot;maxRetransmits&quot;: 1, # Specify the maximum number of attempt the peer will make to retransmits packets if they are not acknowledged.
+   &quot;maxPacketLifeTime&quot;: 100, # Specify the maximum amount of time before giving up retransmitions of unacknowledged packets (in milliseconds).
+   &quot;ordered&quot;: true, # When in unreliable mode (i.e. either &quot;maxRetransmits&quot; or &quot;maxPacketLifetime&quot; is set), &quot;ordered&quot; (true by default) specify if packet ordering is to be enforced.
+
+   &quot;protocol&quot;: &quot;my-custom-protocol&quot;, # A custom sub-protocol string for this channel.
+</code></pre>
+<p>}</p></code></pre>
+<p><b>Note:</b> You must keep a reference to channels created this way, or it will be closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebRtcDataChannel CreateDataChannel(string label, Dictionary options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcDataChannel.html">WebRtcDataChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_CreateOffer_" data-uid="Godot.WebRtcPeerConnection.CreateOffer*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_CreateOffer" data-uid="Godot.WebRtcPeerConnection.CreateOffer">CreateOffer()</h4>
+  <div class="markdown level1 summary"><p>Creates a new SDP offer to start a WebRTC connection with a remote peer. At least one <a class="xref" href="Godot.WebRtcDataChannel.html">WebRtcDataChannel</a> must have been created before calling this method.</p>
+<p>If this functions returns <a class="xref" href="Godot.Error.html#Godot_Error_Ok">Ok</a>, <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_SessionDescriptionCreated">SessionDescriptionCreated</a> will be called when the session is ready to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error CreateOffer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_GetConnectionState_" data-uid="Godot.WebRtcPeerConnection.GetConnectionState*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_GetConnectionState" data-uid="Godot.WebRtcPeerConnection.GetConnectionState">GetConnectionState()</h4>
+  <div class="markdown level1 summary"><p>Returns the connection state. See <a class="xref" href="Godot.WebRtcPeerConnection.ConnectionState.html">WebRtcPeerConnection.ConnectionState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebRtcPeerConnection.ConnectionState GetConnectionState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.ConnectionState.html">ConnectionState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_GetGatheringState_" data-uid="Godot.WebRtcPeerConnection.GetGatheringState*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_GetGatheringState" data-uid="Godot.WebRtcPeerConnection.GetGatheringState">GetGatheringState()</h4>
+  <div class="markdown level1 summary"><p>Returns the ICE <a class="xref" href="Godot.WebRtcPeerConnection.GatheringState.html">WebRtcPeerConnection.GatheringState</a> of the connection. This lets you detect, for example, when collection of ICE candidates has finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebRtcPeerConnection.GatheringState GetGatheringState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.GatheringState.html">GatheringState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_GetSignalingState_" data-uid="Godot.WebRtcPeerConnection.GetSignalingState*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_GetSignalingState" data-uid="Godot.WebRtcPeerConnection.GetSignalingState">GetSignalingState()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.WebRtcPeerConnection.SignalingState.html">WebRtcPeerConnection.SignalingState</a> on the local end of the connection while connecting or reconnecting to another peer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebRtcPeerConnection.SignalingState GetSignalingState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.SignalingState.html">SignalingState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_HasGodotClassMethod_" data-uid="Godot.WebRtcPeerConnection.HasGodotClassMethod*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.WebRtcPeerConnection.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">RefCounted.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_WebRtcPeerConnection_HasGodotClassSignal_" data-uid="Godot.WebRtcPeerConnection.HasGodotClassSignal*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.WebRtcPeerConnection.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">RefCounted.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_WebRtcPeerConnection_Initialize_" data-uid="Godot.WebRtcPeerConnection.Initialize*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_Initialize_Godot_Collections_Dictionary_" data-uid="Godot.WebRtcPeerConnection.Initialize(Godot.Collections.Dictionary)">Initialize(Dictionary)</h4>
+  <div class="markdown level1 summary"><p>Re-initialize this peer connection, closing any previously active connection, and going back to state <a class="xref" href="Godot.WebRtcPeerConnection.ConnectionState.html#Godot_WebRtcPeerConnection_ConnectionState_New">New</a>. A dictionary of <code>configuration</code> options can be passed to configure the peer connection.</p>
+<p>Valid <code>configuration</code> options are:</p>
+<p><pre><code class="lang-csharp">{
+       "iceServers": [
+           {
+               "urls": [ "stun:stun.example.com:3478" ], # One or more STUN servers.
+           },
+           {
+               "urls": [ "turn:turn.example.com:3478" ], # One or more TURN servers.
+               "username": "a_username", # Optional username for the TURN server.
+               "credential": "a_password", # Optional password for the TURN server.
+           }
+       ]
+   }</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Initialize(Dictionary configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_InvokeGodotClassMethod_" data-uid="Godot.WebRtcPeerConnection.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.WebRtcPeerConnection.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">RefCounted.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_WebRtcPeerConnection_Poll_" data-uid="Godot.WebRtcPeerConnection.Poll*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_Poll" data-uid="Godot.WebRtcPeerConnection.Poll">Poll()</h4>
+  <div class="markdown level1 summary"><p>Call this method frequently (e.g. in <a class="xref" href="Godot.Node.html#Godot_Node__Process_System_Double_">_Process(double)</a> or <a class="xref" href="Godot.Node.html#Godot_Node__PhysicsProcess_System_Double_">_PhysicsProcess(double)</a>) to properly receive signals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Poll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_SetDefaultExtension_" data-uid="Godot.WebRtcPeerConnection.SetDefaultExtension*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_SetDefaultExtension_Godot_StringName_" data-uid="Godot.WebRtcPeerConnection.SetDefaultExtension(Godot.StringName)">SetDefaultExtension(StringName)</h4>
+  <div class="markdown level1 summary"><p>Sets the <code>extensionClass</code> as the default <a class="xref" href="Godot.WebRtcPeerConnectionExtension.html">WebRtcPeerConnectionExtension</a> returned when creating a new <a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultExtension(StringName extensionClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.StringName.html">StringName</a></td>
+        <td><span class="parametername">extensionClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_SetLocalDescription_" data-uid="Godot.WebRtcPeerConnection.SetLocalDescription*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_SetLocalDescription_System_String_System_String_" data-uid="Godot.WebRtcPeerConnection.SetLocalDescription(System.String,System.String)">SetLocalDescription(string, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the SDP description of the local peer. This should be called in response to <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_SessionDescriptionCreated">SessionDescriptionCreated</a>.</p>
+<p>After calling this function the peer will start emitting <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_IceCandidateCreated">IceCandidateCreated</a> (unless an <a class="xref" href="Godot.Error.html">Error</a> different from <a class="xref" href="Godot.Error.html#Godot_Error_Ok">Ok</a> is returned).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SetLocalDescription(string type, string sdp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sdp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_WebRtcPeerConnection_SetRemoteDescription_" data-uid="Godot.WebRtcPeerConnection.SetRemoteDescription*"></a>
+  <h4 id="Godot_WebRtcPeerConnection_SetRemoteDescription_System_String_System_String_" data-uid="Godot.WebRtcPeerConnection.SetRemoteDescription(System.String,System.String)">SetRemoteDescription(string, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the SDP description of the remote peer. This should be called with the values generated by a remote peer and received over the signaling server.</p>
+<p>If <code>type</code> is <code>"offer"</code> the peer will emit <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_SessionDescriptionCreated">SessionDescriptionCreated</a> with the appropriate answer.</p>
+<p>If <code>type</code> is <code>"answer"</code> the peer will start emitting <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_IceCandidateCreated">IceCandidateCreated</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error SetRemoteDescription(string type, string sdp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sdp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Godot_WebRtcPeerConnection_DataChannelReceived" data-uid="Godot.WebRtcPeerConnection.DataChannelReceived">DataChannelReceived</h4>
+  <div class="markdown level1 summary"><p>Emitted when a new in-band channel is received, i.e. when the channel was created with <code>negotiated: false</code> (default).</p>
+<p>The object will be an instance of <a class="xref" href="Godot.WebRtcDataChannel.html">WebRtcDataChannel</a>. You must keep a reference of it or it will be closed automatically. See <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_CreateDataChannel_System_String_Godot_Collections_Dictionary_">CreateDataChannel(string, Dictionary)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WebRtcPeerConnection.DataChannelReceivedEventHandler DataChannelReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.DataChannelReceivedEventHandler.html">DataChannelReceivedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_WebRtcPeerConnection_IceCandidateCreated" data-uid="Godot.WebRtcPeerConnection.IceCandidateCreated">IceCandidateCreated</h4>
+  <div class="markdown level1 summary"><p>Emitted when a new ICE candidate has been created. The three parameters are meant to be passed to the remote peer over the signaling server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WebRtcPeerConnection.IceCandidateCreatedEventHandler IceCandidateCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.IceCandidateCreatedEventHandler.html">IceCandidateCreatedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_WebRtcPeerConnection_SessionDescriptionCreated" data-uid="Godot.WebRtcPeerConnection.SessionDescriptionCreated">SessionDescriptionCreated</h4>
+  <div class="markdown level1 summary"><p>Emitted after a successful call to <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_CreateOffer">CreateOffer()</a> or <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_SetRemoteDescription_System_String_System_String_">SetRemoteDescription(string, string)</a> (when it generates an answer). The parameters are meant to be passed to <a class="xref" href="Godot.WebRtcPeerConnection.html#Godot_WebRtcPeerConnection_SetLocalDescription_System_String_System_String_">SetLocalDescription(string, string)</a> on this object, and sent to the remote peer over the signaling server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WebRtcPeerConnection.SessionDescriptionCreatedEventHandler SessionDescriptionCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.WebRtcPeerConnection.html">WebRtcPeerConnection</a>.<a class="xref" href="Godot.WebRtcPeerConnection.SessionDescriptionCreatedEventHandler.html">SessionDescriptionCreatedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

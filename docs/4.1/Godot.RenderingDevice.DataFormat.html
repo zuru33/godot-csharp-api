@@ -1,0 +1,1268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum RenderingDevice.DataFormat
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum RenderingDevice.DataFormat
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.RenderingDevice.DataFormat">
+
+
+
+
+  <h1 id="Godot_RenderingDevice_DataFormat" data-uid="Godot.RenderingDevice.DataFormat" class="text-break">Enum RenderingDevice.DataFormat
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_RenderingDevice_DataFormat_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum RenderingDevice.DataFormat : long</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A1R5G5B5UnormPack16">A1R5G5B5UnormPack16</td>
+        <td><p>Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 bits of green and 5 bits of blue, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10SintPack32">A2B10G10R10SintPack32</td>
+        <td><p>Signed integer alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[-511, 511]</code> range for blue/green/red and <code>[-1, 1]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10SnormPack32">A2B10G10R10SnormPack32</td>
+        <td><p>Signed floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10SscaledPack32">A2B10G10R10SscaledPack32</td>
+        <td><p>Signed floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[-511.0, 511.0]</code> range for blue/green/red and <code>[-1.0, 1.0]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10UintPack32">A2B10G10R10UintPack32</td>
+        <td><p>Unsigned integer alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[0, 1023]</code> range for blue/green/red and <code>[0, 3]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10UnormPack32">A2B10G10R10UnormPack32</td>
+        <td><p>Unsigned floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2B10G10R10UscaledPack32">A2B10G10R10UscaledPack32</td>
+        <td><p>Unsigned floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the <code>[0.0, 1023.0]</code> range for blue/green/red and <code>[0.0, 3.0]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10SintPack32">A2R10G10B10SintPack32</td>
+        <td><p>Signed integer alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[-511, 511]</code> range for red/green/blue and <code>[-1, 1]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10SnormPack32">A2R10G10B10SnormPack32</td>
+        <td><p>Signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10SscaledPack32">A2R10G10B10SscaledPack32</td>
+        <td><p>Signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[-511.0, 511.0]</code> range for red/green/blue and <code>[-1.0, 1.0]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10UintPack32">A2R10G10B10UintPack32</td>
+        <td><p>Unsigned integer alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[0, 1023]</code> range for red/green/blue and <code>[0, 3]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10UnormPack32">A2R10G10B10UnormPack32</td>
+        <td><p>Unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A2R10G10B10UscaledPack32">A2R10G10B10UscaledPack32</td>
+        <td><p>Unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the <code>[0.0, 1023.0]</code> range for red/green/blue and <code>[0.0, 3.0]</code> for alpha.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8SintPack32">A8B8G8R8SintPack32</td>
+        <td><p>8-bit-per-channel signed integer alpha/red/green/blue channel data format, packed in 32 bits. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8SnormPack32">A8B8G8R8SnormPack32</td>
+        <td><p>8-bit-per-channel signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8SrgbPack32">A8B8G8R8SrgbPack32</td>
+        <td><p>8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with normalized value and non-linear sRGB encoding, packed in 32 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8SscaledPack32">A8B8G8R8SscaledPack32</td>
+        <td><p>8-bit-per-channel signed floating-point alpha/red/green/blue channel data format with scaled value (value is converted from integer to float), packed in 32 bits. Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8UintPack32">A8B8G8R8UintPack32</td>
+        <td><p>8-bit-per-channel unsigned integer alpha/red/green/blue channel data format, packed in 32 bits. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8UnormPack32">A8B8G8R8UnormPack32</td>
+        <td><p>8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_A8B8G8R8UscaledPack32">A8B8G8R8UscaledPack32</td>
+        <td><p>8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with scaled value (value is converted from integer to float), packed in 32 bits. Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X10SrgbBlock">Astc10X10SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 10×10 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X10UnormBlock">Astc10X10UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×10 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X5SrgbBlock">Astc10X5SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 10×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X5UnormBlock">Astc10X5UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X6SrgbBlock">Astc10X6SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 10×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X6UnormBlock">Astc10X6UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X8SrgbBlock">Astc10X8SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 10×8 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc10X8UnormBlock">Astc10X8UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×8 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc12X10SrgbBlock">Astc12X10SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 12×10 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc12X10UnormBlock">Astc12X10UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 12×10 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc12X12SrgbBlock">Astc12X12SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 12 blocks (lowest quality). Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc12X12UnormBlock">Astc12X12UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 12 blocks (lowest quality). Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc4X4SrgbBlock">Astc4X4SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 4×4 blocks (highest quality). Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc4X4UnormBlock">Astc4X4UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 4×4 blocks (highest quality). Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc5X4SrgbBlock">Astc5X4SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 5×4 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc5X4UnormBlock">Astc5X4UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 5×4 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc5X5SrgbBlock">Astc5X5SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 5×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc5X5UnormBlock">Astc5X5UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 5×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc6X5SrgbBlock">Astc6X5SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 6×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc6X5UnormBlock">Astc6X5UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 6×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc6X6SrgbBlock">Astc6X6SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 6×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc6X6UnormBlock">Astc6X6UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 6×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X5SrgbBlock">Astc8X5SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 8×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X5UnormBlock">Astc8X5UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×5 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X6SrgbBlock">Astc8X6SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 8×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X6UnormBlock">Astc8X6UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×6 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X8SrgbBlock">Astc8X8SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value and non-linear sRGB encoding, packed in 8×8 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Astc8X8UnormBlock">Astc8X8UnormBlock</td>
+        <td><p>VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×8 blocks. Values are in the <code>[0.0, 1.0]</code> range. Using ASTC compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B10G11R11UfloatPack32">B10G11R11UfloatPack32</td>
+        <td><p>Unsigned floating-point blue/green/red data format with the value stored as-is, packed in 32 bits. The format's precision is 10 bits of blue channel, 11 bits of green channel and 11 bits of red channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B10X6G10X6R10X6G10X6422Unorm4Pack16">B10X6G10X6R10X6G10X6422Unorm4Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point blue/green/red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B12X4G12X4R12X4G12X4422Unorm4Pack16">B12X4G12X4R12X4G12X4422Unorm4Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point blue/green/red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B16G16R16G16422Unorm">B16G16R16G16422Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B4G4R4A4UnormPack16">B4G4R4A4UnormPack16</td>
+        <td><p>4-bit-per-channel blue/green/red/alpha channel data format, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B5G5R5A1UnormPack16">B5G5R5A1UnormPack16</td>
+        <td><p>Blue/green/red/alpha channel data format with 5 bits of blue, 6 bits of green, 5 bits of red and 1 bit of alpha, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B5G6R5UnormPack16">B5G6R5UnormPack16</td>
+        <td><p>Blue/green/red channel data format with 5 bits of blue, 6 bits of green and 5 bits of red, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Sint">B8G8R8A8Sint</td>
+        <td><p>8-bit-per-channel signed integer blue/green/red/alpha channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Snorm">B8G8R8A8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point blue/green/red/alpha channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Srgb">B8G8R8A8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Sscaled">B8G8R8A8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point blue/green/red/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Uint">B8G8R8A8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer blue/green/red/alpha channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Unorm">B8G8R8A8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8A8Uscaled">B8G8R8A8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8G8422Unorm">B8G8R8G8422Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Sint">B8G8R8Sint</td>
+        <td><p>8-bit-per-channel signed integer blue/green/red channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Snorm">B8G8R8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point blue/green/red channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Srgb">B8G8R8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Sscaled">B8G8R8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point blue/green/red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Uint">B8G8R8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer blue/green/red channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Unorm">B8G8R8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_B8G8R8Uscaled">B8G8R8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point blue/green/red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc1RgbSrgbBlock">Bc1RgbSrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel and 5 bits of blue channel. Using BC1 texture compression (also known as S3TC DXT1).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc1RgbUnormBlock">Bc1RgbUnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel and 5 bits of blue channel. Using BC1 texture compression (also known as S3TC DXT1).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc1RgbaSrgbBlock">Bc1RgbaSrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 1 bit of alpha channel. Using BC1 texture compression (also known as S3TC DXT1).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc1RgbaUnormBlock">Bc1RgbaUnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 1 bit of alpha channel. Using BC1 texture compression (also known as S3TC DXT1).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc2SrgbBlock">Bc2SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 4 bits of alpha channel. Using BC2 texture compression (also known as S3TC DXT3).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc2UnormBlock">Bc2UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 4 bits of alpha channel. Using BC2 texture compression (also known as S3TC DXT3).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc3SrgbBlock">Bc3SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 8 bits of alpha channel. Using BC3 texture compression (also known as S3TC DXT5).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc3UnormBlock">Bc3UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 8 bits of alpha channel. Using BC3 texture compression (also known as S3TC DXT5).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc4SnormBlock">Bc4SnormBlock</td>
+        <td><p>VRAM-compressed signed red channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range. The format's precision is 8 bits of red channel. Using BC4 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc4UnormBlock">Bc4UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 8 bits of red channel. Using BC4 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc5SnormBlock">Bc5SnormBlock</td>
+        <td><p>VRAM-compressed signed red/green channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range. The format's precision is 8 bits of red channel and 8 bits of green channel. Using BC5 texture compression (also known as S3TC RGTC).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc5UnormBlock">Bc5UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is 8 bits of red channel and 8 bits of green channel. Using BC5 texture compression (also known as S3TC RGTC).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc6HSfloatBlock">Bc6HSfloatBlock</td>
+        <td><p>VRAM-compressed signed red/green/blue channel data format with the floating-point value stored as-is. The format's precision is between 4 and 7 bits for the red/green/blue channels and between 0 and 8 bits for the alpha channel. Using BC7 texture compression (also known as BPTC HDR).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc6HUfloatBlock">Bc6HUfloatBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue channel data format with the floating-point value stored as-is. The format's precision is 8 bits of red channel and 8 bits of green channel. Using BC6H texture compression (also known as BPTC HDR).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc7SrgbBlock">Bc7SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is between 4 and 7 bits for the red/green/blue channels and between 0 and 8 bits for the alpha channel. Also known as BPTC LDR.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Bc7UnormBlock">Bc7UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. The format's precision is between 4 and 7 bits for the red/green/blue channels and between 0 and 8 bits for the alpha channel. Also known as BPTC LDR.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_D16Unorm">D16Unorm</td>
+        <td><p>16-bit unsigned floating-point depth data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_D16UnormS8Uint">D16UnormS8Uint</td>
+        <td><p>16-bit unsigned floating-point depth data format with normalized value, plus 8 bits of stencil in unsigned integer format. Values for depth are in the <code>[0.0, 1.0]</code> range. Values for stencil are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_D24UnormS8Uint">D24UnormS8Uint</td>
+        <td><p>24-bit unsigned floating-point depth data format with normalized value, plus 8 bits of stencil in unsigned integer format. Values for depth are in the <code>[0.0, 1.0]</code> range. Values for stencil are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_D32Sfloat">D32Sfloat</td>
+        <td><p>32-bit signed floating-point depth data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_D32SfloatS8Uint">D32SfloatS8Uint</td>
+        <td><p>32-bit signed floating-point depth data format with the value stored as-is, plus 8 bits of stencil in unsigned integer format. Values for stencil are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_E5B9G9R9UfloatPack32">E5B9G9R9UfloatPack32</td>
+        <td><p>Unsigned floating-point exposure/blue/green/red data format with the value stored as-is, packed in 32 bits. The format's precision is 5 bits of exposure, 9 bits of blue channel, 9 bits of green channel and 9 bits of red channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_EacR11G11SnormBlock">EacR11G11SnormBlock</td>
+        <td><p>11-bit VRAM-compressed signed red/green channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_EacR11G11UnormBlock">EacR11G11UnormBlock</td>
+        <td><p>11-bit VRAM-compressed unsigned red/green channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_EacR11SnormBlock">EacR11SnormBlock</td>
+        <td><p>11-bit VRAM-compressed signed red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_EacR11UnormBlock">EacR11UnormBlock</td>
+        <td><p>11-bit VRAM-compressed unsigned red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8A1SrgbBlock">Etc2R8G8B8A1SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. Red/green/blue use 8 bit of precision each, with alpha using 1 bit of precision. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8A1UnormBlock">Etc2R8G8B8A1UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Red/green/blue use 8 bit of precision each, with alpha using 1 bit of precision. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8A8SrgbBlock">Etc2R8G8B8A8SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. Red/green/blue use 8 bits of precision each, with alpha using 8 bits of precision. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8A8UnormBlock">Etc2R8G8B8A8UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Red/green/blue use 8 bits of precision each, with alpha using 8 bits of precision. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8SrgbBlock">Etc2R8G8B8SrgbBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Etc2R8G8B8UnormBlock">Etc2R8G8B8UnormBlock</td>
+        <td><p>VRAM-compressed unsigned red/green/blue channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Using ETC2 texture compression.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6G10X6R10X6422Unorm4Pack16">G10X6B10X6G10X6R10X6422Unorm4Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/green/red channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6R10X62Plane420Unorm3Pack16">G10X6B10X6R10X62Plane420Unorm3Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6R10X62Plane422Unorm3Pack16">G10X6B10X6R10X62Plane422Unorm3Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6R10X63Plane420Unorm3Pack16">G10X6B10X6R10X63Plane420Unorm3Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6R10X63Plane422Unorm3Pack16">G10X6B10X6R10X63Plane422Unorm3Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G10X6B10X6R10X63Plane444Unorm3Pack16">G10X6B10X6R10X63Plane444Unorm3Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4G12X4R12X4422Unorm4Pack16">G12X4B12X4G12X4R12X4422Unorm4Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/green/red channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4R12X42Plane420Unorm3Pack16">G12X4B12X4R12X42Plane420Unorm3Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4R12X42Plane422Unorm3Pack16">G12X4B12X4R12X42Plane422Unorm3Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4R12X43Plane420Unorm3Pack16">G12X4B12X4R12X43Plane420Unorm3Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4R12X43Plane422Unorm3Pack16">G12X4B12X4R12X43Plane422Unorm3Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G12X4B12X4R12X43Plane444Unorm3Pack16">G12X4B12X4R12X43Plane444Unorm3Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16G16R16422Unorm">G16B16G16R16422Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16R162Plane420Unorm">G16B16R162Plane420Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 2 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16R162Plane422Unorm">G16B16R162Plane422Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16R163Plane420Unorm">G16B16R163Plane420Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 2 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16R163Plane422Unorm">G16B16R163Plane422Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G16B16R163Plane444Unorm">G16B16R163Plane444Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8G8R8422Unorm">G8B8G8R8422Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8R82Plane420Unorm">G8B8R82Plane420Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8R82Plane422Unorm">G8B8R82Plane422Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue/red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8R83Plane420Unorm">G8B8R83Plane420Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 3 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8R83Plane422Unorm">G8B8R83Plane422Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue + red). Values are in the <code>[0.0, 1.0]</code> range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_G8B8R83Plane444Unorm">G8B8R83Plane444Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 3 separate planes. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_Max">Max</td>
+        <td><p>Represents the size of the <a class="xref" href="Godot.RenderingDevice.DataFormat.html">RenderingDevice.DataFormat</a> enum.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R10X6G10X6B10X6A10X6Unorm4Pack16">R10X6G10X6B10X6A10X6Unorm4Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point red/green/blue/alpha channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R10X6G10X6Unorm2Pack16">R10X6G10X6Unorm2Pack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 2×16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R10X6UnormPack16">R10X6UnormPack16</td>
+        <td><p>10-bit-per-channel unsigned floating-point red channel data with normalized value, plus 6 unused bits, packed in 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R12X4G12X4B12X4A12X4Unorm4Pack16">R12X4G12X4B12X4A12X4Unorm4Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point red/green/blue/alpha channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R12X4G12X4Unorm2Pack16">R12X4G12X4Unorm2Pack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 2×16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R12X4UnormPack16">R12X4UnormPack16</td>
+        <td><p>12-bit-per-channel unsigned floating-point red channel data with normalized value, plus 6 unused bits, packed in 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Sfloat">R16G16B16A16Sfloat</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Sint">R16G16B16A16Sint</td>
+        <td><p>16-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the <code>[-32767, 32767]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Snorm">R16G16B16A16Snorm</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Sscaled">R16G16B16A16Sscaled</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-32767.0, 32767.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Uint">R16G16B16A16Uint</td>
+        <td><p>16-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the <code>[0.0, 65535]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Unorm">R16G16B16A16Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16A16Uscaled">R16G16B16A16Uscaled</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 65535.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Sfloat">R16G16B16Sfloat</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Sint">R16G16B16Sint</td>
+        <td><p>16-bit-per-channel signed integer red/green/blue channel data format. Values are in the <code>[-32767, 32767]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Snorm">R16G16B16Snorm</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Sscaled">R16G16B16Sscaled</td>
+        <td><p>16-bit-per-channel signed floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-32767.0, 32767.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Uint">R16G16B16Uint</td>
+        <td><p>16-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the <code>[0.0, 65535]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Unorm">R16G16B16Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green/blue channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16B16Uscaled">R16G16B16Uscaled</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 65535.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Sfloat">R16G16Sfloat</td>
+        <td><p>16-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Sint">R16G16Sint</td>
+        <td><p>16-bit-per-channel signed integer red/green channel data format. Values are in the <code>[-32767, 32767]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Snorm">R16G16Snorm</td>
+        <td><p>16-bit-per-channel signed floating-point red/green channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Sscaled">R16G16Sscaled</td>
+        <td><p>16-bit-per-channel signed floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-32767.0, 32767.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Uint">R16G16Uint</td>
+        <td><p>16-bit-per-channel unsigned integer red/green channel data format. Values are in the <code>[0.0, 65535]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Unorm">R16G16Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16G16Uscaled">R16G16Uscaled</td>
+        <td><p>16-bit-per-channel unsigned floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 65535.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Sfloat">R16Sfloat</td>
+        <td><p>16-bit-per-channel signed floating-point red channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Sint">R16Sint</td>
+        <td><p>16-bit-per-channel signed integer red channel data format. Values are in the <code>[-32767, 32767]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Snorm">R16Snorm</td>
+        <td><p>16-bit-per-channel signed floating-point red channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Sscaled">R16Sscaled</td>
+        <td><p>16-bit-per-channel signed floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-32767.0, 32767.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Uint">R16Uint</td>
+        <td><p>16-bit-per-channel unsigned integer red channel data format. Values are in the <code>[0.0, 65535]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Unorm">R16Unorm</td>
+        <td><p>16-bit-per-channel unsigned floating-point red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R16Uscaled">R16Uscaled</td>
+        <td><p>16-bit-per-channel unsigned floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 65535.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32A32Sfloat">R32G32B32A32Sfloat</td>
+        <td><p>32-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32A32Sint">R32G32B32A32Sint</td>
+        <td><p>32-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the <code>[2^31 + 1, 2^31 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32A32Uint">R32G32B32A32Uint</td>
+        <td><p>32-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the <code>[0, 2^32 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32Sfloat">R32G32B32Sfloat</td>
+        <td><p>32-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32Sint">R32G32B32Sint</td>
+        <td><p>32-bit-per-channel signed integer red/green/blue channel data format. Values are in the <code>[2^31 + 1, 2^31 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32B32Uint">R32G32B32Uint</td>
+        <td><p>32-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the <code>[0, 2^32 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32Sfloat">R32G32Sfloat</td>
+        <td><p>32-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32Sint">R32G32Sint</td>
+        <td><p>32-bit-per-channel signed integer red/green channel data format. Values are in the <code>[2^31 + 1, 2^31 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32G32Uint">R32G32Uint</td>
+        <td><p>32-bit-per-channel unsigned integer red/green channel data format. Values are in the <code>[0, 2^32 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32Sfloat">R32Sfloat</td>
+        <td><p>32-bit-per-channel signed floating-point red channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32Sint">R32Sint</td>
+        <td><p>32-bit-per-channel signed integer red channel data format. Values are in the <code>[2^31 + 1, 2^31 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R32Uint">R32Uint</td>
+        <td><p>32-bit-per-channel unsigned integer red channel data format. Values are in the <code>[0, 2^32 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R4G4B4A4UnormPack16">R4G4B4A4UnormPack16</td>
+        <td><p>4-bit-per-channel red/green/blue/alpha channel data format, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R4G4UnormPack8">R4G4UnormPack8</td>
+        <td><p>4-bit-per-channel red/green channel data format, packed into 8 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+<p><b>Note:</b> More information on all data formats can be found on the <a href="https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html#_identification_of_formats">Identification of formats</a> section of the Vulkan specification, as well as the <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkFormat.html">VkFormat</a> enum.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R5G5B5A1UnormPack16">R5G5B5A1UnormPack16</td>
+        <td><p>Red/green/blue/alpha channel data format with 5 bits of red, 6 bits of green, 5 bits of blue and 1 bit of alpha, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R5G6B5UnormPack16">R5G6B5UnormPack16</td>
+        <td><p>Red/green/blue channel data format with 5 bits of red, 6 bits of green and 5 bits of blue, packed into 16 bits. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64A64Sfloat">R64G64B64A64Sfloat</td>
+        <td><p>64-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64A64Sint">R64G64B64A64Sint</td>
+        <td><p>64-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the <code>[2^63 + 1, 2^63 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64A64Uint">R64G64B64A64Uint</td>
+        <td><p>64-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the <code>[0, 2^64 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64Sfloat">R64G64B64Sfloat</td>
+        <td><p>64-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64Sint">R64G64B64Sint</td>
+        <td><p>64-bit-per-channel signed integer red/green/blue channel data format. Values are in the <code>[2^63 + 1, 2^63 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64B64Uint">R64G64B64Uint</td>
+        <td><p>64-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the <code>[0, 2^64 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64Sfloat">R64G64Sfloat</td>
+        <td><p>64-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64Sint">R64G64Sint</td>
+        <td><p>64-bit-per-channel signed integer red/green channel data format. Values are in the <code>[2^63 + 1, 2^63 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64G64Uint">R64G64Uint</td>
+        <td><p>64-bit-per-channel unsigned integer red/green channel data format. Values are in the <code>[0, 2^64 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64Sfloat">R64Sfloat</td>
+        <td><p>64-bit-per-channel signed floating-point red channel data format with the value stored as-is.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64Sint">R64Sint</td>
+        <td><p>64-bit-per-channel signed integer red channel data format. Values are in the <code>[2^63 + 1, 2^63 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R64Uint">R64Uint</td>
+        <td><p>64-bit-per-channel unsigned integer red channel data format. Values are in the <code>[0, 2^64 - 1]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Sint">R8G8B8A8Sint</td>
+        <td><p>8-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Snorm">R8G8B8A8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point red/green/blue/alpha channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Srgb">R8G8B8A8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Sscaled">R8G8B8A8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Uint">R8G8B8A8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Unorm">R8G8B8A8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8A8Uscaled">R8G8B8A8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Sint">R8G8B8Sint</td>
+        <td><p>8-bit-per-channel signed integer red/green/blue channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Snorm">R8G8B8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point red/green/blue channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Srgb">R8G8B8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue/blue channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Sscaled">R8G8B8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Uint">R8G8B8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Unorm">R8G8B8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8B8Uscaled">R8G8B8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Sint">R8G8Sint</td>
+        <td><p>8-bit-per-channel signed integer red/green channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Snorm">R8G8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point red/green channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Srgb">R8G8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Sscaled">R8G8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Uint">R8G8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer red/green channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Unorm">R8G8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8G8Uscaled">R8G8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Sint">R8Sint</td>
+        <td><p>8-bit-per-channel signed integer red channel data format. Values are in the <code>[-127, 127]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Snorm">R8Snorm</td>
+        <td><p>8-bit-per-channel signed floating-point red channel data format with normalized value. Values are in the <code>[-1.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Srgb">R8Srgb</td>
+        <td><p>8-bit-per-channel unsigned floating-point red channel data format with normalized value and non-linear sRGB encoding. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Sscaled">R8Sscaled</td>
+        <td><p>8-bit-per-channel signed floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[-127.0, 127.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Uint">R8Uint</td>
+        <td><p>8-bit-per-channel unsigned integer red channel data format. Values are in the <code>[0, 255]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Unorm">R8Unorm</td>
+        <td><p>8-bit-per-channel unsigned floating-point red channel data format with normalized value. Values are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_R8Uscaled">R8Uscaled</td>
+        <td><p>8-bit-per-channel unsigned floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the <code>[0.0, 255.0]</code> range.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_S8Uint">S8Uint</td>
+        <td><p>8-bit unsigned integer stencil data format.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_RenderingDevice_DataFormat_X8D24UnormPack32">X8D24UnormPack32</td>
+        <td><p>24-bit unsigned floating-point depth data format with normalized value, plus 8 unused bits, packed in 32 bits. Values for depth are in the <code>[0.0, 1.0]</code> range.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4356 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StringExtensions
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StringExtensions
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.StringExtensions">
+
+
+
+  <h1 id="Godot_StringExtensions" data-uid="Godot.StringExtensions" class="text-break">Class StringExtensions
+</h1>
+  <div class="markdown level0 summary"><p>Extension methods to manipulate strings.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">StringExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_StringExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_StringExtensions_Bigrams_" data-uid="Godot.StringExtensions.Bigrams*"></a>
+  <h4 id="Godot_StringExtensions_Bigrams_System_String_" data-uid="Godot.StringExtensions.Bigrams(System.String)">Bigrams(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the bigrams (pairs of consecutive letters) of this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Bigrams(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><p>The bigrams of this string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_BinToInt_" data-uid="Godot.StringExtensions.BinToInt*"></a>
+  <h4 id="Godot_StringExtensions_BinToInt_System_String_" data-uid="Godot.StringExtensions.BinToInt(System.String)">BinToInt(string)</h4>
+  <div class="markdown level1 summary"><p>Converts a string containing a binary number into an integer.
+Binary strings can either be prefixed with <code>0b</code> or not,
+and they can also start with a <code>-</code> before the optional prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinToInt(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The converted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_CEscape_" data-uid="Godot.StringExtensions.CEscape*"></a>
+  <h4 id="Godot_StringExtensions_CEscape_System_String_" data-uid="Godot.StringExtensions.CEscape(System.String)">CEscape(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with special characters escaped using the C language standard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CEscape(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to escape.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The escaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_CUnescape_" data-uid="Godot.StringExtensions.CUnescape*"></a>
+  <h4 id="Godot_StringExtensions_CUnescape_System_String_" data-uid="Godot.StringExtensions.CUnescape(System.String)">CUnescape(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with escaped characters replaced by their meanings
+according to the C language standard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CUnescape(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to unescape.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The unescaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Capitalize_" data-uid="Godot.StringExtensions.Capitalize*"></a>
+  <h4 id="Godot_StringExtensions_Capitalize_System_String_" data-uid="Godot.StringExtensions.Capitalize(System.String)">Capitalize(string)</h4>
+  <div class="markdown level1 summary"><p>Changes the case of some letters. Replace underscores with spaces, convert all letters
+to lowercase then capitalize first and every letter following the space character.
+For <code>capitalize camelCase mixed_with_underscores</code> it will return
+<code>Capitalize Camelcase Mixed With Underscores</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Capitalize(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to capitalize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The capitalized string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_CasecmpTo_" data-uid="Godot.StringExtensions.CasecmpTo*"></a>
+  <h4 id="Godot_StringExtensions_CasecmpTo_System_String_System_String_" data-uid="Godot.StringExtensions.CasecmpTo(System.String,System.String)">CasecmpTo(string, string)</h4>
+  <div class="markdown level1 summary"><p>Performs a case-sensitive comparison to another string, return -1 if less, 0 if equal and +1 if greater.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CasecmpTo(this string instance, string to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The other string to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>-1 if less, 0 if equal and +1 if greater.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_CasecmpTo_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_NocasecmpTo_System_String_System_String_">NocasecmpTo(string, string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_CompareTo_System_String_System_String_System_Boolean_">CompareTo(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_CompareTo_" data-uid="Godot.StringExtensions.CompareTo*"></a>
+  <h4 id="Godot_StringExtensions_CompareTo_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.CompareTo(System.String,System.String,System.Boolean)">CompareTo(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Performs a comparison to another string, return -1 if less, 0 if equal and +1 if greater.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareTo(this string instance, string to, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The other string to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the comparison will be case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>-1 if less, 0 if equal and +1 if greater.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Count_" data-uid="Godot.StringExtensions.Count*"></a>
+  <h4 id="Godot_StringExtensions_Count_System_String_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Count(System.String,System.String,System.Int32,System.Int32,System.Boolean)">Count(string, string, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of occurrences of substring <code class="paramref">what</code> in the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(this string instance, string what, int from = 0, int to = 0, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string where the substring will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring that will be counted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Index to start searching from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Index to stop searching at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If the search is case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Number of occurrences of the substring in the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_CountN_" data-uid="Godot.StringExtensions.CountN*"></a>
+  <h4 id="Godot_StringExtensions_CountN_System_String_System_String_System_Int32_System_Int32_" data-uid="Godot.StringExtensions.CountN(System.String,System.String,System.Int32,System.Int32)">CountN(string, string, int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of occurrences of substring <code class="paramref">what</code> (ignoring case)
+between <code class="paramref">from</code> and <code class="paramref">to</code> positions. If <code class="paramref">from</code>
+and <code class="paramref">to</code> equals 0 the whole string will be used. If only <code class="paramref">to</code>
+equals 0 the remained substring will be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CountN(this string instance, string what, int from = 0, int to = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string where the substring will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring that will be counted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Index to start searching from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Index to stop searching at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Number of occurrences of the substring in the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Dedent_" data-uid="Godot.StringExtensions.Dedent*"></a>
+  <h4 id="Godot_StringExtensions_Dedent_System_String_" data-uid="Godot.StringExtensions.Dedent(System.String)">Dedent(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with indentation (leading tabs and spaces) removed.
+See also <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Indent_System_String_System_String_">Indent(string, string)</a> to add indentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Dedent(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to remove the indentation from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string with the indentation removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Find_" data-uid="Godot.StringExtensions.Find*"></a>
+  <h4 id="Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Find(System.String,System.Char,System.Int32,System.Boolean)">Find(string, char, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Find the first occurrence of a char. Optionally, the search starting position can be passed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Find(this string instance, char what, int from = 0, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The search starting position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the search is case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The first instance of the char, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_">Find(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_FindN_System_String_System_String_System_Int32_">FindN(string, string, int)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_">RFind(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_">RFindN(string, string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Find_" data-uid="Godot.StringExtensions.Find*"></a>
+  <h4 id="Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Find(System.String,System.String,System.Int32,System.Boolean)">Find(string, string, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the first occurrence of the specified string in this instance,
+or <code>-1</code>. Optionally, the starting search index can be specified, continuing
+to the end of the string.
+Note: If you just want to know whether a string contains a substring, use the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.contains#system-string-contains(system-string)">Contains(string)</a> method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Find(this string instance, string what, int from = 0, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The search starting position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the search is case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The starting position of the substring, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_">Find(string, char, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_FindN_System_String_System_String_System_Int32_">FindN(string, string, int)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_">RFind(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_">RFindN(string, string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_FindN_" data-uid="Godot.StringExtensions.FindN*"></a>
+  <h4 id="Godot_StringExtensions_FindN_System_String_System_String_System_Int32_" data-uid="Godot.StringExtensions.FindN(System.String,System.String,System.Int32)">FindN(string, string, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the first case-insensitive occurrence of the specified string in this instance,
+or <code>-1</code>. Optionally, the starting search index can be specified, continuing
+to the end of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindN(this string instance, string what, int from = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The search starting position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The starting position of the substring, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_FindN_System_String_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_">Find(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_">Find(string, char, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_">RFind(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_">RFindN(string, string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_GetBaseDir_" data-uid="Godot.StringExtensions.GetBaseDir*"></a>
+  <h4 id="Godot_StringExtensions_GetBaseDir_System_String_" data-uid="Godot.StringExtensions.GetBaseDir(System.String)">GetBaseDir(string)</h4>
+  <div class="markdown level1 summary"><p>If the string is a path to a file, return the base directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBaseDir(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The path to a file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_GetBaseDir_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseName_System_String_">GetBaseName(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetExtension_System_String_">GetExtension(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetFile_System_String_">GetFile(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_GetBaseName_" data-uid="Godot.StringExtensions.GetBaseName*"></a>
+  <h4 id="Godot_StringExtensions_GetBaseName_System_String_" data-uid="Godot.StringExtensions.GetBaseName(System.String)">GetBaseName(string)</h4>
+  <div class="markdown level1 summary"><p>If the string is a path to a file, return the path to the file without the extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBaseName(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The path to a file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The path to the file without the extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_GetBaseName_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetExtension_System_String_">GetExtension(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseDir_System_String_">GetBaseDir(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetFile_System_String_">GetFile(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_GetExtension_" data-uid="Godot.StringExtensions.GetExtension*"></a>
+  <h4 id="Godot_StringExtensions_GetExtension_System_String_" data-uid="Godot.StringExtensions.GetExtension(System.String)">GetExtension(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the extension without the leading period character (<code>.</code>)
+if the string is a valid file name or path. If the string does not contain
+an extension, returns an empty string instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExtension(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The path to a file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The extension of the file or an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_GetExtension_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">GD.Print("/path/to/file.txt".GetExtension())  // "txt"
+GD.Print("file.txt".GetExtension())  // "txt"
+GD.Print("file.sample.txt".GetExtension())  // "txt"
+GD.Print(".txt".GetExtension())  // "txt"
+GD.Print("file.txt.".GetExtension())  // "" (empty string)
+GD.Print("file.txt..".GetExtension())  // "" (empty string)
+GD.Print("txt".GetExtension())  // "" (empty string)
+GD.Print("".GetExtension())  // "" (empty string)</code></pre>
+
+  <h5 id="Godot_StringExtensions_GetExtension_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseName_System_String_">GetBaseName(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseDir_System_String_">GetBaseDir(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetFile_System_String_">GetFile(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_GetFile_" data-uid="Godot.StringExtensions.GetFile*"></a>
+  <h4 id="Godot_StringExtensions_GetFile_System_String_" data-uid="Godot.StringExtensions.GetFile(System.String)">GetFile(string)</h4>
+  <div class="markdown level1 summary"><p>If the string is a path to a file, return the file and ignore the base directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFile(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The path to a file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_GetFile_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseName_System_String_">GetBaseName(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetExtension_System_String_">GetExtension(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetBaseDir_System_String_">GetBaseDir(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_GetStringFromAscii_" data-uid="Godot.StringExtensions.GetStringFromAscii*"></a>
+  <h4 id="Godot_StringExtensions_GetStringFromAscii_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromAscii(System.Byte[])">GetStringFromAscii(byte[])</h4>
+  <div class="markdown level1 summary"><p>Converts ASCII encoded array to string.
+Fast alternative to <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetStringFromUtf8_System_Byte___">GetStringFromUtf8(byte[])</a> if the
+content is ASCII-only. Unlike the UTF-8 function this function
+maps every byte to a character in the array. Multibyte sequences
+will not be interpreted correctly. For parsing user input always
+use <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetStringFromUtf8_System_Byte___">GetStringFromUtf8(byte[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromAscii(this byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>A byte array of ASCII characters (on the range of 0-127).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string created from the bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf16_" data-uid="Godot.StringExtensions.GetStringFromUtf16*"></a>
+  <h4 id="Godot_StringExtensions_GetStringFromUtf16_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf16(System.Byte[])">GetStringFromUtf16(byte[])</h4>
+  <div class="markdown level1 summary"><p>Converts UTF-16 encoded array to string using the little endian byte order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf16(this byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>A byte array of UTF-16 characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string created from the bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf32_" data-uid="Godot.StringExtensions.GetStringFromUtf32*"></a>
+  <h4 id="Godot_StringExtensions_GetStringFromUtf32_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf32(System.Byte[])">GetStringFromUtf32(byte[])</h4>
+  <div class="markdown level1 summary"><p>Converts UTF-32 encoded array to string using the little endian byte order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf32(this byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>A byte array of UTF-32 characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string created from the bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf8_" data-uid="Godot.StringExtensions.GetStringFromUtf8*"></a>
+  <h4 id="Godot_StringExtensions_GetStringFromUtf8_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf8(System.Byte[])">GetStringFromUtf8(byte[])</h4>
+  <div class="markdown level1 summary"><p>Converts UTF-8 encoded array to string.
+Slower than <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_GetStringFromAscii_System_Byte___">GetStringFromAscii(byte[])</a> but supports UTF-8
+encoded data. Use this function if you are unsure about the
+source of the data. For user input this function
+should always be preferred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf8(this byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>A byte array of UTF-8 characters (a character may take up multiple bytes).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string created from the bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Hash_" data-uid="Godot.StringExtensions.Hash*"></a>
+  <h4 id="Godot_StringExtensions_Hash_System_String_" data-uid="Godot.StringExtensions.Hash(System.String)">Hash(string)</h4>
+  <div class="markdown level1 summary"><p>Hash the string and return a 32 bits unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Hash(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><p>The calculated hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_HexDecode_" data-uid="Godot.StringExtensions.HexDecode*"></a>
+  <h4 id="Godot_StringExtensions_HexDecode_System_String_" data-uid="Godot.StringExtensions.HexDecode(System.String)">HexDecode(string)</h4>
+  <div class="markdown level1 summary"><p>Decodes a hexadecimal string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] HexDecode(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The hexadecimal string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The byte array representation of this string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_HexEncode_" data-uid="Godot.StringExtensions.HexEncode*"></a>
+  <h4 id="Godot_StringExtensions_HexEncode_System_Byte___" data-uid="Godot.StringExtensions.HexEncode(System.Byte[])">HexEncode(byte[])</h4>
+  <div class="markdown level1 summary"><p>Returns a hexadecimal representation of this byte array as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HexEncode(this byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>The byte array to encode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The hexadecimal representation of this byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_HexToInt_" data-uid="Godot.StringExtensions.HexToInt*"></a>
+  <h4 id="Godot_StringExtensions_HexToInt_System_String_" data-uid="Godot.StringExtensions.HexToInt(System.String)">HexToInt(string)</h4>
+  <div class="markdown level1 summary"><p>Converts a string containing a hexadecimal number into an integer.
+Hexadecimal strings can either be prefixed with <code>0x</code> or not,
+and they can also start with a <code>-</code> before the optional prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HexToInt(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The converted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Indent_" data-uid="Godot.StringExtensions.Indent*"></a>
+  <h4 id="Godot_StringExtensions_Indent_System_String_System_String_" data-uid="Godot.StringExtensions.Indent(System.String,System.String)">Indent(string, string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with lines indented with <code class="paramref">prefix</code>.
+For example, the string can be indented with two tabs using <code>&quot;\t\t&quot;</code>,
+or four spaces using <code>&quot;    &quot;</code>. The prefix can be any string so it can
+also be used to comment out strings with e.g. <code>&quot;// </code>.
+See also <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Dedent_System_String_">Dedent(string)</a> to remove indentation.
+Note: Empty lines are kept empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Indent(this string instance, string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to add indentation to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>The string to use as indentation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string with indentation added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_IsAbsolutePath_" data-uid="Godot.StringExtensions.IsAbsolutePath*"></a>
+  <h4 id="Godot_StringExtensions_IsAbsolutePath_System_String_" data-uid="Godot.StringExtensions.IsAbsolutePath(System.String)">IsAbsolutePath(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a path to a file or
+directory and its starting point is explicitly defined. This includes
+<code>res://</code>, <code>user://</code>, <code>C:&lt;/code&gt;, <code>/</code>, etc.</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAbsolutePath(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string is an absolute path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsAbsolutePath_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_IsRelativePath_System_String_">IsRelativePath(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_IsRelativePath_" data-uid="Godot.StringExtensions.IsRelativePath*"></a>
+  <h4 id="Godot_StringExtensions_IsRelativePath_System_String_" data-uid="Godot.StringExtensions.IsRelativePath(System.String)">IsRelativePath(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a path to a file or
+directory and its starting point is implicitly defined within the
+context it is being used. The starting point may refer to the current
+directory (<code>./</code>), or the current <a class="xref" href="Godot.Node.html">Node</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRelativePath(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string is a relative path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsRelativePath_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_IsAbsolutePath_System_String_">IsAbsolutePath(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_IsSubsequenceOf_" data-uid="Godot.StringExtensions.IsSubsequenceOf*"></a>
+  <h4 id="Godot_StringExtensions_IsSubsequenceOf_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.IsSubsequenceOf(System.String,System.String,System.Boolean)">IsSubsequenceOf(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Check whether this string is a subsequence of the given string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSubsequenceOf(this string instance, string text, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The subsequence to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The string that contains the subsequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the check is case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string is a subsequence of the given string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsSubsequenceOf_System_String_System_String_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_IsSubsequenceOfN_System_String_System_String_">IsSubsequenceOfN(string, string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_IsSubsequenceOfN_" data-uid="Godot.StringExtensions.IsSubsequenceOfN*"></a>
+  <h4 id="Godot_StringExtensions_IsSubsequenceOfN_System_String_System_String_" data-uid="Godot.StringExtensions.IsSubsequenceOfN(System.String,System.String)">IsSubsequenceOfN(string, string)</h4>
+  <div class="markdown level1 summary"><p>Check whether this string is a subsequence of the given string, ignoring case differences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSubsequenceOfN(this string instance, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The subsequence to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The string that contains the subsequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string is a subsequence of the given string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsSubsequenceOfN_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_IsSubsequenceOf_System_String_System_String_System_Boolean_">IsSubsequenceOf(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_IsValidFileName_" data-uid="Godot.StringExtensions.IsValidFileName*"></a>
+  <h4 id="Godot_StringExtensions_IsValidFileName_System_String_" data-uid="Godot.StringExtensions.IsValidFileName(System.String)">IsValidFileName(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string is free from characters that
+aren't allowed in file names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFileName(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_IsValidFloat_" data-uid="Godot.StringExtensions.IsValidFloat*"></a>
+  <h4 id="Godot_StringExtensions_IsValidFloat_System_String_" data-uid="Godot.StringExtensions.IsValidFloat(System.String)">IsValidFloat(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string contains a valid <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types">float</a>.
+This is inclusive of integers, and also supports exponents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFloat(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid floating point number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsValidFloat_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">GD.Print("1.7".IsValidFloat())  // Prints "True"
+GD.Print("24".IsValidFloat())  // Prints "True"
+GD.Print("7e3".IsValidFloat())  // Prints "True"
+GD.Print("Hello".IsValidFloat())  // Prints "False"</code></pre>
+
+
+
+  <a id="Godot_StringExtensions_IsValidHexNumber_" data-uid="Godot.StringExtensions.IsValidHexNumber*"></a>
+  <h4 id="Godot_StringExtensions_IsValidHexNumber_System_String_System_Boolean_" data-uid="Godot.StringExtensions.IsValidHexNumber(System.String,System.Boolean)">IsValidHexNumber(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string contains a valid hexadecimal number.
+If <code class="paramref">withPrefix</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, then a validity of the
+hexadecimal number is determined by <code>0x</code> prefix, for instance: <code>0xDEADC0DE</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidHexNumber(this string instance, bool withPrefix = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">withPrefix</span></td>
+        <td><p>If the string must contain the <code>0x</code> prefix to be valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid hexadecimal number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_IsValidHtmlColor_" data-uid="Godot.StringExtensions.IsValidHtmlColor*"></a>
+  <h4 id="Godot_StringExtensions_IsValidHtmlColor_System_String_" data-uid="Godot.StringExtensions.IsValidHtmlColor(System.String)">IsValidHtmlColor(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string contains a valid color in hexadecimal
+HTML notation. Other HTML notations such as named colors or <code>hsl()</code> aren't
+considered valid by this method and will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidHtmlColor(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid HTML color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_IsValidIPAddress_" data-uid="Godot.StringExtensions.IsValidIPAddress*"></a>
+  <h4 id="Godot_StringExtensions_IsValidIPAddress_System_String_" data-uid="Godot.StringExtensions.IsValidIPAddress(System.String)">IsValidIPAddress(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string contains only a well-formatted
+IPv4 or IPv6 address. This method considers reserved IP addresses such as
+<code>0.0.0.0</code> as valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidIPAddress(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid IP address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_IsValidIdentifier_" data-uid="Godot.StringExtensions.IsValidIdentifier*"></a>
+  <h4 id="Godot_StringExtensions_IsValidIdentifier_System_String_" data-uid="Godot.StringExtensions.IsValidIdentifier(System.String)">IsValidIdentifier(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string is a valid identifier.
+A valid identifier may contain only letters, digits and underscores (<code>_</code>)
+and the first character may not be a digit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidIdentifier(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsValidIdentifier_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">GD.Print("good_ident_1".IsValidIdentifier())  // Prints "True"
+GD.Print("1st_bad_ident".IsValidIdentifier())  // Prints "False"
+GD.Print("bad_ident_#2".IsValidIdentifier())  // Prints "False"</code></pre>
+
+
+
+  <a id="Godot_StringExtensions_IsValidInt_" data-uid="Godot.StringExtensions.IsValidInt*"></a>
+  <h4 id="Godot_StringExtensions_IsValidInt_System_String_" data-uid="Godot.StringExtensions.IsValidInt(System.String)">IsValidInt(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this string contains a valid <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">int</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidInt(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the string contains a valid integer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_IsValidInt_System_String__examples">Examples</h5>
+  <pre><code class="lang-csharp">GD.Print("7".IsValidInt())  // Prints "True"
+GD.Print("14.6".IsValidInt())  // Prints "False"
+GD.Print("L".IsValidInt())  // Prints "False"
+GD.Print("+3".IsValidInt())  // Prints "True"
+GD.Print("-12".IsValidInt())  // Prints "True"</code></pre>
+
+
+
+  <a id="Godot_StringExtensions_JSONEscape_" data-uid="Godot.StringExtensions.JSONEscape*"></a>
+  <h4 id="Godot_StringExtensions_JSONEscape_System_String_" data-uid="Godot.StringExtensions.JSONEscape(System.String)">JSONEscape(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with special characters escaped using the JSON standard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JSONEscape(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to escape.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The escaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Left_" data-uid="Godot.StringExtensions.Left*"></a>
+  <h4 id="Godot_StringExtensions_Left_System_String_System_Int32_" data-uid="Godot.StringExtensions.Left(System.String,System.Int32)">Left(string, int)</h4>
+  <div class="markdown level1 summary"><p>Returns an amount of characters from the left of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Left(this string instance, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The original string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position in the string where the left side ends.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The left side of the string from the given position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Left_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Right_System_String_System_Int32_">Right(string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Match_" data-uid="Godot.StringExtensions.Match*"></a>
+  <h4 id="Godot_StringExtensions_Match_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.Match(System.String,System.String,System.Boolean)">Match(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Do a simple case sensitive expression match, using ? and * wildcards
+(see <span class="xref">Godot.StringExtensions.ExprMatch(System.String,System.String,System.Boolean)</span>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Match(this string instance, string expr, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td><p>Expression to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the check will be case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the expression has any matches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Match_System_String_System_String_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_MatchN_System_String_System_String_">MatchN(string, string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_MatchN_" data-uid="Godot.StringExtensions.MatchN*"></a>
+  <h4 id="Godot_StringExtensions_MatchN_System_String_System_String_" data-uid="Godot.StringExtensions.MatchN(System.String,System.String)">MatchN(string, string)</h4>
+  <div class="markdown level1 summary"><p>Do a simple case insensitive expression match, using ? and * wildcards
+(see <span class="xref">Godot.StringExtensions.ExprMatch(System.String,System.String,System.Boolean)</span>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MatchN(this string instance, string expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td><p>Expression to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the expression has any matches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_MatchN_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Match_System_String_System_String_System_Boolean_">Match(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Md5Buffer_" data-uid="Godot.StringExtensions.Md5Buffer*"></a>
+  <h4 id="Godot_StringExtensions_Md5Buffer_System_String_" data-uid="Godot.StringExtensions.Md5Buffer(System.String)">Md5Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the MD5 hash of the string as an array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Md5Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The MD5 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Md5Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Md5Text_System_String_">Md5Text(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Md5Text_" data-uid="Godot.StringExtensions.Md5Text*"></a>
+  <h4 id="Godot_StringExtensions_Md5Text_System_String_" data-uid="Godot.StringExtensions.Md5Text(System.String)">Md5Text(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the MD5 hash of the string as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Md5Text(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The MD5 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Md5Text_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Md5Buffer_System_String_">Md5Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_NocasecmpTo_" data-uid="Godot.StringExtensions.NocasecmpTo*"></a>
+  <h4 id="Godot_StringExtensions_NocasecmpTo_System_String_System_String_" data-uid="Godot.StringExtensions.NocasecmpTo(System.String,System.String)">NocasecmpTo(string, string)</h4>
+  <div class="markdown level1 summary"><p>Perform a case-insensitive comparison to another string, return -1 if less, 0 if equal and +1 if greater.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NocasecmpTo(this string instance, string to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The other string to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>-1 if less, 0 if equal and +1 if greater.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_NocasecmpTo_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_CasecmpTo_System_String_System_String_">CasecmpTo(string, string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_CompareTo_System_String_System_String_System_Boolean_">CompareTo(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_PadDecimals_" data-uid="Godot.StringExtensions.PadDecimals*"></a>
+  <h4 id="Godot_StringExtensions_PadDecimals_System_String_System_Int32_" data-uid="Godot.StringExtensions.PadDecimals(System.String,System.Int32)">PadDecimals(string, int)</h4>
+  <div class="markdown level1 summary"><p>Format a number to have an exact number of <code class="paramref">digits</code>
+after the decimal point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadDecimals(this string instance, int digits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to pad.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">digits</span></td>
+        <td><p>Amount of digits after the decimal point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string padded with zeroes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_PadDecimals_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_PadZeros_System_String_System_Int32_">PadZeros(string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_PadZeros_" data-uid="Godot.StringExtensions.PadZeros*"></a>
+  <h4 id="Godot_StringExtensions_PadZeros_System_String_System_Int32_" data-uid="Godot.StringExtensions.PadZeros(System.String,System.Int32)">PadZeros(string, int)</h4>
+  <div class="markdown level1 summary"><p>Format a number to have an exact number of <code class="paramref">digits</code>
+before the decimal point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadZeros(this string instance, int digits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to pad.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">digits</span></td>
+        <td><p>Amount of digits before the decimal point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string padded with zeroes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_PadZeros_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_PadDecimals_System_String_System_Int32_">PadDecimals(string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_PathJoin_" data-uid="Godot.StringExtensions.PathJoin*"></a>
+  <h4 id="Godot_StringExtensions_PathJoin_System_String_System_String_" data-uid="Godot.StringExtensions.PathJoin(System.String,System.String)">PathJoin(string, string)</h4>
+  <div class="markdown level1 summary"><p>If the string is a path, this concatenates <code class="paramref">file</code>
+at the end of the string as a subpath.
+E.g. <code>&quot;this/is&quot;.PathJoin(&quot;path&quot;) == &quot;this/is/path&quot;</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PathJoin(this string instance, string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The path that will be concatenated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>File name to concatenate with the path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The concatenated path with the given file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_RFind_" data-uid="Godot.StringExtensions.RFind*"></a>
+  <h4 id="Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.RFind(System.String,System.String,System.Int32,System.Boolean)">RFind(string, string, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the last occurrence of the specified string in this instance,
+or <code>-1</code>. Optionally, the starting search index can be specified, continuing to
+the beginning of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RFind(this string instance, string what, int from = -1, bool caseSensitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to search in the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The position at which to start searching.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">caseSensitive</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the search is case sensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The position at which the substring was found, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_">Find(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_">Find(string, char, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_FindN_System_String_System_String_System_Int32_">FindN(string, string, int)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_">RFindN(string, string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_RFindN_" data-uid="Godot.StringExtensions.RFindN*"></a>
+  <h4 id="Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_" data-uid="Godot.StringExtensions.RFindN(System.String,System.String,System.Int32)">RFindN(string, string, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the last case-insensitive occurrence of the specified string in this instance,
+or <code>-1</code>. Optionally, the starting search index can be specified, continuing to
+the beginning of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RFindN(this string instance, string what, int from = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string that will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to search in the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The position at which to start searching.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The position at which the substring was found, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_RFindN_System_String_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_">Find(string, string, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_">Find(string, char, int, bool)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_FindN_System_String_System_String_System_Int32_">FindN(string, string, int)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_">RFind(string, string, int, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Replace_" data-uid="Godot.StringExtensions.Replace*"></a>
+  <h4 id="Godot_StringExtensions_Replace_System_String_System_String_System_String_" data-uid="Godot.StringExtensions.Replace(System.String,System.String,System.String)">Replace(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Replace occurrences of a substring for different ones inside the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Replace(this string instance, string what, string forwhat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to modify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to be replaced in the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">forwhat</span></td>
+        <td><p>The substring that replaces <code class="paramref">what</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string with the substring occurrences replaced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Replace_System_String_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ReplaceN_System_String_System_String_System_String_">ReplaceN(string, string, string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ReplaceN_" data-uid="Godot.StringExtensions.ReplaceN*"></a>
+  <h4 id="Godot_StringExtensions_ReplaceN_System_String_System_String_System_String_" data-uid="Godot.StringExtensions.ReplaceN(System.String,System.String,System.String)">ReplaceN(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Replace occurrences of a substring for different ones inside the string, but search case-insensitive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceN(this string instance, string what, string forwhat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to modify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">what</span></td>
+        <td><p>The substring to be replaced in the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">forwhat</span></td>
+        <td><p>The substring that replaces <code class="paramref">what</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string with the substring occurrences replaced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ReplaceN_System_String_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Replace_System_String_System_String_System_String_">Replace(string, string, string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Right_" data-uid="Godot.StringExtensions.Right*"></a>
+  <h4 id="Godot_StringExtensions_Right_System_String_System_Int32_" data-uid="Godot.StringExtensions.Right(System.String,System.Int32)">Right(string, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the right side of the string from a given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Right(this string instance, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The original string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position in the string from which the right side starts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The right side of the string from the given position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Right_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Left_System_String_System_Int32_">Left(string, int)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Sha1Buffer_" data-uid="Godot.StringExtensions.Sha1Buffer*"></a>
+  <h4 id="Godot_StringExtensions_Sha1Buffer_System_String_" data-uid="Godot.StringExtensions.Sha1Buffer(System.String)">Sha1Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the SHA-1 hash of the string as an array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Sha1Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The SHA-1 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Sha1Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Sha1Text_System_String_">Sha1Text(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Sha1Text_" data-uid="Godot.StringExtensions.Sha1Text*"></a>
+  <h4 id="Godot_StringExtensions_Sha1Text_System_String_" data-uid="Godot.StringExtensions.Sha1Text(System.String)">Sha1Text(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the SHA-1 hash of the string as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Sha1Text(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The SHA-1 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Sha1Text_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Sha1Buffer_System_String_">Sha1Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Sha256Buffer_" data-uid="Godot.StringExtensions.Sha256Buffer*"></a>
+  <h4 id="Godot_StringExtensions_Sha256Buffer_System_String_" data-uid="Godot.StringExtensions.Sha256Buffer(System.String)">Sha256Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the SHA-256 hash of the string as an array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Sha256Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The SHA-256 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Sha256Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Sha256Text_System_String_">Sha256Text(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Sha256Text_" data-uid="Godot.StringExtensions.Sha256Text*"></a>
+  <h4 id="Godot_StringExtensions_Sha256Text_System_String_" data-uid="Godot.StringExtensions.Sha256Text(System.String)">Sha256Text(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the SHA-256 hash of the string as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Sha256Text(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The SHA-256 hash of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Sha256Text_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Sha256Buffer_System_String_">Sha256Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_Similarity_" data-uid="Godot.StringExtensions.Similarity*"></a>
+  <h4 id="Godot_StringExtensions_Similarity_System_String_System_String_" data-uid="Godot.StringExtensions.Similarity(System.String,System.String)">Similarity(string, string)</h4>
+  <div class="markdown level1 summary"><p>Returns the similarity index of the text compared to this string.
+1 means totally similar and 0 means totally dissimilar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Similarity(this string instance, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The other string to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The similarity index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_SimplifyPath_" data-uid="Godot.StringExtensions.SimplifyPath*"></a>
+  <h4 id="Godot_StringExtensions_SimplifyPath_System_String_" data-uid="Godot.StringExtensions.SimplifyPath(System.String)">SimplifyPath(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a simplified canonical path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SimplifyPath(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Split_" data-uid="Godot.StringExtensions.Split*"></a>
+  <h4 id="Godot_StringExtensions_Split_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.Split(System.String,System.String,System.Boolean)">Split(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Split the string by a divisor string, return an array of the substrings.
+Example &quot;One,Two,Three&quot; will return [&quot;One&quot;,&quot;Two&quot;,&quot;Three&quot;] if split by &quot;,&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Split(this string instance, string divisor, bool allowEmpty = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to split.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">divisor</span></td>
+        <td><p>The divisor string that splits the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowEmpty</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the array may include empty strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><p>The array of strings split from the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_Split_System_String_System_String_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_SplitFloats_System_String_System_String_System_Boolean_">SplitFloats(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_SplitFloats_" data-uid="Godot.StringExtensions.SplitFloats*"></a>
+  <h4 id="Godot_StringExtensions_SplitFloats_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.SplitFloats(System.String,System.String,System.Boolean)">SplitFloats(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Split the string in floats by using a divisor string, return an array of the substrings.
+Example &quot;1,2.5,3&quot; will return [1,2.5,3] if split by &quot;,&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float[] SplitFloats(this string instance, string divisor, bool allowEmpty = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to split.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">divisor</span></td>
+        <td><p>The divisor string that splits the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowEmpty</span></td>
+        <td><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the array may include empty floats.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><p>The array of floats split from the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_SplitFloats_System_String_System_String_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_Split_System_String_System_String_System_Boolean_">Split(string, string, bool)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_StripEdges_" data-uid="Godot.StringExtensions.StripEdges*"></a>
+  <h4 id="Godot_StringExtensions_StripEdges_System_String_System_Boolean_System_Boolean_" data-uid="Godot.StringExtensions.StripEdges(System.String,System.Boolean,System.Boolean)">StripEdges(string, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string stripped of any non-printable character
+(including tabulations, spaces and line breaks) at the beginning and the end.
+The optional arguments are used to toggle stripping on the left and right
+edges respectively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEdges(this string instance, bool left = true, bool right = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to strip.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>If the left side should be stripped.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>If the right side should be stripped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string stripped of any non-printable characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_StripEscapes_" data-uid="Godot.StringExtensions.StripEscapes*"></a>
+  <h4 id="Godot_StringExtensions_StripEscapes_System_String_" data-uid="Godot.StringExtensions.StripEscapes(System.String)">StripEscapes(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string stripped of any escape character.
+These include all non-printable control characters of the first page
+of the ASCII table (&lt; 32), such as tabulation (<code>\t</code>) and
+newline (<code>\n</code> and <code>\r</code>) characters, but not spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEscapes(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to strip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string stripped of any escape characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_Substr_" data-uid="Godot.StringExtensions.Substr*"></a>
+  <h4 id="Godot_StringExtensions_Substr_System_String_System_Int32_System_Int32_" data-uid="Godot.StringExtensions.Substr(System.String,System.Int32,System.Int32)">Substr(string, int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns part of the string from the position <code class="paramref">from</code>, with length <code class="paramref">len</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Substr(this string instance, int from, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to slice.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The position in the string that the part starts from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>The length of the returned part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Part of the string from the position <code class="paramref">from</code>, with length <code class="paramref">len</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_ToAsciiBuffer_" data-uid="Godot.StringExtensions.ToAsciiBuffer*"></a>
+  <h4 id="Godot_StringExtensions_ToAsciiBuffer_System_String_" data-uid="Godot.StringExtensions.ToAsciiBuffer(System.String)">ToAsciiBuffer(string)</h4>
+  <div class="markdown level1 summary"><p>Converts the String (which is a character array) to PackedByteArray (which is an array of bytes).
+The conversion is faster compared to <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf8Buffer_System_String_">ToUtf8Buffer(string)</a>,
+as this method assumes that all the characters in the String are ASCII characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToAsciiBuffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The string as ASCII encoded bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToAsciiBuffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf8Buffer_System_String_">ToUtf8Buffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf16Buffer_System_String_">ToUtf16Buffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf32Buffer_System_String_">ToUtf32Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ToCamelCase_" data-uid="Godot.StringExtensions.ToCamelCase*"></a>
+  <h4 id="Godot_StringExtensions_ToCamelCase_System_String_" data-uid="Godot.StringExtensions.ToCamelCase(System.String)">ToCamelCase(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the string converted to <code>camelCase</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCamelCase(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The converted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_ToFloat_" data-uid="Godot.StringExtensions.ToFloat*"></a>
+  <h4 id="Godot_StringExtensions_ToFloat_System_String_" data-uid="Godot.StringExtensions.ToFloat(System.String)">ToFloat(string)</h4>
+  <div class="markdown level1 summary"><p>Converts a string, containing a decimal number, into a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types">float</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToFloat(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The number representation of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToFloat_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToInt_System_String_">ToInt(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ToInt_" data-uid="Godot.StringExtensions.ToInt*"></a>
+  <h4 id="Godot_StringExtensions_ToInt_System_String_" data-uid="Godot.StringExtensions.ToInt(System.String)">ToInt(string)</h4>
+  <div class="markdown level1 summary"><p>Converts a string, containing an integer number, into an <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">int</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ToInt(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number representation of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToInt_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToFloat_System_String_">ToFloat(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ToPascalCase_" data-uid="Godot.StringExtensions.ToPascalCase*"></a>
+  <h4 id="Godot_StringExtensions_ToPascalCase_System_String_" data-uid="Godot.StringExtensions.ToPascalCase(System.String)">ToPascalCase(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the string converted to <code>PascalCase</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToPascalCase(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The converted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_ToSnakeCase_" data-uid="Godot.StringExtensions.ToSnakeCase*"></a>
+  <h4 id="Godot_StringExtensions_ToSnakeCase_System_String_" data-uid="Godot.StringExtensions.ToSnakeCase(System.String)">ToSnakeCase(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the string converted to <code>snake_case</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToSnakeCase(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The converted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_ToUtf16Buffer_" data-uid="Godot.StringExtensions.ToUtf16Buffer*"></a>
+  <h4 id="Godot_StringExtensions_ToUtf16Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf16Buffer(System.String)">ToUtf16Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Converts the string (which is an array of characters) to an UTF-16 encoded array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf16Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The string as UTF-16 encoded bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToUtf16Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToAsciiBuffer_System_String_">ToAsciiBuffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf32Buffer_System_String_">ToUtf32Buffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf8Buffer_System_String_">ToUtf8Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ToUtf32Buffer_" data-uid="Godot.StringExtensions.ToUtf32Buffer*"></a>
+  <h4 id="Godot_StringExtensions_ToUtf32Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf32Buffer(System.String)">ToUtf32Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Converts the string (which is an array of characters) to an UTF-32 encoded array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf32Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The string as UTF-32 encoded bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToUtf32Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToAsciiBuffer_System_String_">ToAsciiBuffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf16Buffer_System_String_">ToUtf16Buffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf8Buffer_System_String_">ToUtf8Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_ToUtf8Buffer_" data-uid="Godot.StringExtensions.ToUtf8Buffer*"></a>
+  <h4 id="Godot_StringExtensions_ToUtf8Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf8Buffer(System.String)">ToUtf8Buffer(string)</h4>
+  <div class="markdown level1 summary"><p>Converts the string (which is an array of characters) to an UTF-8 encoded array of bytes.
+The conversion is a bit slower than <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToAsciiBuffer_System_String_">ToAsciiBuffer(string)</a>,
+but supports all UTF-8 characters. Therefore, you should prefer this function
+over <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToAsciiBuffer_System_String_">ToAsciiBuffer(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf8Buffer(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The string as UTF-8 encoded bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_ToUtf8Buffer_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToAsciiBuffer_System_String_">ToAsciiBuffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf16Buffer_System_String_">ToUtf16Buffer(string)</a></div>
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_ToUtf32Buffer_System_String_">ToUtf32Buffer(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_TrimPrefix_" data-uid="Godot.StringExtensions.TrimPrefix*"></a>
+  <h4 id="Godot_StringExtensions_TrimPrefix_System_String_System_String_" data-uid="Godot.StringExtensions.TrimPrefix(System.String,System.String)">TrimPrefix(string, string)</h4>
+  <div class="markdown level1 summary"><p>Removes a given string from the start if it starts with it or leaves the string unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimPrefix(this string instance, string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to remove the prefix from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>The string to remove from the start.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A copy of the string with the prefix string removed from the start.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_TrimSuffix_" data-uid="Godot.StringExtensions.TrimSuffix*"></a>
+  <h4 id="Godot_StringExtensions_TrimSuffix_System_String_System_String_" data-uid="Godot.StringExtensions.TrimSuffix(System.String,System.String)">TrimSuffix(string, string)</h4>
+  <div class="markdown level1 summary"><p>Removes a given string from the end if it ends with it or leaves the string unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimSuffix(this string instance, string suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to remove the suffix from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">suffix</span></td>
+        <td><p>The string to remove from the end.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A copy of the string with the suffix string removed from the end.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_URIDecode_" data-uid="Godot.StringExtensions.URIDecode*"></a>
+  <h4 id="Godot_StringExtensions_URIDecode_System_String_" data-uid="Godot.StringExtensions.URIDecode(System.String)">URIDecode(string)</h4>
+  <div class="markdown level1 summary"><p>Decodes a string in URL encoded format. This is meant to
+decode parameters in a URL when receiving an HTTP request.
+This mostly wraps around <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UnescapeDataString(string)</a>,
+but also handles <code>+</code>.
+See <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_URIEncode_System_String_">URIEncode(string)</a> for encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string URIDecode(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to decode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The unescaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_URIEncode_" data-uid="Godot.StringExtensions.URIEncode*"></a>
+  <h4 id="Godot_StringExtensions_URIEncode_System_String_" data-uid="Godot.StringExtensions.URIEncode(System.String)">URIEncode(string)</h4>
+  <div class="markdown level1 summary"><p>Encodes a string to URL friendly format. This is meant to
+encode parameters in a URL when sending an HTTP request.
+This wraps around <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EscapeDataString(string)</a>.
+See <a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_URIDecode_System_String_">URIDecode(string)</a> for decoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string URIEncode(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to encode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The escaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_ValidateNodeName_" data-uid="Godot.StringExtensions.ValidateNodeName*"></a>
+  <h4 id="Godot_StringExtensions_ValidateNodeName_System_String_" data-uid="Godot.StringExtensions.ValidateNodeName(System.String)">ValidateNodeName(string)</h4>
+  <div class="markdown level1 summary"><p>Removes any characters from the string that are prohibited in
+<a class="xref" href="Godot.Node.html">Node</a> names (<code>.</code> <code>:</code> <code>@</code> <code>/</code> <code>&quot;</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ValidateNodeName(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to sanitize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string sanitized as a valid node name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_StringExtensions_XMLEscape_" data-uid="Godot.StringExtensions.XMLEscape*"></a>
+  <h4 id="Godot_StringExtensions_XMLEscape_System_String_" data-uid="Godot.StringExtensions.XMLEscape(System.String)">XMLEscape(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with special characters escaped using the XML standard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string XMLEscape(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to escape.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The escaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_XMLEscape_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_XMLUnescape_System_String_">XMLUnescape(string)</a></div>
+  </div>
+
+
+  <a id="Godot_StringExtensions_XMLUnescape_" data-uid="Godot.StringExtensions.XMLUnescape*"></a>
+  <h4 id="Godot_StringExtensions_XMLUnescape_System_String_" data-uid="Godot.StringExtensions.XMLUnescape(System.String)">XMLUnescape(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the string with escaped characters replaced by their meanings
+according to the XML standard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? XMLUnescape(this string instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The string to unescape.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The unescaped string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_StringExtensions_XMLUnescape_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Godot.StringExtensions.html#Godot_StringExtensions_XMLEscape_System_String_">XMLEscape(string)</a></div>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

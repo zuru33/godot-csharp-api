@@ -1,0 +1,1388 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Geometry2D
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Geometry2D
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.Geometry2D">
+
+
+
+  <h1 id="Godot_Geometry2D" data-uid="Godot.Geometry2D" class="text-break">Class Geometry2D
+</h1>
+  <div class="markdown level0 summary"><p>Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and process various other geometric operations in 2D.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Geometry2D</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_Geometry2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Geometry2D</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_Geometry2D_Singleton_" data-uid="Godot.Geometry2D.Singleton*"></a>
+  <h4 id="Godot_Geometry2D_Singleton" data-uid="Godot.Geometry2D.Singleton">Singleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GodotObject Singleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.GodotObject.html">GodotObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_Geometry2D_ClipPolygons_" data-uid="Godot.Geometry2D.ClipPolygons*"></a>
+  <h4 id="Godot_Geometry2D_ClipPolygons_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.ClipPolygons(Godot.Vector2[],Godot.Vector2[])">ClipPolygons(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Clips <code>polygonA</code> against <code>polygonB</code> and returns an array of clipped polygons. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Difference">Difference</a> between polygons. Returns an empty array if <code>polygonB</code> completely overlaps <code>polygonA</code>.</p>
+<p>If <code>polygonB</code> is enclosed by <code>polygonA</code>, returns an outer polygon (boundary) and inner polygon (hole) which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; ClipPolygons(Vector2[] polygonA, Vector2[] polygonB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_ClipPolylineWithPolygon_" data-uid="Godot.Geometry2D.ClipPolylineWithPolygon*"></a>
+  <h4 id="Godot_Geometry2D_ClipPolylineWithPolygon_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])">ClipPolylineWithPolygon(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Clips <code>polyline</code> against <code>polygon</code> and returns an array of clipped polylines. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Difference">Difference</a> between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; ClipPolylineWithPolygon(Vector2[] polyline, Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polyline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_ConvexHull_" data-uid="Godot.Geometry2D.ConvexHull*"></a>
+  <h4 id="Godot_Geometry2D_ConvexHull_Godot_Vector2___" data-uid="Godot.Geometry2D.ConvexHull(Godot.Vector2[])">ConvexHull(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Given an array of <a class="xref" href="Godot.Vector2.html">Vector2</a>s, returns the convex hull as a list of points in counterclockwise order. The last point is the same as the first one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2[] ConvexHull(Vector2[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_DecomposePolygonInConvex_" data-uid="Godot.Geometry2D.DecomposePolygonInConvex*"></a>
+  <h4 id="Godot_Geometry2D_DecomposePolygonInConvex_Godot_Vector2___" data-uid="Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2[])">DecomposePolygonInConvex(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Decomposes the <code>polygon</code> into multiple convex hulls and returns an array of <a class="xref" href="Godot.Vector2.html">Vector2</a>[].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; DecomposePolygonInConvex(Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_ExcludePolygons_" data-uid="Godot.Geometry2D.ExcludePolygons*"></a>
+  <h4 id="Godot_Geometry2D_ExcludePolygons_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.ExcludePolygons(Godot.Vector2[],Godot.Vector2[])">ExcludePolygons(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Mutually excludes common area defined by intersection of <code>polygonA</code> and <code>polygonB</code> (see <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IntersectPolygons_Godot_Vector2___Godot_Vector2___">IntersectPolygons(Vector2[], Vector2[])</a>) and returns an array of excluded polygons. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Xor">Xor</a> between polygons. In other words, returns all but common area between polygons.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; ExcludePolygons(Vector2[] polygonA, Vector2[] polygonB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_GetClosestPointToSegment_" data-uid="Godot.Geometry2D.GetClosestPointToSegment*"></a>
+  <h4 id="Godot_Geometry2D_GetClosestPointToSegment_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.GetClosestPointToSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2)">GetClosestPointToSegment(Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the 2D point on the 2D segment (<code>s1</code>, <code>s2</code>) that is closest to <code>point</code>. The returned point will always be inside the specified segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetClosestPointToSegment(Vector2 point, Vector2 s1, Vector2 s2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">s1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">s2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_GetClosestPointToSegmentUncapped_" data-uid="Godot.Geometry2D.GetClosestPointToSegmentUncapped*"></a>
+  <h4 id="Godot_Geometry2D_GetClosestPointToSegmentUncapped_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.GetClosestPointToSegmentUncapped(Godot.Vector2,Godot.Vector2,Godot.Vector2)">GetClosestPointToSegmentUncapped(Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the 2D point on the 2D line defined by (<code>s1</code>, <code>s2</code>) that is closest to <code>point</code>. The returned point can be inside the segment (<code>s1</code>, <code>s2</code>) or outside of it, i.e. somewhere on the line extending from the segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetClosestPointToSegmentUncapped(Vector2 point, Vector2 s1, Vector2 s2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">s1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">s2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_GetClosestPointsBetweenSegments_" data-uid="Godot.Geometry2D.GetClosestPointsBetweenSegments*"></a>
+  <h4 id="Godot_Geometry2D_GetClosestPointsBetweenSegments_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.GetClosestPointsBetweenSegments(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">GetClosestPointsBetweenSegments(Vector2, Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Given the two 2D segments (<code>p1</code>, <code>q1</code>) and (<code>p2</code>, <code>q2</code>), finds those two points on the two segments that are closest to each other. Returns a <a class="xref" href="Godot.Vector2.html">Vector2</a>[] that contains this point on (<code>p1</code>, <code>q1</code>) as well the accompanying point on (<code>p2</code>, <code>q2</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2[] GetClosestPointsBetweenSegments(Vector2 p1, Vector2 q1, Vector2 p2, Vector2 q2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">q1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">q2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_IntersectPolygons_" data-uid="Godot.Geometry2D.IntersectPolygons*"></a>
+  <h4 id="Godot_Geometry2D_IntersectPolygons_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.IntersectPolygons(Godot.Vector2[],Godot.Vector2[])">IntersectPolygons(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Intersects <code>polygonA</code> with <code>polygonB</code> and returns an array of intersected polygons. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Intersection">Intersection</a> between polygons. In other words, returns common area shared by polygons. Returns an empty array if no intersection occurs.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; IntersectPolygons(Vector2[] polygonA, Vector2[] polygonB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_IntersectPolylineWithPolygon_" data-uid="Godot.Geometry2D.IntersectPolylineWithPolygon*"></a>
+  <h4 id="Godot_Geometry2D_IntersectPolylineWithPolygon_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])">IntersectPolylineWithPolygon(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Intersects <code>polyline</code> with <code>polygon</code> and returns an array of intersected polylines. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Intersection">Intersection</a> between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; IntersectPolylineWithPolygon(Vector2[] polyline, Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polyline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_IsPointInCircle_" data-uid="Godot.Geometry2D.IsPointInCircle*"></a>
+  <h4 id="Godot_Geometry2D_IsPointInCircle_Godot_Vector2_Godot_Vector2_System_Single_" data-uid="Godot.Geometry2D.IsPointInCircle(Godot.Vector2,Godot.Vector2,System.Single)">IsPointInCircle(Vector2, Vector2, float)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if <code>point</code> is inside the circle or if it's located exactly <i>on</i> the circle's boundary, otherwise returns <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointInCircle(Vector2 point, Vector2 circlePosition, float circleRadius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">circlePosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">circleRadius</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_IsPointInPolygon_" data-uid="Godot.Geometry2D.IsPointInPolygon*"></a>
+  <h4 id="Godot_Geometry2D_IsPointInPolygon_Godot_Vector2_Godot_Vector2___" data-uid="Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,Godot.Vector2[])">IsPointInPolygon(Vector2, Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if <code>point</code> is inside <code>polygon</code> or if it's located exactly <i>on</i> polygon's boundary, otherwise returns <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointInPolygon(Vector2 point, Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_IsPolygonClockwise_" data-uid="Godot.Geometry2D.IsPolygonClockwise*"></a>
+  <h4 id="Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___" data-uid="Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2[])">IsPolygonClockwise(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if <code>polygon</code>'s vertices are ordered in clockwise order, otherwise returns <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPolygonClockwise(Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_LineIntersectsLine_" data-uid="Godot.Geometry2D.LineIntersectsLine*"></a>
+  <h4 id="Godot_Geometry2D_LineIntersectsLine_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.LineIntersectsLine(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">LineIntersectsLine(Vector2, Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Checks if the two lines (<code>fromA</code>, <code>dirA</code>) and (<code>fromB</code>, <code>dirB</code>) intersect. If yes, return the point of intersection as <a class="xref" href="Godot.Vector2.html">Vector2</a>. If no intersection takes place, returns <code>null</code>.</p>
+<p><b>Note:</b> The lines are specified using direction vectors, not end points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant LineIntersectsLine(Vector2 fromA, Vector2 dirA, Vector2 fromB, Vector2 dirB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">fromA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">dirA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">fromB</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">dirB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_MakeAtlas_" data-uid="Godot.Geometry2D.MakeAtlas*"></a>
+  <h4 id="Godot_Geometry2D_MakeAtlas_Godot_Vector2___" data-uid="Godot.Geometry2D.MakeAtlas(Godot.Vector2[])">MakeAtlas(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Given an array of <a class="xref" href="Godot.Vector2.html">Vector2</a>s representing tiles, builds an atlas. The returned dictionary has two keys: <code>points</code> is a <a class="xref" href="Godot.Vector2.html">Vector2</a>[] that specifies the positions of each tile, <code>size</code> contains the overall size of the whole atlas as <a class="xref" href="Godot.Vector2I.html">Vector2I</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary MakeAtlas(Vector2[] sizes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">sizes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_MergePolygons_" data-uid="Godot.Geometry2D.MergePolygons*"></a>
+  <h4 id="Godot_Geometry2D_MergePolygons_Godot_Vector2___Godot_Vector2___" data-uid="Godot.Geometry2D.MergePolygons(Godot.Vector2[],Godot.Vector2[])">MergePolygons(Vector2[], Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Merges (combines) <code>polygonA</code> and <code>polygonB</code> and returns an array of merged polygons. This performs <a class="xref" href="Godot.Geometry2D.PolyBooleanOperation.html#Godot_Geometry2D_PolyBooleanOperation_Union">Union</a> between polygons.</p>
+<p>The operation may result in an outer polygon (boundary) and multiple inner polygons (holes) produced which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; MergePolygons(Vector2[] polygonA, Vector2[] polygonB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygonB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_OffsetPolygon_" data-uid="Godot.Geometry2D.OffsetPolygon*"></a>
+  <h4 id="Godot_Geometry2D_OffsetPolygon_Godot_Vector2___System_Single_Godot_Geometry2D_PolyJoinType_" data-uid="Godot.Geometry2D.OffsetPolygon(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType)">OffsetPolygon(Vector2[], float, PolyJoinType)</h4>
+  <div class="markdown level1 summary"><p>Inflates or deflates <code>polygon</code> by <code>delta</code> units (pixels). If <code>delta</code> is positive, makes the polygon grow outward. If <code>delta</code> is negative, shrinks the polygon inward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. Returns an empty array if <code>delta</code> is negative and the absolute value of it approximately exceeds the minimum bounding rectangle dimensions of the polygon.</p>
+<p>Each polygon's vertices will be rounded as determined by <code>joinType</code>, see <a class="xref" href="Godot.Geometry2D.PolyJoinType.html">Geometry2D.PolyJoinType</a>.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+<p><b>Note:</b> To translate the polygon's vertices specifically, multiply them to a <a class="xref" href="Godot.Transform2D.html">Transform2D</a>:</p>
+<p><pre><code class="lang-csharp">var polygon = new Vector2[] { new Vector2(0, 0), new Vector2(100, 0), new Vector2(100, 100), new Vector2(0, 100) };
+   var offset = new Vector2(50, 50);
+   polygon = new Transform2D(0, offset) * polygon;
+   GD.Print((Variant)polygon); // prints [(50, 50), (150, 50), (150, 150), (50, 150)]</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; OffsetPolygon(Vector2[] polygon, float delta, Geometry2D.PolyJoinType joinType = PolyJoinType.Square)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Geometry2D.html">Geometry2D</a>.<a class="xref" href="Godot.Geometry2D.PolyJoinType.html">PolyJoinType</a></td>
+        <td><span class="parametername">joinType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_OffsetPolyline_" data-uid="Godot.Geometry2D.OffsetPolyline*"></a>
+  <h4 id="Godot_Geometry2D_OffsetPolyline_Godot_Vector2___System_Single_Godot_Geometry2D_PolyJoinType_Godot_Geometry2D_PolyEndType_" data-uid="Godot.Geometry2D.OffsetPolyline(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)">OffsetPolyline(Vector2[], float, PolyJoinType, PolyEndType)</h4>
+  <div class="markdown level1 summary"><p>Inflates or deflates <code>polyline</code> by <code>delta</code> units (pixels), producing polygons. If <code>delta</code> is positive, makes the polyline grow outward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. If <code>delta</code> is negative, returns an empty array.</p>
+<p>Each polygon's vertices will be rounded as determined by <code>joinType</code>, see <a class="xref" href="Godot.Geometry2D.PolyJoinType.html">Geometry2D.PolyJoinType</a>.</p>
+<p>Each polygon's endpoints will be rounded as determined by <code>endType</code>, see <a class="xref" href="Godot.Geometry2D.PolyEndType.html">Geometry2D.PolyEndType</a>.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="xref" href="Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___">IsPolygonClockwise(Vector2[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Vector2[]&gt; OffsetPolyline(Vector2[] polyline, float delta, Geometry2D.PolyJoinType joinType = PolyJoinType.Square, Geometry2D.PolyEndType endType = PolyEndType.Square)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polyline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Geometry2D.html">Geometry2D</a>.<a class="xref" href="Godot.Geometry2D.PolyJoinType.html">PolyJoinType</a></td>
+        <td><span class="parametername">joinType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Geometry2D.html">Geometry2D</a>.<a class="xref" href="Godot.Geometry2D.PolyEndType.html">PolyEndType</a></td>
+        <td><span class="parametername">endType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Vector2.html">Vector2</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_PointIsInsideTriangle_" data-uid="Godot.Geometry2D.PointIsInsideTriangle*"></a>
+  <h4 id="Godot_Geometry2D_PointIsInsideTriangle_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.PointIsInsideTriangle(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">PointIsInsideTriangle(Vector2, Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns if <code>point</code> is inside the triangle specified by <code>a</code>, <code>b</code> and <code>c</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointIsInsideTriangle(Vector2 point, Vector2 a, Vector2 b, Vector2 c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_SegmentIntersectsCircle_" data-uid="Godot.Geometry2D.SegmentIntersectsCircle*"></a>
+  <h4 id="Godot_Geometry2D_SegmentIntersectsCircle_Godot_Vector2_Godot_Vector2_Godot_Vector2_System_Single_" data-uid="Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2,Godot.Vector2,Godot.Vector2,System.Single)">SegmentIntersectsCircle(Vector2, Vector2, Vector2, float)</h4>
+  <div class="markdown level1 summary"><p>Given the 2D segment (<code>segmentFrom</code>, <code>segmentTo</code>), returns the position on the segment (as a number between 0 and 1) at which the segment hits the circle that is located at position <code>circlePosition</code> and has radius <code>circleRadius</code>. If the segment does not intersect the circle, -1 is returned (this is also the case if the line extending the segment would intersect the circle, but the segment does not).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SegmentIntersectsCircle(Vector2 segmentFrom, Vector2 segmentTo, Vector2 circlePosition, float circleRadius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">segmentFrom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">segmentTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">circlePosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">circleRadius</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_SegmentIntersectsSegment_" data-uid="Godot.Geometry2D.SegmentIntersectsSegment*"></a>
+  <h4 id="Godot_Geometry2D_SegmentIntersectsSegment_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_" data-uid="Godot.Geometry2D.SegmentIntersectsSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">SegmentIntersectsSegment(Vector2, Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Checks if the two segments (<code>fromA</code>, <code>toA</code>) and (<code>fromB</code>, <code>toB</code>) intersect. If yes, return the point of intersection as <a class="xref" href="Godot.Vector2.html">Vector2</a>. If no intersection takes place, returns <code>null</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant SegmentIntersectsSegment(Vector2 fromA, Vector2 toA, Vector2 fromB, Vector2 toB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">fromA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">toA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">fromB</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">toB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_TriangulateDelaunay_" data-uid="Godot.Geometry2D.TriangulateDelaunay*"></a>
+  <h4 id="Godot_Geometry2D_TriangulateDelaunay_Godot_Vector2___" data-uid="Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2[])">TriangulateDelaunay(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Triangulates the area specified by discrete set of <code>points</code> such that no point is inside the circumcircle of any resulting triangle. Returns a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] where each triangle consists of three consecutive point indices into <code>points</code> (i.e. the returned array will have <code>n * 3</code> elements, with <code>n</code> being the number of found triangles). If the triangulation did not succeed, an empty <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] TriangulateDelaunay(Vector2[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Geometry2D_TriangulatePolygon_" data-uid="Godot.Geometry2D.TriangulatePolygon*"></a>
+  <h4 id="Godot_Geometry2D_TriangulatePolygon_Godot_Vector2___" data-uid="Godot.Geometry2D.TriangulatePolygon(Godot.Vector2[])">TriangulatePolygon(Vector2[])</h4>
+  <div class="markdown level1 summary"><p>Triangulates the polygon specified by the points in <code>polygon</code>. Returns a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] where each triangle consists of three consecutive point indices into <code>polygon</code> (i.e. the returned array will have <code>n * 3</code> elements, with <code>n</code> being the number of found triangles). Output triangles will always be counter clockwise, and the contour will be flipped if it's clockwise. If the triangulation did not succeed, an empty <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] TriangulatePolygon(Vector2[] polygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

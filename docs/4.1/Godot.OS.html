@@ -1,0 +1,2491 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OS
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OS
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.OS">
+
+
+
+  <h1 id="Godot_OS" data-uid="Godot.OS" class="text-break">Class OS
+</h1>
+  <div class="markdown level0 summary"><p>This class wraps the most common functionalities for communicating with the host operating system, such as the video driver, delays, environment variables, execution of binaries, command line, etc.</p>
+<p><b>Note:</b> In Godot 4, <a class="xref" href="Godot.OS.html">OS</a> functions related to window management were moved to the <a class="xref" href="Godot.DisplayServer.html">DisplayServer</a> singleton.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">OS</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_OS_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class OS</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_OS_DeltaSmoothing_" data-uid="Godot.OS.DeltaSmoothing*"></a>
+  <h4 id="Godot_OS_DeltaSmoothing" data-uid="Godot.OS.DeltaSmoothing">DeltaSmoothing</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the engine filters the time delta measured between each frame, and attempts to compensate for random variation. This will only operate on systems where V-Sync is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeltaSmoothing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_LowProcessorUsageMode_" data-uid="Godot.OS.LowProcessorUsageMode*"></a>
+  <h4 id="Godot_OS_LowProcessorUsageMode" data-uid="Godot.OS.LowProcessorUsageMode">LowProcessorUsageMode</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the engine optimizes for low processor usage by only refreshing the screen if needed. Can improve battery consumption on mobile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LowProcessorUsageMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_LowProcessorUsageModeSleepUsec_" data-uid="Godot.OS.LowProcessorUsageModeSleepUsec*"></a>
+  <h4 id="Godot_OS_LowProcessorUsageModeSleepUsec" data-uid="Godot.OS.LowProcessorUsageModeSleepUsec">LowProcessorUsageModeSleepUsec</h4>
+  <div class="markdown level1 summary"><p>The amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU usage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LowProcessorUsageModeSleepUsec { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_Singleton_" data-uid="Godot.OS.Singleton*"></a>
+  <h4 id="Godot_OS_Singleton" data-uid="Godot.OS.Singleton">Singleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GodotObject Singleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.GodotObject.html">GodotObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_OS_Alert_" data-uid="Godot.OS.Alert*"></a>
+  <h4 id="Godot_OS_Alert_System_String_System_String_" data-uid="Godot.OS.Alert(System.String,System.String)">Alert(string, string)</h4>
+  <div class="markdown level1 summary"><p>Displays a modal dialog box using the host OS' facilities. Execution is blocked until the dialog is closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Alert(string text, string title = &quot;Alert!&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_CloseMidiInputs_" data-uid="Godot.OS.CloseMidiInputs*"></a>
+  <h4 id="Godot_OS_CloseMidiInputs" data-uid="Godot.OS.CloseMidiInputs">CloseMidiInputs()</h4>
+  <div class="markdown level1 summary"><p>Shuts down system MIDI driver.</p>
+<p><b>Note:</b> This method is implemented on Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CloseMidiInputs()</code></pre>
+  </div>
+
+
+  <a id="Godot_OS_Crash_" data-uid="Godot.OS.Crash*"></a>
+  <h4 id="Godot_OS_Crash_System_String_" data-uid="Godot.OS.Crash(System.String)">Crash(string)</h4>
+  <div class="markdown level1 summary"><p>Crashes the engine (or the editor if called within a <code>@tool</code> script). This should <i>only</i> be used for testing the system's crash handler, not for any other purpose. For general error reporting, use (in order of preference) <code>@GDScript.assert</code>, <code>@GlobalScope.push_error</code> or <a class="xref" href="Godot.OS.html#Godot_OS_Alert_System_String_System_String_">Alert(string, string)</a>. See also <a class="xref" href="Godot.OS.html#Godot_OS_Kill_System_Int32_">Kill(int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Crash(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_CreateInstance_" data-uid="Godot.OS.CreateInstance*"></a>
+  <h4 id="Godot_OS_CreateInstance_System_String___" data-uid="Godot.OS.CreateInstance(System.String[])">CreateInstance(string[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of Godot that runs independently. The <code>arguments</code> are used in the given order and separated by a space.</p>
+<p>If the process creation succeeds, the method will return the new process ID, which you can use to monitor the process (and potentially terminate it with <a class="xref" href="Godot.OS.html#Godot_OS_Kill_System_Int32_">Kill(int)</a>). If the process creation fails, the method will return <code>-1</code>.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateInstance(string[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_CreateProcess_" data-uid="Godot.OS.CreateProcess*"></a>
+  <h4 id="Godot_OS_CreateProcess_System_String_System_String___System_Boolean_" data-uid="Godot.OS.CreateProcess(System.String,System.String[],System.Boolean)">CreateProcess(string, string[], bool)</h4>
+  <div class="markdown level1 summary"><p>Creates a new process that runs independently of Godot. It will not terminate if Godot terminates. The path specified in <code>path</code> must exist and be executable file or macOS .app bundle. Platform path resolution will be used. The <code>arguments</code> are used in the given order and separated by a space.</p>
+<p>On Windows, if <code>openConsole</code> is <code>true</code> and the process is a console app, a new terminal window will be opened. This is ignored on other platforms.</p>
+<p>If the process creation succeeds, the method will return the new process ID, which you can use to monitor the process (and potentially terminate it with <a class="xref" href="Godot.OS.html#Godot_OS_Kill_System_Int32_">Kill(int)</a>). If the process creation fails, the method will return <code>-1</code>.</p>
+<p>For example, running another instance of the project:</p>
+<p><pre><code class="lang-csharp">var pid = OS.CreateProcess(OS.GetExecutablePath(), new string[] {});</code></pre>
+<p>See <a class="xref" href="Godot.OS.html#Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_">Execute(string, string[], Array, bool, bool)</a> if you wish to run an external command and retrieve the results.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+<p><b>Note:</b> On macOS, sandboxed applications are limited to run only embedded helper executables, specified during export or system .app bundle, system .app bundles will ignore arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateProcess(string path, string[] arguments, bool openConsole = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">openConsole</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_DelayMsec_" data-uid="Godot.OS.DelayMsec*"></a>
+  <h4 id="Godot_OS_DelayMsec_System_Int32_" data-uid="Godot.OS.DelayMsec(System.Int32)">DelayMsec(int)</h4>
+  <div class="markdown level1 summary"><p>Delays execution of the current thread by <code>msec</code> milliseconds. <code>msec</code> must be greater than or equal to <code>0</code>. Otherwise, <a class="xref" href="Godot.OS.html#Godot_OS_DelayMsec_System_Int32_">DelayMsec(int)</a> will do nothing and will print an error message.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.OS.html#Godot_OS_DelayMsec_System_Int32_">DelayMsec(int)</a> is a <i>blocking</i> way to delay code execution. To delay code execution in a non-blocking way, see <a class="xref" href="Godot.SceneTree.html#Godot_SceneTree_CreateTimer_System_Double_System_Boolean_System_Boolean_System_Boolean_">CreateTimer(double, bool, bool, bool)</a>. Awaiting with <a class="xref" href="Godot.SceneTree.html#Godot_SceneTree_CreateTimer_System_Double_System_Boolean_System_Boolean_System_Boolean_">CreateTimer(double, bool, bool, bool)</a> will delay the execution of code placed below the <code>await</code> without affecting the rest of the project (or editor, for Godot.EditorPlugins and Godot.EditorScripts).</p>
+<p><b>Note:</b> When <a class="xref" href="Godot.OS.html#Godot_OS_DelayMsec_System_Int32_">DelayMsec(int)</a> is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using <a class="xref" href="Godot.OS.html#Godot_OS_DelayMsec_System_Int32_">DelayMsec(int)</a> as part of an Godot.EditorPlugin or Godot.EditorScript, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DelayMsec(int msec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">msec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_DelayUsec_" data-uid="Godot.OS.DelayUsec*"></a>
+  <h4 id="Godot_OS_DelayUsec_System_Int32_" data-uid="Godot.OS.DelayUsec(System.Int32)">DelayUsec(int)</h4>
+  <div class="markdown level1 summary"><p>Delays execution of the current thread by <code>usec</code> microseconds. <code>usec</code> must be greater than or equal to <code>0</code>. Otherwise, <a class="xref" href="Godot.OS.html#Godot_OS_DelayUsec_System_Int32_">DelayUsec(int)</a> will do nothing and will print an error message.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.OS.html#Godot_OS_DelayUsec_System_Int32_">DelayUsec(int)</a> is a <i>blocking</i> way to delay code execution. To delay code execution in a non-blocking way, see <a class="xref" href="Godot.SceneTree.html#Godot_SceneTree_CreateTimer_System_Double_System_Boolean_System_Boolean_System_Boolean_">CreateTimer(double, bool, bool, bool)</a>. Awaiting with <a class="xref" href="Godot.SceneTree.html#Godot_SceneTree_CreateTimer_System_Double_System_Boolean_System_Boolean_System_Boolean_">CreateTimer(double, bool, bool, bool)</a> will delay the execution of code placed below the <code>await</code> without affecting the rest of the project (or editor, for Godot.EditorPlugins and Godot.EditorScripts).</p>
+<p><b>Note:</b> When <a class="xref" href="Godot.OS.html#Godot_OS_DelayUsec_System_Int32_">DelayUsec(int)</a> is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using <a class="xref" href="Godot.OS.html#Godot_OS_DelayUsec_System_Int32_">DelayUsec(int)</a> as part of an Godot.EditorPlugin or Godot.EditorScript, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DelayUsec(int usec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">usec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_Execute_" data-uid="Godot.OS.Execute*"></a>
+  <h4 id="Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_" data-uid="Godot.OS.Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)">Execute(string, string[], Array, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Executes a command. The file specified in <code>path</code> must exist and be executable. Platform path resolution will be used. The <code>arguments</code> are used in the given order, separated by spaces, and wrapped in quotes. If an <code>output</code> <a class="xref" href="Godot.Collections.Array.html">Array</a> is provided, the complete shell output of the process will be appended as a single <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> element in <code>output</code>. If <code>readStderr</code> is <code>true</code>, the output to the standard error stream will be included too.</p>
+<p>On Windows, if <code>openConsole</code> is <code>true</code> and the process is a console app, a new terminal window will be opened. This is ignored on other platforms.</p>
+<p>If the command is successfully executed, the method will return the exit code of the command, or <code>-1</code> if it fails.</p>
+<p><b>Note:</b> The Godot thread will pause its execution until the executed command terminates. Use <a class="xref" href="Godot.GodotThread.html">GodotThread</a> to create a separate thread that will not pause the Godot thread, or use <a class="xref" href="Godot.OS.html#Godot_OS_CreateProcess_System_String_System_String___System_Boolean_">CreateProcess(string, string[], bool)</a> to create a completely independent process.</p>
+<p>For example, to retrieve a list of the working directory's contents:</p>
+<p><pre><code class="lang-csharp">var output = new Godot.Collections.Array();
+   int exitCode = OS.Execute("ls", new string[] {"-l", "/tmp"}, output);</code></pre>
+<p>If you wish to access a shell built-in or execute a composite command, a platform-specific shell can be invoked. For example:</p>
+<p><pre><code class="lang-csharp">var output = new Godot.Collections.Array();
+   OS.Execute("CMD.exe", new string[] {"/C", "cd %TEMP% &amp;&amp; dir"}, output);</code></pre>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+<p><b>Note:</b> To execute a Windows command interpreter built-in command, specify <code>cmd.exe</code> in <code>path</code>, <code>/c</code> as the first argument, and the desired command as the second argument.</p>
+<p><b>Note:</b> To execute a PowerShell built-in command, specify <code>powershell.exe</code> in <code>path</code>, <code>-Command</code> as the first argument, and the desired command as the second argument.</p>
+<p><b>Note:</b> To execute a Unix shell built-in command, specify shell executable name in <code>path</code>, <code>-c</code> as the first argument, and the desired command as the second argument.</p>
+<p><b>Note:</b> On macOS, sandboxed applications are limited to run only embedded helper executables, specified during export.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Execute(string path, string[] arguments, Array output = null, bool readStderr = false, bool openConsole = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array.html">Array</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">readStderr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">openConsole</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_FindKeycodeFromString_" data-uid="Godot.OS.FindKeycodeFromString*"></a>
+  <h4 id="Godot_OS_FindKeycodeFromString_System_String_" data-uid="Godot.OS.FindKeycodeFromString(System.String)">FindKeycodeFromString(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the keycode of the given string (e.g. "Escape").</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Key FindKeycodeFromString(string @string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Key.html">Key</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetCacheDir_" data-uid="Godot.OS.GetCacheDir*"></a>
+  <h4 id="Godot_OS_GetCacheDir" data-uid="Godot.OS.GetCacheDir">GetCacheDir()</h4>
+  <div class="markdown level1 summary"><p>Returns the <i>global</i> cache data directory according to the operating system's standards. On the Linux/BSD platform, this path can be overridden by setting the <code>XDG_CACHE_HOME</code> environment variable before starting the project. See <a href="$DOCS_URL/tutorials/io/data_paths.html">File paths in Godot projects</a> in the documentation for more information. See also <a class="xref" href="Godot.OS.html#Godot_OS_GetConfigDir">GetConfigDir()</a> and <a class="xref" href="Godot.OS.html#Godot_OS_GetDataDir">GetDataDir()</a>.</p>
+<p>Not to be confused with <a class="xref" href="Godot.OS.html#Godot_OS_GetUserDataDir">GetUserDataDir()</a>, which returns the <i>project-specific</i> user data path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCacheDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetCmdlineArgs_" data-uid="Godot.OS.GetCmdlineArgs*"></a>
+  <h4 id="Godot_OS_GetCmdlineArgs" data-uid="Godot.OS.GetCmdlineArgs">GetCmdlineArgs()</h4>
+  <div class="markdown level1 summary"><p>Returns the command-line arguments passed to the engine.</p>
+<p>Command-line arguments can be written in any form, including both <code>--key value</code> and <code>--key=value</code> forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.</p>
+<p>You can also incorporate environment variables using the <a class="xref" href="Godot.OS.html#Godot_OS_GetEnvironment_System_String_">GetEnvironment(string)</a> method.</p>
+<p>You can set <code>ProjectSettings.editor/run/main_run_args</code> to define command-line arguments to be passed by the editor when running the project.</p>
+<p>Here's a minimal example on how to parse command-line arguments into a dictionary using the <code>--key=value</code> form for arguments:</p>
+<p><pre><code class="lang-csharp">var arguments = new Godot.Collections.Dictionary();
+   foreach (var argument in OS.GetCmdlineArgs())
+   {
+       if (argument.Find("=") &gt; -1)
+       {
+           string[] keyValue = argument.Split("=");
+           arguments[keyValue[0].LStrip("--")] = keyValue[1];
+       }
+       else
+       {
+           // Options without an argument will be present in the dictionary,
+           // with the value set to an empty string.
+           arguments[keyValue[0].LStrip("--")] = "";
+       }
+   }</code></pre>
+<p><b>Note:</b> Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, the best way is to use the standard UNIX double dash (<code>--</code>) and then pass custom arguments, which the engine itself will ignore. These can be read via <a class="xref" href="Godot.OS.html#Godot_OS_GetCmdlineUserArgs">GetCmdlineUserArgs()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetCmdlineArgs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetCmdlineUserArgs_" data-uid="Godot.OS.GetCmdlineUserArgs*"></a>
+  <h4 id="Godot_OS_GetCmdlineUserArgs" data-uid="Godot.OS.GetCmdlineUserArgs">GetCmdlineUserArgs()</h4>
+  <div class="markdown level1 summary"><p>Similar to <a class="xref" href="Godot.OS.html#Godot_OS_GetCmdlineArgs">GetCmdlineArgs()</a>, but this returns the user arguments (any argument passed after the double dash <code>--</code> or double plus <code>++</code> argument). These are left untouched by Godot for the user. <code>++</code> can be used in situations where <code>--</code> is intercepted by another program (such as <code>startx</code>).</p>
+<p>For example, in the command line below, <code>--fullscreen</code> will not be returned in <a class="xref" href="Godot.OS.html#Godot_OS_GetCmdlineUserArgs">GetCmdlineUserArgs()</a> and <code>--level 1</code> will only be returned in <a class="xref" href="Godot.OS.html#Godot_OS_GetCmdlineUserArgs">GetCmdlineUserArgs()</a>:</p>
+<p><pre><code class="lang-csharp">godot --fullscreen -- --level 1
+   # Or:
+   godot --fullscreen ++ --level 1</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetCmdlineUserArgs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetConfigDir_" data-uid="Godot.OS.GetConfigDir*"></a>
+  <h4 id="Godot_OS_GetConfigDir" data-uid="Godot.OS.GetConfigDir">GetConfigDir()</h4>
+  <div class="markdown level1 summary"><p>Returns the <i>global</i> user configuration directory according to the operating system's standards. On the Linux/BSD platform, this path can be overridden by setting the <code>XDG_CONFIG_HOME</code> environment variable before starting the project. See <a href="$DOCS_URL/tutorials/io/data_paths.html">File paths in Godot projects</a> in the documentation for more information. See also <a class="xref" href="Godot.OS.html#Godot_OS_GetCacheDir">GetCacheDir()</a> and <a class="xref" href="Godot.OS.html#Godot_OS_GetDataDir">GetDataDir()</a>.</p>
+<p>Not to be confused with <a class="xref" href="Godot.OS.html#Godot_OS_GetUserDataDir">GetUserDataDir()</a>, which returns the <i>project-specific</i> user data path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetConfigDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetConnectedMidiInputs_" data-uid="Godot.OS.GetConnectedMidiInputs*"></a>
+  <h4 id="Godot_OS_GetConnectedMidiInputs" data-uid="Godot.OS.GetConnectedMidiInputs">GetConnectedMidiInputs()</h4>
+  <div class="markdown level1 summary"><p>Returns an array of MIDI device names.</p>
+<p>The returned array will be empty if the system MIDI driver has not previously been initialized with <a class="xref" href="Godot.OS.html#Godot_OS_OpenMidiInputs">OpenMidiInputs()</a>.</p>
+<p><b>Note:</b> This method is implemented on Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetConnectedMidiInputs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetDataDir_" data-uid="Godot.OS.GetDataDir*"></a>
+  <h4 id="Godot_OS_GetDataDir" data-uid="Godot.OS.GetDataDir">GetDataDir()</h4>
+  <div class="markdown level1 summary"><p>Returns the <i>global</i> user data directory according to the operating system's standards. On the Linux/BSD platform, this path can be overridden by setting the <code>XDG_DATA_HOME</code> environment variable before starting the project. See <a href="$DOCS_URL/tutorials/io/data_paths.html">File paths in Godot projects</a> in the documentation for more information. See also <a class="xref" href="Godot.OS.html#Godot_OS_GetCacheDir">GetCacheDir()</a> and <a class="xref" href="Godot.OS.html#Godot_OS_GetConfigDir">GetConfigDir()</a>.</p>
+<p>Not to be confused with <a class="xref" href="Godot.OS.html#Godot_OS_GetUserDataDir">GetUserDataDir()</a>, which returns the <i>project-specific</i> user data path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDataDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetDistributionName_" data-uid="Godot.OS.GetDistributionName*"></a>
+  <h4 id="Godot_OS_GetDistributionName" data-uid="Godot.OS.GetDistributionName">GetDistributionName()</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the distribution for Linux and BSD platforms (e.g. Ubuntu, Manjaro, OpenBSD, etc.).</p>
+<p>Returns the same value as <a class="xref" href="Godot.OS.html#Godot_OS_GetName">GetName()</a> for stock Android ROMs, but attempts to return the custom ROM name for popular Android derivatives such as LineageOS.</p>
+<p>Returns the same value as <a class="xref" href="Godot.OS.html#Godot_OS_GetName">GetName()</a> for other platforms.</p>
+<p><b>Note:</b> This method is not supported on the web platform. It returns an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDistributionName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetEnvironment_" data-uid="Godot.OS.GetEnvironment*"></a>
+  <h4 id="Godot_OS_GetEnvironment_System_String_" data-uid="Godot.OS.GetEnvironment(System.String)">GetEnvironment(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of an environment variable. Returns an empty string if the environment variable doesn't exist.</p>
+<p><b>Note:</b> Double-check the casing of <code>variable</code>. Environment variable names are case-sensitive on all platforms except Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetEnvironment(string variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetExecutablePath_" data-uid="Godot.OS.GetExecutablePath*"></a>
+  <h4 id="Godot_OS_GetExecutablePath" data-uid="Godot.OS.GetExecutablePath">GetExecutablePath()</h4>
+  <div class="markdown level1 summary"><p>Returns the path to the current engine executable.</p>
+<p><b>Note:</b> On macOS, always use <a class="xref" href="Godot.OS.html#Godot_OS_CreateInstance_System_String___">CreateInstance(string[])</a> instead of relying on executable path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExecutablePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetGrantedPermissions_" data-uid="Godot.OS.GetGrantedPermissions*"></a>
+  <h4 id="Godot_OS_GetGrantedPermissions" data-uid="Godot.OS.GetGrantedPermissions">GetGrantedPermissions()</h4>
+  <div class="markdown level1 summary"><p>With this function, you can get the list of dangerous permissions that have been granted to the Android application.</p>
+<p><b>Note:</b> This method is implemented only on Android.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetGrantedPermissions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetKeycodeString_" data-uid="Godot.OS.GetKeycodeString*"></a>
+  <h4 id="Godot_OS_GetKeycodeString_Godot_Key_" data-uid="Godot.OS.GetKeycodeString(Godot.Key)">GetKeycodeString(Key)</h4>
+  <div class="markdown level1 summary"><p>Returns the given keycode as a string (e.g. Return values: <code>"Escape"</code>, <code>"Shift+Escape"</code>).</p>
+<p>See also <a class="xref" href="Godot.InputEventKey.html#Godot_InputEventKey_Keycode">Keycode</a> and <a class="xref" href="Godot.InputEventKey.html#Godot_InputEventKey_GetKeycodeWithModifiers">GetKeycodeWithModifiers()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetKeycodeString(Key code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Key.html">Key</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetLocale_" data-uid="Godot.OS.GetLocale*"></a>
+  <h4 id="Godot_OS_GetLocale" data-uid="Godot.OS.GetLocale">GetLocale()</h4>
+  <div class="markdown level1 summary"><p>Returns the host OS locale as a string of the form <code>language_Script_COUNTRY_VARIANT@extra</code>. If you want only the language code and not the fully specified locale from the OS, you can use <a class="xref" href="Godot.OS.html#Godot_OS_GetLocaleLanguage">GetLocaleLanguage()</a>.</p>
+<p><code>language</code> - 2 or 3-letter <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">language code</a>, in lower case.</p>
+<p><code>Script</code> - optional, 4-letter <a href="https://en.wikipedia.org/wiki/ISO_15924">script code</a>, in title case.</p>
+<p><code>COUNTRY</code> - optional, 2 or 3-letter <a href="https://en.wikipedia.org/wiki/ISO_3166-1">country code</a>, in upper case.</p>
+<p><code>VARIANT</code> - optional, language variant, region and sort order. Variant can have any number of underscored keywords.</p>
+<p><code>extra</code> - optional, semicolon separated list of additional key words. Currency, calendar, sort order and numbering system information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetLocaleLanguage_" data-uid="Godot.OS.GetLocaleLanguage*"></a>
+  <h4 id="Godot_OS_GetLocaleLanguage" data-uid="Godot.OS.GetLocaleLanguage">GetLocaleLanguage()</h4>
+  <div class="markdown level1 summary"><p>Returns the host OS locale's 2 or 3-letter <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">language code</a> as a string which should be consistent on all platforms. This is equivalent to extracting the <code>language</code> part of the <a class="xref" href="Godot.OS.html#Godot_OS_GetLocale">GetLocale()</a> string.</p>
+<p>This can be used to narrow down fully specified locale strings to only the "common" language code, when you don't need the additional information about country code or variants. For example, for a French Canadian user with <code>fr_CA</code> locale, this would return <code>fr</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocaleLanguage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetMainThreadId_" data-uid="Godot.OS.GetMainThreadId*"></a>
+  <h4 id="Godot_OS_GetMainThreadId" data-uid="Godot.OS.GetMainThreadId">GetMainThreadId()</h4>
+  <div class="markdown level1 summary"><p>Returns the ID of the main thread. See <a class="xref" href="Godot.OS.html#Godot_OS_GetThreadCallerId">GetThreadCallerId()</a>.</p>
+<p><b>Note:</b> Thread IDs are not deterministic and may be reused across application restarts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetMainThreadId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetMemoryInfo_" data-uid="Godot.OS.GetMemoryInfo*"></a>
+  <h4 id="Godot_OS_GetMemoryInfo" data-uid="Godot.OS.GetMemoryInfo">GetMemoryInfo()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a> with the following keys:</p>
+<p><code>"physical"</code> - total amount of usable physical memory, in bytes or <code>-1</code> if unknown. This value can be slightly less than the actual physical memory amount, since it does not include memory reserved by kernel and devices.</p>
+<p><code>"free"</code> - amount of physical memory, that can be immediately allocated without disk access or other costly operation, in bytes or <code>-1</code> if unknown. The process might be able to allocate more physical memory, but such allocation will require moving inactive pages to disk and can take some time.</p>
+<p><code>"available"</code> - amount of memory, that can be allocated without extending the swap file(s), in bytes or <code>-1</code> if unknown. This value include both physical memory and swap.</p>
+<p><code>"stack"</code> - size of the current thread stack, in bytes or <code>-1</code> if unknown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary GetMemoryInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetModelName_" data-uid="Godot.OS.GetModelName*"></a>
+  <h4 id="Godot_OS_GetModelName" data-uid="Godot.OS.GetModelName">GetModelName()</h4>
+  <div class="markdown level1 summary"><p>Returns the model name of the current device.</p>
+<p><b>Note:</b> This method is implemented on Android and iOS. Returns <code>"GenericDevice"</code> on unsupported platforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetModelName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetName_" data-uid="Godot.OS.GetName*"></a>
+  <h4 id="Godot_OS_GetName" data-uid="Godot.OS.GetName">GetName()</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the host OS.</p>
+<p>On Windows, this is <code>"Windows"</code> or <code>"UWP"</code> if exported on Universal Windows Platform.</p>
+<p>On macOS, this is <code>"macOS"</code>.</p>
+<p>On Linux-based operating systems, this is <code>"Linux"</code>.</p>
+<p>On BSD-based operating systems, this is <code>"FreeBSD"</code>, <code>"NetBSD"</code>, <code>"OpenBSD"</code>, or <code>"BSD"</code> as a fallback.</p>
+<p>On Android, this is <code>"Android"</code>.</p>
+<p>On iOS, this is <code>"iOS"</code>.</p>
+<p>On the web, this is <code>"Web"</code>.</p>
+<p><b>Note:</b> Custom builds of the engine may support additional platforms, such as consoles, yielding other return values.</p>
+<p><pre><code class="lang-csharp">switch (OS.GetName())
+   {
+       case "Windows":
+       case "UWP":
+           GD.Print("Windows");
+           break;
+       case "macOS":
+           GD.Print("macOS");
+           break;
+       case "Linux":
+       case "FreeBSD":
+       case "NetBSD":
+       case "OpenBSD"
+       case "BSD":
+           GD.Print("Linux/BSD");
+           break;
+       case "Android":
+           GD.Print("Android");
+           break;
+       case "iOS":
+           GD.Print("iOS");
+           break;
+       case "Web":
+           GD.Print("Web");
+           break;
+   }</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetProcessId_" data-uid="Godot.OS.GetProcessId*"></a>
+  <h4 id="Godot_OS_GetProcessId" data-uid="Godot.OS.GetProcessId">GetProcessId()</h4>
+  <div class="markdown level1 summary"><p>Returns the project's process ID.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetProcessId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetProcessorCount_" data-uid="Godot.OS.GetProcessorCount*"></a>
+  <h4 id="Godot_OS_GetProcessorCount" data-uid="Godot.OS.GetProcessorCount">GetProcessorCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of <i>logical</i> CPU cores available on the host machine. On CPUs with HyperThreading enabled, this number will be greater than the number of <i>physical</i> CPU cores.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetProcessorCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetProcessorName_" data-uid="Godot.OS.GetProcessorName*"></a>
+  <h4 id="Godot_OS_GetProcessorName" data-uid="Godot.OS.GetProcessorName">GetProcessorName()</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the CPU model on the host machine (e.g. "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz").</p>
+<p><b>Note:</b> This method is only implemented on Windows, macOS, Linux and iOS. On Android, Web and UWP, <a class="xref" href="Godot.OS.html#Godot_OS_GetProcessorName">GetProcessorName()</a> returns an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetProcessorName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetRestartOnExitArguments_" data-uid="Godot.OS.GetRestartOnExitArguments*"></a>
+  <h4 id="Godot_OS_GetRestartOnExitArguments" data-uid="Godot.OS.GetRestartOnExitArguments">GetRestartOnExitArguments()</h4>
+  <div class="markdown level1 summary"><p>Returns the list of command line arguments that will be used when the project automatically restarts using <a class="xref" href="Godot.OS.html#Godot_OS_SetRestartOnExit_System_Boolean_System_String___">SetRestartOnExit(bool, string[])</a>. See also <a class="xref" href="Godot.OS.html#Godot_OS_IsRestartOnExitSet">IsRestartOnExitSet()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetRestartOnExitArguments()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetStaticMemoryPeakUsage_" data-uid="Godot.OS.GetStaticMemoryPeakUsage*"></a>
+  <h4 id="Godot_OS_GetStaticMemoryPeakUsage" data-uid="Godot.OS.GetStaticMemoryPeakUsage">GetStaticMemoryPeakUsage()</h4>
+  <div class="markdown level1 summary"><p>Returns the maximum amount of static memory used (only works in debug).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetStaticMemoryPeakUsage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetStaticMemoryUsage_" data-uid="Godot.OS.GetStaticMemoryUsage*"></a>
+  <h4 id="Godot_OS_GetStaticMemoryUsage" data-uid="Godot.OS.GetStaticMemoryUsage">GetStaticMemoryUsage()</h4>
+  <div class="markdown level1 summary"><p>Returns the amount of static memory being used by the program in bytes (only works in debug).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetStaticMemoryUsage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetSystemDir_" data-uid="Godot.OS.GetSystemDir*"></a>
+  <h4 id="Godot_OS_GetSystemDir_Godot_OS_SystemDir_System_Boolean_" data-uid="Godot.OS.GetSystemDir(Godot.OS.SystemDir,System.Boolean)">GetSystemDir(SystemDir, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the actual path to commonly used folders across different platforms. Available locations are specified in <a class="xref" href="Godot.OS.SystemDir.html">OS.SystemDir</a>.</p>
+<p><b>Note:</b> This method is implemented on Android, Linux, macOS and Windows.</p>
+<p><b>Note:</b> Shared storage is implemented on Android and allows to differentiate between app specific and shared directories. Shared directories have additional restrictions on Android.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemDir(OS.SystemDir dir, bool sharedStorage = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.OS.html">OS</a>.<a class="xref" href="Godot.OS.SystemDir.html">SystemDir</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sharedStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetSystemFontPath_" data-uid="Godot.OS.GetSystemFontPath*"></a>
+  <h4 id="Godot_OS_GetSystemFontPath_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.OS.GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)">GetSystemFontPath(string, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns path to the system font file with <code>fontName</code> and style. Returns empty string if no matching fonts found.</p>
+<p>The following aliases can be used to request default fonts: "sans-serif", "serif", "monospace", "cursive", and "fantasy".</p>
+<p><b>Note:</b> Returned font might have different style if the requested style is not available.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemFontPath(string fontName, int weight = 400, int stretch = 100, bool italic = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fontName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stretch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">italic</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetSystemFontPathForText_" data-uid="Godot.OS.GetSystemFontPathForText*"></a>
+  <h4 id="Godot_OS_GetSystemFontPathForText_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.OS.GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)">GetSystemFontPathForText(string, string, string, string, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns an array of the system substitute font file paths, which are similar to the font with <code>fontName</code> and style for the specified text, locale and script. Returns empty array if no matching fonts found.</p>
+<p>The following aliases can be used to request default fonts: "sans-serif", "serif", "monospace", "cursive", and "fantasy".</p>
+<p><b>Note:</b> Depending on OS, it's not guaranteed that any of the returned fonts will be suitable for rendering specified text. Fonts should be loaded and checked in the order they are returned, and the first suitable one used.</p>
+<p><b>Note:</b> Returned fonts might have different style if the requested style is not available or belong to a different font family.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSystemFontPathForText(string fontName, string text, string locale = &quot;&quot;, string script = &quot;&quot;, int weight = 400, int stretch = 100, bool italic = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fontName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stretch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">italic</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetSystemFonts_" data-uid="Godot.OS.GetSystemFonts*"></a>
+  <h4 id="Godot_OS_GetSystemFonts" data-uid="Godot.OS.GetSystemFonts">GetSystemFonts()</h4>
+  <div class="markdown level1 summary"><p>Returns list of font family names available.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSystemFonts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetThreadCallerId_" data-uid="Godot.OS.GetThreadCallerId*"></a>
+  <h4 id="Godot_OS_GetThreadCallerId" data-uid="Godot.OS.GetThreadCallerId">GetThreadCallerId()</h4>
+  <div class="markdown level1 summary"><p>Returns the ID of the current thread. This can be used in logs to ease debugging of multi-threaded applications.</p>
+<p><b>Note:</b> Thread IDs are not deterministic and may be reused across application restarts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetThreadCallerId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetUniqueId_" data-uid="Godot.OS.GetUniqueId*"></a>
+  <h4 id="Godot_OS_GetUniqueId" data-uid="Godot.OS.GetUniqueId">GetUniqueId()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that is unique to the device.</p>
+<p><b>Note:</b> This string may change without notice if the user reinstalls/upgrades their operating system or changes their hardware. This means it should generally not be used to encrypt persistent data as the data saved before an unexpected ID change would become inaccessible. The returned string may also be falsified using external programs, so do not rely on the string returned by <a class="xref" href="Godot.OS.html#Godot_OS_GetUniqueId">GetUniqueId()</a> for security purposes.</p>
+<p><b>Note:</b> Returns an empty string on Web and UWP, as this method isn't implemented on those platforms yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUniqueId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetUserDataDir_" data-uid="Godot.OS.GetUserDataDir*"></a>
+  <h4 id="Godot_OS_GetUserDataDir" data-uid="Godot.OS.GetUserDataDir">GetUserDataDir()</h4>
+  <div class="markdown level1 summary"><p>Returns the absolute directory path where user data is written (<code>user://</code>).</p>
+<p>On Windows, this is <code>%AppData%\Godot\app_userdata\[project_name]</code>, or <code>%AppData%\[custom_name]</code> if <code>use_custom_user_dir</code> is set. <code>%AppData%</code> expands to <code>%UserProfile%\AppData\Roaming</code>.</p>
+<p>On macOS, this is <code>~/Library/Application Support/Godot/app_userdata/[project_name]</code>, or <code>~/Library/Application Support/[custom_name]</code> if <code>use_custom_user_dir</code> is set.</p>
+<p>On Linux and BSD, this is <code>~/.local/share/godot/app_userdata/[project_name]</code>, or <code>~/.local/share/[custom_name]</code> if <code>use_custom_user_dir</code> is set.</p>
+<p>On Android and iOS, this is a sandboxed directory in either internal or external storage, depending on the user's configuration.</p>
+<p>On the web, this is a virtual directory managed by the browser.</p>
+<p>If the project name is empty, <code>[project_name]</code> falls back to <code>[unnamed project]</code>.</p>
+<p>Not to be confused with <a class="xref" href="Godot.OS.html#Godot_OS_GetDataDir">GetDataDir()</a>, which returns the <i>global</i> (non-project-specific) user home directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUserDataDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetVersion_" data-uid="Godot.OS.GetVersion*"></a>
+  <h4 id="Godot_OS_GetVersion" data-uid="Godot.OS.GetVersion">GetVersion()</h4>
+  <div class="markdown level1 summary"><p>Returns the exact production and build version of the operating system. This is different from the branded version used in marketing. This helps to distinguish between different releases of operating systems, including minor versions, and insider and custom builds.</p>
+<p>For Windows, the major and minor version are returned, as well as the build number. For example, the returned string can look like <code>10.0.9926</code> for a build of Windows 10, and it can look like <code>6.1.7601</code> for a build of Windows 7 SP1.</p>
+<p>For rolling distributions, such as Arch Linux, an empty string is returned.</p>
+<p>For macOS and iOS, the major and minor version are returned, as well as the patch number.</p>
+<p>For UWP, the device family version is returned.</p>
+<p>For Android, the SDK version and the incremental build number are returned. If it's a custom ROM, it attempts to return its version instead.</p>
+<p><b>Note:</b> This method is not supported on the web platform. It returns an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetVersion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_GetVideoAdapterDriverInfo_" data-uid="Godot.OS.GetVideoAdapterDriverInfo*"></a>
+  <h4 id="Godot_OS_GetVideoAdapterDriverInfo" data-uid="Godot.OS.GetVideoAdapterDriverInfo">GetVideoAdapterDriverInfo()</h4>
+  <div class="markdown level1 summary"><p>Returns the video adapter driver name and version for the user's currently active graphics card. See also <a class="xref" href="Godot.RenderingServer.html#Godot_RenderingServer_GetVideoAdapterApiVersion">GetVideoAdapterApiVersion()</a>.</p>
+<p>The first element holds the driver name, such as <code>nvidia</code>, <code>amdgpu</code>, etc.</p>
+<p>The second element holds the driver version. For e.g. the <code>nvidia</code> driver on a Linux/BSD platform, the version is in the format <code>510.85.02</code>. For Windows, the driver's format is <code>31.0.15.1659</code>.</p>
+<p><b>Note:</b> This method is only supported on the platforms Linux/BSD and Windows when not running in headless mode. It returns an empty array on other platforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetVideoAdapterDriverInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_HasEnvironment_" data-uid="Godot.OS.HasEnvironment*"></a>
+  <h4 id="Godot_OS_HasEnvironment_System_String_" data-uid="Godot.OS.HasEnvironment(System.String)">HasEnvironment(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the environment variable with the name <code>variable</code> exists.</p>
+<p><b>Note:</b> Double-check the casing of <code>variable</code>. Environment variable names are case-sensitive on all platforms except Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEnvironment(string variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_HasFeature_" data-uid="Godot.OS.HasFeature*"></a>
+  <h4 id="Godot_OS_HasFeature_System_String_" data-uid="Godot.OS.HasFeature(System.String)">HasFeature(string)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the feature for the given feature tag is supported in the currently running instance, depending on the platform, build, etc. Can be used to check whether you're currently running a debug build, on a certain platform or arch, etc. Refer to the <a href="$DOCS_URL/tutorials/export/feature_tags.html">Feature Tags</a> documentation for more details.</p>
+<p><b>Note:</b> Tag names are case-sensitive.</p>
+<p><b>Note:</b> On the web platform, one of the following additional tags is defined to indicate host platform: <code>web_android</code>, <code>web_ios</code>, <code>web_linuxbsd</code>, <code>web_macos</code>, or <code>web_windows</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasFeature(string tagName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tagName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsDebugBuild_" data-uid="Godot.OS.IsDebugBuild*"></a>
+  <h4 id="Godot_OS_IsDebugBuild" data-uid="Godot.OS.IsDebugBuild">IsDebugBuild()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the Godot binary used to run the project is a <i>debug</i> export template, or when running in the editor.</p>
+<p>Returns <code>false</code> if the Godot binary used to run the project is a <i>release</i> export template.</p>
+<p>To check whether the Godot binary used to run the project is an export template (debug or release), use <code>OS.has_feature("template")</code> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDebugBuild()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsKeycodeUnicode_" data-uid="Godot.OS.IsKeycodeUnicode*"></a>
+  <h4 id="Godot_OS_IsKeycodeUnicode_System_Int64_" data-uid="Godot.OS.IsKeycodeUnicode(System.Int64)">IsKeycodeUnicode(long)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the input keycode corresponds to a Unicode character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeycodeUnicode(long code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsProcessRunning_" data-uid="Godot.OS.IsProcessRunning*"></a>
+  <h4 id="Godot_OS_IsProcessRunning_System_Int32_" data-uid="Godot.OS.IsProcessRunning(System.Int32)">IsProcessRunning(int)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the child process ID (<code>pid</code>) is still running or <code>false</code> if it has terminated.</p>
+<p>Must be a valid ID generated from <a class="xref" href="Godot.OS.html#Godot_OS_CreateProcess_System_String_System_String___System_Boolean_">CreateProcess(string, string[], bool)</a>.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsProcessRunning(int pid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsRestartOnExitSet_" data-uid="Godot.OS.IsRestartOnExitSet*"></a>
+  <h4 id="Godot_OS_IsRestartOnExitSet" data-uid="Godot.OS.IsRestartOnExitSet">IsRestartOnExitSet()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the project will automatically restart when it exits for any reason, <code>false</code> otherwise. See also <a class="xref" href="Godot.OS.html#Godot_OS_SetRestartOnExit_System_Boolean_System_String___">SetRestartOnExit(bool, string[])</a> and <a class="xref" href="Godot.OS.html#Godot_OS_GetRestartOnExitArguments">GetRestartOnExitArguments()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRestartOnExitSet()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsStdOutVerbose_" data-uid="Godot.OS.IsStdOutVerbose*"></a>
+  <h4 id="Godot_OS_IsStdOutVerbose" data-uid="Godot.OS.IsStdOutVerbose">IsStdOutVerbose()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the engine was executed with the <code>--verbose</code> or <code>-v</code> command line argument, or if <code>ProjectSettings.debug/settings/stdout/verbose_stdout</code> is <code>true</code>. See also <code>@GlobalScope.print_verbose</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsStdOutVerbose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_IsUserfsPersistent_" data-uid="Godot.OS.IsUserfsPersistent*"></a>
+  <h4 id="Godot_OS_IsUserfsPersistent" data-uid="Godot.OS.IsUserfsPersistent">IsUserfsPersistent()</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the <code>user://</code> file system is persistent, so that its state is the same after a player quits and starts the game again. Relevant to the Web platform, where this persistence may be unavailable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUserfsPersistent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_Kill_" data-uid="Godot.OS.Kill*"></a>
+  <h4 id="Godot_OS_Kill_System_Int32_" data-uid="Godot.OS.Kill(System.Int32)">Kill(int)</h4>
+  <div class="markdown level1 summary"><p>Kill (terminate) the process identified by the given process ID (<code>pid</code>), e.g. the one returned by <a class="xref" href="Godot.OS.html#Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_">Execute(string, string[], Array, bool, bool)</a> in non-blocking mode. See also <a class="xref" href="Godot.OS.html#Godot_OS_Crash_System_String_">Crash(string)</a>.</p>
+<p><b>Note:</b> This method can also be used to kill processes that were not spawned by the game.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error Kill(int pid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_MoveToTrash_" data-uid="Godot.OS.MoveToTrash*"></a>
+  <h4 id="Godot_OS_MoveToTrash_System_String_" data-uid="Godot.OS.MoveToTrash(System.String)">MoveToTrash(string)</h4>
+  <div class="markdown level1 summary"><p>Moves the file or directory to the system's recycle bin. See also <a class="xref" href="Godot.DirAccess.html#Godot_DirAccess_Remove_System_String_">Remove(string)</a>.</p>
+<p>The method takes only global paths, so you may need to use <a class="xref" href="Godot.ProjectSettings.html#Godot_ProjectSettings_GlobalizePath_System_String_">GlobalizePath(string)</a>. Do not use it for files in <code>res://</code> as it will not work in exported projects.</p>
+<p><b>Note:</b> If the user has disabled the recycle bin on their system, the file will be permanently deleted instead.</p>
+<p><pre><code class="lang-csharp">var fileToRemove = "user://slot1.save";
+   OS.MoveToTrash(ProjectSettings.GlobalizePath(fileToRemove));</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error MoveToTrash(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_OpenMidiInputs_" data-uid="Godot.OS.OpenMidiInputs*"></a>
+  <h4 id="Godot_OS_OpenMidiInputs" data-uid="Godot.OS.OpenMidiInputs">OpenMidiInputs()</h4>
+  <div class="markdown level1 summary"><p>Initializes the singleton for the system MIDI driver.</p>
+<p><b>Note:</b> This method is implemented on Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenMidiInputs()</code></pre>
+  </div>
+
+
+  <a id="Godot_OS_ReadStringFromStdIn_" data-uid="Godot.OS.ReadStringFromStdIn*"></a>
+  <h4 id="Godot_OS_ReadStringFromStdIn" data-uid="Godot.OS.ReadStringFromStdIn">ReadStringFromStdIn()</h4>
+  <div class="markdown level1 summary"><p>Reads a user input string from the standard input (usually the terminal). This operation is <i>blocking</i>, which causes the window to freeze if <a class="xref" href="Godot.OS.html#Godot_OS_ReadStringFromStdIn">ReadStringFromStdIn()</a> is called on the main thread. The thread calling <a class="xref" href="Godot.OS.html#Godot_OS_ReadStringFromStdIn">ReadStringFromStdIn()</a> will block until the program receives a line break in standard input (usually by the user pressing Enter).</p>
+<p><b>Note:</b> This method is implemented on Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadStringFromStdIn()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_RequestPermission_" data-uid="Godot.OS.RequestPermission*"></a>
+  <h4 id="Godot_OS_RequestPermission_System_String_" data-uid="Godot.OS.RequestPermission(System.String)">RequestPermission(string)</h4>
+  <div class="markdown level1 summary"><p>At the moment this function is only used by <code>AudioDriverOpenSL</code> to request permission for <code>RECORD_AUDIO</code> on Android.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RequestPermission(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_RequestPermissions_" data-uid="Godot.OS.RequestPermissions*"></a>
+  <h4 id="Godot_OS_RequestPermissions" data-uid="Godot.OS.RequestPermissions">RequestPermissions()</h4>
+  <div class="markdown level1 summary"><p>With this function, you can request dangerous permissions since normal permissions are automatically granted at install time in Android applications.</p>
+<p><b>Note:</b> This method is implemented only on Android.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RequestPermissions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_SetEnvironment_" data-uid="Godot.OS.SetEnvironment*"></a>
+  <h4 id="Godot_OS_SetEnvironment_System_String_System_String_" data-uid="Godot.OS.SetEnvironment(System.String,System.String)">SetEnvironment(string, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of the environment variable <code>variable</code> to <code>value</code>. The environment variable will be set for the Godot process and any process executed with <a class="xref" href="Godot.OS.html#Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_">Execute(string, string[], Array, bool, bool)</a> after running <a class="xref" href="Godot.OS.html#Godot_OS_SetEnvironment_System_String_System_String_">SetEnvironment(string, string)</a>. The environment variable will <i>not</i> persist to processes run after the Godot process was terminated.</p>
+<p><b>Note:</b> Environment variable names are case-sensitive on all platforms except Windows. The <code>variable</code> name cannot be empty or include the <code>=</code> character. On Windows, there is a 32767 characters limit for the combined length of <code>variable</code>, <code>value</code>, and the <code>=</code> and null terminator characters that will be registered in the environment block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEnvironment(string variable, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_SetRestartOnExit_" data-uid="Godot.OS.SetRestartOnExit*"></a>
+  <h4 id="Godot_OS_SetRestartOnExit_System_Boolean_System_String___" data-uid="Godot.OS.SetRestartOnExit(System.Boolean,System.String[])">SetRestartOnExit(bool, string[])</h4>
+  <div class="markdown level1 summary"><p>If <code>restart</code> is <code>true</code>, restarts the project automatically when it is exited with <a class="xref" href="Godot.SceneTree.html#Godot_SceneTree_Quit_System_Int32_">Quit(int)</a> or <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMCloseRequest">NotificationWMCloseRequest</a>. Command line <code>arguments</code> can be supplied. To restart the project with the same command line arguments as originally used to run the project, pass <a class="xref" href="Godot.OS.html#Godot_OS_GetCmdlineArgs">GetCmdlineArgs()</a> as the value for <code>arguments</code>.</p>
+<p><a class="xref" href="Godot.OS.html#Godot_OS_SetRestartOnExit_System_Boolean_System_String___">SetRestartOnExit(bool, string[])</a> can be used to apply setting changes that require a restart. See also <a class="xref" href="Godot.OS.html#Godot_OS_IsRestartOnExitSet">IsRestartOnExitSet()</a> and <a class="xref" href="Godot.OS.html#Godot_OS_GetRestartOnExitArguments">GetRestartOnExitArguments()</a>.</p>
+<p><b>Note:</b> This method is only effective on desktop platforms, and only when the project isn't started from the editor. It will have no effect on mobile and Web platforms, or when the project is started from the editor.</p>
+<p><b>Note:</b> If the project process crashes or is <i>killed</i> by the user (by sending <code>SIGKILL</code> instead of the usual <code>SIGTERM</code>), the project won't restart automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRestartOnExit(bool restart, string[] arguments = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">restart</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>If the parameter is null, then the default value is <code>Array.Empty&lt;string&gt;()</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_SetThreadName_" data-uid="Godot.OS.SetThreadName*"></a>
+  <h4 id="Godot_OS_SetThreadName_System_String_" data-uid="Godot.OS.SetThreadName(System.String)">SetThreadName(string)</h4>
+  <div class="markdown level1 summary"><p>Sets the name of the current thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error SetThreadName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_SetUseFileAccessSaveAndSwap_" data-uid="Godot.OS.SetUseFileAccessSaveAndSwap*"></a>
+  <h4 id="Godot_OS_SetUseFileAccessSaveAndSwap_System_Boolean_" data-uid="Godot.OS.SetUseFileAccessSaveAndSwap(System.Boolean)">SetUseFileAccessSaveAndSwap(bool)</h4>
+  <div class="markdown level1 summary"><p>Enables backup saves if <code>enabled</code> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUseFileAccessSaveAndSwap(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_ShellOpen_" data-uid="Godot.OS.ShellOpen*"></a>
+  <h4 id="Godot_OS_ShellOpen_System_String_" data-uid="Godot.OS.ShellOpen(System.String)">ShellOpen(string)</h4>
+  <div class="markdown level1 summary"><p>Requests the OS to open a resource with the most appropriate program. For example:</p>
+<p>- <code>OS.shell_open("C:\\Users\name\Downloads")</code> on Windows opens the file explorer at the user's Downloads folder.</p>
+<p>- <code>OS.shell_open("https://godotengine.org")</code> opens the default web browser on the official Godot website.</p>
+<p>- <code>OS.shell_open("mailto:example@example.com")</code> opens the default email client with the "To" field set to <code>example@example.com</code>. See <a href="https://datatracker.ietf.org/doc/html/rfc2368">RFC 2368 - The <code>mailto</code> URL scheme</a> for a list of fields that can be added.</p>
+<p>Use <a class="xref" href="Godot.ProjectSettings.html#Godot_ProjectSettings_GlobalizePath_System_String_">GlobalizePath(string)</a> to convert a <code>res://</code> or <code>user://</code> path into a system path for use with this method.</p>
+<p><b>Note:</b> Use <code>String.uri_encode</code> to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, <a class="xref" href="Godot.OS.html#Godot_OS_ShellOpen_System_String_">ShellOpen(string)</a> may not work correctly in a project exported to the Web platform.</p>
+<p><b>Note:</b> This method is implemented on Android, iOS, Web, Linux, macOS and Windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error ShellOpen(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_ShellShowInFileManager_" data-uid="Godot.OS.ShellShowInFileManager*"></a>
+  <h4 id="Godot_OS_ShellShowInFileManager_System_String_System_Boolean_" data-uid="Godot.OS.ShellShowInFileManager(System.String,System.Boolean)">ShellShowInFileManager(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Requests the OS to open the file manager, then navigate to the given <code>fileOrDirPath</code> and select the target file or folder.</p>
+<p>If <code>fileOrDirPath</code> is a valid directory path, and <code>openFolder</code> is <code>true</code>, the method will open the file manager and enter the target folder without selecting anything.</p>
+<p>Use <a class="xref" href="Godot.ProjectSettings.html#Godot_ProjectSettings_GlobalizePath_System_String_">GlobalizePath(string)</a> to convert a <code>res://</code> or <code>user://</code> path into a system path for use with this method.</p>
+<p><b>Note:</b> Currently this method is only implemented on Windows and macOS. On other platforms, it will fallback to <a class="xref" href="Godot.OS.html#Godot_OS_ShellOpen_System_String_">ShellOpen(string)</a> with a directory path of <code>fileOrDirPath</code> with prefix <code>file://</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error ShellShowInFileManager(string fileOrDirPath, bool openFolder = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileOrDirPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">openFolder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Error.html">Error</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_OS_UnsetEnvironment_" data-uid="Godot.OS.UnsetEnvironment*"></a>
+  <h4 id="Godot_OS_UnsetEnvironment_System_String_" data-uid="Godot.OS.UnsetEnvironment(System.String)">UnsetEnvironment(string)</h4>
+  <div class="markdown level1 summary"><p>Removes the environment <code>variable</code> from the current environment, if it exists. The environment variable will be removed for the Godot process and any process executed with <a class="xref" href="Godot.OS.html#Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_">Execute(string, string[], Array, bool, bool)</a> after running <a class="xref" href="Godot.OS.html#Godot_OS_UnsetEnvironment_System_String_">UnsetEnvironment(string)</a>. The removal of the environment variable will <i>not</i> persist to processes run after the Godot process was terminated.</p>
+<p><b>Note:</b> Environment variable names are case-sensitive on all platforms except Windows. The <code>variable</code> name cannot be empty or include the <code>=</code> character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsetEnvironment(string variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1449 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EditorNode3DGizmo
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EditorNode3DGizmo
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.EditorNode3DGizmo">
+
+
+
+  <h1 id="Godot_EditorNode3DGizmo" data-uid="Godot.EditorNode3DGizmo" class="text-break">Class EditorNode3DGizmo
+</h1>
+  <div class="markdown level0 summary"><p>Gizmo that is used for providing custom visualization and editing (handles and subgizmos) for Node3D objects. Can be overridden to create custom gizmos, but for simple gizmos creating a <a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a> is usually recommended.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+    <div class="level3"><a class="xref" href="Godot.Node3DGizmo.html">Node3DGizmo</a></div>
+    <div class="level4"><span class="xref">EditorNode3DGizmo</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharpEditor.dll</h6>
+  <h5 id="Godot_EditorNode3DGizmo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EditorNode3DGizmo : Node3DGizmo, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_EditorNode3DGizmo__ctor_" data-uid="Godot.EditorNode3DGizmo.#ctor*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__ctor" data-uid="Godot.EditorNode3DGizmo.#ctor">EditorNode3DGizmo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorNode3DGizmo()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddCollisionSegments_" data-uid="Godot.EditorNode3DGizmo.AddCollisionSegments*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddCollisionSegments_Godot_Vector3___" data-uid="Godot.EditorNode3DGizmo.AddCollisionSegments(Godot.Vector3[])">AddCollisionSegments(Vector3[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code>segments</code> to the gizmo's collision shape for picking. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCollisionSegments(Vector3[] segments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</td>
+        <td><span class="parametername">segments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddCollisionTriangles_" data-uid="Godot.EditorNode3DGizmo.AddCollisionTriangles*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddCollisionTriangles_Godot_TriangleMesh_" data-uid="Godot.EditorNode3DGizmo.AddCollisionTriangles(Godot.TriangleMesh)">AddCollisionTriangles(TriangleMesh)</h4>
+  <div class="markdown level1 summary"><p>Adds collision triangles to the gizmo for picking. A <a class="xref" href="Godot.TriangleMesh.html">TriangleMesh</a> can be generated from a regular <a class="xref" href="Godot.Mesh.html">Mesh</a> too. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCollisionTriangles(TriangleMesh triangles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.TriangleMesh.html">TriangleMesh</a></td>
+        <td><span class="parametername">triangles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddHandles_" data-uid="Godot.EditorNode3DGizmo.AddHandles*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_" data-uid="Godot.EditorNode3DGizmo.AddHandles(Godot.Vector3[],Godot.Material,System.Int32[],System.Boolean,System.Boolean)">AddHandles(Vector3[], Material, int[], bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Adds a list of handles (points) which can be used to edit the properties of the gizmo's Node3D. The <code>ids</code> argument can be used to specify a custom identifier for each handle, if an empty <code>Array</code> is passed, the ids will be assigned automatically from the <code>handles</code> argument order.</p>
+<p>The <code>secondary</code> argument marks the added handles as secondary, meaning they will normally have lower selection priority than regular handles. When the user is holding the shift key secondary handles will switch to have higher priority than regular handles. This change in priority can be used to place multiple handles at the same point while still giving the user control on their selection.</p>
+<p>There are virtual methods which will be called upon editing of these handles. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHandles(Vector3[] handles, Material material, int[] ids, bool billboard = false, bool secondary = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</td>
+        <td><span class="parametername">handles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">billboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddLines_" data-uid="Godot.EditorNode3DGizmo.AddLines*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddLines_Godot_Vector3___Godot_Material_System_Boolean_System_Nullable_Godot_Color__" data-uid="Godot.EditorNode3DGizmo.AddLines(Godot.Vector3[],Godot.Material,System.Boolean,System.Nullable{Godot.Color})">AddLines(Vector3[], Material, bool, Color?)</h4>
+  <div class="markdown level1 summary"><p>Adds lines to the gizmo (as sets of 2 points), with a given material. The lines are used for visualizing the gizmo. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddLines(Vector3[] lines, Material material, bool billboard = false, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</td>
+        <td><span class="parametername">lines</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">billboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddMesh_" data-uid="Godot.EditorNode3DGizmo.AddMesh*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddMesh_Godot_Mesh_Godot_Material_System_Nullable_Godot_Transform3D__Godot_SkinReference_" data-uid="Godot.EditorNode3DGizmo.AddMesh(Godot.Mesh,Godot.Material,System.Nullable{Godot.Transform3D},Godot.SkinReference)">AddMesh(Mesh, Material, Transform3D?, SkinReference)</h4>
+  <div class="markdown level1 summary"><p>Adds a mesh to the gizmo with the specified <code>material</code>, local <code>transform</code> and <code>skeleton</code>. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh, Material material = null, Transform3D? transform = null, SkinReference skeleton = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Transform3D.html">Transform3D</a>?</td>
+        <td><span class="parametername">transform</span></td>
+        <td><p>If the parameter is null, then the default value is <code>Transform3D.Identity</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.SkinReference.html">SkinReference</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_AddUnscaledBillboard_" data-uid="Godot.EditorNode3DGizmo.AddUnscaledBillboard*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_AddUnscaledBillboard_Godot_Material_System_Single_System_Nullable_Godot_Color__" data-uid="Godot.EditorNode3DGizmo.AddUnscaledBillboard(Godot.Material,System.Single,System.Nullable{Godot.Color})">AddUnscaledBillboard(Material, float, Color?)</h4>
+  <div class="markdown level1 summary"><p>Adds an unscaled billboard for visualization and selection. Call this method during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUnscaledBillboard(Material material, float defaultScale = 1, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">defaultScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_Clear_" data-uid="Godot.EditorNode3DGizmo.Clear*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_Clear" data-uid="Godot.EditorNode3DGizmo.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Removes everything in the gizmo including meshes, collisions and handles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorNode3DGizmo_GetNode3D_" data-uid="Godot.EditorNode3DGizmo.GetNode3D*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_GetNode3D" data-uid="Godot.EditorNode3DGizmo.GetNode3D">GetNode3D()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.Node3D.html">Node3D</a> node associated with this gizmo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node3D GetNode3D()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Node3D.html">Node3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_GetPlugin_" data-uid="Godot.EditorNode3DGizmo.GetPlugin*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_GetPlugin" data-uid="Godot.EditorNode3DGizmo.GetPlugin">GetPlugin()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a> that owns this gizmo. It's useful to retrieve materials using <a class="xref" href="Godot.EditorNode3DGizmoPlugin.html#Godot_EditorNode3DGizmoPlugin_GetMaterial_System_String_Godot_EditorNode3DGizmo_">GetMaterial(string, EditorNode3DGizmo)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorNode3DGizmoPlugin GetPlugin()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_GetSubgizmoSelection_" data-uid="Godot.EditorNode3DGizmo.GetSubgizmoSelection*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_GetSubgizmoSelection" data-uid="Godot.EditorNode3DGizmo.GetSubgizmoSelection">GetSubgizmoSelection()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of the currently selected subgizmos. Can be used to highlight selected elements during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetSubgizmoSelection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_HasGodotClassMethod_" data-uid="Godot.EditorNode3DGizmo.HasGodotClassMethod*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorNode3DGizmo.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node3DGizmo.html#Godot_Node3DGizmo_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">Node3DGizmo.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_EditorNode3DGizmo_HasGodotClassSignal_" data-uid="Godot.EditorNode3DGizmo.HasGodotClassSignal*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorNode3DGizmo.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node3DGizmo.html#Godot_Node3DGizmo_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">Node3DGizmo.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_EditorNode3DGizmo_InvokeGodotClassMethod_" data-uid="Godot.EditorNode3DGizmo.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.EditorNode3DGizmo.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node3DGizmo.html#Godot_Node3DGizmo_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">Node3DGizmo.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_EditorNode3DGizmo_IsSubgizmoSelected_" data-uid="Godot.EditorNode3DGizmo.IsSubgizmoSelected*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_IsSubgizmoSelected_System_Int32_" data-uid="Godot.EditorNode3DGizmo.IsSubgizmoSelected(System.Int32)">IsSubgizmoSelected(int)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the given subgizmo is currently selected. Can be used to highlight selected elements during <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__Redraw">_Redraw()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSubgizmoSelected(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_SetHidden_" data-uid="Godot.EditorNode3DGizmo.SetHidden*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_SetHidden_System_Boolean_" data-uid="Godot.EditorNode3DGizmo.SetHidden(System.Boolean)">SetHidden(bool)</h4>
+  <div class="markdown level1 summary"><p>Sets the gizmo's hidden state. If <code>true</code>, the gizmo will be hidden. If <code>false</code>, it will be shown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHidden(bool hidden)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">hidden</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo_SetNode3D_" data-uid="Godot.EditorNode3DGizmo.SetNode3D*"></a>
+  <h4 id="Godot_EditorNode3DGizmo_SetNode3D_Godot_Node_" data-uid="Godot.EditorNode3DGizmo.SetNode3D(Godot.Node)">SetNode3D(Node)</h4>
+  <div class="markdown level1 summary"><p>Sets the reference <a class="xref" href="Godot.Node3D.html">Node3D</a> node for the gizmo. <code>node</code> must inherit from <a class="xref" href="Godot.Node3D.html">Node3D</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNode3D(Node node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Node.html">Node</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__CommitHandle_" data-uid="Godot.EditorNode3DGizmo._CommitHandle*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__CommitHandle_System_Int32_System_Boolean_Godot_Variant_System_Boolean_" data-uid="Godot.EditorNode3DGizmo._CommitHandle(System.Int32,System.Boolean,Godot.Variant,System.Boolean)">_CommitHandle(int, bool, Variant, bool)</h4>
+  <div class="markdown level1 summary"><p>Override this method to commit a handle being edited (handles must have been previously added by <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a>). This usually means creating an <a class="xref" href="Godot.UndoRedo.html">UndoRedo</a> action for the change, using the current handle value as "do" and the <code>restore</code> argument as "undo".</p>
+<p>If the <code>cancel</code> argument is <code>true</code>, the <code>restore</code> value should be directly set, without any <a class="xref" href="Godot.UndoRedo.html">UndoRedo</a> action.</p>
+<p>The <code>secondary</code> argument is <code>true</code> when the committed handle is secondary (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a> for more information).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _CommitHandle(int id, bool secondary, Variant restore, bool cancel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td><span class="parametername">restore</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">cancel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__CommitSubgizmos_" data-uid="Godot.EditorNode3DGizmo._CommitSubgizmos*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__CommitSubgizmos_System_Int32___Godot_Collections_Array_Godot_Transform3D__System_Boolean_" data-uid="Godot.EditorNode3DGizmo._CommitSubgizmos(System.Int32[],Godot.Collections.Array{Godot.Transform3D},System.Boolean)">_CommitSubgizmos(int[], Array&lt;Transform3D&gt;, bool)</h4>
+  <div class="markdown level1 summary"><p>Override this method to commit a group of subgizmos being edited (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__SubgizmosIntersectRay_Godot_Camera3D_Godot_Vector2_">_SubgizmosIntersectRay(Camera3D, Vector2)</a> and <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__SubgizmosIntersectFrustum_Godot_Camera3D_Godot_Collections_Array_Godot_Plane__">_SubgizmosIntersectFrustum(Camera3D, Array&lt;Plane&gt;)</a>). This usually means creating an <a class="xref" href="Godot.UndoRedo.html">UndoRedo</a> action for the change, using the current transforms as "do" and the <code>restores</code> transforms as "undo".</p>
+<p>If the <code>cancel</code> argument is <code>true</code>, the <code>restores</code> transforms should be directly set, without any <a class="xref" href="Godot.UndoRedo.html">UndoRedo</a> action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _CommitSubgizmos(int[] ids, Array&lt;Transform3D&gt; restores, bool cancel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Transform3D.html">Transform3D</a>&gt;</td>
+        <td><span class="parametername">restores</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">cancel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__GetHandleName_" data-uid="Godot.EditorNode3DGizmo._GetHandleName*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__GetHandleName_System_Int32_System_Boolean_" data-uid="Godot.EditorNode3DGizmo._GetHandleName(System.Int32,System.Boolean)">_GetHandleName(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Override this method to return the name of an edited handle (handles must have been previously added by <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a>). Handles can be named for reference to the user when editing.</p>
+<p>The <code>secondary</code> argument is <code>true</code> when the requested handle is secondary (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a> for more information).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetHandleName(int id, bool secondary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__GetHandleValue_" data-uid="Godot.EditorNode3DGizmo._GetHandleValue*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__GetHandleValue_System_Int32_System_Boolean_" data-uid="Godot.EditorNode3DGizmo._GetHandleValue(System.Int32,System.Boolean)">_GetHandleValue(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Override this method to return the current value of a handle. This value will be requested at the start of an edit and used as the <code>restore</code> argument in <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__CommitHandle_System_Int32_System_Boolean_Godot_Variant_System_Boolean_">_CommitHandle(int, bool, Variant, bool)</a>.</p>
+<p>The <code>secondary</code> argument is <code>true</code> when the requested handle is secondary (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a> for more information).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Variant _GetHandleValue(int id, bool secondary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__GetSubgizmoTransform_" data-uid="Godot.EditorNode3DGizmo._GetSubgizmoTransform*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__GetSubgizmoTransform_System_Int32_" data-uid="Godot.EditorNode3DGizmo._GetSubgizmoTransform(System.Int32)">_GetSubgizmoTransform(int)</h4>
+  <div class="markdown level1 summary"><p>Override this method to return the current transform of a subgizmo. This transform will be requested at the start of an edit and used as the <code>restore</code> argument in <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__CommitSubgizmos_System_Int32___Godot_Collections_Array_Godot_Transform3D__System_Boolean_">_CommitSubgizmos(int[], Array&lt;Transform3D&gt;, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Transform3D _GetSubgizmoTransform(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform3D.html">Transform3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__IsHandleHighlighted_" data-uid="Godot.EditorNode3DGizmo._IsHandleHighlighted*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__IsHandleHighlighted_System_Int32_System_Boolean_" data-uid="Godot.EditorNode3DGizmo._IsHandleHighlighted(System.Int32,System.Boolean)">_IsHandleHighlighted(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Override this method to return <code>true</code> whenever the given handle should be highlighted in the editor.</p>
+<p>The <code>secondary</code> argument is <code>true</code> when the requested handle is secondary (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a> for more information).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsHandleHighlighted(int id, bool secondary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__Redraw_" data-uid="Godot.EditorNode3DGizmo._Redraw*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__Redraw" data-uid="Godot.EditorNode3DGizmo._Redraw">_Redraw()</h4>
+  <div class="markdown level1 summary"><p>Override this method to add all the gizmo elements whenever a gizmo update is requested. It's common to call <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_Clear">Clear()</a> at the beginning of this method and then add visual elements depending on the node's properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Redraw()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorNode3DGizmo__SetHandle_" data-uid="Godot.EditorNode3DGizmo._SetHandle*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__SetHandle_System_Int32_System_Boolean_Godot_Camera3D_Godot_Vector2_" data-uid="Godot.EditorNode3DGizmo._SetHandle(System.Int32,System.Boolean,Godot.Camera3D,Godot.Vector2)">_SetHandle(int, bool, Camera3D, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Override this method to update the node properties when the user drags a gizmo handle (previously added with <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a>). The provided <code>point</code> is the mouse position in screen coordinates and the <code>camera</code> can be used to convert it to raycasts.</p>
+<p>The <code>secondary</code> argument is <code>true</code> when the edited handle is secondary (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo_AddHandles_Godot_Vector3___Godot_Material_System_Int32___System_Boolean_System_Boolean_">AddHandles(Vector3[], Material, int[], bool, bool)</a> for more information).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetHandle(int id, bool secondary, Camera3D camera, Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">secondary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Camera3D.html">Camera3D</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__SetSubgizmoTransform_" data-uid="Godot.EditorNode3DGizmo._SetSubgizmoTransform*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__SetSubgizmoTransform_System_Int32_Godot_Transform3D_" data-uid="Godot.EditorNode3DGizmo._SetSubgizmoTransform(System.Int32,Godot.Transform3D)">_SetSubgizmoTransform(int, Transform3D)</h4>
+  <div class="markdown level1 summary"><p>Override this method to update the node properties during subgizmo editing (see <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__SubgizmosIntersectRay_Godot_Camera3D_Godot_Vector2_">_SubgizmosIntersectRay(Camera3D, Vector2)</a> and <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__SubgizmosIntersectFrustum_Godot_Camera3D_Godot_Collections_Array_Godot_Plane__">_SubgizmosIntersectFrustum(Camera3D, Array&lt;Plane&gt;)</a>). The <code>transform</code> is given in the Node3D's local coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetSubgizmoTransform(int id, Transform3D transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Transform3D.html">Transform3D</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__SubgizmosIntersectFrustum_" data-uid="Godot.EditorNode3DGizmo._SubgizmosIntersectFrustum*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__SubgizmosIntersectFrustum_Godot_Camera3D_Godot_Collections_Array_Godot_Plane__" data-uid="Godot.EditorNode3DGizmo._SubgizmosIntersectFrustum(Godot.Camera3D,Godot.Collections.Array{Godot.Plane})">_SubgizmosIntersectFrustum(Camera3D, Array&lt;Plane&gt;)</h4>
+  <div class="markdown level1 summary"><p>Override this method to allow selecting subgizmos using mouse drag box selection. Given a <code>camera</code> and a <code>frustum</code>, this method should return which subgizmos are contained within the frustum. The <code>frustum</code> argument consists of an <code>Array</code> with all the <code>Plane</code>s that make up the selection frustum. The returned value should contain a list of unique subgizmo identifiers, which can have any non-negative value and will be used in other virtual methods like <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__GetSubgizmoTransform_System_Int32_">_GetSubgizmoTransform(int)</a> or <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__CommitSubgizmos_System_Int32___Godot_Collections_Array_Godot_Transform3D__System_Boolean_">_CommitSubgizmos(int[], Array&lt;Transform3D&gt;, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int[] _SubgizmosIntersectFrustum(Camera3D camera, Array&lt;Plane&gt; frustum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Camera3D.html">Camera3D</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Plane.html">Plane</a>&gt;</td>
+        <td><span class="parametername">frustum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorNode3DGizmo__SubgizmosIntersectRay_" data-uid="Godot.EditorNode3DGizmo._SubgizmosIntersectRay*"></a>
+  <h4 id="Godot_EditorNode3DGizmo__SubgizmosIntersectRay_Godot_Camera3D_Godot_Vector2_" data-uid="Godot.EditorNode3DGizmo._SubgizmosIntersectRay(Godot.Camera3D,Godot.Vector2)">_SubgizmosIntersectRay(Camera3D, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Override this method to allow selecting subgizmos using mouse clicks. Given a <code>camera</code> and a <code>point</code> in screen coordinates, this method should return which subgizmo should be selected. The returned value should be a unique subgizmo identifier, which can have any non-negative value and will be used in other virtual methods like <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__GetSubgizmoTransform_System_Int32_">_GetSubgizmoTransform(int)</a> or <a class="xref" href="Godot.EditorNode3DGizmo.html#Godot_EditorNode3DGizmo__CommitSubgizmos_System_Int32___Godot_Collections_Array_Godot_Transform3D__System_Boolean_">_CommitSubgizmos(int[], Array&lt;Transform3D&gt;, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _SubgizmosIntersectRay(Camera3D camera, Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Camera3D.html">Camera3D</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

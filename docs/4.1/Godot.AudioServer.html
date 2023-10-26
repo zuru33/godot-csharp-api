@@ -1,0 +1,1704 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AudioServer
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AudioServer
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.AudioServer">
+
+
+
+  <h1 id="Godot_AudioServer" data-uid="Godot.AudioServer" class="text-break">Class AudioServer
+</h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Godot.AudioServer.html">AudioServer</a> is a low-level server interface for audio access. It is in charge of creating sample data (playable audio) as well as its playback via a voice interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">AudioServer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_AudioServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AudioServer</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_AudioServer_BusCount_" data-uid="Godot.AudioServer.BusCount*"></a>
+  <h4 id="Godot_AudioServer_BusCount" data-uid="Godot.AudioServer.BusCount">BusCount</h4>
+  <div class="markdown level1 summary"><p>Number of available audio buses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BusCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_InputDevice_" data-uid="Godot.AudioServer.InputDevice*"></a>
+  <h4 id="Godot_AudioServer_InputDevice" data-uid="Godot.AudioServer.InputDevice">InputDevice</h4>
+  <div class="markdown level1 summary"><p>Name of the current device for audio input (see <a class="xref" href="Godot.AudioServer.html#Godot_AudioServer_GetInputDeviceList">GetInputDeviceList()</a>). On systems with multiple audio inputs (such as analog, USB and HDMI audio), this can be used to select the audio input device. The value <code>"Default"</code> will record audio on the system-wide default audio input. If an invalid device name is set, the value will be reverted back to <code>"Default"</code>.</p>
+<p><b>Note:</b> <code>ProjectSettings.audio/driver/enable_input</code> must be <code>true</code> for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InputDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_OutputDevice_" data-uid="Godot.AudioServer.OutputDevice*"></a>
+  <h4 id="Godot_AudioServer_OutputDevice" data-uid="Godot.AudioServer.OutputDevice">OutputDevice</h4>
+  <div class="markdown level1 summary"><p>Name of the current device for audio output (see <a class="xref" href="Godot.AudioServer.html#Godot_AudioServer_GetOutputDeviceList">GetOutputDeviceList()</a>). On systems with multiple audio outputs (such as analog, USB and HDMI audio), this can be used to select the audio output device. The value <code>"Default"</code> will play audio on the system-wide default audio output. If an invalid device name is set, the value will be reverted back to <code>"Default"</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string OutputDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_PlaybackSpeedScale_" data-uid="Godot.AudioServer.PlaybackSpeedScale*"></a>
+  <h4 id="Godot_AudioServer_PlaybackSpeedScale" data-uid="Godot.AudioServer.PlaybackSpeedScale">PlaybackSpeedScale</h4>
+  <div class="markdown level1 summary"><p>Scales the rate at which audio is played (i.e. setting it to <code>0.5</code> will make the audio be played at half its speed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PlaybackSpeedScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_Singleton_" data-uid="Godot.AudioServer.Singleton*"></a>
+  <h4 id="Godot_AudioServer_Singleton" data-uid="Godot.AudioServer.Singleton">Singleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GodotObject Singleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.GodotObject.html">GodotObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_AudioServer_AddBus_" data-uid="Godot.AudioServer.AddBus*"></a>
+  <h4 id="Godot_AudioServer_AddBus_System_Int32_" data-uid="Godot.AudioServer.AddBus(System.Int32)">AddBus(int)</h4>
+  <div class="markdown level1 summary"><p>Adds a bus at <code>atPosition</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBus(int atPosition = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">atPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_AddBusEffect_" data-uid="Godot.AudioServer.AddBusEffect*"></a>
+  <h4 id="Godot_AudioServer_AddBusEffect_System_Int32_Godot_AudioEffect_System_Int32_" data-uid="Godot.AudioServer.AddBusEffect(System.Int32,Godot.AudioEffect,System.Int32)">AddBusEffect(int, AudioEffect, int)</h4>
+  <div class="markdown level1 summary"><p>Adds an <a class="xref" href="Godot.AudioEffect.html">AudioEffect</a> effect to the bus <code>busIdx</code> at <code>atPosition</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBusEffect(int busIdx, AudioEffect effect, int atPosition = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.AudioEffect.html">AudioEffect</a></td>
+        <td><span class="parametername">effect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">atPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GenerateBusLayout_" data-uid="Godot.AudioServer.GenerateBusLayout*"></a>
+  <h4 id="Godot_AudioServer_GenerateBusLayout" data-uid="Godot.AudioServer.GenerateBusLayout">GenerateBusLayout()</h4>
+  <div class="markdown level1 summary"><p>Generates an <a class="xref" href="Godot.AudioBusLayout.html">AudioBusLayout</a> using the available buses and effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioBusLayout GenerateBusLayout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.AudioBusLayout.html">AudioBusLayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusChannels_" data-uid="Godot.AudioServer.GetBusChannels*"></a>
+  <h4 id="Godot_AudioServer_GetBusChannels_System_Int32_" data-uid="Godot.AudioServer.GetBusChannels(System.Int32)">GetBusChannels(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of channels of the bus at index <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBusChannels(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusEffect_" data-uid="Godot.AudioServer.GetBusEffect*"></a>
+  <h4 id="Godot_AudioServer_GetBusEffect_System_Int32_System_Int32_" data-uid="Godot.AudioServer.GetBusEffect(System.Int32,System.Int32)">GetBusEffect(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.AudioEffect.html">AudioEffect</a> at position <code>effectIdx</code> in bus <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioEffect GetBusEffect(int busIdx, int effectIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.AudioEffect.html">AudioEffect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusEffectCount_" data-uid="Godot.AudioServer.GetBusEffectCount*"></a>
+  <h4 id="Godot_AudioServer_GetBusEffectCount_System_Int32_" data-uid="Godot.AudioServer.GetBusEffectCount(System.Int32)">GetBusEffectCount(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of effects on the bus at <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBusEffectCount(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusEffectInstance_" data-uid="Godot.AudioServer.GetBusEffectInstance*"></a>
+  <h4 id="Godot_AudioServer_GetBusEffectInstance_System_Int32_System_Int32_System_Int32_" data-uid="Godot.AudioServer.GetBusEffectInstance(System.Int32,System.Int32,System.Int32)">GetBusEffectInstance(int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.AudioEffectInstance.html">AudioEffectInstance</a> assigned to the given bus and effect indices (and optionally channel).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioEffectInstance GetBusEffectInstance(int busIdx, int effectIdx, int channel = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.AudioEffectInstance.html">AudioEffectInstance</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusIndex_" data-uid="Godot.AudioServer.GetBusIndex*"></a>
+  <h4 id="Godot_AudioServer_GetBusIndex_Godot_StringName_" data-uid="Godot.AudioServer.GetBusIndex(Godot.StringName)">GetBusIndex(StringName)</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the bus with the name <code>busName</code>. Returns <code>-1</code> if no bus with the specified name exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBusIndex(StringName busName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.StringName.html">StringName</a></td>
+        <td><span class="parametername">busName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusName_" data-uid="Godot.AudioServer.GetBusName*"></a>
+  <h4 id="Godot_AudioServer_GetBusName_System_Int32_" data-uid="Godot.AudioServer.GetBusName(System.Int32)">GetBusName(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the bus with the index <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBusName(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusPeakVolumeLeftDb_" data-uid="Godot.AudioServer.GetBusPeakVolumeLeftDb*"></a>
+  <h4 id="Godot_AudioServer_GetBusPeakVolumeLeftDb_System_Int32_System_Int32_" data-uid="Godot.AudioServer.GetBusPeakVolumeLeftDb(System.Int32,System.Int32)">GetBusPeakVolumeLeftDb(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the peak volume of the left speaker at bus index <code>busIdx</code> and channel index <code>channel</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetBusPeakVolumeLeftDb(int busIdx, int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusPeakVolumeRightDb_" data-uid="Godot.AudioServer.GetBusPeakVolumeRightDb*"></a>
+  <h4 id="Godot_AudioServer_GetBusPeakVolumeRightDb_System_Int32_System_Int32_" data-uid="Godot.AudioServer.GetBusPeakVolumeRightDb(System.Int32,System.Int32)">GetBusPeakVolumeRightDb(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns the peak volume of the right speaker at bus index <code>busIdx</code> and channel index <code>channel</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetBusPeakVolumeRightDb(int busIdx, int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusSend_" data-uid="Godot.AudioServer.GetBusSend*"></a>
+  <h4 id="Godot_AudioServer_GetBusSend_System_Int32_" data-uid="Godot.AudioServer.GetBusSend(System.Int32)">GetBusSend(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the bus that the bus at index <code>busIdx</code> sends to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringName GetBusSend(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.StringName.html">StringName</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetBusVolumeDb_" data-uid="Godot.AudioServer.GetBusVolumeDb*"></a>
+  <h4 id="Godot_AudioServer_GetBusVolumeDb_System_Int32_" data-uid="Godot.AudioServer.GetBusVolumeDb(System.Int32)">GetBusVolumeDb(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the volume of the bus at index <code>busIdx</code> in dB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetBusVolumeDb(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetInputDeviceList_" data-uid="Godot.AudioServer.GetInputDeviceList*"></a>
+  <h4 id="Godot_AudioServer_GetInputDeviceList" data-uid="Godot.AudioServer.GetInputDeviceList">GetInputDeviceList()</h4>
+  <div class="markdown level1 summary"><p>Returns the names of all audio input devices detected on the system.</p>
+<p><b>Note:</b> <code>ProjectSettings.audio/driver/enable_input</code> must be <code>true</code> for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetInputDeviceList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetMixRate_" data-uid="Godot.AudioServer.GetMixRate*"></a>
+  <h4 id="Godot_AudioServer_GetMixRate" data-uid="Godot.AudioServer.GetMixRate">GetMixRate()</h4>
+  <div class="markdown level1 summary"><p>Returns the sample rate at the output of the <a class="xref" href="Godot.AudioServer.html">AudioServer</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetMixRate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetOutputDeviceList_" data-uid="Godot.AudioServer.GetOutputDeviceList*"></a>
+  <h4 id="Godot_AudioServer_GetOutputDeviceList" data-uid="Godot.AudioServer.GetOutputDeviceList">GetOutputDeviceList()</h4>
+  <div class="markdown level1 summary"><p>Returns the names of all audio output devices detected on the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetOutputDeviceList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetOutputLatency_" data-uid="Godot.AudioServer.GetOutputLatency*"></a>
+  <h4 id="Godot_AudioServer_GetOutputLatency" data-uid="Godot.AudioServer.GetOutputLatency">GetOutputLatency()</h4>
+  <div class="markdown level1 summary"><p>Returns the audio driver's output latency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetOutputLatency()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetSpeakerMode_" data-uid="Godot.AudioServer.GetSpeakerMode*"></a>
+  <h4 id="Godot_AudioServer_GetSpeakerMode" data-uid="Godot.AudioServer.GetSpeakerMode">GetSpeakerMode()</h4>
+  <div class="markdown level1 summary"><p>Returns the speaker configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioServer.SpeakerMode GetSpeakerMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.AudioServer.html">AudioServer</a>.<a class="xref" href="Godot.AudioServer.SpeakerMode.html">SpeakerMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetTimeSinceLastMix_" data-uid="Godot.AudioServer.GetTimeSinceLastMix*"></a>
+  <h4 id="Godot_AudioServer_GetTimeSinceLastMix" data-uid="Godot.AudioServer.GetTimeSinceLastMix">GetTimeSinceLastMix()</h4>
+  <div class="markdown level1 summary"><p>Returns the relative time since the last mix occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetTimeSinceLastMix()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_GetTimeToNextMix_" data-uid="Godot.AudioServer.GetTimeToNextMix*"></a>
+  <h4 id="Godot_AudioServer_GetTimeToNextMix" data-uid="Godot.AudioServer.GetTimeToNextMix">GetTimeToNextMix()</h4>
+  <div class="markdown level1 summary"><p>Returns the relative time until the next mix occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetTimeToNextMix()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_IsBusBypassingEffects_" data-uid="Godot.AudioServer.IsBusBypassingEffects*"></a>
+  <h4 id="Godot_AudioServer_IsBusBypassingEffects_System_Int32_" data-uid="Godot.AudioServer.IsBusBypassingEffects(System.Int32)">IsBusBypassingEffects(int)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is bypassing effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBusBypassingEffects(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_IsBusEffectEnabled_" data-uid="Godot.AudioServer.IsBusEffectEnabled*"></a>
+  <h4 id="Godot_AudioServer_IsBusEffectEnabled_System_Int32_System_Int32_" data-uid="Godot.AudioServer.IsBusEffectEnabled(System.Int32,System.Int32)">IsBusEffectEnabled(int, int)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the effect at index <code>effectIdx</code> on the bus at index <code>busIdx</code> is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBusEffectEnabled(int busIdx, int effectIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_IsBusMute_" data-uid="Godot.AudioServer.IsBusMute*"></a>
+  <h4 id="Godot_AudioServer_IsBusMute_System_Int32_" data-uid="Godot.AudioServer.IsBusMute(System.Int32)">IsBusMute(int)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is muted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBusMute(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_IsBusSolo_" data-uid="Godot.AudioServer.IsBusSolo*"></a>
+  <h4 id="Godot_AudioServer_IsBusSolo_System_Int32_" data-uid="Godot.AudioServer.IsBusSolo(System.Int32)">IsBusSolo(int)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is in solo mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBusSolo(int busIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_Lock_" data-uid="Godot.AudioServer.Lock*"></a>
+  <h4 id="Godot_AudioServer_Lock" data-uid="Godot.AudioServer.Lock">Lock()</h4>
+  <div class="markdown level1 summary"><p>Locks the audio driver's main loop.</p>
+<p><b>Note:</b> Remember to unlock it afterwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Lock()</code></pre>
+  </div>
+
+
+  <a id="Godot_AudioServer_MoveBus_" data-uid="Godot.AudioServer.MoveBus*"></a>
+  <h4 id="Godot_AudioServer_MoveBus_System_Int32_System_Int32_" data-uid="Godot.AudioServer.MoveBus(System.Int32,System.Int32)">MoveBus(int, int)</h4>
+  <div class="markdown level1 summary"><p>Moves the bus from index <code>index</code> to index <code>toIndex</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveBus(int index, int toIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_RemoveBus_" data-uid="Godot.AudioServer.RemoveBus*"></a>
+  <h4 id="Godot_AudioServer_RemoveBus_System_Int32_" data-uid="Godot.AudioServer.RemoveBus(System.Int32)">RemoveBus(int)</h4>
+  <div class="markdown level1 summary"><p>Removes the bus at index <code>index</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveBus(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_RemoveBusEffect_" data-uid="Godot.AudioServer.RemoveBusEffect*"></a>
+  <h4 id="Godot_AudioServer_RemoveBusEffect_System_Int32_System_Int32_" data-uid="Godot.AudioServer.RemoveBusEffect(System.Int32,System.Int32)">RemoveBusEffect(int, int)</h4>
+  <div class="markdown level1 summary"><p>Removes the effect at index <code>effectIdx</code> from the bus at index <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveBusEffect(int busIdx, int effectIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusBypassEffects_" data-uid="Godot.AudioServer.SetBusBypassEffects*"></a>
+  <h4 id="Godot_AudioServer_SetBusBypassEffects_System_Int32_System_Boolean_" data-uid="Godot.AudioServer.SetBusBypassEffects(System.Int32,System.Boolean)">SetBusBypassEffects(int, bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is bypassing effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusBypassEffects(int busIdx, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusEffectEnabled_" data-uid="Godot.AudioServer.SetBusEffectEnabled*"></a>
+  <h4 id="Godot_AudioServer_SetBusEffectEnabled_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.AudioServer.SetBusEffectEnabled(System.Int32,System.Int32,System.Boolean)">SetBusEffectEnabled(int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the effect at index <code>effectIdx</code> on the bus at index <code>busIdx</code> is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusEffectEnabled(int busIdx, int effectIdx, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusLayout_" data-uid="Godot.AudioServer.SetBusLayout*"></a>
+  <h4 id="Godot_AudioServer_SetBusLayout_Godot_AudioBusLayout_" data-uid="Godot.AudioServer.SetBusLayout(Godot.AudioBusLayout)">SetBusLayout(AudioBusLayout)</h4>
+  <div class="markdown level1 summary"><p>Overwrites the currently used <a class="xref" href="Godot.AudioBusLayout.html">AudioBusLayout</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusLayout(AudioBusLayout busLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.AudioBusLayout.html">AudioBusLayout</a></td>
+        <td><span class="parametername">busLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusMute_" data-uid="Godot.AudioServer.SetBusMute*"></a>
+  <h4 id="Godot_AudioServer_SetBusMute_System_Int32_System_Boolean_" data-uid="Godot.AudioServer.SetBusMute(System.Int32,System.Boolean)">SetBusMute(int, bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is muted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusMute(int busIdx, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusName_" data-uid="Godot.AudioServer.SetBusName*"></a>
+  <h4 id="Godot_AudioServer_SetBusName_System_Int32_System_String_" data-uid="Godot.AudioServer.SetBusName(System.Int32,System.String)">SetBusName(int, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the name of the bus at index <code>busIdx</code> to <code>name</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusName(int busIdx, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusSend_" data-uid="Godot.AudioServer.SetBusSend*"></a>
+  <h4 id="Godot_AudioServer_SetBusSend_System_Int32_Godot_StringName_" data-uid="Godot.AudioServer.SetBusSend(System.Int32,Godot.StringName)">SetBusSend(int, StringName)</h4>
+  <div class="markdown level1 summary"><p>Connects the output of the bus at <code>busIdx</code> to the bus named <code>send</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusSend(int busIdx, StringName send)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.StringName.html">StringName</a></td>
+        <td><span class="parametername">send</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusSolo_" data-uid="Godot.AudioServer.SetBusSolo*"></a>
+  <h4 id="Godot_AudioServer_SetBusSolo_System_Int32_System_Boolean_" data-uid="Godot.AudioServer.SetBusSolo(System.Int32,System.Boolean)">SetBusSolo(int, bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the bus at index <code>busIdx</code> is in solo mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusSolo(int busIdx, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetBusVolumeDb_" data-uid="Godot.AudioServer.SetBusVolumeDb*"></a>
+  <h4 id="Godot_AudioServer_SetBusVolumeDb_System_Int32_System_Single_" data-uid="Godot.AudioServer.SetBusVolumeDb(System.Int32,System.Single)">SetBusVolumeDb(int, float)</h4>
+  <div class="markdown level1 summary"><p>Sets the volume of the bus at index <code>busIdx</code> to <code>volumeDb</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBusVolumeDb(int busIdx, float volumeDb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">volumeDb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SetEnableTaggingUsedAudioStreams_" data-uid="Godot.AudioServer.SetEnableTaggingUsedAudioStreams*"></a>
+  <h4 id="Godot_AudioServer_SetEnableTaggingUsedAudioStreams_System_Boolean_" data-uid="Godot.AudioServer.SetEnableTaggingUsedAudioStreams(System.Boolean)">SetEnableTaggingUsedAudioStreams(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEnableTaggingUsedAudioStreams(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_SwapBusEffects_" data-uid="Godot.AudioServer.SwapBusEffects*"></a>
+  <h4 id="Godot_AudioServer_SwapBusEffects_System_Int32_System_Int32_System_Int32_" data-uid="Godot.AudioServer.SwapBusEffects(System.Int32,System.Int32,System.Int32)">SwapBusEffects(int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Swaps the position of two effects in bus <code>busIdx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SwapBusEffects(int busIdx, int effectIdx, int byEffectIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">busIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">effectIdx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">byEffectIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_AudioServer_Unlock_" data-uid="Godot.AudioServer.Unlock*"></a>
+  <h4 id="Godot_AudioServer_Unlock" data-uid="Godot.AudioServer.Unlock">Unlock()</h4>
+  <div class="markdown level1 summary"><p>Unlocks the audio driver's main loop. (After locking it, you should always unlock it.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unlock()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Godot_AudioServer_BusLayoutChanged" data-uid="Godot.AudioServer.BusLayoutChanged">BusLayoutChanged</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.AudioServer.html#Godot_AudioServer_BusLayoutChanged">BusLayoutChanged</a> event of a <a class="xref" href="Godot.AudioServer.html">AudioServer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action BusLayoutChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -3,6 +3,10 @@
 ###############
 /**/obj/
 
+# Version folders like 3.5, 4.1
+[0-9]*/*
+src/[0-9]*/*
+
 _exported_templates/
 
 docs/manifest.json

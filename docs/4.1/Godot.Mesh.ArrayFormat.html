@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum Mesh.ArrayFormat
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum Mesh.ArrayFormat
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.Mesh.ArrayFormat">
+
+
+
+
+  <h1 id="Godot_Mesh_ArrayFormat" data-uid="Godot.Mesh.ArrayFormat" class="text-break">Enum Mesh.ArrayFormat
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_Mesh_ArrayFormat_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum Mesh.ArrayFormat : long</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_CompressFlagsBase">CompressFlagsBase</td>
+        <td><p>Shift of first compress flag. Compress flags should be passed to <a class="xref" href="Godot.ArrayMesh.html#Godot_ArrayMesh_AddSurfaceFromArrays_Godot_Mesh_PrimitiveType_Godot_Collections_Array_Godot_Collections_Array_Godot_Collections_Array__Godot_Collections_Dictionary_Godot_Mesh_ArrayFormat_">AddSurfaceFromArrays(PrimitiveType, Array, Array&lt;Array&gt;, Dictionary, ArrayFormat)</a> and <a class="xref" href="Godot.SurfaceTool.html#Godot_SurfaceTool_Commit_Godot_ArrayMesh_System_UInt32_">Commit(ArrayMesh, uint)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FlagUse2DVertices">FlagUse2DVertices</td>
+        <td><p>Flag used to mark that the array contains 2D vertices.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FlagUse8BoneWeights">FlagUse8BoneWeights</td>
+        <td><p>Flag used to mark that the mesh contains up to 8 bone influences per vertex. This flag indicates that <a class="xref" href="Godot.Mesh.ArrayType.html#Godot_Mesh_ArrayType_Bones">Bones</a> and <a class="xref" href="Godot.Mesh.ArrayType.html#Godot_Mesh_ArrayType_Weights">Weights</a> elements will have double length.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FlagUseDynamicUpdate">FlagUseDynamicUpdate</td>
+        <td><p>Flag indices that the mesh data will use <code>GL_DYNAMIC_DRAW</code> on GLES. Unused on Vulkan.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FlagUsesEmptyVertexArray">FlagUsesEmptyVertexArray</td>
+        <td><p>Flag used to mark that the mesh intentionally contains no vertex array.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatBlendShapeMask">FormatBlendShapeMask</td>
+        <td><p>Mask of mesh channels permitted in blend shapes.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatBones">FormatBones</td>
+        <td><p>Mesh array contains bones.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatColor">FormatColor</td>
+        <td><p>Mesh array contains colors.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom0">FormatCustom0</td>
+        <td><p>Mesh array contains custom channel index 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom0Shift">FormatCustom0Shift</td>
+        <td><p>Amount to shift <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a> for custom channel index 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom1">FormatCustom1</td>
+        <td><p>Mesh array contains custom channel index 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom1Shift">FormatCustom1Shift</td>
+        <td><p>Amount to shift <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a> for custom channel index 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom2">FormatCustom2</td>
+        <td><p>Mesh array contains custom channel index 2.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom2Shift">FormatCustom2Shift</td>
+        <td><p>Amount to shift <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a> for custom channel index 2.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom3">FormatCustom3</td>
+        <td><p>Mesh array contains custom channel index 3.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustom3Shift">FormatCustom3Shift</td>
+        <td><p>Amount to shift <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a> for custom channel index 3.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustomBase">FormatCustomBase</td>
+        <td><p>Shift of first custom channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustomBits">FormatCustomBits</td>
+        <td><p>Number of format bits per custom channel. See <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatCustomMask">FormatCustomMask</td>
+        <td><p>Mask of custom format bits per custom channel. Must be shifted by one of the SHIFT constants. See <a class="xref" href="Godot.Mesh.ArrayCustomFormat.html">Mesh.ArrayCustomFormat</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatIndex">FormatIndex</td>
+        <td><p>Mesh array uses indices.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatNormal">FormatNormal</td>
+        <td><p>Mesh array contains normals.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatTangent">FormatTangent</td>
+        <td><p>Mesh array contains tangents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatTexUV">FormatTexUV</td>
+        <td><p>Mesh array contains UVs.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatTexUV2">FormatTexUV2</td>
+        <td><p>Mesh array contains second UV.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatVertex">FormatVertex</td>
+        <td><p>Mesh array contains vertices. All meshes require a vertex array so this should always be present.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_Mesh_ArrayFormat_FormatWeights">FormatWeights</td>
+        <td><p>Mesh array contains bone weights.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

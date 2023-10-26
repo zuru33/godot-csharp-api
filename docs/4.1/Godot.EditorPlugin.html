@@ -1,0 +1,3106 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EditorPlugin
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EditorPlugin
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.EditorPlugin">
+
+
+
+  <h1 id="Godot_EditorPlugin" data-uid="Godot.EditorPlugin" class="text-break">Class EditorPlugin
+</h1>
+  <div class="markdown level0 summary"><p>Plugins are used by the editor to extend functionality. The most common types of plugins are those which edit a given node or resource type, import plugins and export plugins. See also <a class="xref" href="Godot.EditorScript.html">EditorScript</a> to add functions to the editor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.Node.html">Node</a></div>
+    <div class="level3"><span class="xref">EditorPlugin</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEnterTree">Node.NotificationEnterTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationExitTree">Node.NotificationExitTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationMovedInParent">Node.NotificationMovedInParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationReady">Node.NotificationReady</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPaused">Node.NotificationPaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationUnpaused">Node.NotificationUnpaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPhysicsProcess">Node.NotificationPhysicsProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationProcess">Node.NotificationProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationParented">Node.NotificationParented</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationUnparented">Node.NotificationUnparented</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationSceneInstantiated">Node.NotificationSceneInstantiated</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDragBegin">Node.NotificationDragBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDragEnd">Node.NotificationDragEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPathRenamed">Node.NotificationPathRenamed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationChildOrderChanged">Node.NotificationChildOrderChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationInternalProcess">Node.NotificationInternalProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationInternalPhysicsProcess">Node.NotificationInternalPhysicsProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPostEnterTree">Node.NotificationPostEnterTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDisabled">Node.NotificationDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEnabled">Node.NotificationEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationNodeRecacheRequested">Node.NotificationNodeRecacheRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEditorPreSave">Node.NotificationEditorPreSave</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEditorPostSave">Node.NotificationEditorPostSave</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMMouseEnter">Node.NotificationWMMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMMouseExit">Node.NotificationWMMouseExit</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMWindowFocusIn">Node.NotificationWMWindowFocusIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMWindowFocusOut">Node.NotificationWMWindowFocusOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMCloseRequest">Node.NotificationWMCloseRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMGoBackRequest">Node.NotificationWMGoBackRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMSizeChanged">Node.NotificationWMSizeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMDpiChange">Node.NotificationWMDpiChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationVpMouseEnter">Node.NotificationVpMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationVpMouseExit">Node.NotificationVpMouseExit</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationOsMemoryWarning">Node.NotificationOsMemoryWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationTranslationChanged">Node.NotificationTranslationChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMAbout">Node.NotificationWMAbout</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationCrash">Node.NotificationCrash</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationOsImeUpdate">Node.NotificationOsImeUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationResumed">Node.NotificationApplicationResumed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationPaused">Node.NotificationApplicationPaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationFocusIn">Node.NotificationApplicationFocusIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationFocusOut">Node.NotificationApplicationFocusOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationTextServerChanged">Node.NotificationTextServerChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNode__1_Godot_NodePath_">Node.GetNode&lt;T&gt;(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeOrNull__1_Godot_NodePath_">Node.GetNodeOrNull&lt;T&gt;(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChild__1_System_Int32_System_Boolean_">Node.GetChild&lt;T&gt;(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildOrNull__1_System_Int32_System_Boolean_">Node.GetChildOrNull&lt;T&gt;(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetOwner__1">Node.GetOwner&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetOwnerOrNull__1">Node.GetOwnerOrNull&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParent__1">Node.GetParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParentOrNull__1">Node.GetParentOrNull&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__EnterTree">Node._EnterTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ExitTree">Node._ExitTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__GetConfigurationWarnings">Node._GetConfigurationWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Input_Godot_InputEvent_">Node._Input(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__PhysicsProcess_System_Double_">Node._PhysicsProcess(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Process_System_Double_">Node._Process(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Ready">Node._Ready()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ShortcutInput_Godot_InputEvent_">Node._ShortcutInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__UnhandledInput_Godot_InputEvent_">Node._UnhandledInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__UnhandledKeyInput_Godot_InputEvent_">Node._UnhandledKeyInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintOrphanNodes">Node.PrintOrphanNodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddSibling_Godot_Node_System_Boolean_">Node.AddSibling(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddChild_Godot_Node_System_Boolean_Godot_Node_InternalMode_">Node.AddChild(Node, bool, Node.InternalMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RemoveChild_Godot_Node_">Node.RemoveChild(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Reparent_Godot_Node_System_Boolean_">Node.Reparent(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildCount_System_Boolean_">Node.GetChildCount(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildren_System_Boolean_">Node.GetChildren(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChild_System_Int32_System_Boolean_">Node.GetChild(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_HasNode_Godot_NodePath_">Node.HasNode(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNode_Godot_NodePath_">Node.GetNode(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeOrNull_Godot_NodePath_">Node.GetNodeOrNull(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParent">Node.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindChild_System_String_System_Boolean_System_Boolean_">Node.FindChild(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindChildren_System_String_System_String_System_Boolean_System_Boolean_">Node.FindChildren(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindParent_System_String_">Node.FindParent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_HasNodeAndResource_Godot_NodePath_">Node.HasNodeAndResource(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeAndResource_Godot_NodePath_">Node.GetNodeAndResource(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsInsideTree">Node.IsInsideTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsAncestorOf_Godot_Node_">Node.IsAncestorOf(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsGreaterThan_Godot_Node_">Node.IsGreaterThan(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPath">Node.GetPath()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPathTo_Godot_Node_System_Boolean_">Node.GetPathTo(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddToGroup_Godot_StringName_System_Boolean_">Node.AddToGroup(StringName, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RemoveFromGroup_Godot_StringName_">Node.RemoveFromGroup(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsInGroup_Godot_StringName_">Node.IsInGroup(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_MoveChild_Godot_Node_System_Int32_">Node.MoveChild(Node, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetGroups">Node.GetGroups()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetIndex_System_Boolean_">Node.GetIndex(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintTree">Node.PrintTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintTreePretty">Node.PrintTreePretty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PropagateNotification_System_Int32_">Node.PropagateNotification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PropagateCall_Godot_StringName_Godot_Collections_Array_System_Boolean_">Node.PropagateCall(StringName, Array, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetPhysicsProcess_System_Boolean_">Node.SetPhysicsProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPhysicsProcessDeltaTime">Node.GetPhysicsProcessDeltaTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsPhysicsProcessing">Node.IsPhysicsProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetProcessDeltaTime">Node.GetProcessDeltaTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcess_System_Boolean_">Node.SetProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessing">Node.IsProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessInput_System_Boolean_">Node.SetProcessInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingInput">Node.IsProcessingInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessShortcutInput_System_Boolean_">Node.SetProcessShortcutInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingShortcutInput">Node.IsProcessingShortcutInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessUnhandledInput_System_Boolean_">Node.SetProcessUnhandledInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingUnhandledInput">Node.IsProcessingUnhandledInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessUnhandledKeyInput_System_Boolean_">Node.SetProcessUnhandledKeyInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingUnhandledKeyInput">Node.IsProcessingUnhandledKeyInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CanProcess">Node.CanProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetDisplayFolded_System_Boolean_">Node.SetDisplayFolded(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsDisplayedFolded">Node.IsDisplayedFolded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessInternal_System_Boolean_">Node.SetProcessInternal(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingInternal">Node.IsProcessingInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetPhysicsProcessInternal_System_Boolean_">Node.SetPhysicsProcessInternal(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsPhysicsProcessingInternal">Node.IsPhysicsProcessingInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetWindow">Node.GetWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetLastExclusiveWindow">Node.GetLastExclusiveWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetTree">Node.GetTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CreateTween">Node.CreateTween()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Duplicate_System_Int32_">Node.Duplicate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ReplaceBy_Godot_Node_System_Boolean_">Node.ReplaceBy(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetSceneInstanceLoadPlaceholder_System_Boolean_">Node.SetSceneInstanceLoadPlaceholder(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetSceneInstanceLoadPlaceholder">Node.GetSceneInstanceLoadPlaceholder()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetEditableInstance_Godot_Node_System_Boolean_">Node.SetEditableInstance(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsEditableInstance_Godot_Node_">Node.IsEditableInstance(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetViewport">Node.GetViewport()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">Node.QueueFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RequestReady">Node.RequestReady()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsNodeReady">Node.IsNodeReady()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetMultiplayerAuthority_System_Int32_System_Boolean_">Node.SetMultiplayerAuthority(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetMultiplayerAuthority">Node.GetMultiplayerAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsMultiplayerAuthority">Node.IsMultiplayerAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RpcConfig_Godot_StringName_Godot_Variant_">Node.RpcConfig(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Rpc_Godot_StringName_Godot_Variant___">Node.Rpc(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RpcId_System_Int64_Godot_StringName_Godot_Variant___">Node.RpcId(long, StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_UpdateConfigurationWarnings">Node.UpdateConfigurationWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CallDeferredThreadGroup_Godot_StringName_Godot_Variant___">Node.CallDeferredThreadGroup(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetDeferredThreadGroup_Godot_StringName_Godot_Variant_">Node.SetDeferredThreadGroup(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotifyDeferredThreadGroup_System_Int32_">Node.NotifyDeferredThreadGroup(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CallThreadSafe_Godot_StringName_Godot_Variant___">Node.CallThreadSafe(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetThreadSafe_Godot_StringName_Godot_Variant_">Node.SetThreadSafe(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotifyThreadSafe_System_Int32_">Node.NotifyThreadSafe(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ImportPath">Node._ImportPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Name">Node.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_UniqueNameInOwner">Node.UniqueNameInOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SceneFilePath">Node.SceneFilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Owner">Node.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Multiplayer">Node.Multiplayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessMode">Node.ProcessMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessPriority">Node.ProcessPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessPhysicsPriority">Node.ProcessPhysicsPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadGroup">Node.ProcessThreadGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadGroupOrder">Node.ProcessThreadGroupOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadMessages">Node.ProcessThreadMessages</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_EditorDescription">Node.EditorDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Ready">Node.Ready</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Renamed">Node.Renamed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeEntered">Node.TreeEntered</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeExiting">Node.TreeExiting</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeExited">Node.TreeExited</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildEnteredTree">Node.ChildEnteredTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildExitingTree">Node.ChildExitingTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildOrderChanged">Node.ChildOrderChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ReplacingBy">Node.ReplacingBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharpEditor.dll</h6>
+  <h5 id="Godot_EditorPlugin_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EditorPlugin : Node, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_EditorPlugin__ctor_" data-uid="Godot.EditorPlugin.#ctor*"></a>
+  <h4 id="Godot_EditorPlugin__ctor" data-uid="Godot.EditorPlugin.#ctor">EditorPlugin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorPlugin()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_EditorPlugin_AddAutoloadSingleton_" data-uid="Godot.EditorPlugin.AddAutoloadSingleton*"></a>
+  <h4 id="Godot_EditorPlugin_AddAutoloadSingleton_System_String_System_String_" data-uid="Godot.EditorPlugin.AddAutoloadSingleton(System.String,System.String)">AddAutoloadSingleton(string, string)</h4>
+  <div class="markdown level1 summary"><p>Adds a script at <code>path</code> to the Autoload list as <code>name</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAutoloadSingleton(string name, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddControlToBottomPanel_" data-uid="Godot.EditorPlugin.AddControlToBottomPanel*"></a>
+  <h4 id="Godot_EditorPlugin_AddControlToBottomPanel_Godot_Control_System_String_" data-uid="Godot.EditorPlugin.AddControlToBottomPanel(Godot.Control,System.String)">AddControlToBottomPanel(Control, string)</h4>
+  <div class="markdown level1 summary"><p>Adds a control to the bottom panel (together with Output, Debug, Animation, etc). Returns a reference to the button added. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_RemoveControlFromBottomPanel_Godot_Control_">RemoveControlFromBottomPanel(Control)</a> and free it with <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button AddControlToBottomPanel(Control control, string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Button.html">Button</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddControlToContainer_" data-uid="Godot.EditorPlugin.AddControlToContainer*"></a>
+  <h4 id="Godot_EditorPlugin_AddControlToContainer_Godot_EditorPlugin_CustomControlContainer_Godot_Control_" data-uid="Godot.EditorPlugin.AddControlToContainer(Godot.EditorPlugin.CustomControlContainer,Godot.Control)">AddControlToContainer(CustomControlContainer, Control)</h4>
+  <div class="markdown level1 summary"><p>Adds a custom control to a container (see <a class="xref" href="Godot.EditorPlugin.CustomControlContainer.html">EditorPlugin.CustomControlContainer</a>). There are many locations where custom controls can be added in the editor UI.</p>
+<p>Please remember that you have to manage the visibility of your custom controls yourself (and likely hide it after adding it).</p>
+<p>When your plugin is deactivated, make sure to remove your custom control with <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_RemoveControlFromContainer_Godot_EditorPlugin_CustomControlContainer_Godot_Control_">RemoveControlFromContainer(CustomControlContainer, Control)</a> and free it with <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddControlToContainer(EditorPlugin.CustomControlContainer container, Control control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.CustomControlContainer.html">CustomControlContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddControlToDock_" data-uid="Godot.EditorPlugin.AddControlToDock*"></a>
+  <h4 id="Godot_EditorPlugin_AddControlToDock_Godot_EditorPlugin_DockSlot_Godot_Control_" data-uid="Godot.EditorPlugin.AddControlToDock(Godot.EditorPlugin.DockSlot,Godot.Control)">AddControlToDock(DockSlot, Control)</h4>
+  <div class="markdown level1 summary"><p>Adds the control to a specific dock slot (see <a class="xref" href="Godot.EditorPlugin.DockSlot.html">EditorPlugin.DockSlot</a> for options).</p>
+<p>If the dock is repositioned and as long as the plugin is active, the editor will save the dock position on further sessions.</p>
+<p>When your plugin is deactivated, make sure to remove your custom control with <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_RemoveControlFromDocks_Godot_Control_">RemoveControlFromDocks(Control)</a> and free it with <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddControlToDock(EditorPlugin.DockSlot slot, Control control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.DockSlot.html">DockSlot</a></td>
+        <td><span class="parametername">slot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddCustomType_" data-uid="Godot.EditorPlugin.AddCustomType*"></a>
+  <h4 id="Godot_EditorPlugin_AddCustomType_System_String_System_String_Godot_Script_Godot_Texture2D_" data-uid="Godot.EditorPlugin.AddCustomType(System.String,System.String,Godot.Script,Godot.Texture2D)">AddCustomType(string, string, Script, Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Adds a custom type, which will appear in the list of nodes or resources. An icon can be optionally passed.</p>
+<p>When a given node or resource is selected, the base type will be instantiated (e.g. "Node3D", "Control", "Resource"), then the script will be loaded and set to this object.</p>
+<p><b>Note:</b> The base type is the base engine class which this type's class hierarchy inherits, not any custom type parent classes.</p>
+<p>You can use the virtual method <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Handles_Godot_GodotObject_">_Handles(GodotObject)</a> to check if your custom object is being edited by checking the script or using the <code>is</code> keyword.</p>
+<p>During run-time, this will be a simple object with a script so this function does not need to be called then.</p>
+<p><b>Note:</b> Custom types added this way are not true classes. They are just a helper to create a node with specific script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCustomType(string type, string @base, Script script, Texture2D icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">base</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddDebuggerPlugin_" data-uid="Godot.EditorPlugin.AddDebuggerPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddDebuggerPlugin_Godot_EditorDebuggerPlugin_" data-uid="Godot.EditorPlugin.AddDebuggerPlugin(Godot.EditorDebuggerPlugin)">AddDebuggerPlugin(EditorDebuggerPlugin)</h4>
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="Godot.Script.html">Script</a> as debugger plugin to the Debugger. The script must extend <a class="xref" href="Godot.EditorDebuggerPlugin.html">EditorDebuggerPlugin</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDebuggerPlugin(EditorDebuggerPlugin script)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorDebuggerPlugin.html">EditorDebuggerPlugin</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddExportPlugin_" data-uid="Godot.EditorPlugin.AddExportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddExportPlugin_Godot_EditorExportPlugin_" data-uid="Godot.EditorPlugin.AddExportPlugin(Godot.EditorExportPlugin)">AddExportPlugin(EditorExportPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorExportPlugin.html">EditorExportPlugin</a>. Export plugins are used to perform tasks when the project is being exported.</p>
+<p>See <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddInspectorPlugin_Godot_EditorInspectorPlugin_">AddInspectorPlugin(EditorInspectorPlugin)</a> for an example of how to register a plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExportPlugin(EditorExportPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorExportPlugin.html">EditorExportPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddImportPlugin_" data-uid="Godot.EditorPlugin.AddImportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddImportPlugin_Godot_EditorImportPlugin_System_Boolean_" data-uid="Godot.EditorPlugin.AddImportPlugin(Godot.EditorImportPlugin,System.Boolean)">AddImportPlugin(EditorImportPlugin, bool)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorImportPlugin.html">EditorImportPlugin</a>. Import plugins are used to import custom and unsupported assets as a custom <a class="xref" href="Godot.Resource.html">Resource</a> type.</p>
+<p>If <code>firstPriority</code> is <code>true</code>, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.</p>
+<p><b>Note:</b> If you want to import custom 3D asset formats use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddSceneFormatImporterPlugin_Godot_EditorSceneFormatImporter_System_Boolean_">AddSceneFormatImporterPlugin(EditorSceneFormatImporter, bool)</a> instead.</p>
+<p>See <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddInspectorPlugin_Godot_EditorInspectorPlugin_">AddInspectorPlugin(EditorInspectorPlugin)</a> for an example of how to register a plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddImportPlugin(EditorImportPlugin importer, bool firstPriority = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorImportPlugin.html">EditorImportPlugin</a></td>
+        <td><span class="parametername">importer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">firstPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddInspectorPlugin_" data-uid="Godot.EditorPlugin.AddInspectorPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddInspectorPlugin_Godot_EditorInspectorPlugin_" data-uid="Godot.EditorPlugin.AddInspectorPlugin(Godot.EditorInspectorPlugin)">AddInspectorPlugin(EditorInspectorPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorInspectorPlugin.html">EditorInspectorPlugin</a>. Inspector plugins are used to extend <a class="xref" href="Godot.EditorInspector.html">EditorInspector</a> and provide custom configuration tools for your object's properties.</p>
+<p><b>Note:</b> Always use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_RemoveInspectorPlugin_Godot_EditorInspectorPlugin_">RemoveInspectorPlugin(EditorInspectorPlugin)</a> to remove the registered <a class="xref" href="Godot.EditorInspectorPlugin.html">EditorInspectorPlugin</a> when your <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a> is disabled to prevent leaks and an unexpected behavior.</p>
+<p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddInspectorPlugin(EditorInspectorPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorInspectorPlugin.html">EditorInspectorPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddNode3DGizmoPlugin_" data-uid="Godot.EditorPlugin.AddNode3DGizmoPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddNode3DGizmoPlugin_Godot_EditorNode3DGizmoPlugin_" data-uid="Godot.EditorPlugin.AddNode3DGizmoPlugin(Godot.EditorNode3DGizmoPlugin)">AddNode3DGizmoPlugin(EditorNode3DGizmoPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a>. Gizmo plugins are used to add custom gizmos to the 3D preview viewport for a <a class="xref" href="Godot.Node3D.html">Node3D</a>.</p>
+<p>See <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddInspectorPlugin_Godot_EditorInspectorPlugin_">AddInspectorPlugin(EditorInspectorPlugin)</a> for an example of how to register a plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNode3DGizmoPlugin(EditorNode3DGizmoPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddResourceConversionPlugin_" data-uid="Godot.EditorPlugin.AddResourceConversionPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddResourceConversionPlugin_Godot_EditorResourceConversionPlugin_" data-uid="Godot.EditorPlugin.AddResourceConversionPlugin(Godot.EditorResourceConversionPlugin)">AddResourceConversionPlugin(EditorResourceConversionPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorResourceConversionPlugin.html">EditorResourceConversionPlugin</a>. Resource conversion plugins are used to add custom resource converters to the editor inspector.</p>
+<p>See <a class="xref" href="Godot.EditorResourceConversionPlugin.html">EditorResourceConversionPlugin</a> for an example of how to create a resource conversion plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResourceConversionPlugin(EditorResourceConversionPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorResourceConversionPlugin.html">EditorResourceConversionPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddSceneFormatImporterPlugin_" data-uid="Godot.EditorPlugin.AddSceneFormatImporterPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddSceneFormatImporterPlugin_Godot_EditorSceneFormatImporter_System_Boolean_" data-uid="Godot.EditorPlugin.AddSceneFormatImporterPlugin(Godot.EditorSceneFormatImporter,System.Boolean)">AddSceneFormatImporterPlugin(EditorSceneFormatImporter, bool)</h4>
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="Godot.EditorSceneFormatImporter.html">EditorSceneFormatImporter</a>. Scene importers are used to import custom 3D asset formats as scenes.</p>
+<p>If <code>firstPriority</code> is <code>true</code>, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSceneFormatImporterPlugin(EditorSceneFormatImporter sceneFormatImporter, bool firstPriority = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorSceneFormatImporter.html">EditorSceneFormatImporter</a></td>
+        <td><span class="parametername">sceneFormatImporter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">firstPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddScenePostImportPlugin_" data-uid="Godot.EditorPlugin.AddScenePostImportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddScenePostImportPlugin_Godot_EditorScenePostImportPlugin_System_Boolean_" data-uid="Godot.EditorPlugin.AddScenePostImportPlugin(Godot.EditorScenePostImportPlugin,System.Boolean)">AddScenePostImportPlugin(EditorScenePostImportPlugin, bool)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="Godot.EditorScenePostImportPlugin.html">EditorScenePostImportPlugin</a>. These plugins allow customizing the import process of 3D assets by adding new options to the import dialogs.</p>
+<p>If <code>firstPriority</code> is <code>true</code>, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddScenePostImportPlugin(EditorScenePostImportPlugin sceneImportPlugin, bool firstPriority = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorScenePostImportPlugin.html">EditorScenePostImportPlugin</a></td>
+        <td><span class="parametername">sceneImportPlugin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">firstPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddToolMenuItem_" data-uid="Godot.EditorPlugin.AddToolMenuItem*"></a>
+  <h4 id="Godot_EditorPlugin_AddToolMenuItem_System_String_Godot_Callable_" data-uid="Godot.EditorPlugin.AddToolMenuItem(System.String,Godot.Callable)">AddToolMenuItem(string, Callable)</h4>
+  <div class="markdown level1 summary"><p>Adds a custom menu item to <b>Project &gt; Tools</b> named <code>name</code>. When clicked, the provided <code>callable</code> will be called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToolMenuItem(string name, Callable callable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Callable.html">Callable</a></td>
+        <td><span class="parametername">callable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddToolSubmenuItem_" data-uid="Godot.EditorPlugin.AddToolSubmenuItem*"></a>
+  <h4 id="Godot_EditorPlugin_AddToolSubmenuItem_System_String_Godot_PopupMenu_" data-uid="Godot.EditorPlugin.AddToolSubmenuItem(System.String,Godot.PopupMenu)">AddToolSubmenuItem(string, PopupMenu)</h4>
+  <div class="markdown level1 summary"><p>Adds a custom <a class="xref" href="Godot.PopupMenu.html">PopupMenu</a> submenu under <b>Project &gt; Tools &gt;</b> <code>name</code>. Use <code>remove_tool_menu_item(name)</code> on plugin clean up to remove the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToolSubmenuItem(string name, PopupMenu submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.PopupMenu.html">PopupMenu</a></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddTranslationParserPlugin_" data-uid="Godot.EditorPlugin.AddTranslationParserPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_AddTranslationParserPlugin_Godot_EditorTranslationParserPlugin_" data-uid="Godot.EditorPlugin.AddTranslationParserPlugin(Godot.EditorTranslationParserPlugin)">AddTranslationParserPlugin(EditorTranslationParserPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a custom translation parser plugin for extracting translatable strings from custom files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTranslationParserPlugin(EditorTranslationParserPlugin parser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorTranslationParserPlugin.html">EditorTranslationParserPlugin</a></td>
+        <td><span class="parametername">parser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_AddUndoRedoInspectorHookCallback_" data-uid="Godot.EditorPlugin.AddUndoRedoInspectorHookCallback*"></a>
+  <h4 id="Godot_EditorPlugin_AddUndoRedoInspectorHookCallback_Godot_Callable_" data-uid="Godot.EditorPlugin.AddUndoRedoInspectorHookCallback(Godot.Callable)">AddUndoRedoInspectorHookCallback(Callable)</h4>
+  <div class="markdown level1 summary"><p>Hooks a callback into the undo/redo action creation when a property is modified in the inspector. This allows, for example, to save other properties that may be lost when a given property is modified.</p>
+<p>The callback should have 4 arguments: <a class="xref" href="Godot.GodotObject.html">GodotObject</a> <code>undo_redo</code>, <a class="xref" href="Godot.GodotObject.html">GodotObject</a> <code>modified_object</code>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <code>property</code> and <a class="xref" href="Godot.Variant.html">Variant</a> <code>new_value</code>. They are, respectively, the <a class="xref" href="Godot.UndoRedo.html">UndoRedo</a> object used by the inspector, the currently modified object, the name of the modified property and the new value the property is about to take.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUndoRedoInspectorHookCallback(Callable callable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Callable.html">Callable</a></td>
+        <td><span class="parametername">callable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_GetEditorInterface_" data-uid="Godot.EditorPlugin.GetEditorInterface*"></a>
+  <h4 id="Godot_EditorPlugin_GetEditorInterface" data-uid="Godot.EditorPlugin.GetEditorInterface">GetEditorInterface()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.EditorInterface.html">EditorInterface</a> singleton. It provides access to some parts of the editor GUI as well as various inner states and tools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorInterface GetEditorInterface()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorInterface.html">EditorInterface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_GetExportAsMenu_" data-uid="Godot.EditorPlugin.GetExportAsMenu*"></a>
+  <h4 id="Godot_EditorPlugin_GetExportAsMenu" data-uid="Godot.EditorPlugin.GetExportAsMenu">GetExportAsMenu()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.PopupMenu.html">PopupMenu</a> under <b>Scene &gt; Export As...</b>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PopupMenu GetExportAsMenu()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.PopupMenu.html">PopupMenu</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_GetScriptCreateDialog_" data-uid="Godot.EditorPlugin.GetScriptCreateDialog*"></a>
+  <h4 id="Godot_EditorPlugin_GetScriptCreateDialog" data-uid="Godot.EditorPlugin.GetScriptCreateDialog">GetScriptCreateDialog()</h4>
+  <div class="markdown level1 summary"><p>Gets the Editor's dialog used for making scripts.</p>
+<p><b>Note:</b> Users can configure it before use.</p>
+<p><b>Warning:</b> Removing and freeing this node will render a part of the editor useless and may cause a crash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptCreateDialog GetScriptCreateDialog()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.ScriptCreateDialog.html">ScriptCreateDialog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_GetUndoRedo_" data-uid="Godot.EditorPlugin.GetUndoRedo*"></a>
+  <h4 id="Godot_EditorPlugin_GetUndoRedo" data-uid="Godot.EditorPlugin.GetUndoRedo">GetUndoRedo()</h4>
+  <div class="markdown level1 summary"><p>Gets the undo/redo object. Most actions in the editor can be undoable, so use this object to make sure this happens when it's worth it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorUndoRedoManager GetUndoRedo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorUndoRedoManager.html">EditorUndoRedoManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_HasGodotClassMethod_" data-uid="Godot.EditorPlugin.HasGodotClassMethod*"></a>
+  <h4 id="Godot_EditorPlugin_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorPlugin.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">Node.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_EditorPlugin_HasGodotClassSignal_" data-uid="Godot.EditorPlugin.HasGodotClassSignal*"></a>
+  <h4 id="Godot_EditorPlugin_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorPlugin.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">Node.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_EditorPlugin_HideBottomPanel_" data-uid="Godot.EditorPlugin.HideBottomPanel*"></a>
+  <h4 id="Godot_EditorPlugin_HideBottomPanel" data-uid="Godot.EditorPlugin.HideBottomPanel">HideBottomPanel()</h4>
+  <div class="markdown level1 summary"><p>Minimizes the bottom panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideBottomPanel()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin_InvokeGodotClassMethod_" data-uid="Godot.EditorPlugin.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_EditorPlugin_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.EditorPlugin.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">Node.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_EditorPlugin_MakeBottomPanelItemVisible_" data-uid="Godot.EditorPlugin.MakeBottomPanelItemVisible*"></a>
+  <h4 id="Godot_EditorPlugin_MakeBottomPanelItemVisible_Godot_Control_" data-uid="Godot.EditorPlugin.MakeBottomPanelItemVisible(Godot.Control)">MakeBottomPanelItemVisible(Control)</h4>
+  <div class="markdown level1 summary"><p>Makes a specific item in the bottom panel visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeBottomPanelItemVisible(Control item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_QueueSaveLayout_" data-uid="Godot.EditorPlugin.QueueSaveLayout*"></a>
+  <h4 id="Godot_EditorPlugin_QueueSaveLayout" data-uid="Godot.EditorPlugin.QueueSaveLayout">QueueSaveLayout()</h4>
+  <div class="markdown level1 summary"><p>Queue save the project's editor layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueueSaveLayout()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin_RemoveAutoloadSingleton_" data-uid="Godot.EditorPlugin.RemoveAutoloadSingleton*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveAutoloadSingleton_System_String_" data-uid="Godot.EditorPlugin.RemoveAutoloadSingleton(System.String)">RemoveAutoloadSingleton(string)</h4>
+  <div class="markdown level1 summary"><p>Removes an Autoload <code>name</code> from the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAutoloadSingleton(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveControlFromBottomPanel_" data-uid="Godot.EditorPlugin.RemoveControlFromBottomPanel*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveControlFromBottomPanel_Godot_Control_" data-uid="Godot.EditorPlugin.RemoveControlFromBottomPanel(Godot.Control)">RemoveControlFromBottomPanel(Control)</h4>
+  <div class="markdown level1 summary"><p>Removes the control from the bottom panel. You have to manually <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a> the control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveControlFromBottomPanel(Control control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveControlFromContainer_" data-uid="Godot.EditorPlugin.RemoveControlFromContainer*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveControlFromContainer_Godot_EditorPlugin_CustomControlContainer_Godot_Control_" data-uid="Godot.EditorPlugin.RemoveControlFromContainer(Godot.EditorPlugin.CustomControlContainer,Godot.Control)">RemoveControlFromContainer(CustomControlContainer, Control)</h4>
+  <div class="markdown level1 summary"><p>Removes the control from the specified container. You have to manually <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a> the control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveControlFromContainer(EditorPlugin.CustomControlContainer container, Control control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.CustomControlContainer.html">CustomControlContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveControlFromDocks_" data-uid="Godot.EditorPlugin.RemoveControlFromDocks*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveControlFromDocks_Godot_Control_" data-uid="Godot.EditorPlugin.RemoveControlFromDocks(Godot.Control)">RemoveControlFromDocks(Control)</h4>
+  <div class="markdown level1 summary"><p>Removes the control from the dock. You have to manually <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">QueueFree()</a> the control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveControlFromDocks(Control control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveCustomType_" data-uid="Godot.EditorPlugin.RemoveCustomType*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveCustomType_System_String_" data-uid="Godot.EditorPlugin.RemoveCustomType(System.String)">RemoveCustomType(string)</h4>
+  <div class="markdown level1 summary"><p>Removes a custom type added by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddCustomType_System_String_System_String_Godot_Script_Godot_Texture2D_">AddCustomType(string, string, Script, Texture2D)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCustomType(string type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveDebuggerPlugin_" data-uid="Godot.EditorPlugin.RemoveDebuggerPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveDebuggerPlugin_Godot_EditorDebuggerPlugin_" data-uid="Godot.EditorPlugin.RemoveDebuggerPlugin(Godot.EditorDebuggerPlugin)">RemoveDebuggerPlugin(EditorDebuggerPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes the debugger plugin with given script from the Debugger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDebuggerPlugin(EditorDebuggerPlugin script)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorDebuggerPlugin.html">EditorDebuggerPlugin</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveExportPlugin_" data-uid="Godot.EditorPlugin.RemoveExportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveExportPlugin_Godot_EditorExportPlugin_" data-uid="Godot.EditorPlugin.RemoveExportPlugin(Godot.EditorExportPlugin)">RemoveExportPlugin(EditorExportPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes an export plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddExportPlugin_Godot_EditorExportPlugin_">AddExportPlugin(EditorExportPlugin)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveExportPlugin(EditorExportPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorExportPlugin.html">EditorExportPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveImportPlugin_" data-uid="Godot.EditorPlugin.RemoveImportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveImportPlugin_Godot_EditorImportPlugin_" data-uid="Godot.EditorPlugin.RemoveImportPlugin(Godot.EditorImportPlugin)">RemoveImportPlugin(EditorImportPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes an import plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddImportPlugin_Godot_EditorImportPlugin_System_Boolean_">AddImportPlugin(EditorImportPlugin, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveImportPlugin(EditorImportPlugin importer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorImportPlugin.html">EditorImportPlugin</a></td>
+        <td><span class="parametername">importer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveInspectorPlugin_" data-uid="Godot.EditorPlugin.RemoveInspectorPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveInspectorPlugin_Godot_EditorInspectorPlugin_" data-uid="Godot.EditorPlugin.RemoveInspectorPlugin(Godot.EditorInspectorPlugin)">RemoveInspectorPlugin(EditorInspectorPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes an inspector plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddImportPlugin_Godot_EditorImportPlugin_System_Boolean_">AddImportPlugin(EditorImportPlugin, bool)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveInspectorPlugin(EditorInspectorPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorInspectorPlugin.html">EditorInspectorPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveNode3DGizmoPlugin_" data-uid="Godot.EditorPlugin.RemoveNode3DGizmoPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveNode3DGizmoPlugin_Godot_EditorNode3DGizmoPlugin_" data-uid="Godot.EditorPlugin.RemoveNode3DGizmoPlugin(Godot.EditorNode3DGizmoPlugin)">RemoveNode3DGizmoPlugin(EditorNode3DGizmoPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes a gizmo plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddNode3DGizmoPlugin_Godot_EditorNode3DGizmoPlugin_">AddNode3DGizmoPlugin(EditorNode3DGizmoPlugin)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveNode3DGizmoPlugin(EditorNode3DGizmoPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorNode3DGizmoPlugin.html">EditorNode3DGizmoPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveResourceConversionPlugin_" data-uid="Godot.EditorPlugin.RemoveResourceConversionPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveResourceConversionPlugin_Godot_EditorResourceConversionPlugin_" data-uid="Godot.EditorPlugin.RemoveResourceConversionPlugin(Godot.EditorResourceConversionPlugin)">RemoveResourceConversionPlugin(EditorResourceConversionPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes a resource conversion plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddResourceConversionPlugin_Godot_EditorResourceConversionPlugin_">AddResourceConversionPlugin(EditorResourceConversionPlugin)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveResourceConversionPlugin(EditorResourceConversionPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorResourceConversionPlugin.html">EditorResourceConversionPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveSceneFormatImporterPlugin_" data-uid="Godot.EditorPlugin.RemoveSceneFormatImporterPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveSceneFormatImporterPlugin_Godot_EditorSceneFormatImporter_" data-uid="Godot.EditorPlugin.RemoveSceneFormatImporterPlugin(Godot.EditorSceneFormatImporter)">RemoveSceneFormatImporterPlugin(EditorSceneFormatImporter)</h4>
+  <div class="markdown level1 summary"><p>Removes a scene format importer registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddSceneFormatImporterPlugin_Godot_EditorSceneFormatImporter_System_Boolean_">AddSceneFormatImporterPlugin(EditorSceneFormatImporter, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSceneFormatImporterPlugin(EditorSceneFormatImporter sceneFormatImporter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorSceneFormatImporter.html">EditorSceneFormatImporter</a></td>
+        <td><span class="parametername">sceneFormatImporter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveScenePostImportPlugin_" data-uid="Godot.EditorPlugin.RemoveScenePostImportPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveScenePostImportPlugin_Godot_EditorScenePostImportPlugin_" data-uid="Godot.EditorPlugin.RemoveScenePostImportPlugin(Godot.EditorScenePostImportPlugin)">RemoveScenePostImportPlugin(EditorScenePostImportPlugin)</h4>
+  <div class="markdown level1 summary"><p>Remove the <a class="xref" href="Godot.EditorScenePostImportPlugin.html">EditorScenePostImportPlugin</a>, added with <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddScenePostImportPlugin_Godot_EditorScenePostImportPlugin_System_Boolean_">AddScenePostImportPlugin(EditorScenePostImportPlugin, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveScenePostImportPlugin(EditorScenePostImportPlugin sceneImportPlugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorScenePostImportPlugin.html">EditorScenePostImportPlugin</a></td>
+        <td><span class="parametername">sceneImportPlugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveToolMenuItem_" data-uid="Godot.EditorPlugin.RemoveToolMenuItem*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveToolMenuItem_System_String_" data-uid="Godot.EditorPlugin.RemoveToolMenuItem(System.String)">RemoveToolMenuItem(string)</h4>
+  <div class="markdown level1 summary"><p>Removes a menu <code>name</code> from <b>Project &gt; Tools</b>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveToolMenuItem(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveTranslationParserPlugin_" data-uid="Godot.EditorPlugin.RemoveTranslationParserPlugin*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveTranslationParserPlugin_Godot_EditorTranslationParserPlugin_" data-uid="Godot.EditorPlugin.RemoveTranslationParserPlugin(Godot.EditorTranslationParserPlugin)">RemoveTranslationParserPlugin(EditorTranslationParserPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes a custom translation parser plugin registered by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddTranslationParserPlugin_Godot_EditorTranslationParserPlugin_">AddTranslationParserPlugin(EditorTranslationParserPlugin)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTranslationParserPlugin(EditorTranslationParserPlugin parser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorTranslationParserPlugin.html">EditorTranslationParserPlugin</a></td>
+        <td><span class="parametername">parser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_RemoveUndoRedoInspectorHookCallback_" data-uid="Godot.EditorPlugin.RemoveUndoRedoInspectorHookCallback*"></a>
+  <h4 id="Godot_EditorPlugin_RemoveUndoRedoInspectorHookCallback_Godot_Callable_" data-uid="Godot.EditorPlugin.RemoveUndoRedoInspectorHookCallback(Godot.Callable)">RemoveUndoRedoInspectorHookCallback(Callable)</h4>
+  <div class="markdown level1 summary"><p>Removes a callback previously added by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_AddUndoRedoInspectorHookCallback_Godot_Callable_">AddUndoRedoInspectorHookCallback(Callable)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUndoRedoInspectorHookCallback(Callable callable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Callable.html">Callable</a></td>
+        <td><span class="parametername">callable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin_SetForceDrawOverForwardingEnabled_" data-uid="Godot.EditorPlugin.SetForceDrawOverForwardingEnabled*"></a>
+  <h4 id="Godot_EditorPlugin_SetForceDrawOverForwardingEnabled" data-uid="Godot.EditorPlugin.SetForceDrawOverForwardingEnabled">SetForceDrawOverForwardingEnabled()</h4>
+  <div class="markdown level1 summary"><p>Enables calling of <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__ForwardCanvasForceDrawOverViewport_Godot_Control_">_ForwardCanvasForceDrawOverViewport(Control)</a> for the 2D editor and <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DForceDrawOverViewport_Godot_Control_">_Forward3DForceDrawOverViewport(Control)</a> for the 3D editor when their viewports are updated. You need to call this method only once and it will work permanently for this plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetForceDrawOverForwardingEnabled()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin_SetInputEventForwardingAlwaysEnabled_" data-uid="Godot.EditorPlugin.SetInputEventForwardingAlwaysEnabled*"></a>
+  <h4 id="Godot_EditorPlugin_SetInputEventForwardingAlwaysEnabled" data-uid="Godot.EditorPlugin.SetInputEventForwardingAlwaysEnabled">SetInputEventForwardingAlwaysEnabled()</h4>
+  <div class="markdown level1 summary"><p>Use this method if you always want to receive inputs from 3D view screen inside <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DGuiInput_Godot_Camera3D_Godot_InputEvent_">_Forward3DGuiInput(Camera3D, InputEvent)</a>. It might be especially usable if your plugin will want to use raycast in the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputEventForwardingAlwaysEnabled()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin_UpdateOverlays_" data-uid="Godot.EditorPlugin.UpdateOverlays*"></a>
+  <h4 id="Godot_EditorPlugin_UpdateOverlays" data-uid="Godot.EditorPlugin.UpdateOverlays">UpdateOverlays()</h4>
+  <div class="markdown level1 summary"><p>Updates the overlays of the 2D and 3D editor viewport. Causes methods <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__ForwardCanvasDrawOverViewport_Godot_Control_">_ForwardCanvasDrawOverViewport(Control)</a>, <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__ForwardCanvasForceDrawOverViewport_Godot_Control_">_ForwardCanvasForceDrawOverViewport(Control)</a>, <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DDrawOverViewport_Godot_Control_">_Forward3DDrawOverViewport(Control)</a> and <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DForceDrawOverViewport_Godot_Control_">_Forward3DForceDrawOverViewport(Control)</a> to be called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateOverlays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__ApplyChanges_" data-uid="Godot.EditorPlugin._ApplyChanges*"></a>
+  <h4 id="Godot_EditorPlugin__ApplyChanges" data-uid="Godot.EditorPlugin._ApplyChanges">_ApplyChanges()</h4>
+  <div class="markdown level1 summary"><p>This method is called when the editor is about to save the project, switch to another tab, etc. It asks the plugin to apply any pending state changes to ensure consistency.</p>
+<p>This is used, for example, in shader editors to let the plugin know that it must apply the shader code being written by the user to the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ApplyChanges()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin__Build_" data-uid="Godot.EditorPlugin._Build*"></a>
+  <h4 id="Godot_EditorPlugin__Build" data-uid="Godot.EditorPlugin._Build">_Build()</h4>
+  <div class="markdown level1 summary"><p>This method is called when the editor is about to run the project. The plugin can then perform required operations before the project runs.</p>
+<p>This method must return a boolean. If this method returns <code>false</code>, the project will not run. The run is aborted immediately, so this also prevents all other plugins' <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Build">_Build()</a> methods from running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _Build()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__Clear_" data-uid="Godot.EditorPlugin._Clear*"></a>
+  <h4 id="Godot_EditorPlugin__Clear" data-uid="Godot.EditorPlugin._Clear">_Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear all the state and reset the object being edited to zero. This ensures your plugin does not keep editing a currently existing node, or a node from the wrong scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Clear()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin__DisablePlugin_" data-uid="Godot.EditorPlugin._DisablePlugin*"></a>
+  <h4 id="Godot_EditorPlugin__DisablePlugin" data-uid="Godot.EditorPlugin._DisablePlugin">_DisablePlugin()</h4>
+  <div class="markdown level1 summary"><p>Called by the engine when the user disables the <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a> in the Plugin tab of the project settings window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _DisablePlugin()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin__Edit_" data-uid="Godot.EditorPlugin._Edit*"></a>
+  <h4 id="Godot_EditorPlugin__Edit_Godot_GodotObject_" data-uid="Godot.EditorPlugin._Edit(Godot.GodotObject)">_Edit(GodotObject)</h4>
+  <div class="markdown level1 summary"><p>This function is used for plugins that edit specific object types (nodes or resources). It requests the editor to edit the given object.</p>
+<p><code>object</code> can be <code>null</code> if the plugin was editing an object, but there is no longer any selected object handled by this plugin. It can be used to cleanup editing state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Edit(GodotObject @object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.GodotObject.html">GodotObject</a></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__EnablePlugin_" data-uid="Godot.EditorPlugin._EnablePlugin*"></a>
+  <h4 id="Godot_EditorPlugin__EnablePlugin" data-uid="Godot.EditorPlugin._EnablePlugin">_EnablePlugin()</h4>
+  <div class="markdown level1 summary"><p>Called by the engine when the user enables the <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a> in the Plugin tab of the project settings window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _EnablePlugin()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin__Forward3DDrawOverViewport_" data-uid="Godot.EditorPlugin._Forward3DDrawOverViewport*"></a>
+  <h4 id="Godot_EditorPlugin__Forward3DDrawOverViewport_Godot_Control_" data-uid="Godot.EditorPlugin._Forward3DDrawOverViewport(Godot.Control)">_Forward3DDrawOverViewport(Control)</h4>
+  <div class="markdown level1 summary"><p>Called by the engine when the 3D editor's viewport is updated. Use the <code>overlay</code> <a class="xref" href="Godot.Control.html">Control</a> for drawing. You can update the viewport manually by calling <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_UpdateOverlays">UpdateOverlays()</a>.</p>
+<p><pre><code class="lang-csharp">public override void _Forward3DDrawOverViewport(Control viewportControl)
+   {
+       // Draw a circle at cursor position.
+       viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
+   }
+<p>public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D viewportCamera, InputEvent @event)
+{
+if (@event is InputEventMouseMotion)
+{
+// Redraw viewport when cursor is moved.
+UpdateOverlays();
+return EditorPlugin.AfterGuiInput.Stop;
+}
+return EditorPlugin.AfterGuiInput.Pass;
+}</p></code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Forward3DDrawOverViewport(Control viewportControl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">viewportControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__Forward3DForceDrawOverViewport_" data-uid="Godot.EditorPlugin._Forward3DForceDrawOverViewport*"></a>
+  <h4 id="Godot_EditorPlugin__Forward3DForceDrawOverViewport_Godot_Control_" data-uid="Godot.EditorPlugin._Forward3DForceDrawOverViewport(Godot.Control)">_Forward3DForceDrawOverViewport(Control)</h4>
+  <div class="markdown level1 summary"><p>This method is the same as <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DDrawOverViewport_Godot_Control_">_Forward3DDrawOverViewport(Control)</a>, except it draws on top of everything. Useful when you need an extra layer that shows over anything else.</p>
+<p>You need to enable calling of this method by using <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_SetForceDrawOverForwardingEnabled">SetForceDrawOverForwardingEnabled()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Forward3DForceDrawOverViewport(Control viewportControl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">viewportControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__Forward3DGuiInput_" data-uid="Godot.EditorPlugin._Forward3DGuiInput*"></a>
+  <h4 id="Godot_EditorPlugin__Forward3DGuiInput_Godot_Camera3D_Godot_InputEvent_" data-uid="Godot.EditorPlugin._Forward3DGuiInput(Godot.Camera3D,Godot.InputEvent)">_Forward3DGuiInput(Camera3D, InputEvent)</h4>
+  <div class="markdown level1 summary"><p>Called when there is a root node in the current edited scene, <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Handles_Godot_GodotObject_">_Handles(GodotObject)</a> is implemented, and an <a class="xref" href="Godot.InputEvent.html">InputEvent</a> happens in the 3D viewport. The return value decides whether the <a class="xref" href="Godot.InputEvent.html">InputEvent</a> is consumed or forwarded to other <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>s. See <a class="xref" href="Godot.EditorPlugin.AfterGuiInput.html">EditorPlugin.AfterGuiInput</a> for options.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">// Prevents the InputEvent from reaching other Editor classes.
+   public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
+   {
+       return EditorPlugin.AfterGuiInput.Stop;
+   }</code></pre>
+<p>Must <code>return EditorPlugin.AFTER_GUI_INPUT_PASS</code> in order to forward the <a class="xref" href="Godot.InputEvent.html">InputEvent</a> to other Editor classes.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">// Consumes InputEventMouseMotion and forwards other InputEvent types.
+   public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
+   {
+       return @event is InputEventMouseMotion ? EditorPlugin.AfterGuiInput.Stop : EditorPlugin.AfterGuiInput.Pass;
+   }</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _Forward3DGuiInput(Camera3D viewportCamera, InputEvent @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Camera3D.html">Camera3D</a></td>
+        <td><span class="parametername">viewportCamera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.InputEvent.html">InputEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__ForwardCanvasDrawOverViewport_" data-uid="Godot.EditorPlugin._ForwardCanvasDrawOverViewport*"></a>
+  <h4 id="Godot_EditorPlugin__ForwardCanvasDrawOverViewport_Godot_Control_" data-uid="Godot.EditorPlugin._ForwardCanvasDrawOverViewport(Godot.Control)">_ForwardCanvasDrawOverViewport(Control)</h4>
+  <div class="markdown level1 summary"><p>Called by the engine when the 2D editor's viewport is updated. Use the <code>overlay</code> <a class="xref" href="Godot.Control.html">Control</a> for drawing. You can update the viewport manually by calling <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_UpdateOverlays">UpdateOverlays()</a>.</p>
+<p><pre><code class="lang-csharp">public override void _ForwardCanvasDrawOverViewport(Control viewportControl)
+   {
+       // Draw a circle at cursor position.
+       viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
+   }
+<p>public override bool _ForwardCanvasGuiInput(InputEvent @event)
+{
+if (@event is InputEventMouseMotion)
+{
+// Redraw viewport when cursor is moved.
+UpdateOverlays();
+return true;
+}
+return false;
+}</p></code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ForwardCanvasDrawOverViewport(Control viewportControl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">viewportControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__ForwardCanvasForceDrawOverViewport_" data-uid="Godot.EditorPlugin._ForwardCanvasForceDrawOverViewport*"></a>
+  <h4 id="Godot_EditorPlugin__ForwardCanvasForceDrawOverViewport_Godot_Control_" data-uid="Godot.EditorPlugin._ForwardCanvasForceDrawOverViewport(Godot.Control)">_ForwardCanvasForceDrawOverViewport(Control)</h4>
+  <div class="markdown level1 summary"><p>This method is the same as <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__ForwardCanvasDrawOverViewport_Godot_Control_">_ForwardCanvasDrawOverViewport(Control)</a>, except it draws on top of everything. Useful when you need an extra layer that shows over anything else.</p>
+<p>You need to enable calling of this method by using <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_SetForceDrawOverForwardingEnabled">SetForceDrawOverForwardingEnabled()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ForwardCanvasForceDrawOverViewport(Control viewportControl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Control.html">Control</a></td>
+        <td><span class="parametername">viewportControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__ForwardCanvasGuiInput_" data-uid="Godot.EditorPlugin._ForwardCanvasGuiInput*"></a>
+  <h4 id="Godot_EditorPlugin__ForwardCanvasGuiInput_Godot_InputEvent_" data-uid="Godot.EditorPlugin._ForwardCanvasGuiInput(Godot.InputEvent)">_ForwardCanvasGuiInput(InputEvent)</h4>
+  <div class="markdown level1 summary"><p>Called when there is a root node in the current edited scene, <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Handles_Godot_GodotObject_">_Handles(GodotObject)</a> is implemented and an <a class="xref" href="Godot.InputEvent.html">InputEvent</a> happens in the 2D viewport. Intercepts the <a class="xref" href="Godot.InputEvent.html">InputEvent</a>, if <code>return true</code> <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a> consumes the <code>event</code>, otherwise forwards <code>event</code> to other Editor classes.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">// Prevents the InputEvent from reaching other Editor classes.
+   public override bool ForwardCanvasGuiInput(InputEvent @event)
+   {
+       return true;
+   }</code></pre>
+<p>Must <code>return false</code> in order to forward the <a class="xref" href="Godot.InputEvent.html">InputEvent</a> to other Editor classes.</p>
+<p><b>Example:</b></p>
+<p><pre><code class="lang-csharp">// Consumes InputEventMouseMotion and forwards other InputEvent types.
+   public override bool _ForwardCanvasGuiInput(InputEvent @event)
+   {
+       if (@event is InputEventMouseMotion)
+       {
+           return true;
+       }
+       return false;
+   }</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _ForwardCanvasGuiInput(InputEvent @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.InputEvent.html">InputEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__GetBreakpoints_" data-uid="Godot.EditorPlugin._GetBreakpoints*"></a>
+  <h4 id="Godot_EditorPlugin__GetBreakpoints" data-uid="Godot.EditorPlugin._GetBreakpoints">_GetBreakpoints()</h4>
+  <div class="markdown level1 summary"><p>This is for editors that edit script-based objects. You can return a list of breakpoints in the format (<code>script:line</code>), for example: <code>res://path_to_script.gd:25</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] _GetBreakpoints()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__GetPluginIcon_" data-uid="Godot.EditorPlugin._GetPluginIcon*"></a>
+  <h4 id="Godot_EditorPlugin__GetPluginIcon" data-uid="Godot.EditorPlugin._GetPluginIcon">_GetPluginIcon()</h4>
+  <div class="markdown level1 summary"><p>Override this method in your plugin to return a <a class="xref" href="Godot.Texture2D.html">Texture2D</a> in order to give it an icon.</p>
+<p>For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", and "AssetLib" buttons.</p>
+<p>Ideally, the plugin icon should be white with a transparent background and 16x16 pixels in size.</p>
+<p><pre><code class="lang-csharp">public override Texture2D _GetPluginIcon()
+   {
+       // You can use a custom icon:
+       return ResourceLoader.Load&lt;Texture2D&gt;("res://addons/my_plugin/my_plugin_icon.svg");
+       // Or use a built-in icon:
+       return GetEditorInterface().GetBaseControl().GetThemeIcon("Node", "EditorIcons");
+   }</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Texture2D _GetPluginIcon()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__GetPluginName_" data-uid="Godot.EditorPlugin._GetPluginName*"></a>
+  <h4 id="Godot_EditorPlugin__GetPluginName" data-uid="Godot.EditorPlugin._GetPluginName">_GetPluginName()</h4>
+  <div class="markdown level1 summary"><p>Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.</p>
+<p>For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", and "AssetLib" buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetPluginName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__GetState_" data-uid="Godot.EditorPlugin._GetState*"></a>
+  <h4 id="Godot_EditorPlugin__GetState" data-uid="Godot.EditorPlugin._GetState">_GetState()</h4>
+  <div class="markdown level1 summary"><p>Override this method to provide a state data you want to be saved, like view position, grid settings, folding, etc. This is used when saving the scene (so state is kept when opening it again) and for switching tabs (so state can be restored when the tab returns). This data is automatically saved for each scene in an <code>editstate</code> file in the editor metadata folder. If you want to store global (scene-independent) editor data for your plugin, you can use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetWindowLayout_Godot_ConfigFile_">_GetWindowLayout(ConfigFile)</a> instead.</p>
+<p>Use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__SetState_Godot_Collections_Dictionary_">_SetState(Dictionary)</a> to restore your saved state.</p>
+<p><b>Note:</b> This method should not be used to save important settings that should persist with the project.</p>
+<p><b>Note:</b> You must implement <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetPluginName">_GetPluginName()</a> for the state to be stored and restored correctly.</p>
+<p><pre><code class="lang-csharp">func _get_state():
+       var state = {"zoom": zoom, "preferred_color": my_color}
+       return state</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary _GetState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__GetWindowLayout_" data-uid="Godot.EditorPlugin._GetWindowLayout*"></a>
+  <h4 id="Godot_EditorPlugin__GetWindowLayout_Godot_ConfigFile_" data-uid="Godot.EditorPlugin._GetWindowLayout(Godot.ConfigFile)">_GetWindowLayout(ConfigFile)</h4>
+  <div class="markdown level1 summary"><p>Override this method to provide the GUI layout of the plugin or any other data you want to be stored. This is used to save the project's editor layout when <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_QueueSaveLayout">QueueSaveLayout()</a> is called or the editor layout was changed (for example changing the position of a dock). The data is stored in the <code>editor_layout.cfg</code> file in the editor metadata directory.</p>
+<p>Use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__SetWindowLayout_Godot_ConfigFile_">_SetWindowLayout(ConfigFile)</a> to restore your saved layout.</p>
+<p><pre><code class="lang-csharp">func _get_window_layout(configuration):
+       configuration.set_value("MyPlugin", "window_position", $Window.position)
+       configuration.set_value("MyPlugin", "icon_color", $Icon.modulate)</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _GetWindowLayout(ConfigFile configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.ConfigFile.html">ConfigFile</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__Handles_" data-uid="Godot.EditorPlugin._Handles*"></a>
+  <h4 id="Godot_EditorPlugin__Handles_Godot_GodotObject_" data-uid="Godot.EditorPlugin._Handles(Godot.GodotObject)">_Handles(GodotObject)</h4>
+  <div class="markdown level1 summary"><p>Implement this function if your plugin edits a specific type of object (Resource or Node). If you return <code>true</code>, then you will get the functions <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Edit_Godot_GodotObject_">_Edit(GodotObject)</a> and <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__MakeVisible_System_Boolean_">_MakeVisible(bool)</a> called when the editor requests them. If you have declared the methods <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__ForwardCanvasGuiInput_Godot_InputEvent_">_ForwardCanvasGuiInput(InputEvent)</a> and <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__Forward3DGuiInput_Godot_Camera3D_Godot_InputEvent_">_Forward3DGuiInput(Camera3D, InputEvent)</a> these will be called too.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _Handles(GodotObject @object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.GodotObject.html">GodotObject</a></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__HasMainScreen_" data-uid="Godot.EditorPlugin._HasMainScreen*"></a>
+  <h4 id="Godot_EditorPlugin__HasMainScreen" data-uid="Godot.EditorPlugin._HasMainScreen">_HasMainScreen()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if this is a main screen editor plugin (it goes in the workspace selector together with <b>2D</b>, <b>3D</b>, <b>Script</b> and <b>AssetLib</b>).</p>
+<p>When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of <a class="xref" href="Godot.EditorInterface.html#Godot_EditorInterface_GetBaseControl">GetBaseControl()</a> and made visible inside <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__MakeVisible_System_Boolean_">_MakeVisible(bool)</a>.</p>
+<p>Use <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetPluginName">_GetPluginName()</a> and <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetPluginIcon">_GetPluginIcon()</a> to customize the plugin button's appearance.</p>
+<p><pre><code class="lang-csharp">var plugin_control
+<p>func _enter_tree():
+plugin_control = preload(&quot;my_plugin_control.tscn&quot;).instantiate()
+get_editor_interface().get_editor_main_screen().add_child(plugin_control)
+plugin_control.hide()</p>
+<p>func _has_main_screen():
+return true</p>
+<p>func _make_visible(visible):
+plugin_control.visible = visible</p>
+<p>func _get_plugin_name():
+return &quot;My Super Cool Plugin 3000&quot;</p>
+<p>func _get_plugin_icon():
+return get_editor_interface().get_base_control().get_theme_icon(&quot;Node&quot;, &quot;EditorIcons&quot;)</p></code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _HasMainScreen()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__MakeVisible_" data-uid="Godot.EditorPlugin._MakeVisible*"></a>
+  <h4 id="Godot_EditorPlugin__MakeVisible_System_Boolean_" data-uid="Godot.EditorPlugin._MakeVisible(System.Boolean)">_MakeVisible(bool)</h4>
+  <div class="markdown level1 summary"><p>This function will be called when the editor is requested to become visible. It is used for plugins that edit a specific object type.</p>
+<p>Remember that you have to manage the visibility of all your editor controls manually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _MakeVisible(bool visible)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">visible</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__SaveExternalData_" data-uid="Godot.EditorPlugin._SaveExternalData*"></a>
+  <h4 id="Godot_EditorPlugin__SaveExternalData" data-uid="Godot.EditorPlugin._SaveExternalData">_SaveExternalData()</h4>
+  <div class="markdown level1 summary"><p>This method is called after the editor saves the project or when it's closed. It asks the plugin to save edited external scenes/resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SaveExternalData()</code></pre>
+  </div>
+
+
+  <a id="Godot_EditorPlugin__SetState_" data-uid="Godot.EditorPlugin._SetState*"></a>
+  <h4 id="Godot_EditorPlugin__SetState_Godot_Collections_Dictionary_" data-uid="Godot.EditorPlugin._SetState(Godot.Collections.Dictionary)">_SetState(Dictionary)</h4>
+  <div class="markdown level1 summary"><p>Restore the state saved by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetState">_GetState()</a>. This method is called when the current scene tab is changed in the editor.</p>
+<p><b>Note:</b> Your plugin must implement <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetPluginName">_GetPluginName()</a>, otherwise it will not be recognized and this method will not be called.</p>
+<p><pre><code class="lang-csharp">func _set_state(data):
+       zoom = data.get("zoom", 1.0)
+       preferred_color = data.get("my_color", Color.WHITE)</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetState(Dictionary state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_EditorPlugin__SetWindowLayout_" data-uid="Godot.EditorPlugin._SetWindowLayout*"></a>
+  <h4 id="Godot_EditorPlugin__SetWindowLayout_Godot_ConfigFile_" data-uid="Godot.EditorPlugin._SetWindowLayout(Godot.ConfigFile)">_SetWindowLayout(ConfigFile)</h4>
+  <div class="markdown level1 summary"><p>Restore the plugin GUI layout and data saved by <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin__GetWindowLayout_Godot_ConfigFile_">_GetWindowLayout(ConfigFile)</a>. This method is called for every plugin on editor startup. Use the provided <code>configuration</code> file to read your saved data.</p>
+<p><pre><code class="lang-csharp">func _set_window_layout(configuration):
+       $Window.position = configuration.get_value("MyPlugin", "window_position", Vector2())
+       $Icon.modulate = configuration.get_value("MyPlugin", "icon_color", Color.WHITE)</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _SetWindowLayout(ConfigFile configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.ConfigFile.html">ConfigFile</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Godot_EditorPlugin_MainScreenChanged" data-uid="Godot.EditorPlugin.MainScreenChanged">MainScreenChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted when user changes the workspace (<b>2D</b>, <b>3D</b>, <b>Script</b>, <b>AssetLib</b>). Also works with custom screens defined by plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EditorPlugin.MainScreenChangedEventHandler MainScreenChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.MainScreenChangedEventHandler.html">MainScreenChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_EditorPlugin_ProjectSettingsChanged" data-uid="Godot.EditorPlugin.ProjectSettingsChanged">ProjectSettingsChanged</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.EditorPlugin.html#Godot_EditorPlugin_ProjectSettingsChanged">ProjectSettingsChanged</a> event of a <a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ProjectSettingsChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_EditorPlugin_ResourceSaved" data-uid="Godot.EditorPlugin.ResourceSaved">ResourceSaved</h4>
+  <div class="markdown level1 summary"><p>Emitted when the given <code>resource</code> was saved on disc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EditorPlugin.ResourceSavedEventHandler ResourceSaved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.ResourceSavedEventHandler.html">ResourceSavedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_EditorPlugin_SceneChanged" data-uid="Godot.EditorPlugin.SceneChanged">SceneChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted when the scene is changed in the editor. The argument will return the root node of the scene that has just become active. If this scene is new and empty, the argument will be <code>null</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EditorPlugin.SceneChangedEventHandler SceneChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.SceneChangedEventHandler.html">SceneChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_EditorPlugin_SceneClosed" data-uid="Godot.EditorPlugin.SceneClosed">SceneClosed</h4>
+  <div class="markdown level1 summary"><p>Emitted when user closes a scene. The argument is file path to a closed scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EditorPlugin.SceneClosedEventHandler SceneClosed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.EditorPlugin.html">EditorPlugin</a>.<a class="xref" href="Godot.EditorPlugin.SceneClosedEventHandler.html">SceneClosedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

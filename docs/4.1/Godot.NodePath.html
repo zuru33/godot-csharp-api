@@ -1,0 +1,973 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NodePath
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NodePath
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.NodePath">
+
+
+
+  <h1 id="Godot_NodePath" data-uid="Godot.NodePath" class="text-break">Class NodePath
+</h1>
+  <div class="markdown level0 summary"><p>A pre-parsed relative or absolute path in a scene tree,
+for use with <a class="xref" href="Godot.Node.html#Godot_Node_GetNode_Godot_NodePath_">GetNode(NodePath)</a> and similar functions.
+It can reference a node, a resource within a node, or a property
+of a node or resource.
+For instance, <code>&quot;Path2D/PathFollow2D/Sprite2D:texture:size&quot;</code>
+would refer to the <code>size</code> property of the <code>texture</code>
+resource on the node named <code>&quot;Sprite2D&quot;</code> which is a child of
+the other named nodes in the path.
+You will usually just pass a string to <a class="xref" href="Godot.Node.html#Godot_Node_GetNode_Godot_NodePath_">GetNode(NodePath)</a>
+and it will be automatically converted, but you may occasionally
+want to parse a path ahead of time with NodePath.
+Exporting a NodePath variable will give you a node selection widget
+in the properties panel of the editor, which can often be useful.
+A NodePath is composed of a list of slash-separated node names
+(like a filesystem path) and an optional colon-separated list of
+&quot;subnames&quot; which can be resources or properties.</p>
+<p>Note: In the editor, NodePath properties are automatically updated when moving,
+renaming or deleting a node in the scene tree, but they are never updated at runtime.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">NodePath</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Godot.NodePath.html">NodePath</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_NodePath_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class NodePath : IDisposable, IEquatable&lt;NodePath&gt;</code></pre>
+  </div>
+  <h5 id="Godot_NodePath_examples"><strong>Examples</strong></h5>
+  <p>Some examples of NodePaths include the following:</p>
+<pre><code class="lang-csharp">// No leading slash means it is relative to the current node.
+new NodePath("A"); // Immediate child A.
+new NodePath("A/B"); // A's child B.
+new NodePath("."); // The current node.
+new NodePath(".."); // The parent node.
+new NodePath("../C"); // A sibling node C.
+// A leading slash means it is absolute from the SceneTree.
+new NodePath("/root"); // Equivalent to GetTree().Root
+new NodePath("/root/Main"); // If your main scene's root node were named "Main".
+new NodePath("/root/MyAutoload"); // If you have an autoloaded node or scene.</code></pre>
+
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_NodePath__ctor_" data-uid="Godot.NodePath.#ctor*"></a>
+  <h4 id="Godot_NodePath__ctor" data-uid="Godot.NodePath.#ctor">NodePath()</h4>
+  <div class="markdown level1 summary"><p>Constructs an empty <a class="xref" href="Godot.NodePath.html">NodePath</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodePath()</code></pre>
+  </div>
+
+
+  <a id="Godot_NodePath__ctor_" data-uid="Godot.NodePath.#ctor*"></a>
+  <h4 id="Godot_NodePath__ctor_System_String_" data-uid="Godot.NodePath.#ctor(System.String)">NodePath(string)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="Godot.NodePath.html">NodePath</a> from a string <code class="paramref">path</code>,
+e.g.: <code>&quot;Path2D/PathFollow2D/Sprite2D:texture:size&quot;</code>.
+A path is absolute if it starts with a slash. Absolute paths
+are only valid in the global scene tree, not within individual
+scenes. In a relative path, <code>&quot;.&quot;</code> and <code>&quot;..&quot;</code> indicate
+the current node and its parent.
+The &quot;subnames&quot; optionally included after the path to the target
+node can point to resources or properties, and can also be nested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodePath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>A string that represents a path in a scene tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_NodePath__ctor_System_String__examples">Examples</h5>
+  <p>Examples of valid NodePaths (assuming that those nodes exist and
+have the referenced resources or properties):</p>
+<pre><code class="lang-csharp">// Points to the Sprite2D node.
+"Path2D/PathFollow2D/Sprite2D"
+// Points to the Sprite2D node and its "texture" resource.
+// GetNode() would retrieve "Sprite2D", while GetNodeAndResource()
+// would retrieve both the Sprite2D node and the "texture" resource.
+"Path2D/PathFollow2D/Sprite2D:texture"
+// Points to the Sprite2D node and its "position" property.
+"Path2D/PathFollow2D/Sprite2D:position"
+// Points to the Sprite2D node and the "x" component of its "position" property.
+"Path2D/PathFollow2D/Sprite2D:position:x"
+// Absolute path (from "root")
+"/root/Level/Path2D"</code></pre>
+
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_NodePath_IsEmpty_" data-uid="Godot.NodePath.IsEmpty*"></a>
+  <h4 id="Godot_NodePath_IsEmpty" data-uid="Godot.NodePath.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the node path is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the <a class="xref" href="Godot.NodePath.html">NodePath</a> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_NodePath_Dispose_" data-uid="Godot.NodePath.Dispose*"></a>
+  <h4 id="Godot_NodePath_Dispose" data-uid="Godot.NodePath.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of this <a class="xref" href="Godot.NodePath.html">NodePath</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+  <a id="Godot_NodePath_Dispose_" data-uid="Godot.NodePath.Dispose*"></a>
+  <h4 id="Godot_NodePath_Dispose_System_Boolean_" data-uid="Godot.NodePath.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_Equals_" data-uid="Godot.NodePath.Equals*"></a>
+  <h4 id="Godot_NodePath_Equals_Godot_NodePath_" data-uid="Godot.NodePath.Equals(Godot.NodePath)">Equals(NodePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(NodePath other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_Equals_" data-uid="Godot.NodePath.Equals*"></a>
+  <h4 id="Godot_NodePath_Equals_System_Object_" data-uid="Godot.NodePath.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a></div>
+
+
+  <a id="Godot_NodePath_Finalize_" data-uid="Godot.NodePath.Finalize*"></a>
+  <h4 id="Godot_NodePath_Finalize" data-uid="Godot.NodePath.Finalize">~NodePath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~NodePath()</code></pre>
+  </div>
+
+
+  <a id="Godot_NodePath_GetAsPropertyPath_" data-uid="Godot.NodePath.GetAsPropertyPath*"></a>
+  <h4 id="Godot_NodePath_GetAsPropertyPath" data-uid="Godot.NodePath.GetAsPropertyPath">GetAsPropertyPath()</h4>
+  <div class="markdown level1 summary"><p>Returns a node path with a colon character (<code>:</code>) prepended,
+transforming it to a pure property path with no node name (defaults
+to resolving from the current node).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodePath GetAsPropertyPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><p>The <a class="xref" href="Godot.NodePath.html">NodePath</a> as a pure property path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_NodePath_GetAsPropertyPath_examples">Examples</h5>
+  <pre><code class="lang-csharp">// This will be parsed as a node path to the "x" property in the "position" node.
+var nodePath = new NodePath("position:x");
+// This will be parsed as a node path to the "x" component of the "position" property in the current node.
+NodePath propertyPath = nodePath.GetAsPropertyPath();
+GD.Print(propertyPath); // :position:x</code></pre>
+
+
+
+  <a id="Godot_NodePath_GetConcatenatedNames_" data-uid="Godot.NodePath.GetConcatenatedNames*"></a>
+  <h4 id="Godot_NodePath_GetConcatenatedNames" data-uid="Godot.NodePath.GetConcatenatedNames">GetConcatenatedNames()</h4>
+  <div class="markdown level1 summary"><p>Returns all names concatenated with a slash character (<code>/</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetConcatenatedNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The names concatenated with <code>/</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_NodePath_GetConcatenatedNames_examples">Examples</h5>
+  <pre><code class="lang-csharp">var nodepath = new NodePath("Path2D/PathFollow2D/Sprite2D:texture:load_path");
+GD.Print(nodepath.GetConcatenatedNames()); // Path2D/PathFollow2D/Sprite2D</code></pre>
+
+
+
+  <a id="Godot_NodePath_GetConcatenatedSubNames_" data-uid="Godot.NodePath.GetConcatenatedSubNames*"></a>
+  <h4 id="Godot_NodePath_GetConcatenatedSubNames" data-uid="Godot.NodePath.GetConcatenatedSubNames">GetConcatenatedSubNames()</h4>
+  <div class="markdown level1 summary"><p>Returns all subnames concatenated with a colon character (<code>:</code>)
+as separator, i.e. the right side of the first colon in a node path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetConcatenatedSubNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The subnames concatenated with <code>:</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_NodePath_GetConcatenatedSubNames_examples">Examples</h5>
+  <pre><code class="lang-csharp">var nodepath = new NodePath("Path2D/PathFollow2D/Sprite2D:texture:load_path");
+GD.Print(nodepath.GetConcatenatedSubnames()); // texture:load_path</code></pre>
+
+
+
+  <a id="Godot_NodePath_GetHashCode_" data-uid="Godot.NodePath.GetHashCode*"></a>
+  <h4 id="Godot_NodePath_GetHashCode" data-uid="Godot.NodePath.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
+
+
+  <a id="Godot_NodePath_GetName_" data-uid="Godot.NodePath.GetName*"></a>
+  <h4 id="Godot_NodePath_GetName_System_Int32_" data-uid="Godot.NodePath.GetName(System.Int32)">GetName(int)</h4>
+  <div class="markdown level1 summary"><p>Gets the node name indicated by <code class="paramref">idx</code> (0 to <a class="xref" href="Godot.NodePath.html#Godot_NodePath_GetNameCount">GetNameCount()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The name index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The name at the given index <code class="paramref">idx</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Godot_NodePath_GetName_System_Int32__examples">Examples</h5>
+  <pre><code class="lang-csharp">var nodePath = new NodePath("Path2D/PathFollow2D/Sprite2D");
+GD.Print(nodePath.GetName(0)); // Path2D
+GD.Print(nodePath.GetName(1)); // PathFollow2D
+GD.Print(nodePath.GetName(2)); // Sprite</code></pre>
+
+
+
+  <a id="Godot_NodePath_GetNameCount_" data-uid="Godot.NodePath.GetNameCount*"></a>
+  <h4 id="Godot_NodePath_GetNameCount" data-uid="Godot.NodePath.GetNameCount">GetNameCount()</h4>
+  <div class="markdown level1 summary"><p>Gets the number of node names which make up the path.
+Subnames (see <a class="xref" href="Godot.NodePath.html#Godot_NodePath_GetSubNameCount">GetSubNameCount()</a>) are not included.
+For example, <code>&quot;Path2D/PathFollow2D/Sprite2D&quot;</code> has 3 names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNameCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of node names which make up the path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_GetSubName_" data-uid="Godot.NodePath.GetSubName*"></a>
+  <h4 id="Godot_NodePath_GetSubName_System_Int32_" data-uid="Godot.NodePath.GetSubName(System.Int32)">GetSubName(int)</h4>
+  <div class="markdown level1 summary"><p>Gets the resource or property name indicated by <code class="paramref">idx</code> (0 to <a class="xref" href="Godot.NodePath.html#Godot_NodePath_GetSubNameCount">GetSubNameCount()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSubName(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The subname index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The subname at the given index <code class="paramref">idx</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_GetSubNameCount_" data-uid="Godot.NodePath.GetSubNameCount*"></a>
+  <h4 id="Godot_NodePath_GetSubNameCount" data-uid="Godot.NodePath.GetSubNameCount">GetSubNameCount()</h4>
+  <div class="markdown level1 summary"><p>Gets the number of resource or property names (&quot;subnames&quot;) in the path.
+Each subname is listed after a colon character (<code>:</code>) in the node path.
+For example, <code>&quot;Path2D/PathFollow2D/Sprite2D:texture:load_path&quot;</code> has 2 subnames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSubNameCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of subnames in the path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_IsAbsolute_" data-uid="Godot.NodePath.IsAbsolute*"></a>
+  <h4 id="Godot_NodePath_IsAbsolute" data-uid="Godot.NodePath.IsAbsolute">IsAbsolute()</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the node path is absolute (as opposed to relative),
+which means that it starts with a slash character (<code>/</code>). Absolute node paths can
+be used to access the root node (<code>&quot;/root&quot;</code>) or autoloads (e.g. <code>&quot;/global&quot;</code>
+if a &quot;global&quot; autoload was registered).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAbsolute()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the <a class="xref" href="Godot.NodePath.html">NodePath</a> is an absolute path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_ToString_" data-uid="Godot.NodePath.ToString*"></a>
+  <h4 id="Godot_NodePath_ToString" data-uid="Godot.NodePath.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="Godot.NodePath.html">NodePath</a> to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string representation of this <a class="xref" href="Godot.NodePath.html">NodePath</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="Godot_NodePath_op_Equality_" data-uid="Godot.NodePath.op_Equality*"></a>
+  <h4 id="Godot_NodePath_op_Equality_Godot_NodePath_Godot_NodePath_" data-uid="Godot.NodePath.op_Equality(Godot.NodePath,Godot.NodePath)">operator ==(NodePath, NodePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(NodePath left, NodePath right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_op_Implicit_" data-uid="Godot.NodePath.op_Implicit*"></a>
+  <h4 id="Godot_NodePath_op_Implicit_Godot_NodePath__System_String" data-uid="Godot.NodePath.op_Implicit(Godot.NodePath)~System.String">implicit operator string(NodePath)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="Godot.NodePath.html">NodePath</a> to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string(NodePath from)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The <a class="xref" href="Godot.NodePath.html">NodePath</a> to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_op_Implicit_" data-uid="Godot.NodePath.op_Implicit*"></a>
+  <h4 id="Godot_NodePath_op_Implicit_System_String__Godot_NodePath" data-uid="Godot.NodePath.op_Implicit(System.String)~Godot.NodePath">implicit operator NodePath(string)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a <a class="xref" href="Godot.NodePath.html">NodePath</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator NodePath(string from)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The string to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_NodePath_op_Inequality_" data-uid="Godot.NodePath.op_Inequality*"></a>
+  <h4 id="Godot_NodePath_op_Inequality_Godot_NodePath_Godot_NodePath_" data-uid="Godot.NodePath.op_Inequality(Godot.NodePath,Godot.NodePath)">operator !=(NodePath, NodePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(NodePath left, NodePath right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NodePath.html">NodePath</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

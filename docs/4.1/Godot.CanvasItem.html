@@ -1,0 +1,3863 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CanvasItem
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CanvasItem
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.CanvasItem">
+
+
+
+  <h1 id="Godot_CanvasItem" data-uid="Godot.CanvasItem" class="text-break">Class CanvasItem
+</h1>
+  <div class="markdown level0 summary"><p>Abstract base class for everything in 2D space. Canvas items are laid out in a tree; children inherit and extend their parent's transform. <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is extended by <a class="xref" href="Godot.Control.html">Control</a> for GUI-related nodes, and by <a class="xref" href="Godot.Node2D.html">Node2D</a> for 2D game objects.</p>
+<p>Any <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> can draw. For this, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_QueueRedraw">QueueRedraw()</a> is called by the engine, then <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_NotificationDraw">NotificationDraw</a> will be received on idle time to request a redraw. Because of this, canvas items don't need to be redrawn on every frame, improving the performance significantly. Several functions for drawing on the <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> are provided (see <code>draw_*</code> functions). However, they can only be used inside <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem__Draw">_Draw()</a>, its corresponding <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">_Notification(int)</a> or methods connected to the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Draw">Draw</a> signal.</p>
+<p>Canvas items are drawn in tree order. By default, children are on top of their parents, so a root <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> will be drawn behind everything. This behavior can be changed on a per-item basis.</p>
+<p>A <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> can be hidden, which will also hide its children. By adjusting various other properties of a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>, you can also modulate its color (via <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Modulate">Modulate</a> or <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_SelfModulate">SelfModulate</a>), change its Z-index, blend mode, and more.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.Node.html">Node</a></div>
+    <div class="level3"><span class="xref">CanvasItem</span></div>
+      <div class="level4"><a class="xref" href="Godot.Control.html">Control</a></div>
+      <div class="level4"><a class="xref" href="Godot.Node2D.html">Node2D</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEnterTree">Node.NotificationEnterTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationExitTree">Node.NotificationExitTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationMovedInParent">Node.NotificationMovedInParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationReady">Node.NotificationReady</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPaused">Node.NotificationPaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationUnpaused">Node.NotificationUnpaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPhysicsProcess">Node.NotificationPhysicsProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationProcess">Node.NotificationProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationParented">Node.NotificationParented</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationUnparented">Node.NotificationUnparented</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationSceneInstantiated">Node.NotificationSceneInstantiated</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDragBegin">Node.NotificationDragBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDragEnd">Node.NotificationDragEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPathRenamed">Node.NotificationPathRenamed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationChildOrderChanged">Node.NotificationChildOrderChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationInternalProcess">Node.NotificationInternalProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationInternalPhysicsProcess">Node.NotificationInternalPhysicsProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationPostEnterTree">Node.NotificationPostEnterTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationDisabled">Node.NotificationDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEnabled">Node.NotificationEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationNodeRecacheRequested">Node.NotificationNodeRecacheRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEditorPreSave">Node.NotificationEditorPreSave</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationEditorPostSave">Node.NotificationEditorPostSave</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMMouseEnter">Node.NotificationWMMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMMouseExit">Node.NotificationWMMouseExit</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMWindowFocusIn">Node.NotificationWMWindowFocusIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMWindowFocusOut">Node.NotificationWMWindowFocusOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMCloseRequest">Node.NotificationWMCloseRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMGoBackRequest">Node.NotificationWMGoBackRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMSizeChanged">Node.NotificationWMSizeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMDpiChange">Node.NotificationWMDpiChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationVpMouseEnter">Node.NotificationVpMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationVpMouseExit">Node.NotificationVpMouseExit</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationOsMemoryWarning">Node.NotificationOsMemoryWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationTranslationChanged">Node.NotificationTranslationChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationWMAbout">Node.NotificationWMAbout</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationCrash">Node.NotificationCrash</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationOsImeUpdate">Node.NotificationOsImeUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationResumed">Node.NotificationApplicationResumed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationPaused">Node.NotificationApplicationPaused</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationFocusIn">Node.NotificationApplicationFocusIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationApplicationFocusOut">Node.NotificationApplicationFocusOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotificationTextServerChanged">Node.NotificationTextServerChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNode__1_Godot_NodePath_">Node.GetNode&lt;T&gt;(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeOrNull__1_Godot_NodePath_">Node.GetNodeOrNull&lt;T&gt;(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChild__1_System_Int32_System_Boolean_">Node.GetChild&lt;T&gt;(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildOrNull__1_System_Int32_System_Boolean_">Node.GetChildOrNull&lt;T&gt;(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetOwner__1">Node.GetOwner&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetOwnerOrNull__1">Node.GetOwnerOrNull&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParent__1">Node.GetParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParentOrNull__1">Node.GetParentOrNull&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__EnterTree">Node._EnterTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ExitTree">Node._ExitTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__GetConfigurationWarnings">Node._GetConfigurationWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Input_Godot_InputEvent_">Node._Input(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__PhysicsProcess_System_Double_">Node._PhysicsProcess(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Process_System_Double_">Node._Process(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__Ready">Node._Ready()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ShortcutInput_Godot_InputEvent_">Node._ShortcutInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__UnhandledInput_Godot_InputEvent_">Node._UnhandledInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__UnhandledKeyInput_Godot_InputEvent_">Node._UnhandledKeyInput(InputEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintOrphanNodes">Node.PrintOrphanNodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddSibling_Godot_Node_System_Boolean_">Node.AddSibling(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddChild_Godot_Node_System_Boolean_Godot_Node_InternalMode_">Node.AddChild(Node, bool, Node.InternalMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RemoveChild_Godot_Node_">Node.RemoveChild(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Reparent_Godot_Node_System_Boolean_">Node.Reparent(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildCount_System_Boolean_">Node.GetChildCount(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChildren_System_Boolean_">Node.GetChildren(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetChild_System_Int32_System_Boolean_">Node.GetChild(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_HasNode_Godot_NodePath_">Node.HasNode(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNode_Godot_NodePath_">Node.GetNode(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeOrNull_Godot_NodePath_">Node.GetNodeOrNull(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetParent">Node.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindChild_System_String_System_Boolean_System_Boolean_">Node.FindChild(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindChildren_System_String_System_String_System_Boolean_System_Boolean_">Node.FindChildren(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_FindParent_System_String_">Node.FindParent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_HasNodeAndResource_Godot_NodePath_">Node.HasNodeAndResource(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetNodeAndResource_Godot_NodePath_">Node.GetNodeAndResource(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsInsideTree">Node.IsInsideTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsAncestorOf_Godot_Node_">Node.IsAncestorOf(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsGreaterThan_Godot_Node_">Node.IsGreaterThan(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPath">Node.GetPath()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPathTo_Godot_Node_System_Boolean_">Node.GetPathTo(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_AddToGroup_Godot_StringName_System_Boolean_">Node.AddToGroup(StringName, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RemoveFromGroup_Godot_StringName_">Node.RemoveFromGroup(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsInGroup_Godot_StringName_">Node.IsInGroup(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_MoveChild_Godot_Node_System_Int32_">Node.MoveChild(Node, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetGroups">Node.GetGroups()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetIndex_System_Boolean_">Node.GetIndex(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintTree">Node.PrintTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PrintTreePretty">Node.PrintTreePretty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PropagateNotification_System_Int32_">Node.PropagateNotification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_PropagateCall_Godot_StringName_Godot_Collections_Array_System_Boolean_">Node.PropagateCall(StringName, Array, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetPhysicsProcess_System_Boolean_">Node.SetPhysicsProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetPhysicsProcessDeltaTime">Node.GetPhysicsProcessDeltaTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsPhysicsProcessing">Node.IsPhysicsProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetProcessDeltaTime">Node.GetProcessDeltaTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcess_System_Boolean_">Node.SetProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessing">Node.IsProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessInput_System_Boolean_">Node.SetProcessInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingInput">Node.IsProcessingInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessShortcutInput_System_Boolean_">Node.SetProcessShortcutInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingShortcutInput">Node.IsProcessingShortcutInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessUnhandledInput_System_Boolean_">Node.SetProcessUnhandledInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingUnhandledInput">Node.IsProcessingUnhandledInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessUnhandledKeyInput_System_Boolean_">Node.SetProcessUnhandledKeyInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingUnhandledKeyInput">Node.IsProcessingUnhandledKeyInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CanProcess">Node.CanProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetDisplayFolded_System_Boolean_">Node.SetDisplayFolded(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsDisplayedFolded">Node.IsDisplayedFolded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetProcessInternal_System_Boolean_">Node.SetProcessInternal(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsProcessingInternal">Node.IsProcessingInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetPhysicsProcessInternal_System_Boolean_">Node.SetPhysicsProcessInternal(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsPhysicsProcessingInternal">Node.IsPhysicsProcessingInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetWindow">Node.GetWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetLastExclusiveWindow">Node.GetLastExclusiveWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetTree">Node.GetTree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CreateTween">Node.CreateTween()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Duplicate_System_Int32_">Node.Duplicate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ReplaceBy_Godot_Node_System_Boolean_">Node.ReplaceBy(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetSceneInstanceLoadPlaceholder_System_Boolean_">Node.SetSceneInstanceLoadPlaceholder(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetSceneInstanceLoadPlaceholder">Node.GetSceneInstanceLoadPlaceholder()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetEditableInstance_Godot_Node_System_Boolean_">Node.SetEditableInstance(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsEditableInstance_Godot_Node_">Node.IsEditableInstance(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetViewport">Node.GetViewport()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_QueueFree">Node.QueueFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RequestReady">Node.RequestReady()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsNodeReady">Node.IsNodeReady()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetMultiplayerAuthority_System_Int32_System_Boolean_">Node.SetMultiplayerAuthority(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_GetMultiplayerAuthority">Node.GetMultiplayerAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_IsMultiplayerAuthority">Node.IsMultiplayerAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RpcConfig_Godot_StringName_Godot_Variant_">Node.RpcConfig(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Rpc_Godot_StringName_Godot_Variant___">Node.Rpc(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_RpcId_System_Int64_Godot_StringName_Godot_Variant___">Node.RpcId(long, StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_UpdateConfigurationWarnings">Node.UpdateConfigurationWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CallDeferredThreadGroup_Godot_StringName_Godot_Variant___">Node.CallDeferredThreadGroup(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetDeferredThreadGroup_Godot_StringName_Godot_Variant_">Node.SetDeferredThreadGroup(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotifyDeferredThreadGroup_System_Int32_">Node.NotifyDeferredThreadGroup(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_CallThreadSafe_Godot_StringName_Godot_Variant___">Node.CallThreadSafe(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SetThreadSafe_Godot_StringName_Godot_Variant_">Node.SetThreadSafe(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_NotifyThreadSafe_System_Int32_">Node.NotifyThreadSafe(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node__ImportPath">Node._ImportPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Name">Node.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_UniqueNameInOwner">Node.UniqueNameInOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_SceneFilePath">Node.SceneFilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Owner">Node.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Multiplayer">Node.Multiplayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessMode">Node.ProcessMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessPriority">Node.ProcessPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessPhysicsPriority">Node.ProcessPhysicsPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadGroup">Node.ProcessThreadGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadGroupOrder">Node.ProcessThreadGroupOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ProcessThreadMessages">Node.ProcessThreadMessages</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_EditorDescription">Node.EditorDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Ready">Node.Ready</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_Renamed">Node.Renamed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeEntered">Node.TreeEntered</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeExiting">Node.TreeExiting</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_TreeExited">Node.TreeExited</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildEnteredTree">Node.ChildEnteredTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildExitingTree">Node.ChildExitingTree</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ChildOrderChanged">Node.ChildOrderChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Node.html#Godot_Node_ReplacingBy">Node.ReplacingBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_CanvasItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CanvasItem : Node, IDisposable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Godot_CanvasItem_NotificationDraw" data-uid="Godot.CanvasItem.NotificationDraw">NotificationDraw</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is requested to draw (see <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem__Draw">_Draw()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationDraw = 30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationEnterCanvas" data-uid="Godot.CanvasItem.NotificationEnterCanvas">NotificationEnterCanvas</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> has entered the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationEnterCanvas = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationExitCanvas" data-uid="Godot.CanvasItem.NotificationExitCanvas">NotificationExitCanvas</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> has exited the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationExitCanvas = 33</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationLocalTransformChanged" data-uid="Godot.CanvasItem.NotificationLocalTransformChanged">NotificationLocalTransformChanged</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s local transform has changed. This notification is only received if enabled by <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_SetNotifyLocalTransform_System_Boolean_">SetNotifyLocalTransform(bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationLocalTransformChanged = 35</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationTransformChanged" data-uid="Godot.CanvasItem.NotificationTransformChanged">NotificationTransformChanged</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s global transform has changed. This notification is only received if enabled by <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_SetNotifyTransform_System_Boolean_">SetNotifyTransform(bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationTransformChanged = 2000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationVisibilityChanged" data-uid="Godot.CanvasItem.NotificationVisibilityChanged">NotificationVisibilityChanged</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s visibility has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationVisibilityChanged = 31</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_NotificationWorld2DChanged" data-uid="Godot.CanvasItem.NotificationWorld2DChanged">NotificationWorld2DChanged</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s active <a class="xref" href="Godot.World2D.html">World2D</a> changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long NotificationWorld2DChanged = 36</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_CanvasItem_ClipChildren_" data-uid="Godot.CanvasItem.ClipChildren*"></a>
+  <h4 id="Godot_CanvasItem_ClipChildren" data-uid="Godot.CanvasItem.ClipChildren">ClipChildren</h4>
+  <div class="markdown level1 summary"><p>Allows the current node to clip children nodes, essentially acting as a mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasItem.ClipChildrenMode ClipChildren { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.<a class="xref" href="Godot.CanvasItem.ClipChildrenMode.html">ClipChildrenMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_LightMask_" data-uid="Godot.CanvasItem.LightMask*"></a>
+  <h4 id="Godot_CanvasItem_LightMask" data-uid="Godot.CanvasItem.LightMask">LightMask</h4>
+  <div class="markdown level1 summary"><p>The rendering layers in which this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> responds to <a class="xref" href="Godot.Light2D.html">Light2D</a> nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LightMask { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_Material_" data-uid="Godot.CanvasItem.Material*"></a>
+  <h4 id="Godot_CanvasItem_Material" data-uid="Godot.CanvasItem.Material">Material</h4>
+  <div class="markdown level1 summary"><p>The material applied to this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material Material { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_Modulate_" data-uid="Godot.CanvasItem.Modulate*"></a>
+  <h4 id="Godot_CanvasItem_Modulate" data-uid="Godot.CanvasItem.Modulate">Modulate</h4>
+  <div class="markdown level1 summary"><p>The color applied to this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>. This property does affect child <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>s, unlike <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_SelfModulate">SelfModulate</a> which only affects the node itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Modulate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_SelfModulate_" data-uid="Godot.CanvasItem.SelfModulate*"></a>
+  <h4 id="Godot_CanvasItem_SelfModulate" data-uid="Godot.CanvasItem.SelfModulate">SelfModulate</h4>
+  <div class="markdown level1 summary"><p>The color applied to this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>. This property does <b>not</b> affect child <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>s, unlike <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Modulate">Modulate</a> which affects both the node itself and its children.</p>
+<p><b>Note:</b> Internal children (e.g. sliders in <a class="xref" href="Godot.ColorPicker.html">ColorPicker</a> or tab bar in <a class="xref" href="Godot.TabContainer.html">TabContainer</a>) are also not affected by this property (see <code>include_internal</code> parameter of <a class="xref" href="Godot.Node.html#Godot_Node_GetChild_System_Int32_System_Boolean_">GetChild(int, bool)</a> and other similar methods).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SelfModulate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_ShowBehindParent_" data-uid="Godot.CanvasItem.ShowBehindParent*"></a>
+  <h4 id="Godot_CanvasItem_ShowBehindParent" data-uid="Godot.CanvasItem.ShowBehindParent">ShowBehindParent</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the object draws behind its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowBehindParent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_TextureFilter_" data-uid="Godot.CanvasItem.TextureFilter*"></a>
+  <h4 id="Godot_CanvasItem_TextureFilter" data-uid="Godot.CanvasItem.TextureFilter">TextureFilter</h4>
+  <div class="markdown level1 summary"><p>The texture filtering mode to use on this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasItem.TextureFilterEnum TextureFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.<a class="xref" href="Godot.CanvasItem.TextureFilterEnum.html">TextureFilterEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_TextureRepeat_" data-uid="Godot.CanvasItem.TextureRepeat*"></a>
+  <h4 id="Godot_CanvasItem_TextureRepeat" data-uid="Godot.CanvasItem.TextureRepeat">TextureRepeat</h4>
+  <div class="markdown level1 summary"><p>The texture repeating mode to use on this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasItem.TextureRepeatEnum TextureRepeat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.<a class="xref" href="Godot.CanvasItem.TextureRepeatEnum.html">TextureRepeatEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_TopLevel_" data-uid="Godot.CanvasItem.TopLevel*"></a>
+  <h4 id="Godot_CanvasItem_TopLevel" data-uid="Godot.CanvasItem.TopLevel">TopLevel</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> will <i>not</i> inherit its transform from parent <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>s. Its draw order will also be changed to make it draw on top of other <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>s that do not have <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_TopLevel">TopLevel</a> set to <code>true</code>. The <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> will effectively act as if it was placed as a child of a bare <a class="xref" href="Godot.Node.html">Node</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TopLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_UseParentMaterial_" data-uid="Godot.CanvasItem.UseParentMaterial*"></a>
+  <h4 id="Godot_CanvasItem_UseParentMaterial" data-uid="Godot.CanvasItem.UseParentMaterial">UseParentMaterial</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the parent <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Material">Material</a> property is used as this one's material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseParentMaterial { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_VisibilityLayer_" data-uid="Godot.CanvasItem.VisibilityLayer*"></a>
+  <h4 id="Godot_CanvasItem_VisibilityLayer" data-uid="Godot.CanvasItem.VisibilityLayer">VisibilityLayer</h4>
+  <div class="markdown level1 summary"><p>The rendering layer in which this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is rendered by <a class="xref" href="Godot.Viewport.html">Viewport</a> nodes. A <a class="xref" href="Godot.Viewport.html">Viewport</a> will render a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> if it and all its parents share a layer with the <a class="xref" href="Godot.Viewport.html">Viewport</a>'s canvas cull mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint VisibilityLayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_Visible_" data-uid="Godot.CanvasItem.Visible*"></a>
+  <h4 id="Godot_CanvasItem_Visible" data-uid="Godot.CanvasItem.Visible">Visible</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is drawn. The node is only visible if all of its ancestors are visible as well (in other words, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_IsVisibleInTree">IsVisibleInTree()</a> must return <code>true</code>).</p>
+<p><b>Note:</b> For controls that inherit <a class="xref" href="Godot.Popup.html">Popup</a>, the correct way to make them visible is to call one of the multiple <code>popup*()</code> functions instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_YSortEnabled_" data-uid="Godot.CanvasItem.YSortEnabled*"></a>
+  <h4 id="Godot_CanvasItem_YSortEnabled" data-uid="Godot.CanvasItem.YSortEnabled">YSortEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, child nodes with the lowest Y position are drawn before those with a higher Y position. If <code>false</code>, Y-sorting is disabled. Y-sorting only affects children that inherit from <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.</p>
+<p>You can nest nodes with Y-sorting. Child Y-sorted nodes are sorted in the same space as the parent Y-sort. This feature allows you to organize a scene better or divide it into multiple ones without changing your scene tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool YSortEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_ZAsRelative_" data-uid="Godot.CanvasItem.ZAsRelative*"></a>
+  <h4 id="Godot_CanvasItem_ZAsRelative" data-uid="Godot.CanvasItem.ZAsRelative">ZAsRelative</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the node's Z index is relative to its parent's Z index. If this node's Z index is 2 and its parent's effective Z index is 3, then this node's effective Z index will be 2 + 3 = 5.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZAsRelative { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_ZIndex_" data-uid="Godot.CanvasItem.ZIndex*"></a>
+  <h4 id="Godot_CanvasItem_ZIndex" data-uid="Godot.CanvasItem.ZIndex">ZIndex</h4>
+  <div class="markdown level1 summary"><p>Z index. Controls the order in which the nodes render. A node with a higher Z index will display in front of others. Must be between <a class="xref" href="Godot.RenderingServer.html#Godot_RenderingServer_CanvasItemZMin">CanvasItemZMin</a> and <a class="xref" href="Godot.RenderingServer.html#Godot_RenderingServer_CanvasItemZMax">CanvasItemZMax</a> (inclusive).</p>
+<p><b>Note:</b> Changing the Z index of a <a class="xref" href="Godot.Control.html">Control</a> only affects the drawing order, not the order in which input events are handled. This can be useful to implement certain UI animations, e.g. a menu where hovered items are scaled and should overlap others.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ZIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_CanvasItem_DrawAnimationSlice_" data-uid="Godot.CanvasItem.DrawAnimationSlice*"></a>
+  <h4 id="Godot_CanvasItem_DrawAnimationSlice_System_Double_System_Double_System_Double_System_Double_" data-uid="Godot.CanvasItem.DrawAnimationSlice(System.Double,System.Double,System.Double,System.Double)">DrawAnimationSlice(double, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawAnimationSlice(double animationLength, double sliceBegin, double sliceEnd, double offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">animationLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sliceBegin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sliceEnd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawArc_" data-uid="Godot.CanvasItem.DrawArc*"></a>
+  <h4 id="Godot_CanvasItem_DrawArc_Godot_Vector2_System_Single_System_Single_System_Single_System_Int32_Godot_Color_System_Single_System_Boolean_" data-uid="Godot.CanvasItem.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,Godot.Color,System.Single,System.Boolean)">DrawArc(Vector2, float, float, float, int, Color, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws an unfilled arc between the given angles with a uniform <code>color</code> and <code>width</code> and optional antialiasing (supported only for positive <code>width</code>). The larger the value of <code>pointCount</code>, the smoother the curve. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawCircle_Godot_Vector2_System_Single_Godot_Color_">DrawCircle(Vector2, float, Color)</a>.</p>
+<p>If <code>width</code> is negative, then the arc is drawn using <a class="xref" href="Godot.RenderingServer.PrimitiveType.html#Godot_RenderingServer_PrimitiveType_LineStrip">LineStrip</a>. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+<p>The arc is drawn from <code>startAngle</code> towards the value of <code>endAngle</code> so in clockwise direction if <code>start_angle &lt; end_angle</code> and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of <code>startAngle</code> and <code>endAngle</code> is greater than <code>@GDScript.TAU</code> radians, then a full circle arc is drawn (i.e. arc will not overlap itself).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawArc(Vector2 center, float radius, float startAngle, float endAngle, int pointCount, Color color, float width = -1, bool antialiased = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">center</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">startAngle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">endAngle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pointCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">antialiased</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawChar_" data-uid="Godot.CanvasItem.DrawChar*"></a>
+  <h4 id="Godot_CanvasItem_DrawChar_Godot_Font_Godot_Vector2_System_String_System_Int32_System_Nullable_Godot_Color__" data-uid="Godot.CanvasItem.DrawChar(Godot.Font,Godot.Vector2,System.String,System.Int32,System.Nullable{Godot.Color})">DrawChar(Font, Vector2, string, int, Color?)</h4>
+  <div class="markdown level1 summary"><p>Draws a string first character using a custom font.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawChar(Font font, Vector2 pos, string @char, int fontSize = 16, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">char</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawCharOutline_" data-uid="Godot.CanvasItem.DrawCharOutline*"></a>
+  <h4 id="Godot_CanvasItem_DrawCharOutline_Godot_Font_Godot_Vector2_System_String_System_Int32_System_Int32_System_Nullable_Godot_Color__" data-uid="Godot.CanvasItem.DrawCharOutline(Godot.Font,Godot.Vector2,System.String,System.Int32,System.Int32,System.Nullable{Godot.Color})">DrawCharOutline(Font, Vector2, string, int, int, Color?)</h4>
+  <div class="markdown level1 summary"><p>Draws a string first character outline using a custom font.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCharOutline(Font font, Vector2 pos, string @char, int fontSize = 16, int size = -1, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">char</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawCircle_" data-uid="Godot.CanvasItem.DrawCircle*"></a>
+  <h4 id="Godot_CanvasItem_DrawCircle_Godot_Vector2_System_Single_Godot_Color_" data-uid="Godot.CanvasItem.DrawCircle(Godot.Vector2,System.Single,Godot.Color)">DrawCircle(Vector2, float, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws a colored, filled circle. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawArc_Godot_Vector2_System_Single_System_Single_System_Single_System_Int32_Godot_Color_System_Single_System_Boolean_">DrawArc(Vector2, float, float, float, int, Color, float, bool)</a>, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a> and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCircle(Vector2 position, float radius, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawColoredPolygon_" data-uid="Godot.CanvasItem.DrawColoredPolygon*"></a>
+  <h4 id="Godot_CanvasItem_DrawColoredPolygon_Godot_Vector2___Godot_Color_Godot_Vector2___Godot_Texture2D_" data-uid="Godot.CanvasItem.DrawColoredPolygon(Godot.Vector2[],Godot.Color,Godot.Vector2[],Godot.Texture2D)">DrawColoredPolygon(Vector2[], Color, Vector2[], Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Draws a colored polygon of any number of points, convex or concave. Unlike <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</a>, a single color must be specified for the whole polygon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawColoredPolygon(Vector2[] points, Color color, Vector2[] uvs = null, Texture2D texture = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">uvs</span></td>
+        <td><p>If the parameter is null, then the default value is <code>Array.Empty&lt;Vector2&gt;()</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawDashedLine_" data-uid="Godot.CanvasItem.DrawDashedLine*"></a>
+  <h4 id="Godot_CanvasItem_DrawDashedLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Single_System_Boolean_" data-uid="Godot.CanvasItem.DrawDashedLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Single,System.Boolean)">DrawDashedLine(Vector2, Vector2, Color, float, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws a dashed line from a 2D point to another, with a given color and width. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawMultiline_Godot_Vector2___Godot_Color_System_Single_">DrawMultiline(Vector2[], Color, float)</a> and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a>.</p>
+<p>If <code>width</code> is negative, then a two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawDashedLine(Vector2 from, Vector2 to, Color color, float width = -1, float dash = 2, bool aligned = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">dash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">aligned</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawEndAnimation_" data-uid="Godot.CanvasItem.DrawEndAnimation*"></a>
+  <h4 id="Godot_CanvasItem_DrawEndAnimation" data-uid="Godot.CanvasItem.DrawEndAnimation">DrawEndAnimation()</h4>
+  <div class="markdown level1 summary"><p>After submitting all animations slices via <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawAnimationSlice_System_Double_System_Double_System_Double_System_Double_">DrawAnimationSlice(double, double, double, double)</a>, this function can be used to revert drawing to its default state (all subsequent drawing commands will be visible). If you don't care about this particular use case, usage of this function after submitting the slices is not required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawEndAnimation()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem_DrawLcdTextureRectRegion_" data-uid="Godot.CanvasItem.DrawLcdTextureRectRegion*"></a>
+  <h4 id="Godot_CanvasItem_DrawLcdTextureRectRegion_Godot_Texture2D_Godot_Rect2_Godot_Rect2_System_Nullable_Godot_Color__" data-uid="Godot.CanvasItem.DrawLcdTextureRectRegion(Godot.Texture2D,Godot.Rect2,Godot.Rect2,System.Nullable{Godot.Color})">DrawLcdTextureRectRegion(Texture2D, Rect2, Rect2, Color?)</h4>
+  <div class="markdown level1 summary"><p>Draws a textured rectangle region of the font texture with LCD subpixel anti-aliasing at a given position, optionally modulated by a color.</p>
+<p>Texture is drawn using the following blend operation, blend mode of the <a class="xref" href="Godot.CanvasItemMaterial.html">CanvasItemMaterial</a> is ignored:</p>
+<p><pre><code class="lang-csharp">dst.r = texture.r * modulate.r * modulate.a + dst.r * (1.0 - texture.r * modulate.a);
+   dst.g = texture.g * modulate.g * modulate.a + dst.g * (1.0 - texture.g * modulate.a);
+   dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
+   dst.a = modulate.a + dst.a * (1.0 - modulate.a);</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLcdTextureRectRegion(Texture2D texture, Rect2 rect, Rect2 srcRect, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawLine_" data-uid="Godot.CanvasItem.DrawLine*"></a>
+  <h4 id="Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_" data-uid="Godot.CanvasItem.DrawLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Boolean)">DrawLine(Vector2, Vector2, Color, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws a line from a 2D point to another, with a given color and width. It can be optionally antialiased. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawMultiline_Godot_Vector2___Godot_Color_System_Single_">DrawMultiline(Vector2[], Color, float)</a> and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a>.</p>
+<p>If <code>width</code> is negative, then a two-point primitive will be drawn instead of a four-point one. This means that when the CanvasItem is scaled, the line will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLine(Vector2 from, Vector2 to, Color color, float width = -1, bool antialiased = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">antialiased</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMesh_" data-uid="Godot.CanvasItem.DrawMesh*"></a>
+  <h4 id="Godot_CanvasItem_DrawMesh_Godot_Mesh_Godot_Texture2D_System_Nullable_Godot_Transform2D__System_Nullable_Godot_Color__" data-uid="Godot.CanvasItem.DrawMesh(Godot.Mesh,Godot.Texture2D,System.Nullable{Godot.Transform2D},System.Nullable{Godot.Color})">DrawMesh(Mesh, Texture2D, Transform2D?, Color?)</h4>
+  <div class="markdown level1 summary"><p>Draws a <a class="xref" href="Godot.Mesh.html">Mesh</a> in 2D, using the provided texture. See <a class="xref" href="Godot.MeshInstance2D.html">MeshInstance2D</a> for related documentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMesh(Mesh mesh, Texture2D texture, Transform2D? transform = null, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a>?</td>
+        <td><span class="parametername">transform</span></td>
+        <td><p>If the parameter is null, then the default value is <code>Transform2D.Identity</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMsdfTextureRectRegion_" data-uid="Godot.CanvasItem.DrawMsdfTextureRectRegion*"></a>
+  <h4 id="Godot_CanvasItem_DrawMsdfTextureRectRegion_Godot_Texture2D_Godot_Rect2_Godot_Rect2_System_Nullable_Godot_Color__System_Double_System_Double_System_Double_" data-uid="Godot.CanvasItem.DrawMsdfTextureRectRegion(Godot.Texture2D,Godot.Rect2,Godot.Rect2,System.Nullable{Godot.Color},System.Double,System.Double,System.Double)">DrawMsdfTextureRectRegion(Texture2D, Rect2, Rect2, Color?, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Draws a textured rectangle region of the multi-channel signed distance field texture at a given position, optionally modulated by a color. See <a class="xref" href="Godot.FontFile.html#Godot_FontFile_MultichannelSignedDistanceField">MultichannelSignedDistanceField</a> for more information and caveats about MSDF font rendering.</p>
+<p>If <code>outline</code> is positive, each alpha channel value of pixel in region is set to maximum value of true distance in the <code>outline</code> radius.</p>
+<p>Value of the <code>pixelRange</code> should the same that was used during distance field texture generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMsdfTextureRectRegion(Texture2D texture, Rect2 rect, Rect2 srcRect, Color? modulate = null, double outline = 0, double pixelRange = 4, double scale = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">outline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">pixelRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMultiline_" data-uid="Godot.CanvasItem.DrawMultiline*"></a>
+  <h4 id="Godot_CanvasItem_DrawMultiline_Godot_Vector2___Godot_Color_System_Single_" data-uid="Godot.CanvasItem.DrawMultiline(Godot.Vector2[],Godot.Color,System.Single)">DrawMultiline(Vector2[], Color, float)</h4>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>width</code> and <code>color</code>. Each line is defined by two consecutive points from <code>points</code> array, i.e. i-th segment consists of <code>points[2 * i]</code>, <code>points[2 * i + 1]</code> endpoints. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a> instead.</p>
+<p>If <code>width</code> is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMultiline(Vector2[] points, Color color, float width = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMultilineColors_" data-uid="Godot.CanvasItem.DrawMultilineColors*"></a>
+  <h4 id="Godot_CanvasItem_DrawMultilineColors_Godot_Vector2___Godot_Color___System_Single_" data-uid="Godot.CanvasItem.DrawMultilineColors(Godot.Vector2[],Godot.Color[],System.Single)">DrawMultilineColors(Vector2[], Color[], float)</h4>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>width</code> and segment-by-segment coloring. Each segment is defined by two consecutive points from <code>points</code> array and a corresponding color from <code>colors</code> array, i.e. i-th segment consists of <code>points[2 * i]</code>, <code>points[2 * i + 1]</code> endpoints and has <code>colors[i]</code> color. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolylineColors_Godot_Vector2___Godot_Color___System_Single_System_Boolean_">DrawPolylineColors(Vector2[], Color[], float, bool)</a> instead.</p>
+<p>If <code>width</code> is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMultilineColors(Vector2[] points, Color[] colors, float width = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMultilineString_" data-uid="Godot.CanvasItem.DrawMultilineString*"></a>
+  <h4 id="Godot_CanvasItem_DrawMultilineString_Godot_Font_Godot_Vector2_System_String_Godot_HorizontalAlignment_System_Single_System_Int32_System_Int32_System_Nullable_Godot_Color__Godot_TextServer_LineBreakFlag_Godot_TextServer_JustificationFlag_Godot_TextServer_Direction_Godot_TextServer_Orientation_" data-uid="Godot.CanvasItem.DrawMultilineString(Godot.Font,Godot.Vector2,System.String,Godot.HorizontalAlignment,System.Single,System.Int32,System.Int32,System.Nullable{Godot.Color},Godot.TextServer.LineBreakFlag,Godot.TextServer.JustificationFlag,Godot.TextServer.Direction,Godot.TextServer.Orientation)">DrawMultilineString(Font, Vector2, string, HorizontalAlignment, float, int, int, Color?, LineBreakFlag, JustificationFlag, Direction, Orientation)</h4>
+  <div class="markdown level1 summary"><p>Breaks <code>text</code> into lines and draws it using the specified <code>font</code> at the <code>pos</code> (top-left corner). The text will have its color multiplied by <code>modulate</code>. If <code>width</code> is greater than or equal to 0, the text will be clipped if it exceeds the specified width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMultilineString(Font font, Vector2 pos, string text, HorizontalAlignment alignment = HorizontalAlignment.Left, float width = -1, int fontSize = 16, int maxLines = -1, Color? modulate = null, TextServer.LineBreakFlag brkFlags = LineBreakFlag.Mandatory | LineBreakFlag.WordBound, TextServer.JustificationFlag justificationFlags = JustificationFlag.Kashida | JustificationFlag.WordBound, TextServer.Direction direction = Direction.Auto, TextServer.Orientation orientation = Orientation.Horizontal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxLines</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.LineBreakFlag.html">LineBreakFlag</a></td>
+        <td><span class="parametername">brkFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.JustificationFlag.html">JustificationFlag</a></td>
+        <td><span class="parametername">justificationFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Direction.html">Direction</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMultilineStringOutline_" data-uid="Godot.CanvasItem.DrawMultilineStringOutline*"></a>
+  <h4 id="Godot_CanvasItem_DrawMultilineStringOutline_Godot_Font_Godot_Vector2_System_String_Godot_HorizontalAlignment_System_Single_System_Int32_System_Int32_System_Int32_System_Nullable_Godot_Color__Godot_TextServer_LineBreakFlag_Godot_TextServer_JustificationFlag_Godot_TextServer_Direction_Godot_TextServer_Orientation_" data-uid="Godot.CanvasItem.DrawMultilineStringOutline(Godot.Font,Godot.Vector2,System.String,Godot.HorizontalAlignment,System.Single,System.Int32,System.Int32,System.Int32,System.Nullable{Godot.Color},Godot.TextServer.LineBreakFlag,Godot.TextServer.JustificationFlag,Godot.TextServer.Direction,Godot.TextServer.Orientation)">DrawMultilineStringOutline(Font, Vector2, string, HorizontalAlignment, float, int, int, int, Color?, LineBreakFlag, JustificationFlag, Direction, Orientation)</h4>
+  <div class="markdown level1 summary"><p>Breaks <code>text</code> to the lines and draws text outline using the specified <code>font</code> at the <code>pos</code> (top-left corner). The text will have its color multiplied by <code>modulate</code>. If <code>width</code> is greater than or equal to 0, the text will be clipped if it exceeds the specified width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMultilineStringOutline(Font font, Vector2 pos, string text, HorizontalAlignment alignment = HorizontalAlignment.Left, float width = -1, int fontSize = 16, int maxLines = -1, int size = 1, Color? modulate = null, TextServer.LineBreakFlag brkFlags = LineBreakFlag.Mandatory | LineBreakFlag.WordBound, TextServer.JustificationFlag justificationFlags = JustificationFlag.Kashida | JustificationFlag.WordBound, TextServer.Direction direction = Direction.Auto, TextServer.Orientation orientation = Orientation.Horizontal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxLines</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.LineBreakFlag.html">LineBreakFlag</a></td>
+        <td><span class="parametername">brkFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.JustificationFlag.html">JustificationFlag</a></td>
+        <td><span class="parametername">justificationFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Direction.html">Direction</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawMultimesh_" data-uid="Godot.CanvasItem.DrawMultimesh*"></a>
+  <h4 id="Godot_CanvasItem_DrawMultimesh_Godot_MultiMesh_Godot_Texture2D_" data-uid="Godot.CanvasItem.DrawMultimesh(Godot.MultiMesh,Godot.Texture2D)">DrawMultimesh(MultiMesh, Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Draws a <a class="xref" href="Godot.MultiMesh.html">MultiMesh</a> in 2D with the provided texture. See <a class="xref" href="Godot.MultiMeshInstance2D.html">MultiMeshInstance2D</a> for related documentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMultimesh(MultiMesh multimesh, Texture2D texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.MultiMesh.html">MultiMesh</a></td>
+        <td><span class="parametername">multimesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawPolygon_" data-uid="Godot.CanvasItem.DrawPolygon*"></a>
+  <h4 id="Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_" data-uid="Godot.CanvasItem.DrawPolygon(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture2D)">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Draws a solid polygon of any number of points, convex or concave. Unlike <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawColoredPolygon_Godot_Vector2___Godot_Color_Godot_Vector2___Godot_Texture2D_">DrawColoredPolygon(Vector2[], Color, Vector2[], Texture2D)</a>, each point's color can be changed individually. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a> and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolylineColors_Godot_Vector2___Godot_Color___System_Single_System_Boolean_">DrawPolylineColors(Vector2[], Color[], float, bool)</a>. If you need more flexibility (such as being able to use bones), use <a class="xref" href="Godot.RenderingServer.html#Godot_RenderingServer_CanvasItemAddTriangleArray_Godot_Rid_System_Int32___Godot_Vector2___Godot_Color___Godot_Vector2___System_Int32___System_Single___Godot_Rid_System_Int32_">CanvasItemAddTriangleArray(Rid, int[], Vector2[], Color[], Vector2[], int[], float[], Rid, int)</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPolygon(Vector2[] points, Color[] colors, Vector2[] uvs = null, Texture2D texture = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">uvs</span></td>
+        <td><p>If the parameter is null, then the default value is <code>Array.Empty&lt;Vector2&gt;()</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawPolyline_" data-uid="Godot.CanvasItem.DrawPolyline*"></a>
+  <h4 id="Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_" data-uid="Godot.CanvasItem.DrawPolyline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)">DrawPolyline(Vector2[], Color, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws interconnected line segments with a uniform <code>color</code> and <code>width</code> and optional antialiasing (supported only for positive <code>width</code>). When drawing large amounts of lines, this is faster than using individual <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw disconnected lines, use <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawMultiline_Godot_Vector2___Godot_Color_System_Single_">DrawMultiline(Vector2[], Color, float)</a> instead. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</a>.</p>
+<p>If <code>width</code> is negative, the polyline is drawn using <a class="xref" href="Godot.RenderingServer.PrimitiveType.html#Godot_RenderingServer_PrimitiveType_LineStrip">LineStrip</a>. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPolyline(Vector2[] points, Color color, float width = -1, bool antialiased = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">antialiased</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawPolylineColors_" data-uid="Godot.CanvasItem.DrawPolylineColors*"></a>
+  <h4 id="Godot_CanvasItem_DrawPolylineColors_Godot_Vector2___Godot_Color___System_Single_System_Boolean_" data-uid="Godot.CanvasItem.DrawPolylineColors(Godot.Vector2[],Godot.Color[],System.Single,System.Boolean)">DrawPolylineColors(Vector2[], Color[], float, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws interconnected line segments with a uniform <code>width</code>, point-by-point coloring, and optional antialiasing (supported only for positive <code>width</code>). Colors assigned to line points match by index between <code>points</code> and <code>colors</code>, i.e. each line segment is filled with a gradient between the colors of the endpoints. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw disconnected lines, use <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawMultilineColors_Godot_Vector2___Godot_Color___System_Single_">DrawMultilineColors(Vector2[], Color[], float)</a> instead. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</a>.</p>
+<p>If <code>width</code> is negative, then the polyline is drawn using <a class="xref" href="Godot.RenderingServer.PrimitiveType.html#Godot_RenderingServer_PrimitiveType_LineStrip">LineStrip</a>. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPolylineColors(Vector2[] points, Color[] colors, float width = -1, bool antialiased = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">antialiased</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawPrimitive_" data-uid="Godot.CanvasItem.DrawPrimitive*"></a>
+  <h4 id="Godot_CanvasItem_DrawPrimitive_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_" data-uid="Godot.CanvasItem.DrawPrimitive(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture2D)">DrawPrimitive(Vector2[], Color[], Vector2[], Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for a triangle, and 4 points for a quad. If 0 points or more than 4 points are specified, nothing will be drawn and an error message will be printed. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawLine_Godot_Vector2_Godot_Vector2_Godot_Color_System_Single_System_Boolean_">DrawLine(Vector2, Vector2, Color, float, bool)</a>, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolyline_Godot_Vector2___Godot_Color_System_Single_System_Boolean_">DrawPolyline(Vector2[], Color, float, bool)</a>, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawPolygon_Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Texture2D_">DrawPolygon(Vector2[], Color[], Vector2[], Texture2D)</a>, and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawRect_Godot_Rect2_Godot_Color_System_Boolean_System_Single_">DrawRect(Rect2, Color, bool, float)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPrimitive(Vector2[] points, Color[] colors, Vector2[] uvs, Texture2D texture = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>[]</td>
+        <td><span class="parametername">uvs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawRect_" data-uid="Godot.CanvasItem.DrawRect*"></a>
+  <h4 id="Godot_CanvasItem_DrawRect_Godot_Rect2_Godot_Color_System_Boolean_System_Single_" data-uid="Godot.CanvasItem.DrawRect(Godot.Rect2,Godot.Color,System.Boolean,System.Single)">DrawRect(Rect2, Color, bool, float)</h4>
+  <div class="markdown level1 summary"><p>Draws a rectangle. If <code>filled</code> is <code>true</code>, the rectangle will be filled with the <code>color</code> specified. If <code>filled</code> is <code>false</code>, the rectangle will be drawn as a stroke with the <code>color</code> and <code>width</code> specified. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawTextureRect_Godot_Texture2D_Godot_Rect2_System_Boolean_System_Nullable_Godot_Color__System_Boolean_">DrawTextureRect(Texture2D, Rect2, bool, Color?, bool)</a>.</p>
+<p>If <code>width</code> is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive <code>width</code> like <code>1.0</code>.</p>
+<p><b>Note:</b> <code>width</code> is only effective if <code>filled</code> is <code>false</code>.</p>
+<p><b>Note:</b> Unfilled rectangles drawn with a negative <code>width</code> may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent <code>color</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRect(Rect2 rect, Color color, bool filled = true, float width = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">filled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawSetTransform_" data-uid="Godot.CanvasItem.DrawSetTransform*"></a>
+  <h4 id="Godot_CanvasItem_DrawSetTransform_Godot_Vector2_System_Single_System_Nullable_Godot_Vector2__" data-uid="Godot.CanvasItem.DrawSetTransform(Godot.Vector2,System.Single,System.Nullable{Godot.Vector2})">DrawSetTransform(Vector2, float, Vector2?)</h4>
+  <div class="markdown level1 summary"><p>Sets a custom transform for drawing via components. Anything drawn afterwards will be transformed by this.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.FontFile.html#Godot_FontFile_Oversampling">Oversampling</a> does <i>not</i> take <code>scale</code> into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling <code>ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field</code> (applies to the default project font only), or enabling <b>Multichannel Signed Distance Field</b> in the import options of a DynamicFont for custom fonts. On system fonts, <a class="xref" href="Godot.SystemFont.html#Godot_SystemFont_MultichannelSignedDistanceField">MultichannelSignedDistanceField</a> can be enabled in the inspector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSetTransform(Vector2 position, float rotation = 0, Vector2? scale = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a>?</td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Vector2(1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawSetTransformMatrix_" data-uid="Godot.CanvasItem.DrawSetTransformMatrix*"></a>
+  <h4 id="Godot_CanvasItem_DrawSetTransformMatrix_Godot_Transform2D_" data-uid="Godot.CanvasItem.DrawSetTransformMatrix(Godot.Transform2D)">DrawSetTransformMatrix(Transform2D)</h4>
+  <div class="markdown level1 summary"><p>Sets a custom transform for drawing via matrix. Anything drawn afterwards will be transformed by this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSetTransformMatrix(Transform2D xform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td><span class="parametername">xform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawString_" data-uid="Godot.CanvasItem.DrawString*"></a>
+  <h4 id="Godot_CanvasItem_DrawString_Godot_Font_Godot_Vector2_System_String_Godot_HorizontalAlignment_System_Single_System_Int32_System_Nullable_Godot_Color__Godot_TextServer_JustificationFlag_Godot_TextServer_Direction_Godot_TextServer_Orientation_" data-uid="Godot.CanvasItem.DrawString(Godot.Font,Godot.Vector2,System.String,Godot.HorizontalAlignment,System.Single,System.Int32,System.Nullable{Godot.Color},Godot.TextServer.JustificationFlag,Godot.TextServer.Direction,Godot.TextServer.Orientation)">DrawString(Font, Vector2, string, HorizontalAlignment, float, int, Color?, JustificationFlag, Direction, Orientation)</h4>
+  <div class="markdown level1 summary"><p>Draws <code>text</code> using the specified <code>font</code> at the <code>pos</code> (bottom-left corner using the baseline of the font). The text will have its color multiplied by <code>modulate</code>. If <code>width</code> is greater than or equal to 0, the text will be clipped if it exceeds the specified width.</p>
+<p><b>Example using the default project font:</b></p>
+<p><pre><code class="lang-csharp">// If using this method in a script that redraws constantly, move the
+   // `default_font` declaration to a member variable assigned in `_Ready()`
+   // so the Control is only created once.
+   Font defaultFont = ThemeDB.FallbackFont;
+   int defaultFontSize = ThemeDB.FallbackFontSize;
+   DrawString(defaultFont, new Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, defaultFontSize);</code></pre>
+<p>See also <a class="xref" href="Godot.Font.html#Godot_Font_DrawString_Godot_Rid_Godot_Vector2_System_String_Godot_HorizontalAlignment_System_Single_System_Int32_System_Nullable_Godot_Color__Godot_TextServer_JustificationFlag_Godot_TextServer_Direction_Godot_TextServer_Orientation_">DrawString(Rid, Vector2, string, HorizontalAlignment, float, int, Color?, JustificationFlag, Direction, Orientation)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawString(Font font, Vector2 pos, string text, HorizontalAlignment alignment = HorizontalAlignment.Left, float width = -1, int fontSize = 16, Color? modulate = null, TextServer.JustificationFlag justificationFlags = JustificationFlag.Kashida | JustificationFlag.WordBound, TextServer.Direction direction = Direction.Auto, TextServer.Orientation orientation = Orientation.Horizontal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.JustificationFlag.html">JustificationFlag</a></td>
+        <td><span class="parametername">justificationFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Direction.html">Direction</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawStringOutline_" data-uid="Godot.CanvasItem.DrawStringOutline*"></a>
+  <h4 id="Godot_CanvasItem_DrawStringOutline_Godot_Font_Godot_Vector2_System_String_Godot_HorizontalAlignment_System_Single_System_Int32_System_Int32_System_Nullable_Godot_Color__Godot_TextServer_JustificationFlag_Godot_TextServer_Direction_Godot_TextServer_Orientation_" data-uid="Godot.CanvasItem.DrawStringOutline(Godot.Font,Godot.Vector2,System.String,Godot.HorizontalAlignment,System.Single,System.Int32,System.Int32,System.Nullable{Godot.Color},Godot.TextServer.JustificationFlag,Godot.TextServer.Direction,Godot.TextServer.Orientation)">DrawStringOutline(Font, Vector2, string, HorizontalAlignment, float, int, int, Color?, JustificationFlag, Direction, Orientation)</h4>
+  <div class="markdown level1 summary"><p>Draws <code>text</code> outline using the specified <code>font</code> at the <code>pos</code> (bottom-left corner using the baseline of the font). The text will have its color multiplied by <code>modulate</code>. If <code>width</code> is greater than or equal to 0, the text will be clipped if it exceeds the specified width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStringOutline(Font font, Vector2 pos, string text, HorizontalAlignment alignment = HorizontalAlignment.Left, float width = -1, int fontSize = 16, int size = 1, Color? modulate = null, TextServer.JustificationFlag justificationFlags = JustificationFlag.Kashida | JustificationFlag.WordBound, TextServer.Direction direction = Direction.Auto, TextServer.Orientation orientation = Orientation.Horizontal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Font.html">Font</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.JustificationFlag.html">JustificationFlag</a></td>
+        <td><span class="parametername">justificationFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Direction.html">Direction</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.TextServer.html">TextServer</a>.<a class="xref" href="Godot.TextServer.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawStyleBox_" data-uid="Godot.CanvasItem.DrawStyleBox*"></a>
+  <h4 id="Godot_CanvasItem_DrawStyleBox_Godot_StyleBox_Godot_Rect2_" data-uid="Godot.CanvasItem.DrawStyleBox(Godot.StyleBox,Godot.Rect2)">DrawStyleBox(StyleBox, Rect2)</h4>
+  <div class="markdown level1 summary"><p>Draws a styled rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStyleBox(StyleBox styleBox, Rect2 rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.StyleBox.html">StyleBox</a></td>
+        <td><span class="parametername">styleBox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawTexture_" data-uid="Godot.CanvasItem.DrawTexture*"></a>
+  <h4 id="Godot_CanvasItem_DrawTexture_Godot_Texture2D_Godot_Vector2_System_Nullable_Godot_Color__" data-uid="Godot.CanvasItem.DrawTexture(Godot.Texture2D,Godot.Vector2,System.Nullable{Godot.Color})">DrawTexture(Texture2D, Vector2, Color?)</h4>
+  <div class="markdown level1 summary"><p>Draws a texture at a given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTexture(Texture2D texture, Vector2 position, Color? modulate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawTextureRect_" data-uid="Godot.CanvasItem.DrawTextureRect*"></a>
+  <h4 id="Godot_CanvasItem_DrawTextureRect_Godot_Texture2D_Godot_Rect2_System_Boolean_System_Nullable_Godot_Color__System_Boolean_" data-uid="Godot.CanvasItem.DrawTextureRect(Godot.Texture2D,Godot.Rect2,System.Boolean,System.Nullable{Godot.Color},System.Boolean)">DrawTextureRect(Texture2D, Rect2, bool, Color?, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws a textured rectangle at a given position, optionally modulated by a color. If <code>transpose</code> is <code>true</code>, the texture will have its X and Y coordinates swapped. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawRect_Godot_Rect2_Godot_Color_System_Boolean_System_Single_">DrawRect(Rect2, Color, bool, float)</a> and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawTextureRectRegion_Godot_Texture2D_Godot_Rect2_Godot_Rect2_System_Nullable_Godot_Color__System_Boolean_System_Boolean_">DrawTextureRectRegion(Texture2D, Rect2, Rect2, Color?, bool, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTextureRect(Texture2D texture, Rect2 rect, bool tile, Color? modulate = null, bool transpose = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">transpose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_DrawTextureRectRegion_" data-uid="Godot.CanvasItem.DrawTextureRectRegion*"></a>
+  <h4 id="Godot_CanvasItem_DrawTextureRectRegion_Godot_Texture2D_Godot_Rect2_Godot_Rect2_System_Nullable_Godot_Color__System_Boolean_System_Boolean_" data-uid="Godot.CanvasItem.DrawTextureRectRegion(Godot.Texture2D,Godot.Rect2,Godot.Rect2,System.Nullable{Godot.Color},System.Boolean,System.Boolean)">DrawTextureRectRegion(Texture2D, Rect2, Rect2, Color?, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Draws a textured rectangle from a texture's region (specified by <code>srcRect</code>) at a given position, optionally modulated by a color. If <code>transpose</code> is <code>true</code>, the texture will have its X and Y coordinates swapped. See also <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_DrawTextureRect_Godot_Texture2D_Godot_Rect2_System_Boolean_System_Nullable_Godot_Color__System_Boolean_">DrawTextureRect(Texture2D, Rect2, bool, Color?, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTextureRectRegion(Texture2D texture, Rect2 rect, Rect2 srcRect, Color? modulate = null, bool transpose = false, bool clipUV = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td><span class="parametername">srcRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a>?</td>
+        <td><span class="parametername">modulate</span></td>
+        <td><p>If the parameter is null, then the default value is <code>new Color(1, 1, 1, 1)</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">transpose</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">clipUV</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_ForceUpdateTransform_" data-uid="Godot.CanvasItem.ForceUpdateTransform*"></a>
+  <h4 id="Godot_CanvasItem_ForceUpdateTransform" data-uid="Godot.CanvasItem.ForceUpdateTransform">ForceUpdateTransform()</h4>
+  <div class="markdown level1 summary"><p>Forces the transform to update. Transform changes in physics are not instant for performance reasons. Transforms are accumulated and then set. Use this if you need an up-to-date transform when doing physics operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceUpdateTransform()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem_GetCanvas_" data-uid="Godot.CanvasItem.GetCanvas*"></a>
+  <h4 id="Godot_CanvasItem_GetCanvas" data-uid="Godot.CanvasItem.GetCanvas">GetCanvas()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.Rid.html">Rid</a> of the <a class="xref" href="Godot.World2D.html">World2D</a> canvas where this item is in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid GetCanvas()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rid.html">Rid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetCanvasItem_" data-uid="Godot.CanvasItem.GetCanvasItem*"></a>
+  <h4 id="Godot_CanvasItem_GetCanvasItem" data-uid="Godot.CanvasItem.GetCanvasItem">GetCanvasItem()</h4>
+  <div class="markdown level1 summary"><p>Returns the canvas item RID used by <a class="xref" href="Godot.RenderingServer.html">RenderingServer</a> for this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid GetCanvasItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rid.html">Rid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetCanvasTransform_" data-uid="Godot.CanvasItem.GetCanvasTransform*"></a>
+  <h4 id="Godot_CanvasItem_GetCanvasTransform" data-uid="Godot.CanvasItem.GetCanvasTransform">GetCanvasTransform()</h4>
+  <div class="markdown level1 summary"><p>Returns the transform from the coordinate system of the canvas, this item is in, to the <a class="xref" href="Godot.Viewport.html">Viewport</a>s coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetCanvasTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetGlobalMousePosition_" data-uid="Godot.CanvasItem.GetGlobalMousePosition*"></a>
+  <h4 id="Godot_CanvasItem_GetGlobalMousePosition" data-uid="Godot.CanvasItem.GetGlobalMousePosition">GetGlobalMousePosition()</h4>
+  <div class="markdown level1 summary"><p>Returns the mouse's position in the <a class="xref" href="Godot.CanvasLayer.html">CanvasLayer</a> that this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is in using the coordinate system of the <a class="xref" href="Godot.CanvasLayer.html">CanvasLayer</a>.</p>
+<p><b>Note:</b> For screen-space coordinates (e.g. when using a non-embedded <a class="xref" href="Godot.Popup.html">Popup</a>), you can use <a class="xref" href="Godot.DisplayServer.html#Godot_DisplayServer_MouseGetPosition">MouseGetPosition()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetGlobalMousePosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetGlobalTransform_" data-uid="Godot.CanvasItem.GetGlobalTransform*"></a>
+  <h4 id="Godot_CanvasItem_GetGlobalTransform" data-uid="Godot.CanvasItem.GetGlobalTransform">GetGlobalTransform()</h4>
+  <div class="markdown level1 summary"><p>Returns the global transform matrix of this item, i.e. the combined transform up to the topmost <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> node. The topmost item is a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> that either has no parent, has non-<a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> parent or it has <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_TopLevel">TopLevel</a> enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetGlobalTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetGlobalTransformWithCanvas_" data-uid="Godot.CanvasItem.GetGlobalTransformWithCanvas*"></a>
+  <h4 id="Godot_CanvasItem_GetGlobalTransformWithCanvas" data-uid="Godot.CanvasItem.GetGlobalTransformWithCanvas">GetGlobalTransformWithCanvas()</h4>
+  <div class="markdown level1 summary"><p>Returns the transform from the local coordinate system of this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> to the <a class="xref" href="Godot.Viewport.html">Viewport</a>s coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetGlobalTransformWithCanvas()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetLocalMousePosition_" data-uid="Godot.CanvasItem.GetLocalMousePosition*"></a>
+  <h4 id="Godot_CanvasItem_GetLocalMousePosition" data-uid="Godot.CanvasItem.GetLocalMousePosition">GetLocalMousePosition()</h4>
+  <div class="markdown level1 summary"><p>Returns the mouse's position in this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> using the local coordinate system of this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetLocalMousePosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetScreenTransform_" data-uid="Godot.CanvasItem.GetScreenTransform*"></a>
+  <h4 id="Godot_CanvasItem_GetScreenTransform" data-uid="Godot.CanvasItem.GetScreenTransform">GetScreenTransform()</h4>
+  <div class="markdown level1 summary"><p>Returns the transform of this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.</p>
+<p>Equals to <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_GetGlobalTransform">GetGlobalTransform()</a> if the window is embedded (see <a class="xref" href="Godot.Viewport.html#Godot_Viewport_GuiEmbedSubwindows">GuiEmbedSubwindows</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetScreenTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetTransform_" data-uid="Godot.CanvasItem.GetTransform*"></a>
+  <h4 id="Godot_CanvasItem_GetTransform" data-uid="Godot.CanvasItem.GetTransform">GetTransform()</h4>
+  <div class="markdown level1 summary"><p>Returns the transform matrix of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetViewportRect_" data-uid="Godot.CanvasItem.GetViewportRect*"></a>
+  <h4 id="Godot_CanvasItem_GetViewportRect" data-uid="Godot.CanvasItem.GetViewportRect">GetViewportRect()</h4>
+  <div class="markdown level1 summary"><p>Returns the viewport's boundaries as a <a class="xref" href="Godot.Rect2.html">Rect2</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect2 GetViewportRect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Rect2.html">Rect2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetViewportTransform_" data-uid="Godot.CanvasItem.GetViewportTransform*"></a>
+  <h4 id="Godot_CanvasItem_GetViewportTransform" data-uid="Godot.CanvasItem.GetViewportTransform">GetViewportTransform()</h4>
+  <div class="markdown level1 summary"><p>Returns the transform from the coordinate system of the canvas, this item is in, to the <a class="xref" href="Godot.Viewport.html">Viewport</a>s embedders coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform2D GetViewportTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetVisibilityLayerBit_" data-uid="Godot.CanvasItem.GetVisibilityLayerBit*"></a>
+  <h4 id="Godot_CanvasItem_GetVisibilityLayerBit_System_UInt32_" data-uid="Godot.CanvasItem.GetVisibilityLayerBit(System.UInt32)">GetVisibilityLayerBit(uint)</h4>
+  <div class="markdown level1 summary"><p>Returns an individual bit on the rendering visibility layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVisibilityLayerBit(uint layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_GetWorld2D_" data-uid="Godot.CanvasItem.GetWorld2D*"></a>
+  <h4 id="Godot_CanvasItem_GetWorld2D" data-uid="Godot.CanvasItem.GetWorld2D">GetWorld2D()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Godot.World2D.html">World2D</a> where this item is in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public World2D GetWorld2D()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.World2D.html">World2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_HasGodotClassMethod_" data-uid="Godot.CanvasItem.HasGodotClassMethod*"></a>
+  <h4 id="Godot_CanvasItem_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.CanvasItem.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">Node.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_CanvasItem_HasGodotClassSignal_" data-uid="Godot.CanvasItem.HasGodotClassSignal*"></a>
+  <h4 id="Godot_CanvasItem_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.CanvasItem.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">Node.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_CanvasItem_Hide_" data-uid="Godot.CanvasItem.Hide*"></a>
+  <h4 id="Godot_CanvasItem_Hide" data-uid="Godot.CanvasItem.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Hide the <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> if it's currently visible. This is equivalent to setting <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Visible">Visible</a> to <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem_InvokeGodotClassMethod_" data-uid="Godot.CanvasItem.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_CanvasItem_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.CanvasItem.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Node.html#Godot_Node_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">Node.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_CanvasItem_IsLocalTransformNotificationEnabled_" data-uid="Godot.CanvasItem.IsLocalTransformNotificationEnabled*"></a>
+  <h4 id="Godot_CanvasItem_IsLocalTransformNotificationEnabled" data-uid="Godot.CanvasItem.IsLocalTransformNotificationEnabled">IsLocalTransformNotificationEnabled()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if local transform notifications are communicated to children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocalTransformNotificationEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_IsTransformNotificationEnabled_" data-uid="Godot.CanvasItem.IsTransformNotificationEnabled*"></a>
+  <h4 id="Godot_CanvasItem_IsTransformNotificationEnabled" data-uid="Godot.CanvasItem.IsTransformNotificationEnabled">IsTransformNotificationEnabled()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if global transform notifications are communicated to children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTransformNotificationEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_IsVisibleInTree_" data-uid="Godot.CanvasItem.IsVisibleInTree*"></a>
+  <h4 id="Godot_CanvasItem_IsVisibleInTree" data-uid="Godot.CanvasItem.IsVisibleInTree">IsVisibleInTree()</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if the node is present in the <a class="xref" href="Godot.SceneTree.html">SceneTree</a>, its <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Visible">Visible</a> property is <code>true</code> and all its ancestors are also visible. If any ancestor is hidden, this node will not be visible in the scene tree, and is consequently not drawn (see <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem__Draw">_Draw()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisibleInTree()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_MakeCanvasPositionLocal_" data-uid="Godot.CanvasItem.MakeCanvasPositionLocal*"></a>
+  <h4 id="Godot_CanvasItem_MakeCanvasPositionLocal_Godot_Vector2_" data-uid="Godot.CanvasItem.MakeCanvasPositionLocal(Godot.Vector2)">MakeCanvasPositionLocal(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Assigns <code>screenPoint</code> as this node's new local transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MakeCanvasPositionLocal(Vector2 screenPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">screenPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_MakeInputLocal_" data-uid="Godot.CanvasItem.MakeInputLocal*"></a>
+  <h4 id="Godot_CanvasItem_MakeInputLocal_Godot_InputEvent_" data-uid="Godot.CanvasItem.MakeInputLocal(Godot.InputEvent)">MakeInputLocal(InputEvent)</h4>
+  <div class="markdown level1 summary"><p>Transformations issued by <code>event</code>'s inputs are applied in local space instead of global space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputEvent MakeInputLocal(InputEvent @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.InputEvent.html">InputEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.InputEvent.html">InputEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_MoveToFront_" data-uid="Godot.CanvasItem.MoveToFront*"></a>
+  <h4 id="Godot_CanvasItem_MoveToFront" data-uid="Godot.CanvasItem.MoveToFront">MoveToFront()</h4>
+  <div class="markdown level1 summary"><p>Moves this node to display on top of its siblings.</p>
+<p>Internally, the node is moved to the bottom of parent's children list. The method has no effect on nodes without a parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToFront()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem_QueueRedraw_" data-uid="Godot.CanvasItem.QueueRedraw*"></a>
+  <h4 id="Godot_CanvasItem_QueueRedraw" data-uid="Godot.CanvasItem.QueueRedraw">QueueRedraw()</h4>
+  <div class="markdown level1 summary"><p>Queues the <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> to redraw. During idle time, if <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> is visible, <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_NotificationDraw">NotificationDraw</a> is sent and <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem__Draw">_Draw()</a> is called. This only occurs <b>once</b> per frame, even if this method has been called multiple times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueueRedraw()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem_SetNotifyLocalTransform_" data-uid="Godot.CanvasItem.SetNotifyLocalTransform*"></a>
+  <h4 id="Godot_CanvasItem_SetNotifyLocalTransform_System_Boolean_" data-uid="Godot.CanvasItem.SetNotifyLocalTransform(System.Boolean)">SetNotifyLocalTransform(bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>enable</code> is <code>true</code>, this node will receive <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_NotificationLocalTransformChanged">NotificationLocalTransformChanged</a> when its local transform changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotifyLocalTransform(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_SetNotifyTransform_" data-uid="Godot.CanvasItem.SetNotifyTransform*"></a>
+  <h4 id="Godot_CanvasItem_SetNotifyTransform_System_Boolean_" data-uid="Godot.CanvasItem.SetNotifyTransform(System.Boolean)">SetNotifyTransform(bool)</h4>
+  <div class="markdown level1 summary"><p>If <code>enable</code> is <code>true</code>, this node will receive <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_NotificationTransformChanged">NotificationTransformChanged</a> when its global transform changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotifyTransform(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_SetVisibilityLayerBit_" data-uid="Godot.CanvasItem.SetVisibilityLayerBit*"></a>
+  <h4 id="Godot_CanvasItem_SetVisibilityLayerBit_System_UInt32_System_Boolean_" data-uid="Godot.CanvasItem.SetVisibilityLayerBit(System.UInt32,System.Boolean)">SetVisibilityLayerBit(uint, bool)</h4>
+  <div class="markdown level1 summary"><p>Set/clear individual bits on the rendering visibility layer. This simplifies editing this <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a>'s visibility layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibilityLayerBit(uint layer, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_CanvasItem_Show_" data-uid="Godot.CanvasItem.Show*"></a>
+  <h4 id="Godot_CanvasItem_Show" data-uid="Godot.CanvasItem.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Show the <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> if it's currently hidden. This is equivalent to setting <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Visible">Visible</a> to <code>true</code>. For controls that inherit <a class="xref" href="Godot.Popup.html">Popup</a>, the correct way to make them visible is to call one of the multiple <code>popup*()</code> functions instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+
+
+  <a id="Godot_CanvasItem__Draw_" data-uid="Godot.CanvasItem._Draw*"></a>
+  <h4 id="Godot_CanvasItem__Draw" data-uid="Godot.CanvasItem._Draw">_Draw()</h4>
+  <div class="markdown level1 summary"><p>Called when <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> has been requested to redraw (after <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_QueueRedraw">QueueRedraw()</a> is called, either manually or by the engine).</p>
+<p>Corresponds to the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_NotificationDraw">NotificationDraw</a> notification in <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">_Notification(int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _Draw()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Godot_CanvasItem_Draw" data-uid="Godot.CanvasItem.Draw">Draw</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Draw">Draw</a> event of a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action Draw</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_Hidden" data-uid="Godot.CanvasItem.Hidden">Hidden</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_Hidden">Hidden</a> event of a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action Hidden</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_ItemRectChanged" data-uid="Godot.CanvasItem.ItemRectChanged">ItemRectChanged</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_ItemRectChanged">ItemRectChanged</a> event of a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ItemRectChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Godot_CanvasItem_VisibilityChanged" data-uid="Godot.CanvasItem.VisibilityChanged">VisibilityChanged</h4>
+  <div class="markdown level1 summary"><p>Represents the method that handles the <a class="xref" href="Godot.CanvasItem.html#Godot_CanvasItem_VisibilityChanged">VisibilityChanged</a> event of a <a class="xref" href="Godot.CanvasItem.html">CanvasItem</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action VisibilityChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum PropertyUsageFlags
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum PropertyUsageFlags
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.PropertyUsageFlags">
+
+
+
+
+  <h1 id="Godot_PropertyUsageFlags" data-uid="Godot.PropertyUsageFlags" class="text-break">Enum PropertyUsageFlags
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_PropertyUsageFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum PropertyUsageFlags : long</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_AlwaysDuplicate">AlwaysDuplicate</td>
+        <td><p>When duplicating a resource with <a class="xref" href="Godot.Resource.html#Godot_Resource_Duplicate_System_Boolean_">Duplicate(bool)</a>, and this flag is set on a property of that resource, the property should always be duplicated, regardless of the <code>subresources</code> bool parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Array">Array</td>
+        <td><p>The property is an array.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Category">Category</td>
+        <td><p>Used to categorize properties together in the editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Checkable">Checkable</td>
+        <td><p>The property can be checked in the Godot.EditorInspector.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Checked">Checked</td>
+        <td><p>The property is checked in the Godot.EditorInspector.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ClassIsBitfield">ClassIsBitfield</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ClassIsEnum">ClassIsEnum</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Default">Default</td>
+        <td><p>Default usage (storage and editor).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_DeferredSetResource">DeferredSetResource</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Editor">Editor</td>
+        <td><p>The property is shown in the Godot.EditorInspector (default).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_EditorBasicSetting">EditorBasicSetting</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_EditorInstantiateObject">EditorInstantiateObject</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Group">Group</td>
+        <td><p>Used to group properties together in the editor. See Godot.EditorInspector.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_HighEndGfx">HighEndGfx</td>
+        <td><p>The property is only shown in the editor if modern renderers are supported (the Compatibility rendering method is excluded).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Internal">Internal</td>
+        <td><p>The property is excluded from the class reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_KeyingIncrements">KeyingIncrements</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_NeverDuplicate">NeverDuplicate</td>
+        <td><p>When duplicating a resource with <a class="xref" href="Godot.Resource.html#Godot_Resource_Duplicate_System_Boolean_">Duplicate(bool)</a>, and this flag is set on a property of that resource, the property should never be duplicated, regardless of the <code>subresources</code> bool parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_NilIsVariant">NilIsVariant</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_NoEditor">NoEditor</td>
+        <td><p>Default usage but without showing the property in the editor (storage).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_NoInstanceState">NoInstanceState</td>
+        <td><p>The property does not save its state in <a class="xref" href="Godot.PackedScene.html">PackedScene</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_NodePathFromSceneRoot">NodePathFromSceneRoot</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_None">None</td>
+        <td><p>The property is not stored, and does not display in the editor. This is the default for non-exported properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ReadOnly">ReadOnly</td>
+        <td><p>The property is read-only in the Godot.EditorInspector.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ResourceNotPersistent">ResourceNotPersistent</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_RestartIfChanged">RestartIfChanged</td>
+        <td><p>Editing the property prompts the user for restarting the editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ScriptDefaultValue">ScriptDefaultValue</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_ScriptVariable">ScriptVariable</td>
+        <td><p>The property is a script variable which should be serialized and saved in the scene file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Secret">Secret</td>
+        <td><p>An export preset property with this flag contains confidential information and is stored separately from the rest of the export preset configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Storage">Storage</td>
+        <td><p>The property is serialized and saved in the scene file (default).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_StoreIfNull">StoreIfNull</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_Subgroup">Subgroup</td>
+        <td><p>Used to group properties together in the editor in a subgroup (under a group). See Godot.EditorInspector.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Godot_PropertyUsageFlags_UpdateAllIfModified">UpdateAllIfModified</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

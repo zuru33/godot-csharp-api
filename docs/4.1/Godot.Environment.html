@@ -1,0 +1,2973 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Environment
+ | Godot C# API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Environment
+ | Godot C# API ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/documentation_logo.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main-godot.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/documentation_logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Godot.Environment">
+
+
+
+  <h1 id="Godot_Environment" data-uid="Godot.Environment" class="text-break">Class Environment
+</h1>
+  <div class="markdown level0 summary"><p>Resource for environment nodes (like <a class="xref" href="Godot.WorldEnvironment.html">WorldEnvironment</a>) that define multiple environment operations (such as background <a class="xref" href="Godot.Sky.html">Sky</a> or <a class="xref" href="Godot.Color.html">Color</a>, ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:</p>
+<p>- Depth of Field Blur</p>
+<p>- Glow</p>
+<p>- Tonemap (Auto Exposure)</p>
+<p>- Adjustments</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+    <div class="level2"><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+    <div class="level3"><a class="xref" href="Godot.Resource.html">Resource</a></div>
+    <div class="level4"><span class="xref">Environment</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__GetRid">Resource._GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_TakeOverPath_System_String_">Resource.TakeOverPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetRid">Resource.GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetLocalScene">Resource.GetLocalScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToScene">Resource.SetupLocalToScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_EmitChanged">Resource.EmitChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Duplicate_System_Boolean_">Resource.Duplicate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceLocalToScene">Resource.ResourceLocalToScene</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourcePath">Resource.ResourcePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceName">Resource.ResourceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Changed">Resource.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToSceneRequested">Resource.SetupLocalToSceneRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.SetGodotClassPropertyValue(in godot_string_name, in godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetGodotClassPropertyValue_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_godot_variant__">GodotObject.GetGodotClassPropertyValue(in godot_string_name, out godot_variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RaiseGodotClassSignalCallbacks_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_">GodotObject.RaiseGodotClassSignalCallbacks(in godot_string_name, NativeVariantPtrArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SaveGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.SaveGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RestoreGodotObjectData_Godot_Bridge_GodotSerializationInfo_">GodotObject.RestoreGodotObjectData(GodotSerializationInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Godot.html">Godot</a></h6>
+  <h6><strong>Assembly</strong>: GodotSharp.dll</h6>
+  <h5 id="Godot_Environment_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Environment : Resource, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Godot_Environment__ctor_" data-uid="Godot.Environment.#ctor*"></a>
+  <h4 id="Godot_Environment__ctor" data-uid="Godot.Environment.#ctor">Environment()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Godot_Environment_AdjustmentBrightness_" data-uid="Godot.Environment.AdjustmentBrightness*"></a>
+  <h4 id="Godot_Environment_AdjustmentBrightness" data-uid="Godot.Environment.AdjustmentBrightness">AdjustmentBrightness</h4>
+  <div class="markdown level1 summary"><p>The global brightness value of the rendered scene. Effective only if <code>adjustment_enabled</code> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AdjustmentBrightness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AdjustmentColorCorrection_" data-uid="Godot.Environment.AdjustmentColorCorrection*"></a>
+  <h4 id="Godot_Environment_AdjustmentColorCorrection" data-uid="Godot.Environment.AdjustmentColorCorrection">AdjustmentColorCorrection</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.Texture2D.html">Texture2D</a> or <a class="xref" href="Godot.Texture3D.html">Texture3D</a> lookup table (LUT) to use for the built-in post-process color grading. Can use a <a class="xref" href="Godot.GradientTexture1D.html">GradientTexture1D</a> for a 1-dimensional LUT, or a <a class="xref" href="Godot.Texture3D.html">Texture3D</a> for a more complex LUT. Effective only if <code>adjustment_enabled</code> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture AdjustmentColorCorrection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AdjustmentContrast_" data-uid="Godot.Environment.AdjustmentContrast*"></a>
+  <h4 id="Godot_Environment_AdjustmentContrast" data-uid="Godot.Environment.AdjustmentContrast">AdjustmentContrast</h4>
+  <div class="markdown level1 summary"><p>The global contrast value of the rendered scene (default value is 1). Effective only if <code>adjustment_enabled</code> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AdjustmentContrast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AdjustmentEnabled_" data-uid="Godot.Environment.AdjustmentEnabled*"></a>
+  <h4 id="Godot_Environment_AdjustmentEnabled" data-uid="Godot.Environment.AdjustmentEnabled">AdjustmentEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, enables the <code>adjustment_*</code> properties provided by this resource. If <code>false</code>, modifications to the <code>adjustment_*</code> properties will have no effect on the rendered scene.</p>
+<p><b>Note:</b> Adjustments are only supported in the Forward+ and Mobile rendering methods, not Compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AdjustmentEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AdjustmentSaturation_" data-uid="Godot.Environment.AdjustmentSaturation*"></a>
+  <h4 id="Godot_Environment_AdjustmentSaturation" data-uid="Godot.Environment.AdjustmentSaturation">AdjustmentSaturation</h4>
+  <div class="markdown level1 summary"><p>The global color saturation value of the rendered scene (default value is 1). Effective only if <code>adjustment_enabled</code> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AdjustmentSaturation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AmbientLightColor_" data-uid="Godot.Environment.AmbientLightColor*"></a>
+  <h4 id="Godot_Environment_AmbientLightColor" data-uid="Godot.Environment.AmbientLightColor">AmbientLightColor</h4>
+  <div class="markdown level1 summary"><p>The ambient light's <a class="xref" href="Godot.Color.html">Color</a>. Only effective if <a class="xref" href="Godot.Environment.html#Godot_Environment_AmbientLightSkyContribution">AmbientLightSkyContribution</a> is lower than <code>1.0</code> (exclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color AmbientLightColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AmbientLightEnergy_" data-uid="Godot.Environment.AmbientLightEnergy*"></a>
+  <h4 id="Godot_Environment_AmbientLightEnergy" data-uid="Godot.Environment.AmbientLightEnergy">AmbientLightEnergy</h4>
+  <div class="markdown level1 summary"><p>The ambient light's energy. The higher the value, the stronger the light. Only effective if <a class="xref" href="Godot.Environment.html#Godot_Environment_AmbientLightSkyContribution">AmbientLightSkyContribution</a> is lower than <code>1.0</code> (exclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AmbientLightEnergy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AmbientLightSkyContribution_" data-uid="Godot.Environment.AmbientLightSkyContribution*"></a>
+  <h4 id="Godot_Environment_AmbientLightSkyContribution" data-uid="Godot.Environment.AmbientLightSkyContribution">AmbientLightSkyContribution</h4>
+  <div class="markdown level1 summary"><p>Defines the amount of light that the sky brings on the scene. A value of <code>0.0</code> means that the sky's light emission has no effect on the scene illumination, thus all ambient illumination is provided by the ambient light. On the contrary, a value of <code>1.0</code> means that <i>all</i> the light that affects the scene is provided by the sky, thus the ambient light parameter has no effect on the scene.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.Environment.html#Godot_Environment_AmbientLightSkyContribution">AmbientLightSkyContribution</a> is internally clamped between <code>0.0</code> and <code>1.0</code> (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AmbientLightSkyContribution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_AmbientLightSource_" data-uid="Godot.Environment.AmbientLightSource*"></a>
+  <h4 id="Godot_Environment_AmbientLightSource" data-uid="Godot.Environment.AmbientLightSource">AmbientLightSource</h4>
+  <div class="markdown level1 summary"><p>The ambient light source to use for rendering materials and global illumination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.AmbientSource AmbientLightSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.AmbientSource.html">AmbientSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundCameraFeedId_" data-uid="Godot.Environment.BackgroundCameraFeedId*"></a>
+  <h4 id="Godot_Environment_BackgroundCameraFeedId" data-uid="Godot.Environment.BackgroundCameraFeedId">BackgroundCameraFeedId</h4>
+  <div class="markdown level1 summary"><p>The ID of the camera feed to show in the background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BackgroundCameraFeedId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundCanvasMaxLayer_" data-uid="Godot.Environment.BackgroundCanvasMaxLayer*"></a>
+  <h4 id="Godot_Environment_BackgroundCanvasMaxLayer" data-uid="Godot.Environment.BackgroundCanvasMaxLayer">BackgroundCanvasMaxLayer</h4>
+  <div class="markdown level1 summary"><p>The maximum layer ID to display. Only effective when using the <a class="xref" href="Godot.Environment.BGMode.html#Godot_Environment_BGMode_Canvas">Canvas</a> background mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BackgroundCanvasMaxLayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundColor_" data-uid="Godot.Environment.BackgroundColor*"></a>
+  <h4 id="Godot_Environment_BackgroundColor" data-uid="Godot.Environment.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.Color.html">Color</a> displayed for clear areas of the scene. Only effective when using the <a class="xref" href="Godot.Environment.BGMode.html#Godot_Environment_BGMode_Color">Color</a> background mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundEnergyMultiplier_" data-uid="Godot.Environment.BackgroundEnergyMultiplier*"></a>
+  <h4 id="Godot_Environment_BackgroundEnergyMultiplier" data-uid="Godot.Environment.BackgroundEnergyMultiplier">BackgroundEnergyMultiplier</h4>
+  <div class="markdown level1 summary"><p>Multiplier for background energy. Increase to make background brighter, decrease to make background dimmer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackgroundEnergyMultiplier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundIntensity_" data-uid="Godot.Environment.BackgroundIntensity*"></a>
+  <h4 id="Godot_Environment_BackgroundIntensity" data-uid="Godot.Environment.BackgroundIntensity">BackgroundIntensity</h4>
+  <div class="markdown level1 summary"><p>Luminance of background measured in nits (candela per square meter). Only used when <code>ProjectSettings.rendering/lights_and_shadows/use_physical_light_units</code> is enabled. The default value is roughly equivalent to the sky at midday.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackgroundIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_BackgroundMode_" data-uid="Godot.Environment.BackgroundMode*"></a>
+  <h4 id="Godot_Environment_BackgroundMode" data-uid="Godot.Environment.BackgroundMode">BackgroundMode</h4>
+  <div class="markdown level1 summary"><p>The background mode. See <a class="xref" href="Godot.Environment.BGMode.html">Environment.BGMode</a> for possible values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.BGMode BackgroundMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.BGMode.html">BGMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogAerialPerspective_" data-uid="Godot.Environment.FogAerialPerspective*"></a>
+  <h4 id="Godot_Environment_FogAerialPerspective" data-uid="Godot.Environment.FogAerialPerspective">FogAerialPerspective</h4>
+  <div class="markdown level1 summary"><p>If set above <code>0.0</code> (exclusive), blends between the fog's color and the color of the background <a class="xref" href="Godot.Sky.html">Sky</a>. This has a small performance cost when set above <code>0.0</code>. Must have <a class="xref" href="Godot.Environment.html#Godot_Environment_BackgroundMode">BackgroundMode</a> set to <a class="xref" href="Godot.Environment.BGMode.html#Godot_Environment_BGMode_Sky">Sky</a>.</p>
+<p>This is useful to simulate <a href="https://en.wikipedia.org/wiki/Aerial_perspective">aerial perspective</a> in large scenes with low density fog. However, it is not very useful for high-density fog, as the sky will shine through. When set to <code>1.0</code>, the fog color comes completely from the <a class="xref" href="Godot.Sky.html">Sky</a>. If set to <code>0.0</code>, aerial perspective is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogAerialPerspective { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogDensity_" data-uid="Godot.Environment.FogDensity*"></a>
+  <h4 id="Godot_Environment_FogDensity" data-uid="Godot.Environment.FogDensity">FogDensity</h4>
+  <div class="markdown level1 summary"><p>The <i>exponential</i> fog density to use. Higher values result in a more dense fog. Fog rendering is exponential as in real life.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogEnabled_" data-uid="Godot.Environment.FogEnabled*"></a>
+  <h4 id="Godot_Environment_FogEnabled" data-uid="Godot.Environment.FogEnabled">FogEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, fog effects are enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FogEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogHeight_" data-uid="Godot.Environment.FogHeight*"></a>
+  <h4 id="Godot_Environment_FogHeight" data-uid="Godot.Environment.FogHeight">FogHeight</h4>
+  <div class="markdown level1 summary"><p>The height at which the height fog effect begins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogHeightDensity_" data-uid="Godot.Environment.FogHeightDensity*"></a>
+  <h4 id="Godot_Environment_FogHeightDensity" data-uid="Godot.Environment.FogHeightDensity">FogHeightDensity</h4>
+  <div class="markdown level1 summary"><p>The density used to increase fog as height decreases. To make fog increase as height increases, use a negative value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogHeightDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogLightColor_" data-uid="Godot.Environment.FogLightColor*"></a>
+  <h4 id="Godot_Environment_FogLightColor" data-uid="Godot.Environment.FogLightColor">FogLightColor</h4>
+  <div class="markdown level1 summary"><p>The fog's color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FogLightColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogLightEnergy_" data-uid="Godot.Environment.FogLightEnergy*"></a>
+  <h4 id="Godot_Environment_FogLightEnergy" data-uid="Godot.Environment.FogLightEnergy">FogLightEnergy</h4>
+  <div class="markdown level1 summary"><p>The fog's brightness. Higher values result in brighter fog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogLightEnergy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogSkyAffect_" data-uid="Godot.Environment.FogSkyAffect*"></a>
+  <h4 id="Godot_Environment_FogSkyAffect" data-uid="Godot.Environment.FogSkyAffect">FogSkyAffect</h4>
+  <div class="markdown level1 summary"><p>The factor to use when affecting the sky with non-volumetric fog. <code>1.0</code> means that fog can fully obscure the sky. Lower values reduce the impact of fog on sky rendering, with <code>0.0</code> not affecting sky rendering at all.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.Environment.html#Godot_Environment_FogSkyAffect">FogSkyAffect</a> has no visual effect if <a class="xref" href="Godot.Environment.html#Godot_Environment_FogAerialPerspective">FogAerialPerspective</a> is <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogSkyAffect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_FogSunScatter_" data-uid="Godot.Environment.FogSunScatter*"></a>
+  <h4 id="Godot_Environment_FogSunScatter" data-uid="Godot.Environment.FogSunScatter">FogSunScatter</h4>
+  <div class="markdown level1 summary"><p>If set above <code>0.0</code>, renders the scene's directional light(s) in the fog color depending on the view angle. This can be used to give the impression that the sun is "piercing" through the fog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FogSunScatter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowBlendMode_" data-uid="Godot.Environment.GlowBlendMode*"></a>
+  <h4 id="Godot_Environment_GlowBlendMode" data-uid="Godot.Environment.GlowBlendMode">GlowBlendMode</h4>
+  <div class="markdown level1 summary"><p>The glow blending mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.GlowBlendModeEnum GlowBlendMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.GlowBlendModeEnum.html">GlowBlendModeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowBloom_" data-uid="Godot.Environment.GlowBloom*"></a>
+  <h4 id="Godot_Environment_GlowBloom" data-uid="Godot.Environment.GlowBloom">GlowBloom</h4>
+  <div class="markdown level1 summary"><p>The bloom's intensity. If set to a value higher than <code>0</code>, this will make glow visible in areas darker than the <a class="xref" href="Godot.Environment.html#Godot_Environment_GlowHdrThreshold">GlowHdrThreshold</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowBloom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowEnabled_" data-uid="Godot.Environment.GlowEnabled*"></a>
+  <h4 id="Godot_Environment_GlowEnabled" data-uid="Godot.Environment.GlowEnabled">GlowEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the glow effect is enabled.</p>
+<p><b>Note:</b> Glow is only supported in the Forward+ and Mobile rendering methods, not Compatibility. When using the Mobile rendering method, glow will look different due to the lower dynamic range available in the Mobile rendering method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GlowEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowHdrLuminanceCap_" data-uid="Godot.Environment.GlowHdrLuminanceCap*"></a>
+  <h4 id="Godot_Environment_GlowHdrLuminanceCap" data-uid="Godot.Environment.GlowHdrLuminanceCap">GlowHdrLuminanceCap</h4>
+  <div class="markdown level1 summary"><p>The higher threshold of the HDR glow. Areas brighter than this threshold will be clamped for the purposes of the glow effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowHdrLuminanceCap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowHdrScale_" data-uid="Godot.Environment.GlowHdrScale*"></a>
+  <h4 id="Godot_Environment_GlowHdrScale" data-uid="Godot.Environment.GlowHdrScale">GlowHdrScale</h4>
+  <div class="markdown level1 summary"><p>The bleed scale of the HDR glow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowHdrScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowHdrThreshold_" data-uid="Godot.Environment.GlowHdrThreshold*"></a>
+  <h4 id="Godot_Environment_GlowHdrThreshold" data-uid="Godot.Environment.GlowHdrThreshold">GlowHdrThreshold</h4>
+  <div class="markdown level1 summary"><p>The lower threshold of the HDR glow. When using the Mobile rendering method (which only supports a lower dynamic range up to <code>2.0</code>), this may need to be below <code>1.0</code> for glow to be visible. A value of <code>0.9</code> works well in this case. This value also needs to be decreased below <code>1.0</code> when using glow in 2D, as 2D rendering is performed in SDR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowHdrThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowIntensity_" data-uid="Godot.Environment.GlowIntensity*"></a>
+  <h4 id="Godot_Environment_GlowIntensity" data-uid="Godot.Environment.GlowIntensity">GlowIntensity</h4>
+  <div class="markdown level1 summary"><p>The overall brightness multiplier of the glow effect. When using the Mobile rendering method (which only supports a lower dynamic range up to <code>2.0</code>), this should be increased to <code>1.5</code> to compensate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowMap_" data-uid="Godot.Environment.GlowMap*"></a>
+  <h4 id="Godot_Environment_GlowMap" data-uid="Godot.Environment.GlowMap">GlowMap</h4>
+  <div class="markdown level1 summary"><p>The texture that should be used as a glow map to <i>multiply</i> the resulting glow color according to <a class="xref" href="Godot.Environment.html#Godot_Environment_GlowMapStrength">GlowMapStrength</a>. This can be used to create a "lens dirt" effect. The texture's RGB color channels are used for modulation, but the alpha channel is ignored.</p>
+<p><b>Note:</b> The texture will be stretched to fit the screen. Therefore, it's recommended to use a texture with an aspect ratio that matches your project's base aspect ratio (typically 16:9).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture GlowMap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowMapStrength_" data-uid="Godot.Environment.GlowMapStrength*"></a>
+  <h4 id="Godot_Environment_GlowMapStrength" data-uid="Godot.Environment.GlowMapStrength">GlowMapStrength</h4>
+  <div class="markdown level1 summary"><p>How strong of an impact the <a class="xref" href="Godot.Environment.html#Godot_Environment_GlowMap">GlowMap</a> should have on the overall glow effect. A strength of <code>0.0</code> means the glow map has no effect on the overall glow effect. A strength of <code>1.0</code> means the glow has a full effect on the overall glow effect (and can turn off glow entirely in specific areas of the screen if the glow map has black areas).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowMapStrength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowMix_" data-uid="Godot.Environment.GlowMix*"></a>
+  <h4 id="Godot_Environment_GlowMix" data-uid="Godot.Environment.GlowMix">GlowMix</h4>
+  <div class="markdown level1 summary"><p>When using the <a class="xref" href="Godot.Environment.GlowBlendModeEnum.html#Godot_Environment_GlowBlendModeEnum_Mix">Mix</a> <a class="xref" href="Godot.Environment.html#Godot_Environment_GlowBlendMode">GlowBlendMode</a>, this controls how much the source image is blended with the glow layer. A value of <code>0.0</code> makes the glow rendering invisible, while a value of <code>1.0</code> is equivalent to <a class="xref" href="Godot.Environment.GlowBlendModeEnum.html#Godot_Environment_GlowBlendModeEnum_Replace">Replace</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowMix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowNormalized_" data-uid="Godot.Environment.GlowNormalized*"></a>
+  <h4 id="Godot_Environment_GlowNormalized" data-uid="Godot.Environment.GlowNormalized">GlowNormalized</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, glow levels will be normalized so that summed together their intensities equal <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GlowNormalized { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_GlowStrength_" data-uid="Godot.Environment.GlowStrength*"></a>
+  <h4 id="Godot_Environment_GlowStrength" data-uid="Godot.Environment.GlowStrength">GlowStrength</h4>
+  <div class="markdown level1 summary"><p>The strength of the glow effect. This applies as the glow is blurred across the screen and increases the distance and intensity of the blur. When using the Mobile rendering method, this should be increased to compensate for the lower dynamic range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlowStrength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_ReflectedLightSource_" data-uid="Godot.Environment.ReflectedLightSource*"></a>
+  <h4 id="Godot_Environment_ReflectedLightSource" data-uid="Godot.Environment.ReflectedLightSource">ReflectedLightSource</h4>
+  <div class="markdown level1 summary"><p>The reflected (specular) light source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.ReflectionSource ReflectedLightSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.ReflectionSource.html">ReflectionSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiBounceFeedback_" data-uid="Godot.Environment.SdfgiBounceFeedback*"></a>
+  <h4 id="Godot_Environment_SdfgiBounceFeedback" data-uid="Godot.Environment.SdfgiBounceFeedback">SdfgiBounceFeedback</h4>
+  <div class="markdown level1 summary"><p>The energy multiplier applied to light every time it bounces from a surface when using SDFGI. Values greater than <code>0.0</code> will simulate multiple bounces, resulting in a more realistic appearance. Increasing <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiBounceFeedback">SdfgiBounceFeedback</a> generally has no performance impact. See also <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiEnergy">SdfgiEnergy</a>.</p>
+<p><b>Note:</b> Values greater than <code>0.5</code> can cause infinite feedback loops and should be avoided in scenes with bright materials.</p>
+<p><b>Note:</b> If <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiBounceFeedback">SdfgiBounceFeedback</a> is <code>0.0</code>, indirect lighting will not be represented in reflections as light will only bounce one time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiBounceFeedback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiCascade0Distance_" data-uid="Godot.Environment.SdfgiCascade0Distance*"></a>
+  <h4 id="Godot_Environment_SdfgiCascade0Distance" data-uid="Godot.Environment.SdfgiCascade0Distance">SdfgiCascade0Distance</h4>
+  <div class="markdown level1 summary"><p><b>Note:</b> This property is linked to <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiMinCellSize">SdfgiMinCellSize</a> and <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiMaxDistance">SdfgiMaxDistance</a>. Changing its value will automatically change those properties as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiCascade0Distance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiCascades_" data-uid="Godot.Environment.SdfgiCascades*"></a>
+  <h4 id="Godot_Environment_SdfgiCascades" data-uid="Godot.Environment.SdfgiCascades">SdfgiCascades</h4>
+  <div class="markdown level1 summary"><p>The number of cascades to use for SDFGI (between 1 and 8). A higher number of cascades allows displaying SDFGI further away while preserving detail up close, at the cost of performance. When using SDFGI on small-scale levels, <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiCascades">SdfgiCascades</a> can often be decreased between <code>1</code> and <code>4</code> to improve performance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SdfgiCascades { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiEnabled_" data-uid="Godot.Environment.SdfgiEnabled*"></a>
+  <h4 id="Godot_Environment_SdfgiEnabled" data-uid="Godot.Environment.SdfgiEnabled">SdfgiEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, enables signed distance field global illumination for meshes that have their <a class="xref" href="Godot.GeometryInstance3D.html#Godot_GeometryInstance3D_GIMode">GIMode</a> set to <a class="xref" href="Godot.GeometryInstance3D.GIModeEnum.html#Godot_GeometryInstance3D_GIModeEnum_Static">Static</a>. SDFGI is a real-time global illumination technique that works well with procedurally generated and user-built levels, including in situations where geometry is created during gameplay. The signed distance field is automatically generated around the camera as it moves. Dynamic lights are supported, but dynamic occluders and emissive surfaces are not.</p>
+<p><b>Note:</b> SDFGI is only supported in the Forward+ rendering method, not Mobile or Compatibility.</p>
+<p><b>Performance:</b> SDFGI is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider <a class="xref" href="Godot.LightmapGI.html">LightmapGI</a> instead). To improve SDFGI performance, enable <code>ProjectSettings.rendering/global_illumination/gi/use_half_resolution</code> in the Project Settings.</p>
+<p><b>Note:</b> Meshes should have sufficiently thick walls to avoid light leaks (avoid one-sided walls). For interior levels, enclose your level geometry in a sufficiently large box and bridge the loops to close the mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SdfgiEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiEnergy_" data-uid="Godot.Environment.SdfgiEnergy*"></a>
+  <h4 id="Godot_Environment_SdfgiEnergy" data-uid="Godot.Environment.SdfgiEnergy">SdfgiEnergy</h4>
+  <div class="markdown level1 summary"><p>The energy multiplier to use for SDFGI. Higher values will result in brighter indirect lighting and reflections. See also <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiBounceFeedback">SdfgiBounceFeedback</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiEnergy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiMaxDistance_" data-uid="Godot.Environment.SdfgiMaxDistance*"></a>
+  <h4 id="Godot_Environment_SdfgiMaxDistance" data-uid="Godot.Environment.SdfgiMaxDistance">SdfgiMaxDistance</h4>
+  <div class="markdown level1 summary"><p>The maximum distance at which SDFGI is visible. Beyond this distance, environment lighting or other sources of GI such as <a class="xref" href="Godot.ReflectionProbe.html">ReflectionProbe</a> will be used as a fallback.</p>
+<p><b>Note:</b> This property is linked to <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiMinCellSize">SdfgiMinCellSize</a> and <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiCascade0Distance">SdfgiCascade0Distance</a>. Changing its value will automatically change those properties as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiMaxDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiMinCellSize_" data-uid="Godot.Environment.SdfgiMinCellSize*"></a>
+  <h4 id="Godot_Environment_SdfgiMinCellSize" data-uid="Godot.Environment.SdfgiMinCellSize">SdfgiMinCellSize</h4>
+  <div class="markdown level1 summary"><p>The cell size to use for the closest SDFGI cascade (in 3D units). Lower values allow SDFGI to be more precise up close, at the cost of making SDFGI updates more demanding. This can cause stuttering when the camera moves fast. Higher values allow SDFGI to cover more ground, while also reducing the performance impact of SDFGI updates.</p>
+<p><b>Note:</b> This property is linked to <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiMaxDistance">SdfgiMaxDistance</a> and <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiCascade0Distance">SdfgiCascade0Distance</a>. Changing its value will automatically change those properties as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiMinCellSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiNormalBias_" data-uid="Godot.Environment.SdfgiNormalBias*"></a>
+  <h4 id="Godot_Environment_SdfgiNormalBias" data-uid="Godot.Environment.SdfgiNormalBias">SdfgiNormalBias</h4>
+  <div class="markdown level1 summary"><p>The normal bias to use for SDFGI probes. Increasing this value can reduce visible streaking artifacts on sloped surfaces, at the cost of increased light leaking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiNormalBias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiProbeBias_" data-uid="Godot.Environment.SdfgiProbeBias*"></a>
+  <h4 id="Godot_Environment_SdfgiProbeBias" data-uid="Godot.Environment.SdfgiProbeBias">SdfgiProbeBias</h4>
+  <div class="markdown level1 summary"><p>The constant bias to use for SDFGI probes. Increasing this value can reduce visible streaking artifacts on sloped surfaces, at the cost of increased light leaking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SdfgiProbeBias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiReadSkyLight_" data-uid="Godot.Environment.SdfgiReadSkyLight*"></a>
+  <h4 id="Godot_Environment_SdfgiReadSkyLight" data-uid="Godot.Environment.SdfgiReadSkyLight">SdfgiReadSkyLight</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, SDFGI takes the environment lighting into account. This should be set to <code>false</code> for interior scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SdfgiReadSkyLight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiUseOcclusion_" data-uid="Godot.Environment.SdfgiUseOcclusion*"></a>
+  <h4 id="Godot_Environment_SdfgiUseOcclusion" data-uid="Godot.Environment.SdfgiUseOcclusion">SdfgiUseOcclusion</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, SDFGI uses an occlusion detection approach to reduce light leaking. Occlusion may however introduce dark blotches in certain spots, which may be undesired in mostly outdoor scenes. <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiUseOcclusion">SdfgiUseOcclusion</a> has a performance impact and should only be enabled when needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SdfgiUseOcclusion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SdfgiYScale_" data-uid="Godot.Environment.SdfgiYScale*"></a>
+  <h4 id="Godot_Environment_SdfgiYScale" data-uid="Godot.Environment.SdfgiYScale">SdfgiYScale</h4>
+  <div class="markdown level1 summary"><p>The Y scale to use for SDFGI cells. Lower values will result in SDFGI cells being packed together more closely on the Y axis. This is used to balance between quality and covering a lot of vertical ground. <a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiYScale">SdfgiYScale</a> should be set depending on how vertical your scene is (and how fast your camera may move on the Y axis).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.SdfgiyScale SdfgiYScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.SdfgiyScale.html">SdfgiyScale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_Sky_" data-uid="Godot.Environment.Sky*"></a>
+  <h4 id="Godot_Environment_Sky" data-uid="Godot.Environment.Sky">Sky</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.Sky.html">Sky</a> resource used for this <a class="xref" href="Godot.Environment.html">Environment</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sky Sky { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Sky.html">Sky</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SkyCustomFov_" data-uid="Godot.Environment.SkyCustomFov*"></a>
+  <h4 id="Godot_Environment_SkyCustomFov" data-uid="Godot.Environment.SkyCustomFov">SkyCustomFov</h4>
+  <div class="markdown level1 summary"><p>If set to a value greater than <code>0.0</code>, overrides the field of view to use for sky rendering. If set to <code>0.0</code>, the same FOV as the current <a class="xref" href="Godot.Camera3D.html">Camera3D</a> is used for sky rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SkyCustomFov { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SkyRotation_" data-uid="Godot.Environment.SkyRotation*"></a>
+  <h4 id="Godot_Environment_SkyRotation" data-uid="Godot.Environment.SkyRotation">SkyRotation</h4>
+  <div class="markdown level1 summary"><p>The rotation to use for sky rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 SkyRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoAOChannelAffect_" data-uid="Godot.Environment.SsaoAOChannelAffect*"></a>
+  <h4 id="Godot_Environment_SsaoAOChannelAffect" data-uid="Godot.Environment.SsaoAOChannelAffect">SsaoAOChannelAffect</h4>
+  <div class="markdown level1 summary"><p>The screen-space ambient occlusion intensity on materials that have an AO texture defined. Values higher than <code>0</code> will make the SSAO effect visible in areas darkened by AO textures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoAOChannelAffect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoDetail_" data-uid="Godot.Environment.SsaoDetail*"></a>
+  <h4 id="Godot_Environment_SsaoDetail" data-uid="Godot.Environment.SsaoDetail">SsaoDetail</h4>
+  <div class="markdown level1 summary"><p>Sets the strength of the additional level of detail for the screen-space ambient occlusion effect. A high value makes the detail pass more prominent, but it may contribute to aliasing in your final image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoEnabled_" data-uid="Godot.Environment.SsaoEnabled*"></a>
+  <h4 id="Godot_Environment_SsaoEnabled" data-uid="Godot.Environment.SsaoEnabled">SsaoEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the screen-space ambient occlusion effect is enabled. This darkens objects' corners and cavities to simulate ambient light not reaching the entire object as in real life. This works well for small, dynamic objects, but baked lighting or ambient occlusion textures will do a better job at displaying ambient occlusion on large static objects. Godot uses a form of SSAO called Adaptive Screen Space Ambient Occlusion which is itself a form of Horizon Based Ambient Occlusion.</p>
+<p><b>Note:</b> SSAO is only supported in the Forward+ rendering method, not Mobile or Compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SsaoEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoHorizon_" data-uid="Godot.Environment.SsaoHorizon*"></a>
+  <h4 id="Godot_Environment_SsaoHorizon" data-uid="Godot.Environment.SsaoHorizon">SsaoHorizon</h4>
+  <div class="markdown level1 summary"><p>The threshold for considering whether a given point on a surface is occluded or not represented as an angle from the horizon mapped into the <code>0.0-1.0</code> range. A value of <code>1.0</code> results in no occlusion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoHorizon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoIntensity_" data-uid="Godot.Environment.SsaoIntensity*"></a>
+  <h4 id="Godot_Environment_SsaoIntensity" data-uid="Godot.Environment.SsaoIntensity">SsaoIntensity</h4>
+  <div class="markdown level1 summary"><p>The primary screen-space ambient occlusion intensity. Acts as a multiplier for the screen-space ambient occlusion effect. A higher value results in darker occlusion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoLightAffect_" data-uid="Godot.Environment.SsaoLightAffect*"></a>
+  <h4 id="Godot_Environment_SsaoLightAffect" data-uid="Godot.Environment.SsaoLightAffect">SsaoLightAffect</h4>
+  <div class="markdown level1 summary"><p>The screen-space ambient occlusion intensity in direct light. In real life, ambient occlusion only applies to indirect light, which means its effects can't be seen in direct light. Values higher than <code>0</code> will make the SSAO effect visible in direct light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoLightAffect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoPower_" data-uid="Godot.Environment.SsaoPower*"></a>
+  <h4 id="Godot_Environment_SsaoPower" data-uid="Godot.Environment.SsaoPower">SsaoPower</h4>
+  <div class="markdown level1 summary"><p>The distribution of occlusion. A higher value results in darker occlusion, similar to <a class="xref" href="Godot.Environment.html#Godot_Environment_SsaoIntensity">SsaoIntensity</a>, but with a sharper falloff.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoPower { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoRadius_" data-uid="Godot.Environment.SsaoRadius*"></a>
+  <h4 id="Godot_Environment_SsaoRadius" data-uid="Godot.Environment.SsaoRadius">SsaoRadius</h4>
+  <div class="markdown level1 summary"><p>The distance at which objects can occlude each other when calculating screen-space ambient occlusion. Higher values will result in occlusion over a greater distance at the cost of performance and quality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsaoSharpness_" data-uid="Godot.Environment.SsaoSharpness*"></a>
+  <h4 id="Godot_Environment_SsaoSharpness" data-uid="Godot.Environment.SsaoSharpness">SsaoSharpness</h4>
+  <div class="markdown level1 summary"><p>The amount that the screen-space ambient occlusion effect is allowed to blur over the edges of objects. Setting too high will result in aliasing around the edges of objects. Setting too low will make object edges appear blurry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsaoSharpness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsilEnabled_" data-uid="Godot.Environment.SsilEnabled*"></a>
+  <h4 id="Godot_Environment_SsilEnabled" data-uid="Godot.Environment.SsilEnabled">SsilEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, the screen-space indirect lighting effect is enabled. Screen space indirect lighting is a form of indirect lighting that allows diffuse light to bounce between nearby objects. Screen-space indirect lighting works very similarly to screen-space ambient occlusion, in that it only affects a limited range. It is intended to be used along with a form of proper global illumination like SDFGI or <a class="xref" href="Godot.VoxelGI.html">VoxelGI</a>. Screen-space indirect lighting is not affected by individual light's <a class="xref" href="Godot.Light3D.html#Godot_Light3D_LightIndirectEnergy">LightIndirectEnergy</a>.</p>
+<p><b>Note:</b> SSIL is only supported in the Forward+ rendering method, not Mobile or Compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SsilEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsilIntensity_" data-uid="Godot.Environment.SsilIntensity*"></a>
+  <h4 id="Godot_Environment_SsilIntensity" data-uid="Godot.Environment.SsilIntensity">SsilIntensity</h4>
+  <div class="markdown level1 summary"><p>The brightness multiplier for the screen-space indirect lighting effect. A higher value will result in brighter light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsilIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsilNormalRejection_" data-uid="Godot.Environment.SsilNormalRejection*"></a>
+  <h4 id="Godot_Environment_SsilNormalRejection" data-uid="Godot.Environment.SsilNormalRejection">SsilNormalRejection</h4>
+  <div class="markdown level1 summary"><p>Amount of normal rejection used when calculating screen-space indirect lighting. Normal rejection uses the normal of a given sample point to reject samples that are facing away from the current pixel. Normal rejection is necessary to avoid light leaking when only one side of an object is illuminated. However, normal rejection can be disabled if light leaking is desirable, such as when the scene mostly contains emissive objects that emit light from faces that cannot be seen from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsilNormalRejection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsilRadius_" data-uid="Godot.Environment.SsilRadius*"></a>
+  <h4 id="Godot_Environment_SsilRadius" data-uid="Godot.Environment.SsilRadius">SsilRadius</h4>
+  <div class="markdown level1 summary"><p>The distance that bounced lighting can travel when using the screen space indirect lighting effect. A larger value will result in light bouncing further in a scene, but may result in under-sampling artifacts which look like long spikes surrounding light sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsilRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsilSharpness_" data-uid="Godot.Environment.SsilSharpness*"></a>
+  <h4 id="Godot_Environment_SsilSharpness" data-uid="Godot.Environment.SsilSharpness">SsilSharpness</h4>
+  <div class="markdown level1 summary"><p>The amount that the screen-space indirect lighting effect is allowed to blur over the edges of objects. Setting too high will result in aliasing around the edges of objects. Setting too low will make object edges appear blurry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsilSharpness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsrDepthTolerance_" data-uid="Godot.Environment.SsrDepthTolerance*"></a>
+  <h4 id="Godot_Environment_SsrDepthTolerance" data-uid="Godot.Environment.SsrDepthTolerance">SsrDepthTolerance</h4>
+  <div class="markdown level1 summary"><p>The depth tolerance for screen-space reflections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsrDepthTolerance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsrEnabled_" data-uid="Godot.Environment.SsrEnabled*"></a>
+  <h4 id="Godot_Environment_SsrEnabled" data-uid="Godot.Environment.SsrEnabled">SsrEnabled</h4>
+  <div class="markdown level1 summary"><p>If <code>true</code>, screen-space reflections are enabled. Screen-space reflections are more accurate than reflections from <a class="xref" href="Godot.VoxelGI.html">VoxelGI</a>s or <a class="xref" href="Godot.ReflectionProbe.html">ReflectionProbe</a>s, but are slower and can't reflect surfaces occluded by others.</p>
+<p><b>Note:</b> SSR is only supported in the Forward+ rendering method, not Mobile or Compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SsrEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsrFadeIn_" data-uid="Godot.Environment.SsrFadeIn*"></a>
+  <h4 id="Godot_Environment_SsrFadeIn" data-uid="Godot.Environment.SsrFadeIn">SsrFadeIn</h4>
+  <div class="markdown level1 summary"><p>The fade-in distance for screen-space reflections. Affects the area from the reflected material to the screen-space reflection. Only positive values are valid (negative values will be clamped to <code>0.0</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsrFadeIn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsrFadeOut_" data-uid="Godot.Environment.SsrFadeOut*"></a>
+  <h4 id="Godot_Environment_SsrFadeOut" data-uid="Godot.Environment.SsrFadeOut">SsrFadeOut</h4>
+  <div class="markdown level1 summary"><p>The fade-out distance for screen-space reflections. Affects the area from the screen-space reflection to the "global" reflection. Only positive values are valid (negative values will be clamped to <code>0.0</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SsrFadeOut { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_SsrMaxSteps_" data-uid="Godot.Environment.SsrMaxSteps*"></a>
+  <h4 id="Godot_Environment_SsrMaxSteps" data-uid="Godot.Environment.SsrMaxSteps">SsrMaxSteps</h4>
+  <div class="markdown level1 summary"><p>The maximum number of steps for screen-space reflections. Higher values are slower.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SsrMaxSteps { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_TonemapExposure_" data-uid="Godot.Environment.TonemapExposure*"></a>
+  <h4 id="Godot_Environment_TonemapExposure" data-uid="Godot.Environment.TonemapExposure">TonemapExposure</h4>
+  <div class="markdown level1 summary"><p>The default exposure used for tonemapping. Higher values result in a brighter image. See also <a class="xref" href="Godot.Environment.html#Godot_Environment_TonemapWhite">TonemapWhite</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TonemapExposure { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_TonemapMode_" data-uid="Godot.Environment.TonemapMode*"></a>
+  <h4 id="Godot_Environment_TonemapMode" data-uid="Godot.Environment.TonemapMode">TonemapMode</h4>
+  <div class="markdown level1 summary"><p>The tonemapping mode to use. Tonemapping is the process that "converts" HDR values to be suitable for rendering on a LDR display. (Godot doesn't support rendering on HDR displays yet.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Environment.ToneMapper TonemapMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Environment.html">Environment</a>.<a class="xref" href="Godot.Environment.ToneMapper.html">ToneMapper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_TonemapWhite_" data-uid="Godot.Environment.TonemapWhite*"></a>
+  <h4 id="Godot_Environment_TonemapWhite" data-uid="Godot.Environment.TonemapWhite">TonemapWhite</h4>
+  <div class="markdown level1 summary"><p>The white reference value for tonemapping (also called "whitepoint"). Higher values can make highlights look less blown out, and will also slightly darken the whole scene as a result. Only effective if the <a class="xref" href="Godot.Environment.html#Godot_Environment_TonemapMode">TonemapMode</a> isn't set to <a class="xref" href="Godot.Environment.ToneMapper.html#Godot_Environment_ToneMapper_Linear">Linear</a>. See also <a class="xref" href="Godot.Environment.html#Godot_Environment_TonemapExposure">TonemapExposure</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TonemapWhite { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogAlbedo_" data-uid="Godot.Environment.VolumetricFogAlbedo*"></a>
+  <h4 id="Godot_Environment_VolumetricFogAlbedo" data-uid="Godot.Environment.VolumetricFogAlbedo">VolumetricFogAlbedo</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Godot.Color.html">Color</a> of the volumetric fog when interacting with lights. Mist and fog have an albedo close to <code>Color(1, 1, 1, 1)</code> while smoke has a darker albedo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color VolumetricFogAlbedo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogAmbientInject_" data-uid="Godot.Environment.VolumetricFogAmbientInject*"></a>
+  <h4 id="Godot_Environment_VolumetricFogAmbientInject" data-uid="Godot.Environment.VolumetricFogAmbientInject">VolumetricFogAmbientInject</h4>
+  <div class="markdown level1 summary"><p>Scales the strength of ambient light used in the volumetric fog. A value of <code>0.0</code> means that ambient light will not impact the volumetric fog. <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogAmbientInject">VolumetricFogAmbientInject</a> has a small performance cost when set above <code>0.0</code>.</p>
+<p><b>Note:</b> This has no visible effect if <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogDensity">VolumetricFogDensity</a> is <code>0.0</code> or if <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogAlbedo">VolumetricFogAlbedo</a> is a fully black color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogAmbientInject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogAnisotropy_" data-uid="Godot.Environment.VolumetricFogAnisotropy*"></a>
+  <h4 id="Godot_Environment_VolumetricFogAnisotropy" data-uid="Godot.Environment.VolumetricFogAnisotropy">VolumetricFogAnisotropy</h4>
+  <div class="markdown level1 summary"><p>The direction of scattered light as it goes through the volumetric fog. A value close to <code>1.0</code> means almost all light is scattered forward. A value close to <code>0.0</code> means light is scattered equally in all directions. A value close to <code>-1.0</code> means light is scattered mostly backward. Fog and mist scatter light slightly forward, while smoke scatters light equally in all directions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogAnisotropy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogDensity_" data-uid="Godot.Environment.VolumetricFogDensity*"></a>
+  <h4 id="Godot_Environment_VolumetricFogDensity" data-uid="Godot.Environment.VolumetricFogDensity">VolumetricFogDensity</h4>
+  <div class="markdown level1 summary"><p>The base <i>exponential</i> density of the volumetric fog. Set this to the lowest density you want to have globally. <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s can be used to add to or subtract from this density in specific areas. Fog rendering is exponential as in real life.</p>
+<p>A value of <code>0.0</code> disables global volumetric fog while allowing <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s to display volumetric fog in specific areas.</p>
+<p>To make volumetric fog work as a volumetric <i>lighting</i> solution, set <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogDensity">VolumetricFogDensity</a> to the lowest non-zero value (<code>0.0001</code>) then increase lights' <a class="xref" href="Godot.Light3D.html#Godot_Light3D_LightVolumetricFogEnergy">LightVolumetricFogEnergy</a> to values between <code>10000</code> and <code>100000</code> to compensate for the very low density.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogDensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogDetailSpread_" data-uid="Godot.Environment.VolumetricFogDetailSpread*"></a>
+  <h4 id="Godot_Environment_VolumetricFogDetailSpread" data-uid="Godot.Environment.VolumetricFogDetailSpread">VolumetricFogDetailSpread</h4>
+  <div class="markdown level1 summary"><p>The distribution of size down the length of the froxel buffer. A higher value compresses the froxels closer to the camera and places more detail closer to the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogDetailSpread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogEmission_" data-uid="Godot.Environment.VolumetricFogEmission*"></a>
+  <h4 id="Godot_Environment_VolumetricFogEmission" data-uid="Godot.Environment.VolumetricFogEmission">VolumetricFogEmission</h4>
+  <div class="markdown level1 summary"><p>The emitted light from the volumetric fog. Even with emission, volumetric fog will not cast light onto other surfaces. Emission is useful to establish an ambient color. As the volumetric fog effect uses single-scattering only, fog tends to need a little bit of emission to soften the harsh shadows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color VolumetricFogEmission { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogEmissionEnergy_" data-uid="Godot.Environment.VolumetricFogEmissionEnergy*"></a>
+  <h4 id="Godot_Environment_VolumetricFogEmissionEnergy" data-uid="Godot.Environment.VolumetricFogEmissionEnergy">VolumetricFogEmissionEnergy</h4>
+  <div class="markdown level1 summary"><p>The brightness of the emitted light from the volumetric fog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogEmissionEnergy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogEnabled_" data-uid="Godot.Environment.VolumetricFogEnabled*"></a>
+  <h4 id="Godot_Environment_VolumetricFogEnabled" data-uid="Godot.Environment.VolumetricFogEnabled">VolumetricFogEnabled</h4>
+  <div class="markdown level1 summary"><p>Enables the volumetric fog effect. Volumetric fog uses a screen-aligned froxel buffer to calculate accurate volumetric scattering in the short to medium range. Volumetric fog interacts with <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s and lights to calculate localized and global fog. Volumetric fog uses a PBR single-scattering model based on extinction, scattering, and emission which it exposes to users as density, albedo, and emission.</p>
+<p><b>Note:</b> Volumetric fog is only supported in the Forward+ rendering method, not Mobile or Compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VolumetricFogEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogGIInject_" data-uid="Godot.Environment.VolumetricFogGIInject*"></a>
+  <h4 id="Godot_Environment_VolumetricFogGIInject" data-uid="Godot.Environment.VolumetricFogGIInject">VolumetricFogGIInject</h4>
+  <div class="markdown level1 summary"><p>Scales the strength of Global Illumination used in the volumetric fog's albedo color. A value of <code>0.0</code> means that Global Illumination will not impact the volumetric fog. <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogGIInject">VolumetricFogGIInject</a> has a small performance cost when set above <code>0.0</code>.</p>
+<p><b>Note:</b> This has no visible effect if <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogDensity">VolumetricFogDensity</a> is <code>0.0</code> or if <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogAlbedo">VolumetricFogAlbedo</a> is a fully black color.</p>
+<p><b>Note:</b> Only <a class="xref" href="Godot.VoxelGI.html">VoxelGI</a> and SDFGI (<a class="xref" href="Godot.Environment.html#Godot_Environment_SdfgiEnabled">SdfgiEnabled</a>) are taken into account when using <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogGIInject">VolumetricFogGIInject</a>. Global illumination from <a class="xref" href="Godot.LightmapGI.html">LightmapGI</a>, <a class="xref" href="Godot.ReflectionProbe.html">ReflectionProbe</a> and SSIL (see <a class="xref" href="Godot.Environment.html#Godot_Environment_SsilEnabled">SsilEnabled</a>) will be ignored by volumetric fog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogGIInject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogLength_" data-uid="Godot.Environment.VolumetricFogLength*"></a>
+  <h4 id="Godot_Environment_VolumetricFogLength" data-uid="Godot.Environment.VolumetricFogLength">VolumetricFogLength</h4>
+  <div class="markdown level1 summary"><p>The distance over which the volumetric fog is computed. Increase to compute fog over a greater range, decrease to add more detail when a long range is not needed. For best quality fog, keep this as low as possible. See also <code>ProjectSettings.rendering/environment/volumetric_fog/volume_depth</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogSkyAffect_" data-uid="Godot.Environment.VolumetricFogSkyAffect*"></a>
+  <h4 id="Godot_Environment_VolumetricFogSkyAffect" data-uid="Godot.Environment.VolumetricFogSkyAffect">VolumetricFogSkyAffect</h4>
+  <div class="markdown level1 summary"><p>The factor to use when affecting the sky with volumetric fog. <code>1.0</code> means that volumetric fog can fully obscure the sky. Lower values reduce the impact of volumetric fog on sky rendering, with <code>0.0</code> not affecting sky rendering at all.</p>
+<p><b>Note:</b> <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogSkyAffect">VolumetricFogSkyAffect</a> also affects <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s, even if <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogDensity">VolumetricFogDensity</a> is <code>0.0</code>. If you notice <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s are disappearing when looking towards the sky, set <a class="xref" href="Godot.Environment.html#Godot_Environment_VolumetricFogSkyAffect">VolumetricFogSkyAffect</a> to <code>1.0</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogSkyAffect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogTemporalReprojectionAmount_" data-uid="Godot.Environment.VolumetricFogTemporalReprojectionAmount*"></a>
+  <h4 id="Godot_Environment_VolumetricFogTemporalReprojectionAmount" data-uid="Godot.Environment.VolumetricFogTemporalReprojectionAmount">VolumetricFogTemporalReprojectionAmount</h4>
+  <div class="markdown level1 summary"><p>The amount by which to blend the last frame with the current frame. A higher number results in smoother volumetric fog, but makes "ghosting" much worse. A lower value reduces ghosting but can result in the per-frame temporal jitter becoming visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VolumetricFogTemporalReprojectionAmount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_VolumetricFogTemporalReprojectionEnabled_" data-uid="Godot.Environment.VolumetricFogTemporalReprojectionEnabled*"></a>
+  <h4 id="Godot_Environment_VolumetricFogTemporalReprojectionEnabled" data-uid="Godot.Environment.VolumetricFogTemporalReprojectionEnabled">VolumetricFogTemporalReprojectionEnabled</h4>
+  <div class="markdown level1 summary"><p>Enables temporal reprojection in the volumetric fog. Temporal reprojection blends the current frame's volumetric fog with the last frame's volumetric fog to smooth out jagged edges. The performance cost is minimal; however, it leads to moving <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s and <a class="xref" href="Godot.Light3D.html">Light3D</a>s "ghosting" and leaving a trail behind them. When temporal reprojection is enabled, try to avoid moving <a class="xref" href="Godot.FogVolume.html">FogVolume</a>s or <a class="xref" href="Godot.Light3D.html">Light3D</a>s too fast. Short-lived dynamic lighting effects should have <a class="xref" href="Godot.Light3D.html#Godot_Light3D_LightVolumetricFogEnergy">LightVolumetricFogEnergy</a> set to <code>0.0</code> to avoid ghosting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VolumetricFogTemporalReprojectionEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Godot_Environment_GetGlowLevel_" data-uid="Godot.Environment.GetGlowLevel*"></a>
+  <h4 id="Godot_Environment_GetGlowLevel_System_Int32_" data-uid="Godot.Environment.GetGlowLevel(System.Int32)">GetGlowLevel(int)</h4>
+  <div class="markdown level1 summary"><p>Returns the intensity of the glow level <code>idx</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGlowLevel(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Godot_Environment_HasGodotClassMethod_" data-uid="Godot.Environment.HasGodotClassMethod*"></a>
+  <h4 id="Godot_Environment_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.Environment.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">HasGodotClassMethod(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__">Resource.HasGodotClassMethod(in godot_string_name)</a></div>
+
+
+  <a id="Godot_Environment_HasGodotClassSignal_" data-uid="Godot.Environment.HasGodotClassSignal*"></a>
+  <h4 id="Godot_Environment_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.Environment.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">HasGodotClassSignal(in godot_string_name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__">Resource.HasGodotClassSignal(in godot_string_name)</a></div>
+
+
+  <a id="Godot_Environment_InvokeGodotClassMethod_" data-uid="Godot.Environment.InvokeGodotClassMethod*"></a>
+  <h4 id="Godot_Environment_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.Environment.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Godot.Resource.html#Godot_Resource_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__">Resource.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</a></div>
+
+
+  <a id="Godot_Environment_SetGlowLevel_" data-uid="Godot.Environment.SetGlowLevel*"></a>
+  <h4 id="Godot_Environment_SetGlowLevel_System_Int32_System_Single_" data-uid="Godot.Environment.SetGlowLevel(System.Int32,System.Single)">SetGlowLevel(int, float)</h4>
+  <div class="markdown level1 summary"><p>Sets the intensity of the glow level <code>idx</code>. A value above <code>0.0</code> enables the level. Each level relies on the previous level. This means that enabling higher glow levels will slow down the glow effect rendering, even if previous levels aren't enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlowLevel(int idx, float intensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">intensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In this article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+        <span>Generated by <strong>DocFX</strong></span>
+        
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
