@@ -1,6 +1,6 @@
 # Godot C# API
 
-Unofficial web version of Godot's C# API documentation.
+Unofficial web version of Godot 4.1's C# API documentation (https://zuru33.github.io/godot-csharp-api/).
 
 ## How to use this repository
 
@@ -17,6 +17,10 @@ Unofficial web version of Godot's C# API documentation.
 
 The whole website should now be built under `docs/`. You can preview it locally using `docfx serve docs/`. The documentation logo is from [Godot Design](https://github.com/godotengine/godot-design/).
 
-## License
+## Older Godot versions
 
-See the [index.md](./index.md) file for license details.
+Some older Godot versions have git tags. To access an older version of the API:
+1. git clone this repo
+1. git checkout &lt;specific verson tag&gt;
+1. Install docfx
+1. `docfx serve docs/`
